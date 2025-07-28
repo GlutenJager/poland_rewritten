@@ -71,18 +71,27 @@ leader_traits = {
 		lend_lease_tension = -0.3
 	}
 
-	mod_agresywny_stalinista = {
+	mod_agresywny_stalinista = { # cos z tym zrobic
 		sprite = 12
 		random = no
-		experience_gain_army = @chief_experience_gain_medium
-		army_armor_attack_factor = 0.15
-		army_defence_factor = 0.15
-		communism_drift = 0.1
+		experience_gain_army = @chief_experience_gain_high
+		army_armor_attack_factor = 0.2
+		army_attack_factor = 0.2
+		communism_drift = 0.3
 		command_cap_increase = @tier3_cp_cap_increase
 		command_power = @tier3_cp_cost
 
 	}
-
+	
+	mod_stalinista = {
+	    spirte = 12
+		random = no
+		experience_gain_army = @chief_experience_gain_medium
+		army_infantry_defence_factor = 0.1
+		communism_drift = 0.2
+		
+    }
+	
 	mod_husarz = {
 		sprite = 17
 		random = no
@@ -303,7 +312,7 @@ leader_traits = {
 		supply_consumption_factor = -0.05
 	}
 
-	mod_nacjonalista_chlopski = {
+	mod_nacjonalista_chłopski = {
 		sprite = 7
 		random = no
 		weekly_manpower = 500
@@ -316,11 +325,11 @@ leader_traits = {
 		supply_consumption_factor = 0.2
 	}
 
-	mod_artyst = {
+	mod_artysta = {
 		sprite = 9
 		random = no
 		political_power_factor = 0.1
-		stability_factor = 0.05
+		stability_factor = 0.5
 		construction_speed_buildings_factor = 0.4
 	}
 
@@ -10123,7 +10132,7 @@ leader_traits = {
 		random = no 
 		sprite = 14 
 
-		rch_speed_factor = 0.05
+		research_speed_factor = 0.05
 		consumer_goods_factor = -0.1
 	}
 
