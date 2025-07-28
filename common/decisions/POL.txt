@@ -3707,44 +3707,41 @@ POL_civil_war_decisions = {
 	}
 }
 
-POL_pis_polityka_zagraniczna = { 
-	POL_oddac_wegrom_slowacje = { # decyzje  o oddaniuwegrom slowacji, potem burglandu, potem jak bedziemy mieli marionetke z rumunii tez transylwani, oraz ziemi wegierskich na jugoslawii
+POL_pis_polityka_zagraniczna = {
+	# DO NAPRAWY ALE ZACZYNA DZILAC#
+    
+    POL_oddac_wegrom_slowacje = { # decyzja o oddaniu Węgrom Słowacji (stan 69)
 
-		icon = decision_generic_nationalism
+        icon = decision_generic_nationalism
 
-		available = {
-			has_government = fascism
-			NOT = { has_completed_focus = POL_polak_wegier_2_bratanki }
+        available = {
+            has_completed_focus = POL_polak_wegier_2_bratanki
+            controls_state = 69              # Bratysława (Słowacja)
+            is_in_faction_with = HUN
+            NOT = { exists = CZE }           # Czechosłowacja nie może istnieć
+            HUN = {
+                exists = yes
+            }
+        }
 
-		}
-		
-		visible = {
-			NOT = { has_completed_focus = POL_polak_wegier_2_bratanki }
-		}
+        visible = {
+            has_completed_focus = POL_polak_wegier_2_bratanki
+        }
 
-		fire_only_once = yes
-		days_remove = 15
-		
-		cost = 20
-		
-		modifier = {
-			political_power_factor = -0.5
-			stability_weekly = -0.02
-		}
+        fire_only_once = yes
+        days_remove = 1
+        
+        cost = 20
 
-		custom_cost_trigger = {
-			command_power > 24
-			has_political_power > 24
-		}
-		custom_cost_text = decision_cost_CP_25_pp_25
-		
-		remove_effect = {
-			FROM = {
-				add_command_power = -25
-				add_political_power = -25
-			}
-			custom_effect_tooltip = pis_propaganda_tt
-		}
+        ai_will_do = {
+            factor = 1
+        }
 
-	}
+        complete_effect = {
+            transfer_state = 69              # oddajemy stan
+            HUN = {
+                add_state_core = 69          # Węgry zyskują core
+            }
+        }
+    }
 }

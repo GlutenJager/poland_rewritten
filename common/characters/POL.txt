@@ -359,6 +359,11 @@ characters = {
 
 	POL_john_maynard_keynes = {
 		name = "John Maynard Keynes"
+		portraits = {
+			army={
+				small="GFX_portraits_keynes"
+			}
+		}
 		advisor = {
 			cost = 150
 			slot = political_advisor
@@ -374,6 +379,11 @@ characters = {
 	}
 	POL_leszek_miller = {
 		name = "Leszek Miller"
+		portraits = {
+			army={
+				small="GFX_portraits_leszek_miller"
+			}
+		}
 		advisor = {
 			cost = 200
 			slot = political_advisor
@@ -389,6 +399,11 @@ characters = {
 	}
 	POL_krystyna_pawlowicz = {
 		name = "Krystyna Pawłowicz"
+		portraits = {
+			army={
+				small="GFX_portraits_krystyna_pawlowicz"
+			}
+		}
 		advisor = {
 			cost = 100
 			slot = political_advisor
@@ -405,6 +420,11 @@ characters = {
 
 	POL_mariusz_blaszczak = {
 		name = "Mariusz Błaszczak"
+		portraits = {
+			army={
+				small="GFX_portraits_mariusz_blaszczak"
+			}
+		}
 		advisor = {
 			slot = 150
 			slot = political_advisor
@@ -420,10 +440,15 @@ characters = {
 	}
 	POL_leszek_bubel = {
 		name = "Leszek Bubel"
+		portraits = {
+			army={
+				small="GFX_portraits_leszek_bubel"
+			}
+		}
 		advisor = {
 			slot = 150
 			slot = political_advisor
-			traits = { mod_nacjonalista_chłopski }
+			traits = { mod_nacjonalista_chlopski }
 			idea_token = POL_leszek_bubel
 			allowed = {
 				original_tag = POL
@@ -436,10 +461,15 @@ characters = {
 
 	POL_aleksander_chodorowski = {
 		name = "Aleksander Chodorowski"
+		portraits = {
+			army={
+				small="GFX_portraits_aleksander_chodorowski"
+			}
+		}
 		advisor = {
 			slot = 150
 			slot = political_advisor
-			traits = { mod_artysta }
+			traits = { mod_artyst }
 			idea_token = POL_aleksander_chodorowski
 			allowed = {
 				original_tag = POL
@@ -451,6 +481,12 @@ characters = {
 	}
 
 	POL_leszek_balcerowicz = {
+		name = "Leszek Balcerowicz"
+		portraits = {
+			army={
+				small="GFX_portraits_leszek_balcerowicz_adv"
+			}
+		}
 		advisor = {
 			slot = 150
 			slot = political_advisor
@@ -884,10 +920,10 @@ characters = {
 	#twoja stara up there
 
 	POL_jacek_bartosiak = {
-		name=POL_jacek_bartosiak
+		name = "mgr Jacek Bartosiak"
 		portraits = {
 			army = {
-				small="GFX_idea_POL_tomislaw_lupaszko"
+				small="GFX_portraits_jacek_bartosiak"
 			}
 		}
 		advisor = {
@@ -905,10 +941,10 @@ characters = {
 	}
 
 	POL_piotr_napierala = {
-		name=POL_piotr_napierala
+		name = "Dr Piotr Napierała"
 		portraits = {
 			army = {
-				small="GFX_idea_POL_wladyslaw_kalkus"
+				small="GFX_portraits_piotr_napierala"
 			}
 		}
 		advisor = {
@@ -924,10 +960,10 @@ characters = {
 	}
 
 POL_wladyslaw_kosiniak = {
-		name=POL_wladyslaw_kosiniak
+		name = "Władysław Kosiniak"
 		portraits = {
 			army = {
-				small="GFX_idea_POL_wladyslaw_kalkus"
+				small="GFX_portraits_wladyslaw_kosiniak"
 			}
 		}
 		advisor = {
@@ -943,10 +979,10 @@ POL_wladyslaw_kosiniak = {
 	}
 
 POL_lukail_kalsznikov = {
-		name=POL_lukail_kalasznikov
+		name = "Łukaił 'Kałach' Kalasznikov"
 		portraits = {
 			army = {
-				small="GFX_idea_POL_wladyslaw_kalkus"
+				small="GFX_portraits_kalach"
 			}
 		}
 		advisor = {
@@ -962,10 +998,10 @@ POL_lukail_kalsznikov = {
 	}
 
 POL_elon_musk = {
-		name=POL_elon_musk
+		name = "Elon Musk"
 		portraits = {
 			army = {
-				small="GFX_idea_POL_wladyslaw_kalkus"
+				small="GFX_portraits_elon_musk_adv"
 			}
 		}
 		advisor = {
@@ -981,10 +1017,10 @@ POL_elon_musk = {
 	}
 
 POL_aleksander_jablonowski = {
-		name=POL_aleksander_jablonowski
+		name = "Wojciech Olszański"
 		portraits = {
 			army = {
-				small="GFX_idea_POL_wladyslaw_kalkus"
+				small="GFX_portraits_jaszczur_adv"
 			}
 		}
 		advisor = {
@@ -1000,10 +1036,10 @@ POL_aleksander_jablonowski = {
 	}
 
 POL_slawosz_uznanski = {
-		name=POL_slawosz_uznanski
+		name = "Sławosz Uznański-Wiśniewski"
 		portraits = {
 			army = {
-				small="GFX_idea_POL_wladyslaw_kalkus"
+				small="GFX_portraits_slawosz_uznanski"
 			}
 		}
 		advisor = {
@@ -1027,10 +1063,10 @@ POL_slawosz_uznanski = {
 	
 
 	POL_czerwony_jamal = {
-		name=POL_czerwony_jamal
+		name = "Czerwony Jamal"
 		portraits = {
 			army = {
-				small="GFX_idea_POL_jozef_zajac"
+				small="GFX_portraits_czarny_jamal"
 			}
 		}
 		advisor = {
@@ -1050,10 +1086,10 @@ POL_slawosz_uznanski = {
 	}
 
 	POL_andrzej_szejna = {
-		name=POL_andrzej_szejna
+		name = "Andrzej Szejna"
 		portraits = {
 			army = {
-				small="GFX_idea_POL_jozef_zajac"
+				small="GFX_portraits_andrzej_szejna"
 			}
 		}
 		advisor = {
@@ -1073,10 +1109,10 @@ POL_slawosz_uznanski = {
 	}
 
 	POL_donald_von_tusk = {
-		name=POL_donald_von_tusk
+		name = "Donald von Tusk"
 		portraits = {
 			army = {
-				small="GFX_idea_POL_jozef_zajac"
+				small="GFX_portraits_donald_tusk_adv"
 			}
 		}
 		advisor = {
@@ -1096,10 +1132,10 @@ POL_slawosz_uznanski = {
 	}
 
 	POL_marek_jakubiak = {
-		name=POL_marek_jakubiak
+		name = "Marek Jakubiak"
 		portraits = {
 			army = {
-				small="GFX_idea_POL_jozef_zajac"
+				small="GFX_portraits_marek_jakubiak_adv"
 			}
 		}
 		advisor = {
@@ -1123,10 +1159,10 @@ POL_slawosz_uznanski = {
 	### AIR CHIEFS PLREW ###
 
 	POL_gluten_jager = {
-		name=POL_gluten_jager
+		name = "Gluten Jager"
 		portraits = {
 			army = {
-				small="GFX_idea_POL_jozef_zajac"
+				small="GFX_portraits_gluten_jager"
 			}
 		}
 		advisor = {
@@ -1146,10 +1182,10 @@ POL_slawosz_uznanski = {
 	}
 
 	POL_iga_swiatek = {
-		name=POL_iga_swiatek
+		name = "Iga Świątek"
 		portraits = {
 			army = {
-				small="GFX_idea_POL_jozef_zajac"
+				small="GFX_portraits_iga_swiatek"
 			}
 		}
 		advisor = {
@@ -1172,10 +1208,10 @@ POL_slawosz_uznanski = {
 	### NAVAL CHIEF ###
 
 	POL_mariusz_pudzianowski = {
-		name=POL_mariusz_pudzianowski
+		name = "Mariusz Pudzianowski"
 		portraits = {
 			army = {
-				small="GFX_idea_POL_jozef_zajac"
+				small="GFX_portraits_mariusz_pudzianowski"
 			}
 		}
 		advisor = {
@@ -1195,10 +1231,10 @@ POL_slawosz_uznanski = {
 	}
 
 	POL_dafael = {
-		name=POL_dafael
+		name = "Daf*el"
 		portraits = {
 			army = {
-				small="GFX_idea_POL_jozef_zajac"
+				small="GFX_portraits_dafael"
 			}
 		}
 		advisor = {
@@ -1221,10 +1257,10 @@ POL_slawosz_uznanski = {
 	####PLREW DOWODZTWO###
 
 POL_wojtek_drewniak = {
-		name=POL_wojtek_drewniak
+		name = "Wojtek Drewniak"
 		portraits = {
 			army = {
-				small="GFX_idea_POL_jozef_zajac"
+				small="GFX_portraits_wojciech_drewniak"
 			}
 		}
 		advisor = {
@@ -1244,10 +1280,10 @@ POL_wojtek_drewniak = {
 	}
 
 	POL_agnieszka_holland = {
-		name=POL_agnieszka_holland
+		name = "Agnieszka Holland"
 		portraits = {
 			army = {
-				small="GFX_idea_POL_jozef_zajac"
+				small="GFX_portraits_agnieszka_holland"
 			}
 		}
 		advisor = {
@@ -1267,10 +1303,10 @@ POL_wojtek_drewniak = {
 	}
 
 	POL_rajmund_andrzejczak_com = {
-		name=POL_rajmund_andrzejczak_com
+		name = "Rajmund Andrzejczak"
 		portraits = {
 			army = {
-				small="GFX_idea_POL_jozef_zajac"
+				small="GFX_portraits_rajmund_andrzejczak_adv"
 			}
 		}
 		advisor = {
@@ -1291,10 +1327,10 @@ POL_wojtek_drewniak = {
 
 	
 	POL_pies_odi = {
-		name=POL_pies_odi
+		name = "Odi"
 		portraits = {
 			army = {
-				small="GFX_idea_POL_jozef_zajac"
+				small="GFX_portraits_odi"
 			}
 		}
 		advisor = {
@@ -1314,10 +1350,10 @@ POL_wojtek_drewniak = {
 	}
 
 	POL_norbert_baczyk = {
-		name=POL_norbert_baczyk
+		name = "Norbert Bączyk"
 		portraits = {
 			army = {
-				small="GFX_idea_POL_jozef_zajac"
+				small="GFX_portraits_norbert_baczyk"
 			}
 		}
 		advisor = {
@@ -1338,10 +1374,10 @@ POL_wojtek_drewniak = {
 
 
 	POL_wojciech_cejrowski_com = {
-		name=POL_wojciech_cejrowski_com
+		name = "Wojciech Cejrowski"
 		portraits = {
 			army = {
-				small="GFX_idea_POL_jozef_zajac"
+				small="GFX_portraits_wojcech_cejrowski_adv"
 			}
 		}
 		advisor = {

@@ -303,7 +303,7 @@ leader_traits = {
 		supply_consumption_factor = -0.05
 	}
 
-	mod_nacjonalista_chłopski = {
+	mod_nacjonalista_chlopski = {
 		sprite = 7
 		random = no
 		weekly_manpower = 500
@@ -316,11 +316,11 @@ leader_traits = {
 		supply_consumption_factor = 0.2
 	}
 
-	mod_artysta = {
+	mod_artyst = {
 		sprite = 9
 		random = no
 		political_power_factor = 0.1
-		stability_factor = 0.5
+		stability_factor = 0.05
 		construction_speed_buildings_factor = 0.4
 	}
 
@@ -10123,7 +10123,7 @@ leader_traits = {
 		random = no 
 		sprite = 14 
 
-		research_speed_factor = 0.05
+		rch_speed_factor = 0.05
 		consumer_goods_factor = -0.1
 	}
 

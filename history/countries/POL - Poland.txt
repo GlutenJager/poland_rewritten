@@ -141,16 +141,8 @@ recruit_character = POL_mateusz_morawiecki
 recruit_character = POL_rada_liderow_pis
 recruit_character = POL_janusz_kowalski
 # MOD ADVISORS
-recruit_character = POL_daniel_obajtek
-recruit_character = POL_przemyslaw_czarnek
-recruit_character = POL_zbigniew_ziobro
-recruit_character = POL_karol_nawrocki
-recruit_character = POL_andrzej_duda
-recruit_character = POL_bartlomiej_misiewicz
-recruit_character = POL_john_maynard_keynes
 recruit_character = POL_leszek_miller
 recruit_character = POL_krystyna_pawlowicz
-recruit_character = POL_mariusz_blaszczak
 recruit_character = POL_leszek_bubel
 recruit_character = POL_aleksander_chodorowski
 recruit_character = POL_leszek_balcerowicz

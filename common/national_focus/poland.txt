@@ -1062,6 +1062,14 @@ focus_tree = {
 
 			custom_effect_tooltip = POL_nowi_generalowie_doradcy
 			hidden_effect = {
+				recruit_character = POL_mariusz_blaszczak
+				recruit_character = POL_daniel_obajtek
+				recruit_character = POL_przemyslaw_czarnek
+				recruit_character = POL_zbigniew_ziobro
+				recruit_character = POL_karol_nawrocki
+				recruit_character = POL_andrzej_duda
+				recruit_character = POL_bartlomiej_misiewicz
+				recruit_character = POL_john_maynard_keynes
 				news_event = { id = PLREW_world_news.2 }
 				mark_focus_tree_layout_dirty = yes
 
@@ -1142,6 +1150,9 @@ focus_tree = {
 				ideology = democratic
 				popularity = 0
 			}
+			hidden_effect = {
+				mark_focus_tree_layout_dirty = yes
+			}
 		}
 	}
 	focus = {
@@ -1167,6 +1178,9 @@ focus_tree = {
 			add_popularity = {
 				ideology = democratic
 				popularity = 0.1
+			}
+			hidden_effect = {
+				mark_focus_tree_layout_dirty = yes
 			}
 
 		}
@@ -1195,6 +1209,9 @@ focus_tree = {
 				ideology = democratic
 				popularity = 0.1
 			}
+			hidden_effect = {
+				mark_focus_tree_layout_dirty = yes
+			}
 		}
 	}
 	focus = {
@@ -1220,6 +1237,9 @@ focus_tree = {
 			add_popularity = {
 				ideology = democratic
 				popularity = 0.15
+			}
+			hidden_effect = {
+				mark_focus_tree_layout_dirty = yes
 			}
 		}
 	}
@@ -2278,6 +2298,13 @@ focus_tree = {
 		prerequisite = {
 			focus = POL_kto_obrabia_biura_nato
 		}
+		completion_reward = {
+			POL_antoni_macierewicz = {
+				add_trait = {
+					trait = stalin_political_paranoia_advanced
+				}
+			}
+		}
 	}
 
 	focus = {
@@ -2376,6 +2403,20 @@ focus_tree = {
 		prerequisite = {
 			focus = POL_kto_doradcow_wybral_z_cyrku
 		} #2 razy 100 bonus do elektroniki
+		completion_reward = {
+			add_tech_bonus = {
+    	name = electronics_bonus_1
+    	bonus = 1.0
+    	uses = 1
+    	category = electronics
+			}
+			add_tech_bonus = {
+    	name = electronics_bonus_2
+    	bonus = 1.0
+    	uses = 1
+    	category = electronics
+			}
+		}
 	}
 
 	focus = {
@@ -2400,6 +2441,22 @@ focus_tree = {
 		prerequisite = {
 			focus = POL_kto_w_gasnicach_znalazl_bombe
 		} #4 razy 100 bonus do przetworstwa ropy
+		completion_reward = {
+			add_tech_bonus = {
+    		name = oil_processing_bonus_1
+    		bonus = 1.0
+    		uses = 4
+    		technologies = {
+        		fuel_refining
+        		fuel_refining2
+        		fuel_refining3
+        		fuel_refining4
+        		fuel_refining5
+        		synthetic_oil
+        		improved_synthetic_oil
+				}
+    		}
+		}
 	}
 
 	focus = {
@@ -2412,6 +2469,9 @@ focus_tree = {
 		prerequisite = {
 			focus = POL_mgle_rozpuscil_wodociagiem
 		} 
+		completion_reward = {
+			add_research_slots = 2
+		}
 	}
 
 	focus = {
@@ -2426,6 +2486,12 @@ focus_tree = {
 		}
 		completion_reward = {
 			#jednorazowo 500 procent do lotnictwa
+			add_tech_bonus = {
+    		name = air_doctrine_super_bonus
+    		bonus = 5.0
+    		uses = 1
+    		category = air_doctrine
+			}
 			air_experience = 100
 		}
 	}
@@ -2614,6 +2680,14 @@ focus_tree = {
 		prerequisite = {
 			focus = POL_macierewicz_ekspansja
 		}#wojna domowa w ameryce, trump dostaje ziemie w jakich wygral w ostatnich wyborach, a druga strona zaczyna rzadzic biden
+
+		available = {
+        USA = { exists = yes }
+    }
+
+    completion_reward = {
+        country_event = poland.35
+    }
 	}
 
 	focus = {
@@ -2745,6 +2819,9 @@ focus_tree = {
 		prerequisite = {
 			focus = POL_ograniczenie_praw_kobiet
 			focus = POL_zawiazanie_iv_rp
+		}
+		completion_reward = {
+			unlock_decision_category_tooltip = POL_pis_polityka_zagraniczna
 		}
 	}
 
@@ -7287,6 +7364,18 @@ focus = {
 		
 	}
 
+	focus = {
+		id = POL_zjednoczeni
+		icon = GFX_goal_unknown
+		x = 0
+		y = 7
+		relative_position_id = POL_osadzenie_demokratow_na_tronie_niem
+		cost = 5
+		prerequisite = {
+			focus = POL_do_europy_federalnej
+		}
+		
+	}
 
 
 
@@ -7480,7 +7569,7 @@ focus = {
 	focus = {
 		id = POL_opcja_nowa_lewica
 		icon = GFX_goal_unknown
-		x = -6
+		x = 0
 		y = 1
 		relative_position_id = POL_opcja_lewica
 		cost = 5
@@ -7500,7 +7589,7 @@ focus = {
 			}
 		}
 		offset = {
-			x = 6
+			x = 0
 			y = 0
 			trigger = {
 				has_completed_focus = POL_opcja_nowa_lewica
@@ -7552,7 +7641,7 @@ focus = {
 focus = {
 		id = POL_opcja_razem
 		icon = GFX_goal_unknown
-		x = 0
+		x = -6
 		y = 1
 		relative_position_id = POL_opcja_lewica
 		cost = 5
@@ -7572,7 +7661,7 @@ focus = {
 			}
 		}
 		offset = {
-			x = 0
+			x = 6
 			y = 0
 			trigger = {
 				has_completed_focus = POL_opcja_razem
