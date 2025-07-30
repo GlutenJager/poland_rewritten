@@ -142,4 +142,115 @@ spriteTypes = {
 		name = "GFX_portraits_tadeusz_mazowiecki"
 		texturefile = "gfx/advisors/tadeuszmazowiecki.dds"
 	}
+	spriteType = {
+		name = "GFX_portraits_norbert_baczyk"
+		texturefile = "gfx/advisors/norbertbaczyk.dds"
+	}
+	spriteType = {
+		name = "GFX_portraits_mariusz_blaszczak"
+		texturefile = "gfx/advisors/mariuszblaszczak.dds"
+	}
+	spriteType = {
+		name = "GFX_portraits_leszek_miller"
+		texturefile = "gfx/advisors/leszekmiller.dds"
+	}
+	spriteType = {
+		name = "GFX_portraits_krystyna_pawlowicz"
+		texturefile = "gfx/advisors/krystynapawlowicz.dds"
+	}
+	spriteType = {
+		name = "GFX_portraits_elon_musk_adv"
+		texturefile = "gfx/advisors/elonmusk.dds"
+	}
+	spriteType = {
+		name = "GFX_portraits_mariusz_pudzianowski"
+		texturefile = "gfx/advisors/mariuszpudzianowski.dds"
+	}
+	spriteType = {
+		name = "GFX_portraits_marek_jakubiak_adv"
+		texturefile = "gfx/advisors/marekjakubiak.dds"
+	}spriteType = {
+		name = "GFX_portraits_wojcech_cejrowski_adv"
+		texturefile = "gfx/advisors/wojciechcejrowski.dds"
+	}
+	spriteType = {
+		name = "GFX_portraits_wojciech_drewniak"
+		texturefile = "gfx/advisors/wojciechdrewniak.dds"
+	}
+	spriteType = {
+		name = "GFX_portraits_donald_tusk_adv"
+		texturefile = "gfx/advisors/donaldtusk.dds"
+	}
+	spriteType = {
+		name = "GFX_portraits_iga_swiatek"
+		texturefile = "gfx/advisors/igaswiatek.dds"
+	}
+	spriteType = {
+		name = "GFX_portraits_gluten_jager"
+		texturefile = "gfx/advisors/glutenjager.dds"
+	}
+	spriteType = {
+		name = "GFX_portraits_dafael"
+		texturefile = "gfx/advisors/dafael.dds"
+	}
+	spriteType = {
+		name = "GFX_portraits_andrzej_szejna"
+		texturefile = "gfx/advisors/andrzejszejna.dds"
+	}
+	spriteType = {
+		name = "GFX_portraits_keynes"
+		texturefile = "gfx/advisors/keynes.dds"
+	}
+	spriteType = {
+		name = "GFX_portraits_odi"
+		texturefile = "gfx/advisors/odi.dds"
+	}
+	spriteType = {
+		name = "GFX_portraits_agnieszka_holland"
+		texturefile = "gfx/advisors/agnieszkaholland.dds"
+	}
+	spriteType = {
+		name = "GFX_portraits_slawosz_uznanski"
+		texturefile = "gfx/advisors/slawoszuznanski.dds"
+	}
+	spriteType = {
+		name = "GFX_portraits_jaszczur_adv"
+		texturefile = "gfx/advisors/aleksanderjablonowski.dds"
+	}
+	spriteType = {
+		name = "GFX_portraits_kalach"
+		texturefile = "gfx/advisors/kalach444.dds"
+	}
+	spriteType = {
+		name = "GFX_portraits_rajmund_andrzejczak_adv"
+		texturefile = "gfx/advisors/rajmundandrzejczak.dds"
+	}
+	spriteType = {
+		name = "GFX_portraits_leszek_bubel"
+		texturefile = "gfx/advisors/leszekbubel.dds"
+	}
+	spriteType = {
+		name = "GFX_portraits_leszek_balcerowicz_adv"
+		texturefile = "gfx/advisors/leszekbalcerowicz.dds"
+	}
+	spriteType = {
+		name = "GFX_portraits_aleksander_chodorowski"
+		texturefile = "gfx/advisors/aleksanderchodorowski.dds"
+	}
+	spriteType = {
+		name = "GFX_portraits_piotr_napierala"
+		texturefile = "gfx/advisors/piotrnapierala.dds"
+	}
+	spriteType = {
+		name = "GFX_portraits_wladyslaw_kosiniak"
+		texturefile = "gfx/advisors/wladyslawkosiniak.dds"
+	}
+	spriteType = {
+		name = "GFX_portraits_jacek_bartosiak"
+		texturefile = "gfx/advisors/jacekbartosiak.dds"
+	}
+	spriteType = {
+		name = "GFX_portraits_czarny_jamal"
+		texturefile = "gfx/advisors/czarnyjamal.dds"
+	}
 }

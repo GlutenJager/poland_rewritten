@@ -1701,3 +1701,36 @@ country_event = { # Los Porozumienia Centrum
 		}
 	}
 }
+
+# 9
+country_event = { #domufka w usa
+	id = poland.35
+	title = poland.35.t
+	desc = poland.35.d
+	picture = GFX_MOD_event_civilwar
+	fire_only_once = yes
+
+	option = {
+		name = poland.35.k
+	}
+	immediate = {
+        USA = {
+            country_event = usa.177
+        }
+	}
+}
+
+country_event = { #Trump zaciesnia wspolprace
+	id = poland.36
+	title = poland.36.t
+	desc = poland.36.d
+	picture = GFX_MOD_event_civilwar
+	fire_only_once = yes
+
+	option = {
+		name = poland.36.k
+		puppet = TRU
+		
+	}
+
+}

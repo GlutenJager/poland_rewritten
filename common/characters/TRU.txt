@@ -1,0 +1,17 @@
+characters = {
+	TRU_Donald_Trump = {
+		name= "Donald J. Trump"
+		portraits = {
+			civilian = {
+				large="GFX_portrait_POL_ignacy_moscicki"
+			}
+		}
+		
+		country_leader = {
+			ideology= kaczism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+}
