@@ -20,6 +20,14 @@ spriteTypes = {
 		name = "GFX_portraits_zgromadzenie"
 		texturefile = "gfx/leaders/POL/portrait_POL_zgromadzenie_narodowe.dds"
 	}
+	spriteType = {
+		name = "GFX_portraits_Donald_Trump"
+		texturefile = "gfx/leaders/POL/portrait_USA_donald_trump.dds"
+	}
+	spriteType = {
+		name = "GFX_portraits_Joe_Biden"
+		texturefile = "gfx/leaders/POL/portrait_USA_joe_biden.dds"
+	}
 	# PIS
 	spriteType = {
 		name = "GFX_portraits_jaroslaw_kaczynski"

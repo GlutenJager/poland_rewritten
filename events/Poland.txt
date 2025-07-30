@@ -1519,6 +1519,7 @@ country_event = { # Zamach stanu
 	desc = poland.27.d
 	picture = GFX_MOD_event_civilwar
 	fire_only_once = yes
+	is_triggered_only = yes
 
 	option = {
 		name = poland.27.k
@@ -1562,6 +1563,7 @@ country_event = { # Rozwiązanie Sejmu
 	desc = poland.2801.d
 	picture = GFX_MOD_event_civilwar
 	fire_only_once = yes
+	is_triggered_only = yes
 
 	option = {
 		name = poland.2801.k
@@ -1578,6 +1580,7 @@ country_event = { # Tajemnica samobójstwa
 	title = poland.29.t
 	desc = poland.29.d
 	fire_only_once = yes
+	is_triggered_only = yes
 
 	option = {
 		name = poland.29.k
@@ -1594,6 +1597,7 @@ country_event = { # Odrodzenie PRL
 	title = poland.30.t
 	desc = poland.30.d
 	fire_only_once = yes
+	is_triggered_only = yes
 
 	option = {
 		name = poland.30.k
@@ -1628,6 +1632,7 @@ country_event = { # Ojciec Dyrektor
 	desc = poland.32.d
 	picture = GFX_report_event_generic_read_write # W I P
 	fire_only_once = yes
+	is_triggered_only = yes
 
 	option = {
 		name = poland.32.k
@@ -1641,6 +1646,7 @@ country_event = { # Prawo i Sprawiedliwość - Jedna droga dla kraju
 	desc = poland.33.d
 	picture = GFX_event_pis_frakcje
 	fire_only_once = yes
+	is_triggered_only = yes
 
 	option = {
 		name = poland.33.o1
@@ -1687,6 +1693,7 @@ country_event = { # Los Porozumienia Centrum
 	desc = poland.34.d
 	picture = GFX_report_event_generic_read_write # W I P
 	fire_only_once = yes
+	is_triggered_only = yes
 
 	option = {
 		name = poland.34.k
@@ -1709,28 +1716,56 @@ country_event = { #domufka w usa
 	desc = poland.35.d
 	picture = GFX_MOD_event_civilwar
 	fire_only_once = yes
+	is_triggered_only = yes
 
-	option = {
-		name = poland.35.k
-	}
 	immediate = {
-        USA = {
+		 USA = {
             country_event = usa.177
         }
 	}
-}
 
-country_event = { #Trump zaciesnia wspolprace
+	option = {
+		name = poland.35.k
+		
+	}
+}
+# trump wspolpraca #
+country_event = { 
 	id = poland.36
 	title = poland.36.t
 	desc = poland.36.d
 	picture = GFX_MOD_event_civilwar
 	fire_only_once = yes
 
-	option = {
-		name = poland.36.k
-		puppet = TRU
-		
+	trigger = {
+		original_tag = POL
+	    TRU = {
+		exists = yes
+		is_at_peace_exiled_countries_excluded = yes
+	   }
 	}
+	mean_time_to_happen = {
+        days = 40
+    }
 
+	option = {
+	name = poland.36.k
+	POL = {
+		puppet = TRU
+	}
+	TRU = {
+			if = {
+				limit = {
+					USA = { exist = yes }
+				}
+				annex_country = {
+					target = USA
+				}
+			}
+		}
+	
+	
 }
+}
+
+

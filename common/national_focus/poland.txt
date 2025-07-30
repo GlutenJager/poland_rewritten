@@ -496,13 +496,14 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			POL = { sound_effect = polske_trzeba_zlepperowac }
+			
 			promote_character = POL_andrzej_lepper
 			set_politics = { ruling_party = communism }
 			remove_ideas = POL_sejmersi
 			set_cosmetic_tag = POL_lepperism
 			custom_effect_tooltip = POL_nowi_generalowie
 			hidden_effect = {
+				POL = { sound_effect = polske_trzeba_zlepperowac }
 				news_event = { id = PLREW_world_news.1 }
 				mark_focus_tree_layout_dirty = yes
 				add_popularity = {
@@ -2687,7 +2688,12 @@ focus_tree = {
 
     completion_reward = {
         country_event = poland.35
+		hidden_effect = {
+		news_event = { id = PLREW_world_news.3 }
+	}
     }
+
+	
 	}
 
 	focus = {
@@ -2724,6 +2730,18 @@ focus_tree = {
 		prerequisite = {
 			focus = POL_juz_mu_rosja_nie_wystarczy
 		}
+		bypass = {
+			POL = {
+				OR = {
+					exists = no
+					is_in_faction = yes
+				}
+			}
+		}
+		completion_reward = {
+			create_faction = POL_wola_boza
+			set_rule = { can_create_factions = yes }
+		}
 	}
 
 	focus = {
@@ -2736,6 +2754,9 @@ focus_tree = {
 		prerequisite = {
 			focus = POL_pan_bog_powie_w_niebie
 		}
+		completion_reward = {
+			add_stability = -0.1
+		}
 	}
 
 	focus = {
@@ -2747,7 +2768,7 @@ focus_tree = {
 		cost = 5
 		prerequisite = {
 			focus = POL_napadnij_sam_na_siebie
-		}
+		} #nowa stolica, cosmetic tag world news i portret orac cecha macierewicza
 		
 	}
 

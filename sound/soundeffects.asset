@@ -7,9 +7,15 @@ soundeffect = {
 	sounds = {
 		sound = polske_trzeba_zlepperowac
 	}
-	volume = 2.0
+	volume = 3.0
 }
 
+
+
+
+###################
+	#END#
+###################
 soundeffect = {
 	name = horse_walking
 	loop = yes

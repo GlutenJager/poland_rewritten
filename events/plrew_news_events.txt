@@ -22,3 +22,20 @@ news_event = {
 		name = PLREW_world_news.2.o1
 	}
 }
+
+
+# WAJNA DOMOOFA #
+news_event = {
+	id = PLREW_world_news.3
+	title = PLREW_world_news.3.t
+	desc = PLREW_world_news.3.desc
+	picture = GFX_world_news_pis
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = PLREW_world_news.3.o1
+	}
+}
+
+

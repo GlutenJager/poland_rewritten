@@ -1055,6 +1055,8 @@ POL_slawosz_uznanski = {
 	}
 
 
+
+
 ### ARMY CHIEFS MOD ###
 
 
@@ -1395,6 +1397,29 @@ POL_wojtek_drewniak = {
 			}
 		}
 	}
+
+	POL_dawider = {
+        name=POL_dawider
+        portraits = {
+            army = {
+                small="GFX_idea_POL_zygmunt_buhusz_szysko"
+            }
+        }
+        advisor = {
+            slot = high_command
+            idea_token = POL_dawider
+            allowed = {
+                original_tag = POL
+            }
+            traits = {
+                mod_kosmopolita
+            }
+            cost = 150
+            ai_will_do = {
+                factor = 1.000
+            }
+        }
+    }
 
 
 

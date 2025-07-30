@@ -3,7 +3,7 @@ characters = {
 		name= "Donald J. Trump"
 		portraits = {
 			civilian = {
-				large="GFX_portrait_POL_ignacy_moscicki"
+				large="GFX_portraits_Donald_Trump"
 			}
 		}
 		
@@ -12,6 +12,24 @@ characters = {
 			expire="1965.1.1.1"
 			id=-1
 		}
+		country_leader = {
+			ideology= stalinism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader = {
+			ideology= despotism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader = {
+			ideology= alt-left
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+
+
 	}
 	
 }
