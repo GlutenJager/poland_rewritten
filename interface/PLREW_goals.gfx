@@ -4,6 +4,11 @@ spriteTypes = {
 #		texturefile = "gfx/interface/goals/focus_POL_.dds"
 #	}
 
+	SpriteType = {
+		name = "GFX_goal_debug"
+		texturefile = "gfx/interface/goals/focus_POL_DEBUG_FOCUS.dds"
+	}
+
 	# Przed buntem
 	SpriteType = {
 		name = "GFX_focus_POL_bydgoskie_zamieszki"

@@ -17,18 +17,14 @@ focus_tree = {
 	# Focuses
 	focus = { # do testów
 		id = POL_DEBUG_FOCUS
-		icon = GFX_800plus
-		x = 0
+		icon = GFX_goal_debug
+		x = 10
 		y = 0
 		allow_branch = {
 			always = yes # Pokazuj: tak/nie
 		}
 		completion_reward = {
-			set_party_name = {
-				ideology = democratic
-				long_name = PO_LONG
-				name = PO_SHORT
-			}
+			mark_focus_tree_layout_dirty = yes
 		}
 	}
 
@@ -36,9 +32,10 @@ focus_tree = {
 	focus = {
 		id = POL_trzesienie_ziemii
 		icon = GFX_focus_generic_the_giant_wakes
+		#icon = GFX_goal_debug
 		cost = 1.5
 		x = 30
-		y = 5
+		y = 0
 		bypass = {
 			NOT = {
 				owns_state = 97
@@ -7775,7 +7772,7 @@ focus = {
 		icon = GFX_focus_POL_reorganizacja_armii
 		cost = 10
 		x = 22
-		y = 5
+		y = 0
 		available = {
 			has_completed_focus = POL_zamach_stanu
 		}

@@ -11,7 +11,8 @@ pis_is_avaliable = {
 		NOT = {
 				has_completed_focus = POL_opcja_lepper
 				has_completed_focus = POL_opcja_konfa
-				has_completed_focus = POL_opcja_kamraci							has_completed_focus = POL_opcja_kukiz
+				has_completed_focus = POL_opcja_kamraci
+				has_completed_focus = POL_opcja_kukiz
 				has_completed_focus = POL_opcja_zero
 			}
 }
