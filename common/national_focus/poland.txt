@@ -500,6 +500,7 @@ focus_tree = {
 			set_cosmetic_tag = POL_lepperism
 			custom_effect_tooltip = POL_nowi_generalowie
 			hidden_effect = {
+				play_song = "Silencio"
 				POL = { sound_effect = polske_trzeba_zlepperowac }
 				news_event = { id = PLREW_world_news.1 }
 				mark_focus_tree_layout_dirty = yes
