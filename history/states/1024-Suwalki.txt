@@ -1,0 +1,30 @@
+state={
+	id=1024
+	name="STATE_1024"
+	provinces={
+		400 3254 
+	}
+	manpower=50000
+	state_category=city
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+
+	history = {
+
+		owner = POL
+		add_core_of = POL
+		add_core_of = BLR
+		add_claim_of = LIT
+
+		victory_points = {
+			400 4 
+		}
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			air_base = 2
+		}
+		
+	}
+}
