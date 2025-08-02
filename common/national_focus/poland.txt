@@ -2806,7 +2806,7 @@ focus_tree = {
 	
 	focus = {
 		id = POL_ograniczenie_praw_kobiet
-		icon = GFX_goal_unknown
+		icon = GFX_focus_BRA_good_neighbor_policy
 		x = 1
 		y = 1
 		relative_position_id = POL_pomniki_Keynesa
@@ -2818,7 +2818,7 @@ focus_tree = {
 
 	focus = {
 		id = POL_zawiazanie_iv_rp
-		icon = GFX_goal_unknown
+		icon = GFX_focus_POL_plan_east
 		x = -1
 		y = 1
 		relative_position_id = POL_pomniki_Keynesa
@@ -2830,7 +2830,7 @@ focus_tree = {
 
 	focus = {
 		id = POL_polityka_zemsty_historycznej
-		icon = GFX_goal_unknown
+		icon = GFX_focus_BEL_legacy_of_the_great_war
 		x = 0
 		y = 2
 		relative_position_id = POL_pomniki_Keynesa
@@ -2846,7 +2846,7 @@ focus_tree = {
 
 	focus = {
 		id = POL_przywrocenie_wspolnoty
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_restore_the_grand_duchy
 		x = -3
 		y = 3
 		relative_position_id = POL_pomniki_Keynesa
@@ -2882,7 +2882,7 @@ focus_tree = {
 
 	focus = {
 		id = POL_zajecie_inflant
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_reclaim_courland
 		x = -4
 		y = 4
 		relative_position_id = POL_pomniki_Keynesa
@@ -2895,7 +2895,7 @@ focus_tree = {
 
 	focus = {
 		id = POL_marinis_baltici
-		icon = GFX_goal_unknown
+		icon = GFX_focus_FIN_finnish_influence_in_the_baltic
 		x = -3
 		y = 5
 		relative_position_id = POL_pomniki_Keynesa
@@ -2911,7 +2911,7 @@ focus_tree = {
 
 	focus = {
 		id = POL_bornholmskie_ultimatum
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_attack_denmark
 		x = -6
 		y = 6
 		relative_position_id = POL_pomniki_Keynesa
@@ -2923,7 +2923,7 @@ focus_tree = {
 
 	focus = {
 		id = POL_zemsta_za_potop
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_attack_sweden
 		x = -4
 		y = 6
 		relative_position_id = POL_pomniki_Keynesa
@@ -2935,7 +2935,7 @@ focus_tree = {
 
 	focus = {
 		id = POL_zlamanie_finskiego_oporu
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_attack_finland
 		x = -2
 		y = 6
 		relative_position_id = POL_pomniki_Keynesa
@@ -2947,7 +2947,7 @@ focus_tree = {
 
 	focus = {
 		id = POL_morze_wewnetrzne
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_baltic_sea_empire
 		x = -4
 		y = 7
 		relative_position_id = POL_pomniki_Keynesa
@@ -2977,7 +2977,7 @@ focus_tree = {
 
 	focus = {
 		id = POL_drugie_referendum_slaskie
-		icon = GFX_goal_unknown
+		icon = GFX_focus_POL_reassert_silesian_claims
 		x = 2
 		y = 4
 		relative_position_id = POL_pomniki_Keynesa
@@ -2989,7 +2989,7 @@ focus_tree = {
 
 	focus = {
 		id = POL_wojna_o_kapliczke
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PER_czech_tanks
 		x = 1
 		y = 5
 		relative_position_id = POL_pomniki_Keynesa
@@ -3002,7 +3002,7 @@ focus_tree = {
 
 	focus = {
 		id = POL_powrot_rymanowskiego
-		icon = GFX_goal_unknown
+		icon = GFX_focus_Generic_befriend_hungary
 		x = 2
 		y = 6
 		relative_position_id = POL_pomniki_Keynesa
@@ -3014,7 +3014,7 @@ focus_tree = {
 
 	focus = {
 		id = POL_polityka_balkanska
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_balkan_diplomacy
 		x = 0
 		y = 7
 		relative_position_id = POL_pomniki_Keynesa
@@ -3026,8 +3026,8 @@ focus_tree = {
 
 	focus = {
 		id = POL_koniec_imperializmu
-		icon = GFX_goal_unknown
-		x = 4
+		icon = GFX_focus_eng_imperial_federation
+		x = 8
 		y = 7
 		relative_position_id = POL_pomniki_Keynesa
 		cost = 5
