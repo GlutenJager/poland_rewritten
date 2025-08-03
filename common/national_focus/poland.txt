@@ -342,7 +342,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			promote_character = POL_zgromadzenie
-			country_event = { id = poland.27 }
+			country_event = { id = PLREW_poland.1 }
 			custom_effect_tooltip = POL_wojna_domowa_decyzje_tt
 			hidden_effect = {
 				set_politics = {
@@ -398,7 +398,7 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.3
 			add_ideas = POL_wrogowie_wewnetrzni
-			country_event = { id = poland.28 }
+			country_event = { id = PLREW_poland.2 }
 
 			hidden_effect = {
 				remove_ideas = POL_wojna_domowa
@@ -584,7 +584,7 @@ focus_tree = {
 		relative_position_id = POL_opcja_lepper
 		cost = 3.6
 		completion_reward = {
-			country_event = { id = poland.29 }
+			country_event = { id = PLREW_poland.3 }
 		}
 		prerequisite = {
 			focus = POL_opcja_lepper
@@ -751,7 +751,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = POL_koniec_reform_leppera
-			country_event = { id = poland.30 }
+			country_event = { id = PLREW_poland.4 }
 		}
 	}
 	focus = {
@@ -1061,14 +1061,6 @@ focus_tree = {
 
 			custom_effect_tooltip = POL_nowi_generalowie_doradcy
 			hidden_effect = {
-				recruit_character = POL_mariusz_blaszczak
-				recruit_character = POL_daniel_obajtek
-				recruit_character = POL_przemyslaw_czarnek
-				recruit_character = POL_zbigniew_ziobro
-				recruit_character = POL_karol_nawrocki
-				recruit_character = POL_andrzej_duda
-				recruit_character = POL_bartlomiej_misiewicz
-				recruit_character = POL_john_maynard_keynes
 				news_event = { id = PLREW_world_news.2 }
 				mark_focus_tree_layout_dirty = yes
 
@@ -1409,7 +1401,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = POL_katotaliban
-			country_event = { id = poland.33 }
+			country_event = { id = PLREW_poland.7 }
 		}
 	}
 	focus = {
@@ -1423,7 +1415,7 @@ focus_tree = {
 			focus = POL_delegalizacja_opozycji	
 		}
 		completion_reward = {
-			country_event = { id = poland.34 }
+			country_event = { id = PLREW_poland.8 }
 			# event z generalami (podmiana rachonia i klarenbacha na kurskiego, mozliwosc taka)
 		}
 	}
@@ -1459,7 +1451,7 @@ focus_tree = {
 			focus = POL_reforma_rolna_goal
 		}
 		completion_reward = {	
-			country_event = { id = poland.32 }
+			country_event = { id = PLREW_poland.6 }
 		}#event dajacy mozliwosc rydzyka na generala
 	}
 	focus = {
@@ -2685,7 +2677,7 @@ focus_tree = {
     }
 
     completion_reward = {
-        country_event = poland.35
+        country_event = PLREW_poland.9
 		hidden_effect = {
 		news_event = { id = PLREW_world_news.3 }
 	}

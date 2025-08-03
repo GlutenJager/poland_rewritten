@@ -1,0 +1,328 @@
+###########################
+# PLREW Polish Events
+###########################
+
+add_namespace = PLREW_poland_events
+
+country_event = { # Zamach stanu
+	id = PLREW_poland.1
+	title = PLREW_poland.1.t
+	desc = PLREW_poland.1.d
+	picture = GFX_MOD_event_civilwar
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = PLREW_poland.1.k
+	}
+}
+# 1
+country_event = { # Pilne Posiedzenie Sejmu
+	id = PLREW_poland.2
+	title = PLREW_poland.2.t
+	desc = PLREW_poland.2.d
+	picture = GFX_MOD_event_sejm_meeting
+	fire_only_once = yes
+
+	trigger = {
+		tag = POL
+		has_completed_focus = POL_decydujace_posiedzenie
+	}
+
+	option = {
+		name = PLREW_poland.2.k
+		complete_national_focus = POL_opcja_prawica	
+	}
+	option = {
+		name = PLREW_poland.2.l
+		complete_national_focus = POL_opcja_centrum
+	}
+	option = {
+		name = PLREW_poland.2.m
+		complete_national_focus = POL_opcja_lewica
+	}
+	option = {
+		name = PLREW_poland.2.n
+		add_stability = -0.3
+		country_event = { id = PLREW_poland.2801 }
+	}
+}
+# 2
+country_event = { # Rozwiązanie Sejmu
+	id = PLREW_poland.0201
+	title = PLREW_poland.0201.t
+	desc = PLREW_poland.0201.d
+	picture = GFX_MOD_event_civilwar
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = PLREW_poland.0201.k
+		complete_national_focus = POL_opcja_dziwna
+	}
+	option = {
+		name = PLREW_poland.0201.l
+		complete_national_focus = POL_opcja_anarchia
+	}
+}
+# 5
+country_event = { # Tajemnica samobójstwa
+	id = PLREW_poland.3
+	title = PLREW_poland.3.t
+	desc = PLREW_poland.3.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = PLREW_poland.3.k
+		add_stability = 0.1
+		add_popularity = {
+			ideology = communism
+			popularity = 0.05
+		}
+	}
+}
+# 4
+country_event = { # Odrodzenie PRL
+	id = PLREW_poland.4
+	title = PLREW_poland.4.t
+	desc = PLREW_poland.4.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = PLREW_poland.4.k
+		set_cosmetic_tag = POL_lepperism_prl
+	}
+}
+# 9
+country_event = { # oPOzycja strajkuje
+	id = PLREW_poland.5
+	title = PLREW_poland.5.t
+	desc = PLREW_poland.5.d
+	picture = GFX_report_event_generic_read_write # W I P
+	fire_only_once = yes
+
+	trigger = {
+		tag = POL
+		has_completed_focus = POL_opcja_pis
+		has_stability < 0.50
+		NOT = {
+			has_completed_focus = POL_delegalizacja_opozycji
+		}
+	}
+
+	option = {
+		name = PLREW_poland.5.k
+	}
+	option = {
+		name = PLREW_poland.5.l
+	}
+}
+# 6
+country_event = { # Ojciec Dyrektor
+	id = PLREW_poland.6
+	title = PLREW_poland.6.t
+	desc = PLREW_poland.6.d
+	picture = GFX_report_event_generic_read_write # W I P
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = PLREW_poland.6.k
+		add_ideas = POL_radio_maryja_spirit
+	}
+}
+# 7
+country_event = { # Prawo i Sprawiedliwość - Jedna droga dla kraju
+	id = PLREW_poland.7
+	title = PLREW_poland.7.t
+	desc = PLREW_poland.7.d
+	picture = GFX_event_pis_frakcje
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = PLREW_poland.7.o1
+		set_party_name = {
+			ideology = democratic
+			long_name = PiS_CENTRUM_LONG
+			name = PiS_CENTRUM_SHORT
+		}
+		set_party_name = {
+			ideology = communism
+			long_name = PiS_LEWICA_LONG
+			name = PiS_LEWICA_SHORT
+		}
+		set_party_name = {
+			ideology = neutrality
+			long_name = PiS_PRAWICA_LONG
+			name = PiS_PRAWICA_SHORT
+		}
+		set_party_name = {
+			ideology = fascism
+			long_name = NIEPODLEGLOSC_LONG
+			name = NIEPODLEGLOSC_SHORT
+		}
+		hidden_effect = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.2
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+		}
+	}
+}
+# 8
+country_event = { # Los Porozumienia Centrum
+	id = PLREW_poland.8
+	title = PLREW_poland.8.t
+	desc = PLREW_poland.8.d
+	picture = GFX_report_event_generic_read_write # W I P
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = PLREW_poland.8.k
+		complete_national_focus = POL_emerytura_w_szwecji
+	}
+	option = {
+		name = PLREW_poland.8.l
+		add_war_support = 0.2
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.1
+		}
+	}
+}
+
+# 9
+country_event = { #domufka w usa
+	id = PLREW_poland.9
+	title = PLREW_poland.9.t
+	desc = PLREW_poland.9.d
+	picture = GFX_MOD_event_civilwar
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+		USA = {
+            country_event = usa.177
+        }
+	}
+
+	option = {
+		name = PLREW_poland.9.k
+		
+	}
+}
+# trump wspolpraca #
+country_event = { 
+	id = PLREW_poland.10
+	title = PLREW_poland.10.t
+	desc = PLREW_poland.10.d
+	picture = GFX_MOD_event_civilwar
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = POL
+	    TRU = {
+		exists = yes
+		is_at_peace_exiled_countries_excluded = yes
+	   }
+	}
+	mean_time_to_happen = {
+        days = 40
+    }
+
+	option = {
+	name = PLREW_poland.10.k
+	POL = {
+		puppet = TRU
+	}
+	TRU = {
+			if = {
+				limit = {
+					USA = { exist = yes }
+				}
+				annex_country = {
+					target = USA
+				}
+			}
+		}
+	
+	
+}
+}
+
+###########################
+# Work In Progress Events
+###########################
+
+country_event = { # Kaminski - bojka z antkiem
+	id = POL_mod_events.x10
+	title = POL_mod_events.x10.t
+	desc = POL_mod_events.x10.d
+	picture = GFX_report_event_generic_read_write # W I P
+	fire_only_once = yes
+
+	trigger = {
+		tag = POL
+		has_completed_focus = POL_opcja_macierewicz
+	}
+
+	option = {
+		name = POL_mod_events.x10.o1
+	}
+}
+
+country_event = { # Braun gasi chanuke
+	id = POL_mod_events.x11
+	title = POL_mod_events.x11.t
+	desc = POL_mod_events.x11.d
+	picture = GFX_report_event_generic_read_write # W I P
+	fire_only_once = yes
+
+	trigger = {
+		tag = POL
+		date = 1938.1.1
+		NOT = { 
+			has_country_leader = POL_grzegorz_braun
+			has_country_leader = POL_antoni_macierewicz
+			has_country_leader = POL_wojciech_olszanski
+	 }
+	}
+
+	option = {
+		name = POL_mod_events.x11.o1
+	}
+}
+
+country_event = { # Niemcy wypowiadają nam wojnę
+	id = POL_mod_events.x12
+	title = POL_mod_events.x12.t
+	desc = POL_mod_events.x12.d
+	picture = GFX_report_event_generic_read_write # W I P
+	fire_only_once = yes
+
+	trigger = {
+		tag = POL
+		has_war_with = { tag = GER }
+		NOT = { 
+			has_country_leader = POL_donald_tusk
+	 	}
+	}
+
+	option = {
+		name = POL_mod_events.x12.o1
+	}
+	
+	POL = {sound_effect = dzis_o_piatej}
+}

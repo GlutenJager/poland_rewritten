@@ -10132,7 +10132,7 @@ leader_traits = {
 		random = no 
 		sprite = 14 
 
-		rch_speed_factor = 0.05
+		research_speed_factor = 0.05
 		consumer_goods_factor = -0.1
 	}
 
@@ -10975,7 +10975,7 @@ leader_traits = {
 		random = no
 		stability_factor = 0.15
 		democratic_drift = 0.03
-		party_rity_stability_factor = 0.25
+		party_popularity_stability_factor = 0.25
 		political_power_factor = 0.15
 		drift_defence_factor = 0.25
 	}

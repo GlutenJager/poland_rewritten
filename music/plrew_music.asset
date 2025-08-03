@@ -72,7 +72,7 @@ music = {
 }
 music = {
 	name = "Idźmy, bijmy Moskali"
-	file = "idzmy_bijmy_mosakli.ogg"
+	file = "idzmy_bijmy_moskali.ogg"
 }
 music = {
 	name = "Do przodu POlsko"
@@ -96,7 +96,7 @@ music = {
 }
 music = {
 	name = "Hymn Niemiec"
-	file = "hym_niemiec.ogg"
+	file = "hymn_niemiec.ogg"
 }
 music = {
 	name = "Witajcie w nowej bajce"
@@ -148,7 +148,7 @@ music = {
 }
 music = {
 	name = "Hymn Sybiraków"
-	file = "hymn_sybiraków.ogg"
+	file = "hymn_sybirakow.ogg"
 }
 music = {
 	name = "Idą leśni"
