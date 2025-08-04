@@ -801,9 +801,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_equipment_to_stockpile = {
-				type = motorized
-				amount = 2500
-			}
+    		type = motorized_equipment
+    		amount = 2500
+		}
 			add_stability = 0.05
 		}
 	}
@@ -1323,10 +1323,6 @@ focus_tree = {
 			swap_ideas = {
 				remove_idea = POL_etatyzm_spirit
 				add_idea = POL_etatyzm_spirit_2
-			}
-			add_building_construction = {
-				type = industrial_complex 
-				level = 3
 			}
 			add_popularity = {
 				ideology = communism
@@ -1916,26 +1912,29 @@ focus_tree = {
 			has_completed_focus = POL_opcja_macierewicz
 		}
 		completion_reward = {
-			set_conscription = {
-				conscription = conscription_all_adults_serve
+			set_politics = {
+    			conscription_law = all_adults_serve
 			}
 			add_political_power = 200
 			add_stability = 0.05
-			85 = {
+
+			state = 85 {
+    			set_state_owner = POL
+    			add_state_core = POL
+			}
+
+			state = 807 {
 				set_state_owner = POL
 				add_state_core = POL
 			}
-			807 = {
-				set_state_owner = POL
-				add_state_core = POL
-			}
+
 			add_opinion_modifier = {
 				target = GER
-				modifier = negative_50_opinion
+				modifier = holds_our_cores
 			}
 			add_opinion_modifier = {
 				target = SOV
-				modifier = negative_50_opinion
+				modifier = holds_our_cores
 			}
 		}
 	}
@@ -2044,7 +2043,7 @@ focus_tree = {
 			}
 
 			85 = {
-				add_building_slots = 10
+				add_extra_state_shared_building_slots = 10
 				add_building_construction = {
 					type = dockyard
 					level = 10
@@ -2052,7 +2051,7 @@ focus_tree = {
         		}
     		}
 			807 = {
-				add_building_slots = 10
+				add_extra_state_shared_building_slots = 10
 				add_building_construction = {
 					type = dockyard
 					level = 10
@@ -2081,7 +2080,6 @@ focus_tree = {
 					equipment = {
 						type = ship_hull_heavy_2
 						version_name = "Antoś Respirator"
-						producer = POL
 					}
 					name = "Antoś Respirator"
 					requested_factories = 1
@@ -2092,7 +2090,6 @@ focus_tree = {
 					equipment = {
 						type = ship_hull_heavy_2
 						version_name = "Antoś Respirator"
-						producer = POL
 					}
 					name = "Antoś Respirator"
 					requested_factories = 1
@@ -2273,7 +2270,7 @@ focus_tree = {
 			
 			add_opinion_modifier = {
 				target = USA
-				modifier = negative_75_opinion
+				modifier = western_betrayal
 			}
 		}
 	}
@@ -2437,15 +2434,7 @@ focus_tree = {
     		name = oil_processing_bonus_1
     		bonus = 1.0
     		uses = 4
-    		technologies = {
-        		fuel_refining
-        		fuel_refining2
-        		fuel_refining3
-        		fuel_refining4
-        		fuel_refining5
-        		synthetic_oil
-        		improved_synthetic_oil
-				}
+			category = oil_processing
     		}
 		}
 	}
@@ -2461,7 +2450,7 @@ focus_tree = {
 			focus = POL_mgle_rozpuscil_wodociagiem
 		} 
 		completion_reward = {
-			add_research_slots = 2
+			research_slots_add = 1
 		}
 	}
 
@@ -2518,15 +2507,15 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_equipment_to_stockpile = {
-				type = POL_infantry_equipment
+				type = infantry_equipment
 				amount = 20000
 			}
 			add_equipment_to_stockpile = {
-				type = POL_artillery
+				type = artillery_equipment
 				amount = 800
 			}
 			add_equipment_to_stockpile = {
-				type = POL_support_equipment
+				type = support_equipment
 				amount = 5000
 			}
 			add_war_support = 0.1
@@ -5242,13 +5231,13 @@ focus = {
 		focus = POL_chocby_byla_z_tego_draka
 	}
 	completion_reward = {
-		set_capital = 56 # Poznań
-		add_building_construction = {
-			province = 56 # Poznań
-			building = infrastructure
-			level = 10
-		}
-	}
+    set_capital = { 56 }
+    add_building_construction = {
+        type = building_infrastructure
+        level = 10
+        province = 56
+    }
+}
 }
 
 
