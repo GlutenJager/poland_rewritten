@@ -1918,12 +1918,12 @@ focus_tree = {
 			add_political_power = 200
 			add_stability = 0.05
 
-			state = 85 {
+			85 = {
     			set_state_owner = POL
     			add_state_core = POL
 			}
 
-			state = 807 {
+			807 = {
 				set_state_owner = POL
 				add_state_core = POL
 			}
