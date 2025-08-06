@@ -3234,6 +3234,7 @@ focus_tree = {
 	focus = {
 		id = POL_opcja_konfa
 		icon = GFX_focus_POL_opcja_konfa
+		dynamic = no
 		x = 16
 		y = 1
 		relative_position_id = POL_opcja_prawica
@@ -3260,7 +3261,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			hidden_effect = {
-				mark_focus_tree_layout_dirty = yes
+				mark_focus_tree_layout_dirty = no
 			}
 		}
 	}

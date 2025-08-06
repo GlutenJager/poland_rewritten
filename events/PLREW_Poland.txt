@@ -2,7 +2,7 @@
 # PLREW Polish Events
 ###########################
 
-add_namespace = PLREW_poland_events
+add_namespace = PLREW_poland
 
 country_event = { # Zamach stanu
 	id = PLREW_poland.1
@@ -16,18 +16,13 @@ country_event = { # Zamach stanu
 		name = PLREW_poland.1.k
 	}
 }
-# 1
 country_event = { # Pilne Posiedzenie Sejmu
 	id = PLREW_poland.2
 	title = PLREW_poland.2.t
 	desc = PLREW_poland.2.d
 	picture = GFX_MOD_event_sejm_meeting
 	fire_only_once = yes
-
-	trigger = {
-		tag = POL
-		has_completed_focus = POL_decydujace_posiedzenie
-	}
+	is_triggered_only = yes
 
 	option = {
 		name = PLREW_poland.2.k
@@ -44,7 +39,7 @@ country_event = { # Pilne Posiedzenie Sejmu
 	option = {
 		name = PLREW_poland.2.n
 		add_stability = -0.3
-		country_event = { id = PLREW_poland.2801 }
+		country_event = { id = PLREW_poland.0201 }
 	}
 }
 # 2
@@ -65,7 +60,6 @@ country_event = { # Rozwiązanie Sejmu
 		complete_national_focus = POL_opcja_anarchia
 	}
 }
-# 5
 country_event = { # Tajemnica samobójstwa
 	id = PLREW_poland.3
 	title = PLREW_poland.3.t
@@ -82,7 +76,6 @@ country_event = { # Tajemnica samobójstwa
 		}
 	}
 }
-# 4
 country_event = { # Odrodzenie PRL
 	id = PLREW_poland.4
 	title = PLREW_poland.4.t
