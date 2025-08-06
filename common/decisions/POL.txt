@@ -363,8 +363,7 @@ POL_pis_polityka_zagraniczna = {
         available = {
             has_completed_focus = POL_polak_wegier_2_bratanki
             controls_state = 69              # Bratysława (Słowacja)
-            is_in_faction_with = HUN
-            NOT = { exists = CZE }           # Czechosłowacja nie może istnieć
+            is_in_faction_with = HUN          # Czechosłowacja nie może istnieć
             HUN = {
                 exists = yes
             }
