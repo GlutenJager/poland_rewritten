@@ -31,6 +31,7 @@ state={
 			infrastructure = 3
 			industrial_complex = 1
 			air_base = 3
+			rocket_site = 0
 		}
 
 		1939.1.1 = {

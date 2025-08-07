@@ -341,10 +341,19 @@ focus_tree = {
 			focus = POL_lodz_centrum_buntow
 		}
 		completion_reward = {
-			promote_character = POL_zgromadzenie
+			add_country_leader_role = {
+                character = POL_zgromadzenie
+                country_leader = {
+                    ideology = socialism
+                    expire = "1965.1.1.1"
+                  	traits = { mod_illegitimate_government }
+					id=-1
+                }
+            }
 			country_event = { id = PLREW_poland.1 }
 			custom_effect_tooltip = POL_wojna_domowa_decyzje_tt
 			hidden_effect = {
+				promote_character = POL_zgromadzenie
 				set_politics = {
 					ruling_party = democratic
 				}
@@ -493,13 +502,26 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			
-			promote_character = POL_andrzej_lepper
-			set_politics = { ruling_party = communism }
-			remove_ideas = POL_sejmersi
-			set_cosmetic_tag = POL_lepperism
-			custom_effect_tooltip = POL_nowi_generalowie
+			set_party_name = {
+				ideology = communism
+				long_name = SAMOOBRONA_LONG
+				name = SAMOOBRONA_SHORT
+			}
+			#custom_effect_tooltip = POL_nowi_generalowie
 			hidden_effect = {
+				add_country_leader_role = {
+                    character = POL_andrzej_lepper
+                    country_leader = {
+                      ideology = lepperism
+                      expire = "1965.1.1.1"
+                      traits = { mod_agrarian_tribune mod_populist }
+					  id=-1
+                    }
+                }
+				promote_character = POL_andrzej_lepper
+				set_politics = { ruling_party = communism }
+				remove_ideas = POL_sejmersi
+				set_cosmetic_tag = POL_lepperism
 				play_song = "Silencio"
 				POL = { sound_effect = polske_trzeba_zlepperowac }
 				news_event = { id = PLREW_world_news.1 }
@@ -509,21 +531,7 @@ focus_tree = {
 					popularity = 0.2
 				}
 				add_stability = 0.10
-				set_party_name = {
-					ideology = communism
-					long_name = SAMOOBRONA_LONG
-					name = SAMOOBRONA_SHORT
-				}
 				# opozycja
-				add_country_leader_role = {
-                    character = POL_janusz_korwin_mikke
-                    country_leader = {
-                      ideology = korwinism
-                      expire = "1965.1.1.1"
-                      traits = {}
-					  id=-1
-                    }
-                }
 				set_party_name = {
 					ideology = democratic
 					long_name = PO_LONG
@@ -543,9 +551,6 @@ focus_tree = {
 					ideology = fascism
 					popularity = -0.1
 				}
-				promote_character = POL_donald_tusk
-				promote_character = POL_janusz_korwin_mikke
-				promote_character = POL_wojciech_olszanski
 			}
 		}
 	}
@@ -951,12 +956,6 @@ focus_tree = {
 		y = 10
 		relative_position_id = POL_opcja_lepper
 		cost = 5
-		offset = {
-			y = -1
-			trigger = {
-				has_completed_focus = POL_opcja_lepper
-			}
-		}
 		prerequisite = {
 			focus = POL_komunizm_z_ludzka_twarza
 			focus = POL_wsparcie_rolnikow
@@ -995,7 +994,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_wykorzystanie_LPR
-		icon = GFX_focus_POL_dopasc_giertycha
+		icon = GFX_focus_generic_giertych
 		x = 0
 		y = 12
 		relative_position_id = POL_opcja_lepper
@@ -1056,17 +1055,14 @@ focus_tree = {
 				long_name = PiS_LONG
 				name = PiS_SHORT
 			}
-			set_cosmetic_tag = POL_kaczism
-			remove_ideas = POL_sejmersi
 
-			custom_effect_tooltip = POL_nowi_generalowie_doradcy
+			# custom_effect_tooltip = POL_nowi_generalowie_doradcy
 			hidden_effect = {
+				set_cosmetic_tag = POL_kaczism
+				remove_ideas = POL_sejmersi
 				news_event = { id = PLREW_world_news.2 }
 				mark_focus_tree_layout_dirty = yes
 
-				promote_character = POL_andrzej_lepper
-				promote_character = POL_janusz_korwin_mikke
-				promote_character = POL_wojciech_olszanski
 				set_party_name = {
 					ideology = communism
 					long_name = SAMOOBRONA_LONG
@@ -1081,9 +1077,7 @@ focus_tree = {
 					ideology = fascism
 					long_name = KAMRACI_LONG
 					name = KAMRACI_SHORT
-				}
-
-				
+				}	
 			}
 
 		}
@@ -1106,13 +1100,22 @@ focus_tree = {
 			focus = POL_opcja_macierewicz
 		}
 		completion_reward = {
-			promote_character = POL_jaroslaw_kaczynski
+			add_country_leader_role = {
+				character = POL_jaroslaw_kaczynski
+				country_leader = {
+					ideology = kaczism
+					expire = "1965.1.1.1"
+					traits = { mod_pan_prezes dictator }
+					id=-1
+				}
+			}
 			add_stability = 0.2
 			add_popularity = {
 				ideology = democratic
 				popularity = 0.15
 			}
 			hidden_effect = {
+				promote_character = POL_jaroslaw_kaczynski
 				mark_focus_tree_layout_dirty = yes
 			}
 		}
@@ -1135,13 +1138,22 @@ focus_tree = {
 			focus = POL_opcja_rada_liderow
 		}
 		completion_reward = {
-			promote_character = POL_zbigniew_ziobro
+			add_country_leader_role = {
+				character = POL_zbigniew_ziobro
+				country_leader = {
+					ideology = kaczism
+					expire = "1965.1.1.1"
+					traits = { mod_populist mod_zero }
+					id=-1
+				}
+			}
 			add_stability = 0
 			add_popularity = {
 				ideology = democratic
 				popularity = 0
 			}
 			hidden_effect = {
+				promote_character = POL_zbigniew_ziobro
 				mark_focus_tree_layout_dirty = yes
 			}
 		}
@@ -1164,13 +1176,22 @@ focus_tree = {
 			focus = POL_opcja_rada_liderow
 		}
 		completion_reward = {
-			promote_character = POL_janusz_kowalski
+			add_country_leader_role = {
+				character = POL_janusz_kowalski
+				country_leader = {
+					ideology = kaczism
+					expire = "1965.1.1.1"
+					traits = { mod_yapper }
+					id=-1
+				}
+			}
 			add_stability = 0.05
 			add_popularity = {
 				ideology = democratic
 				popularity = 0.1
 			}
 			hidden_effect = {
+				promote_character = POL_janusz_kowalski
 				mark_focus_tree_layout_dirty = yes
 			}
 
@@ -1194,13 +1215,22 @@ focus_tree = {
 			focus = POL_opcja_macierewicz
 		}
 		completion_reward = {
-			promote_character = POL_mateusz_morawiecki
+			add_country_leader_role = {
+				character = POL_mateusz_morawiecki
+				country_leader = {
+					ideology = kaczism
+					expire = "1965.1.1.1"
+					traits = { mod_vateusz }
+					id=-1
+				}
+			}
 			add_stability = 0.1
 			add_popularity = {
 				ideology = democratic
 				popularity = 0.1
 			}
 			hidden_effect = {
+				promote_character = POL_mateusz_morawiecki
 				mark_focus_tree_layout_dirty = yes
 			}
 		}
@@ -1223,13 +1253,22 @@ focus_tree = {
 			focus = POL_opcja_ziobro
 		}
 		completion_reward = {
-			promote_character = POL_rada_liderow_pis
+			add_country_leader_role = {
+				character = POL_rada_liderow_pis
+				country_leader = {
+					ideology = kaczism
+					expire = "1965.1.1.1"
+					traits = { mod_indecisive_party }
+					id=-1
+				}
+			}
 			add_stability = 0.2
 			add_popularity = {
 				ideology = democratic
 				popularity = 0.15
 			}
 			hidden_effect = {
+				promote_character = POL_rada_liderow_pis
 				mark_focus_tree_layout_dirty = yes
 			}
 		}
@@ -1429,10 +1468,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = POL_emeryturki_szwecja
-			ROOT = {
-				add_state_core = 124
-				set_state_owner = 124
-				set_state_controller = 124
+			124 = {
+				set_state_owner = POL
+				add_state_core = POL
+				set_state_controllet = POL
 			}
 		}
 	}
@@ -1552,7 +1591,7 @@ focus_tree = {
 	
 	focus = {
 		id = POL_dopasc_giertycha
-		icon = GFX_focus_POL_dopasc_giertycha
+		icon = GFX_focus_generic_giertych
 		x = -2
 		y = 6
 		relative_position_id = POL_opcja_pis
@@ -3223,6 +3262,7 @@ focus_tree = {
 	focus = {
 		id = POL_opcja_konfa
 		icon = GFX_focus_POL_opcja_konfa
+		dynamic = no
 		x = 16
 		y = 1
 		relative_position_id = POL_opcja_prawica
@@ -3248,20 +3288,60 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			set_party_name = {
+				ideology = neutrality
+				long_name = KON_LONG
+				name = KON_SHORT
+			}
+
+			#custom_effect_tooltip = POL_nowi_generalowie_doradcy
 			hidden_effect = {
+				add_country_leader_role = {
+                    character = POL_janusz_korwin_mikke
+                    country_leader = {
+                      ideology = korwinism
+                      expire = "1965.1.1.1"
+                      traits = {}
+					  id=-1
+                    }
+                }
+				promote_character = POL_janusz_korwin_mikke
+				set_politics = { ruling_party = neutrality }
+				#news_event = { id = PLREW_world_news.2 }
+				remove_ideas = POL_sejmersi
 				mark_focus_tree_layout_dirty = yes
+				set_party_name = {
+					ideology = communism
+					long_name = SAMOOBRONA_LONG
+					name = SAMOOBRONA_SHORT
+				}
+				set_party_name = {
+					ideology = democratic
+					long_name = PiS_LONG
+					name = PiS_SHORT
+				}
+				set_party_name = {
+					ideology = fascism
+					long_name = NIEPODLEGLOSC_LONG
+					name = NIEPODLEGLOSC_SHORT
+				}
+
+				set_cosmetic_tag = POL_IIIRP
 			}
 		}
 	}
 	focus = {
-		id = POL_likwiacja_dochodowego
-		icon = GFX_focus_POL_likwiacja_dochodowego
+		id = POL_likwidacja_dochodowego
+		icon = GFX_focus_POL_likwidacja_dochodowego
 		x = -2
 		y = 1
 		relative_position_id = POL_opcja_konfa
 		cost = 5
 		prerequisite = {
 			focus = POL_opcja_konfa
+		}
+		completion_reward = {
+			add_ideas = POL_zerowy_pit
 		}
 	}
 	focus = {
@@ -3274,6 +3354,9 @@ focus_tree = {
 		prerequisite = {
 			focus = POL_opcja_konfa
 		}
+		completion_reward = {
+			add_stability = 0.15
+		}
 	}
 	focus = {
 		id = POL_liberalizacja
@@ -3281,9 +3364,15 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = POL_opcja_konfa
-		cost = 5
+		cost = 10
 		prerequisite = {
 			focus = POL_opcja_konfa
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = POL_broken_justice_system
+				add_idea = POL_fixed_justice_system
+			}
 		}
 	}
 	focus = {
@@ -3296,6 +3385,12 @@ focus_tree = {
 		prerequisite = {
 			focus = POL_liberalizacja
 		}
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.10
+			}
+		}
 	}
 	focus = {
 		id = POL_bosak_i_mentzen
@@ -3305,12 +3400,15 @@ focus_tree = {
 		relative_position_id = POL_opcja_konfa
 		cost = 5
 		prerequisite = {
-			focus = POL_likwiacja_dochodowego
+			focus = POL_likwidacja_dochodowego
+		}
+		completion_reward = {
+			# bosak/mentzen jako doradca
 		}
 	}
 	focus = {
 		id = POL_pierwszy_kongres_w_wolnej_polsce
-		icon = GFX_goal_unknown
+		icon = GFX_focus_POL_pierwszy_kongres_w_wolnej_polsce
 		x = 0
 		y = 3
 		relative_position_id = POL_opcja_konfa
@@ -3323,6 +3421,10 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = POL_mentzen_grilluje
+		}
+
+		completion_reward = {
+			country_event = { id = PLREW_poland.11 }
 		}
 	}
 
@@ -3758,6 +3860,17 @@ focus_tree = {
 		prerequisite = {
 			focus = POL_korwin_nadal_u_wladzy
 		}
+		completion_reward = {
+			add_stability = 0.10
+			add_popularity = {
+				ideology = communism
+				popularity = -0.05
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.15
+			}
+		}
 	}
 	focus = {
 		id = POL_nie_wiedzial
@@ -3768,6 +3881,8 @@ focus_tree = {
 		cost = 5
 		prerequisite = {
 			focus = POL_korwin_nadal_u_wladzy
+		}
+		completion_reward = {
 		}
 	}
 	focus = {
@@ -5231,13 +5346,13 @@ focus = {
 		focus = POL_chocby_byla_z_tego_draka
 	}
 	completion_reward = {
-    set_capital = { 56 }
-    add_building_construction = {
-        type = building_infrastructure
-        level = 10
-        province = 56
-    }
-}
+		#set_capital = { 56 }
+		#add_building_construction = {
+		#	type = building_infrastructure
+		#	level = 10
+		#	province = 56
+		#}
+	}
 }
 
 

@@ -2,7 +2,7 @@
 # PLREW Polish Events
 ###########################
 
-add_namespace = PLREW_poland_events
+add_namespace = PLREW_poland
 
 country_event = { # Zamach stanu
 	id = PLREW_poland.1
@@ -16,18 +16,13 @@ country_event = { # Zamach stanu
 		name = PLREW_poland.1.k
 	}
 }
-# 1
 country_event = { # Pilne Posiedzenie Sejmu
 	id = PLREW_poland.2
 	title = PLREW_poland.2.t
 	desc = PLREW_poland.2.d
 	picture = GFX_MOD_event_sejm_meeting
 	fire_only_once = yes
-
-	trigger = {
-		tag = POL
-		has_completed_focus = POL_decydujace_posiedzenie
-	}
+	is_triggered_only = yes
 
 	option = {
 		name = PLREW_poland.2.k
@@ -44,7 +39,7 @@ country_event = { # Pilne Posiedzenie Sejmu
 	option = {
 		name = PLREW_poland.2.n
 		add_stability = -0.3
-		country_event = { id = PLREW_poland.2801 }
+		country_event = { id = PLREW_poland.0201 }
 	}
 }
 # 2
@@ -65,7 +60,6 @@ country_event = { # Rozwiązanie Sejmu
 		complete_national_focus = POL_opcja_anarchia
 	}
 }
-# 5
 country_event = { # Tajemnica samobójstwa
 	id = PLREW_poland.3
 	title = PLREW_poland.3.t
@@ -82,7 +76,6 @@ country_event = { # Tajemnica samobójstwa
 		}
 	}
 }
-# 4
 country_event = { # Odrodzenie PRL
 	id = PLREW_poland.4
 	title = PLREW_poland.4.t
@@ -243,23 +236,69 @@ country_event = {
     }
 
 	option = {
-	name = PLREW_poland.10.k
-	POL = {
-		puppet = TRU
-	}
-	TRU = {
-			if = {
-				limit = {
-					USA = { exist = yes }
-				}
-				annex_country = {
-					target = USA
+		name = PLREW_poland.10.k
+		POL = {
+			puppet = TRU
+		}
+		TRU = {
+				if = {
+					limit = {
+						USA = { exist = yes }
+					}
+					annex_country = {
+						target = USA
+					}
 				}
 			}
-		}
-	
-	
+	}
 }
+country_event = { # I Kongres Konfederacji
+	id = PLREW_poland.11
+	title = PLREW_poland.11.t
+	desc = PLREW_poland_placeholder_desc
+	picture = GFX_MOD_event_civilwar
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { # Ponowne zwycięstwo Korwina
+		name = PLREW_poland.11.k
+		add_stability = 0.10
+		complete_national_focus = POL_korwin_nadal_u_wladzy
+	}
+	option = { # Korwin traci władzę
+		name = PLREW_poland.11.l
+		complete_national_focus = POL_usuniecie_korwina
+	}
+	option = { # Dochodzi do tragicznego incydentu
+		name = PLREW_poland.11.m
+		add_stability = -0.2
+		complete_national_focus = POL_koniec_cukru
+		hidden_effect = {
+			country_event = { id = PLREW_poland.1101 }
+		}
+	}
+}
+country_event = { # Śmierć Janusza Korwina-Mikke
+	id = PLREW_poland.1101
+	title = PLREW_poland.1101.t
+	desc = PLREW_poland_placeholder_desc
+	picture = GFX_MOD_event_civilwar
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { # Trzeba pokazać Polakom prawdziwą drogę do wolności
+		name = PLREW_poland.1101.k
+		complete_national_focus = POL_wolnosciowcy
+	}
+	option = { # Pora na propolskie przywództwo na prawicy
+		name = PLREW_poland.1101.l
+		complete_national_focus = POL_przewrót_narodowców
+	}
+	option = { # tO WiNA żYDÓW!!!1!
+		name = PLREW_poland.1101.m
+		add_war_support = 0.10
+		complete_national_focus = POL_braun
+	}
 }
 
 ###########################
