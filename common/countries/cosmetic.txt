@@ -682,6 +682,10 @@ POL_kaczism = {
 	color = rgb { 44 28 84 }
 	color_ui = rgb { 44 28 84 }
 }
+POL_konfa = {
+	color = rgb { 180 30 30 }
+	color_ui = rgb { 180 30 30 }
+}
 UKR_UPA = {
 	color = rgb { 50 30 0 }
 	color_ui = rgb { 50 30 0 }

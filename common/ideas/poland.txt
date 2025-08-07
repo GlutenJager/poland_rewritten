@@ -584,5 +584,9 @@ country = {
                 political_power_gain = 0.3
             }
         }
+
+        POL_zerowy_pit = {
+        }
+
     }
 }

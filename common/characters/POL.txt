@@ -68,12 +68,6 @@ characters = {
 				large = GFX_portraits_zgromadzenie
 			}
 		}
-		country_leader = {
-			ideology = socialism
-			traits = { mod_illegitimate_government }
-			expire="1965.1.1.1"
-			id=-1
-		}
 	}
 
 	POL_andrzej_lepper = {
@@ -82,12 +76,6 @@ characters = {
 			civilian = {
 				large = GFX_portraits_andrzej_lepper
 			}
-		}
-		country_leader = {
-			ideology = lepperism
-			traits = { mod_agrarian_tribune mod_populist }
-			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 
@@ -98,15 +86,9 @@ characters = {
 				large = GFX_portraits_jaroslaw_kaczynski
 			}
 		}
-		country_leader = {
-			ideology = kaczism
-			traits = { mod_pan_prezes dictator }
-			expire="1965.1.1.1"
-			id=-1
-		}
 	}
 
-	POL_donald_tusk = {
+	POL_donald_tusk = { # lider
 		name="Donald Tusk"
 		portraits = {
 			civilian = {
@@ -128,15 +110,9 @@ characters = {
 				large = GFX_portraits_janusz_korwin_mikke
 			}
 		}
-		country_leader = {
-			ideology = korwinism
-			traits = { }
-			expire="1965.1.1.1"
-			id=-1
-		}
 	}
 
-	POL_wojciech_olszanski = {
+	POL_wojciech_olszanski = { # lider
 		name="Wojciech Olszański"
 		portraits = {
 			civilian = {
@@ -155,12 +131,6 @@ characters = {
 
 	POL_antoni_macierewicz = {
 		name="Antoni Macierewicz"
-		country_leader = {
-			ideology = kaczism
-			traits = {}
-			expire="1965.1.1.1"
-			id=-1
-		}
 	}
 
 	POL_janusz_kowalski = {
@@ -169,12 +139,6 @@ characters = {
 			civilian = {
 				large = GFX_portraits_janusz_kowalski
 			}
-		}
-		country_leader = {
-			ideology = kaczism
-			traits = { mod_yapper }
-			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 
@@ -215,12 +179,6 @@ characters = {
 				large = GFX_portraits_mateusz_morawiecki
 			}
 		}
-		country_leader = {
-			ideology = kaczism
-			traits = { mod_vateusz }
-			expire="1965.1.1.1"
-			id=-1
-		}
 	}
 
 	POL_rada_liderow_pis = {
@@ -229,12 +187,6 @@ characters = {
 			civilian = {
 				large = GFX_portraits_rada_liderow_pis
 			}
-		}
-		country_leader = {
-			ideology = kaczism
-			traits = { mod_indecisive_party }
-			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 

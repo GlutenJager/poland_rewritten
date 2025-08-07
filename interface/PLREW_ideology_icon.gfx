@@ -124,5 +124,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideologies/kaczyzm.dds"
 	}	
 
+	spriteType = {
+		name = "GFX_ideology_korwinism"
+		texturefile = "gfx/interface/ideologies/korwinizm.dds"
+	}	
+
 	
 }

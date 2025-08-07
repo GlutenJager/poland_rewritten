@@ -1,0 +1,9 @@
+add_country_leader_role = {
+    character = POL_andrzej_lepper
+	country_leader = {
+        ideology = lepperism
+        expire = "1965.1.1.1"
+        traits = { mod_agrarian_tribune mod_populist }
+		id=-1
+	}
+}

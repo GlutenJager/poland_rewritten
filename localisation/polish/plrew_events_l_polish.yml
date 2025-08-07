@@ -1,4 +1,5 @@
 ﻿l_polish:
+  PLREW_poland_placeholder_desc: ""
   PLREW_poland.1.t: "Zamach stanu"
   PLREW_poland.1.d: "Wczoraj wieczorem oddziały Wojska Polskiego dostrzegły podejrzaną aktywność w okolicach większych polskich miast, w szczególności M. St. Warszawy. Urzędujący prezydent Ignacy Mościcki nakazał zgromadzić wierne mu i jego rzadowi siły wojskowe i przygotować do gotowości na wszelkie zagrożenia wobec państwa polskiego. Dzisiaj prezydent wygłosił orędzie do narodu polskiego, na którym powiedział:"
   PLREW_poland.1.k: "'Ogłaszam wprowadzenie stanu wojennego.'"
@@ -28,6 +29,17 @@
   PLREW_poland.8.d: "dajcie mi swoje erotyczne zabaweczki a ja pokaze wam droge do agarthy"
   PLREW_poland.8.k: "Możemy przystąpić na tę propozycję"
   PLREW_poland.8.l: "Jeszcze się nam przydadzą"
+
+  PLREW_poland.11.t: "I Kongres Konfederacji"
+  PLREW_poland.11.k: "Ponowne zwycięstwo Korwina"
+  PLREW_poland.11.l: "Korwin traci władzę"
+  PLREW_poland.11.m: "Dochodzi do tragicznego incydentu"
+
+  PLREW_poland.1101.t: "Śmierć Janusza-Korwina-Mikke"
+  PLREW_poland.1101.k: "Trzeba pokazać Polakom prawdziwą drogę do wolności"
+  PLREW_poland.1101.l: "Pora na propolskie przywództwo na prawicy"
+  PLREW_poland.1101.m: "tO wSzystkO WiNA żYDÓW!!!1!"
+
 # WORLD NEWS
   PLREW_world_news.1.t: "Lepper przejmuje władzę w Polsce"
   PLREW_world_news.1.d: "Po ostatnich zawirowaniach politycznych w Polsce sanacja została obalona. W wyniku zamachu stanu do władzy doszła partia chłopskiego przywódcy protestów - Samoobrona Andrzeja Leppera. To właśnie to ugrupowanie w ostatnim czasie okupowało Warszawę i doprowadziło do kryzysu. Ci antydemokratyczni populiści mają komunistyczne skłonności i są skrajnie konserwatywni. Bez wątpienia trzeba na nich uważać. Są nieprzewidywalni."
