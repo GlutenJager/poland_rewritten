@@ -2489,7 +2489,7 @@ focus_tree = {
 			focus = POL_mgle_rozpuscil_wodociagiem
 		} 
 		completion_reward = {
-			research_slots_add = 1
+			add_research_slots = 2
 		}
 	}
 
