@@ -6880,7 +6880,19 @@ focus = {
 	focus = {
 		id = POL_powrot_do_europy
 		icon = GFX_goal_unknown
-		x = 0
+		x = -1
+		y = 1
+		relative_position_id = POL_opcja_tusk
+		cost = 5
+		prerequisite = {
+			focus = POL_opcja_tusk
+		}
+	}
+
+	focus = {
+		id = POL_never_lose_yr_smile
+		icon = GFX_goal_unknown
+		x = 1
 		y = 1
 		relative_position_id = POL_opcja_tusk
 		cost = 5
@@ -6899,6 +6911,9 @@ focus = {
 		prerequisite = {
 			focus = POL_powrot_do_europy
 		}
+		prerequisite = {
+			focus = POL_never_lose_yr_smile
+		}
 	}
 
 	focus = {
@@ -6911,6 +6926,9 @@ focus = {
 		prerequisite = {
 			focus = POL_powrot_do_europy
 		}
+		prerequisite = {
+			focus = POL_never_lose_yr_smile
+		}
 	}
 
 	focus = {
@@ -6922,6 +6940,9 @@ focus = {
 		cost = 5
 		prerequisite = {
 			focus = POL_powrot_do_europy
+		}
+		prerequisite = {
+			focus = POL_never_lose_yr_smile
 		}
 	}
 
