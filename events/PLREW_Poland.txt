@@ -306,19 +306,21 @@ country_event = { # Śmierć Janusza Korwina-Mikke
 ###########################
 
 country_event = { # Kaminski - bojka z antkiem
-	id = POL_mod_events.x10
-	title = POL_mod_events.x10.t
-	desc = POL_mod_events.x10.d
+	id = PLREW_poland.x01
+	title = PLREW_poland.x01.t
+	desc = PLREW_poland.x01.d
 	picture = GFX_report_event_generic_read_write # W I P
 	fire_only_once = yes
 
 	trigger = {
+		always = no
+
 		tag = POL
 		has_completed_focus = POL_opcja_macierewicz
 	}
 
 	option = {
-		name = POL_mod_events.x10.o1
+		name = PLREW_poland.x10.o1
 	}
 }
 
@@ -330,13 +332,15 @@ country_event = { # Braun gasi chanuke
 	fire_only_once = yes
 
 	trigger = {
+		always = no
+
 		tag = POL
-		date = 1938.1.1
+		date > 1938.1.1
 		NOT = { 
 			has_country_leader = POL_grzegorz_braun
 			has_country_leader = POL_antoni_macierewicz
 			has_country_leader = POL_wojciech_olszanski
-	 }
+	 	}
 	}
 
 	option = {
@@ -352,6 +356,8 @@ country_event = { # Niemcy wypowiadają nam wojnę
 	fire_only_once = yes
 
 	trigger = {
+		always = no
+
 		tag = POL
 		has_war_with = { tag = GER }
 		NOT = { 

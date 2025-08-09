@@ -1468,10 +1468,11 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = POL_emeryturki_szwecja
-			124 = {
-				set_state_owner = POL
-				add_state_core = POL
-				set_state_controllet = POL
+
+			POL = {
+				set_state_owner = 124
+				set_state_controller = 124
+				add_state_core = 124
 			}
 		}
 	}
@@ -1951,20 +1952,18 @@ focus_tree = {
 			has_completed_focus = POL_opcja_macierewicz
 		}
 		completion_reward = {
-			set_politics = {
-    			conscription_law = all_adults_serve
-			}
+			#set_politics = { # jakiś spirit zwiększający pobór
+    		#	conscription_law = all_adults_serve
+			#}
 			add_political_power = 200
 			add_stability = 0.05
 
-			85 = {
-    			set_state_owner = POL
-    			add_state_core = POL
-			}
+			POL = {
+				set_state_owner = 85
+				add_state_core = 85
 
-			807 = {
-				set_state_owner = POL
-				add_state_core = POL
+				set_state_owner = 807
+				add_state_core = 807
 			}
 
 			add_opinion_modifier = {
@@ -2219,8 +2218,8 @@ focus_tree = {
             	infantry = { x = 0 y = 2 }
             	infantry = { x = 1 y = 2 }
             	infantry = { x = 2 y = 2 }
-            	artillery = { x = 0 y = 3 }
-            	artillery = { x = 1 y = 3 }
+            	artillery_brigade = { x = 0 y = 3 }
+            	artillery_brigade = { x = 1 y = 3 }
 				}
 				support = {
 					engineer = { x = 0 y = 0 }
@@ -2470,10 +2469,10 @@ focus_tree = {
 		} #4 razy 100 bonus do przetworstwa ropy
 		completion_reward = {
 			add_tech_bonus = {
-    		name = oil_processing_bonus_1
-    		bonus = 1.0
-    		uses = 4
-			category = oil_processing
+				name = oil_processing_bonus_1
+				bonus = 1.0
+				uses = 4
+				category = synth_resources
     		}
 		}
 	}
@@ -2489,7 +2488,7 @@ focus_tree = {
 			focus = POL_mgle_rozpuscil_wodociagiem
 		} 
 		completion_reward = {
-			add_research_slots = 2
+			add_research_slot = 1
 		}
 	}
 
@@ -3326,7 +3325,7 @@ focus_tree = {
 					name = NIEPODLEGLOSC_SHORT
 				}
 
-				set_cosmetic_tag = POL_IIIRP
+				set_cosmetic_tag = POL_konfa
 			}
 		}
 	}
@@ -4094,9 +4093,6 @@ focus_tree = {
 		y = 6
 		relative_position_id = POL_korwin_nadal_u_wladzy
 		cost = 5
-		mutually_exclusive = {
-			focus = POL_korwin_cyborg
-		}
 		prerequisite = {
 			focus = POL_legalizuj_femboy
 		}
@@ -6880,19 +6876,7 @@ focus = {
 	focus = {
 		id = POL_powrot_do_europy
 		icon = GFX_goal_unknown
-		x = -1
-		y = 1
-		relative_position_id = POL_opcja_tusk
-		cost = 5
-		prerequisite = {
-			focus = POL_opcja_tusk
-		}
-	}
-
-	focus = {
-		id = POL_never_lose_yr_smile
-		icon = GFX_goal_unknown
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = POL_opcja_tusk
 		cost = 5
@@ -6911,9 +6895,6 @@ focus = {
 		prerequisite = {
 			focus = POL_powrot_do_europy
 		}
-		prerequisite = {
-			focus = POL_never_lose_yr_smile
-		}
 	}
 
 	focus = {
@@ -6926,9 +6907,6 @@ focus = {
 		prerequisite = {
 			focus = POL_powrot_do_europy
 		}
-		prerequisite = {
-			focus = POL_never_lose_yr_smile
-		}
 	}
 
 	focus = {
@@ -6940,9 +6918,6 @@ focus = {
 		cost = 5
 		prerequisite = {
 			focus = POL_powrot_do_europy
-		}
-		prerequisite = {
-			focus = POL_never_lose_yr_smile
 		}
 	}
 

@@ -19,9 +19,11 @@ ideologies = {
 			# MOD
 
 			euro_liberalism = {
+				can_be_randomly_selected = no
 			}
 
 			kaczism = {
+				can_be_randomly_selected = no
 			}
 		}
 
@@ -99,12 +101,15 @@ ideologies = {
 			# MOD
 
 			potato_dicatorship = {
+				can_be_randomly_selected = no
 			}
 
 			lepperism = {
+				can_be_randomly_selected = no
 			}
 
 			post-kaczism = {
+				can_be_randomly_selected = no
 			}
 		}
 
@@ -169,7 +174,10 @@ ideologies = {
 			rexism = {
 			}
 
+			# MOD
+
 			alt-left = {
+				can_be_randomly_selected = no
 			}
 		}
 
@@ -233,16 +241,24 @@ ideologies = {
 
 			# MOD
 			
-			right_libertarianism = {
+			libertarianism = {
+				can_be_randomly_selected = no
+			}
+
+			right_anarchism = {
+				can_be_randomly_selected = no
 			}
 
 			korwinism = {
+				can_be_randomly_selected = no
 			}
 
 			agrarianism = {
+				can_be_randomly_selected = no
 			}
 
 			neo-kaczism = {
+				can_be_randomly_selected = no
 			}
 
 		}

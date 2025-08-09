@@ -413,15 +413,15 @@ music = {
         }
     }
 }
-music = {
-    song = "Berkowicz - Sprawa osobista"
-    chance = {
-        factor = 0
-        modifier = {
-            factor = 100
-        }
-    }
-}
+#music = {
+#    song = "Berkowicz - Sprawa osobista"
+#    chance = {
+#        factor = 0
+#        modifier = {
+#            factor = 100
+#        }
+#    }
+#}
 music = {
     song = "Jadą wierni z daleka"
     chance = {

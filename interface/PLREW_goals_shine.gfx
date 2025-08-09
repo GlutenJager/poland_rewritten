@@ -1520,11 +1520,11 @@ SpriteType = {
 	}
 
 	SpriteType = {
-		name = "GFX_focus_POL_dopasc_giertycha_shine"
-		texturefile = "gfx/interface/goals/pis/focus_POL_dopasc_giertycha.dds"
+		name = "GFX_focus_generic_giertych_shine"
+		texturefile = "gfx/interface/goals/focus_generic_giertych.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/pis/focus_POL_dopasc_giertycha.dds"
+			animationmaskfile = "gfx/interface/goals/focus_generic_giertych.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1536,7 +1536,7 @@ SpriteType = {
 			animationtexturescale = { x = 2.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/pis/focus_POL_dopasc_giertycha.dds"
+			animationmaskfile = "gfx/interface/goals/focus_generic_giertych.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1816,7 +1816,7 @@ SpriteType = {
 		}
 		animation = {
 			animationmaskfile = "gfx/interface/goals/pis/focus_POL_1000plus.dds"
-			animationtexturefile = "gfx/interface/goals/pis/shine_overlay.dds" 	# <- the animated file
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
 			animationtime = 0.75				# in seconds
