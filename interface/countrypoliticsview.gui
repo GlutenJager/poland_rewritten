@@ -436,6 +436,8 @@ guiTypes = {
 				name = "national_spirit_container"
 				position = { x = 90 y = 20 }
 				size = { width = 345 height = 90 }
+
+				clipping = yes
 				horizontalScrollbar = "bottom_horizontal_slider"
 				margin = { top = 6 left = 0 bottom = 4 right = 0 }
 				
@@ -447,16 +449,15 @@ guiTypes = {
 				gridboxtype = {
 					name = "spirit_grid"
 					position = { x = 15 y = -6 } # położenie
-					size = { width = 350 height = 68 } # jak daleko mozna przesuwac
-					slotsize = { width = 70 height = 68 } # odleglosc od siebie
-					max_slots = { x = 100 y = 1 } # ile sie miesci
+					size = { width = 350 height = 100%% } # jak daleko mozna przesuwac
+					slotsize = { width = 68 height = 68 } # odleglosc od siebie
+					max_slots_horizontal = 100
 					format = "UPPER_LEFT"
 				}
 				gridboxtype = {
 					name = "spirit_grid_over_defined"
-					position = { x = 15 y = 10 }
-					size = { width = 350 height = 68 }
-					slotsize = { width = 40 height = 68 }
+					size = { width = 350 height = 100%% }
+					slotsize = { width = 43 height = 32 }
 					max_slots_horizontal = 100
 					format = "UPPER_LEFT"
 				}
