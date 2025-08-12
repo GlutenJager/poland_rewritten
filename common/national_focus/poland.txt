@@ -2715,6 +2715,9 @@ focus_tree = {
 			focus = POL_on_napadnie_dzis_na_szwecje
 		}
 		completion_reward = {
+			SPA = {
+				country_event = { id = POL_mod_events.x13 }
+			}
 			#ultimatum dla hiszpanii o zostanie marioneetka
 		}
 	}

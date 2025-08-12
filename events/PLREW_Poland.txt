@@ -232,7 +232,7 @@ country_event = {
 	   }
 	}
 	mean_time_to_happen = {
-        days = 40
+        hours = 20
     }
 
 	option = {
@@ -298,6 +298,126 @@ country_event = { # Śmierć Janusza Korwina-Mikke
 		name = PLREW_poland.1101.m
 		add_war_support = 0.10
 		complete_national_focus = POL_braun
+	}
+}
+
+#ultimatum dla hiszpani antek CHYBA NIE DZIALA
+country_event = {
+	id = POL_mod_events.x13
+	title = POL_mod_events.x13.t
+	desc = {
+		text = POL_mod_events.x13.d
+	}
+	
+	picture = GFX_report_event_lithuanian_ultimatum
+	
+	is_triggered_only = yes
+
+	option = { #Sure!
+		name = POL_mod_events.x13.a
+		ai_chance = {
+			base = 30
+			modifier = {
+				add = -25
+				POL = { has_army_size = { size < 40 } }
+			}
+			modifier = {
+				add = 100
+				POL = { has_army_size = { size > 39 } }
+			}
+			modifier = {
+				add = 20
+				is_in_faction_with = POL
+			}
+			modifier = {
+				factor = 0.1
+				is_in_faction = yes
+			}
+		}
+		POL = {
+			country_event = { hours = 2 id = POL_mod_events.x1301 }
+		}
+	}
+
+	option = { #No thank you
+		name = POL_mod_events.x13.b
+		ai_chance = {
+			base = 10
+			modifier = {
+				POL = { has_army_size = { size > 39 } }
+				factor = 0.5
+			}
+			modifier = {
+				add = 20
+				POL = { has_army_size = { size < 30 } }
+			}
+			modifier = {
+				factor = 2
+				is_in_faction = yes
+				NOT = { is_in_faction_with = POL }
+			}
+			modifier = {
+				any_other_country = {
+					has_guaranteed = SPA
+				}
+				factor = 5 #i've got friends
+			}
+			modifier = {
+				any_other_country = {
+					is_major = yes
+					has_guaranteed = SPA
+				}
+				factor = 5 #i've got big friends
+			}
+		}
+		POL = {
+			add_opinion_modifier = { target = PREV modifier = refused_help }
+			country_event = { hours = 2 id = POL_mod_events.x1302 }
+			if = { limit = { is_in_faction_with = SPA }
+				remove_from_faction = SPA
+			}
+		}
+	}
+}
+
+#Spain says yes
+country_event = {
+	id = POL_mod_events.x1301
+	title = POL_mod_events.x1301.t
+	desc = POL_mod_events.x1301.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+
+	option = { #Awesome!
+		name = POL_mod_events.x1301.a
+		ai_chance = {
+			base = 30
+		}
+		POL = {
+			puppet = { target = FROM }
+		}
+	}
+}
+
+#spain says no
+country_event = {
+	id = POL_mod_events.x1302
+	title = POL_mod_events.x1302.t
+	desc = POL_mod_events.x1302.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+
+	option = { #How 'bout I do anyway
+		name = POL_mod_events.x1302.a
+		ai_chance = {
+			base = 30
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = FROM
+		}
 	}
 }
 
