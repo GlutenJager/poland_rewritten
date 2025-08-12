@@ -6,6 +6,11 @@ spriteTypes = {
 	}
 
 	# Przed buntem
+
+	SpriteType = {
+		name = "GFX_focus_POL_trzesienie_ziemii_w_bialymstoku"
+		texturefile = "gfx/interface/goals/focus_POL_trzesienie_ziemii_w_bialymstoku.dds"
+	}
 	SpriteType = {
 		name = "GFX_focus_POL_bydgoskie_zamieszki"
 		texturefile = "gfx/interface/goals/focus_POL_bydgoskie_zamieszki.dds"
@@ -325,6 +330,161 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_focus_POL_opcja_macierewicz"
 		texturefile = "gfx/interface/goals/pis/focus_POL_opcja_macierewicz.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_POL_antoni_wzywa_do_broni"
+		texturefile = "gfx/interface/goals/pis/macierewicz/focus_POL_antoni_wzywa_do_broni.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_POL_antoni_ojczyzne_obroni"
+		texturefile = "gfx/interface/goals/pis/macierewicz/focus_POL_antoni_ojczyzne_obroni.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_POL_kto_w_lodowce_trzyma_nowa"
+		texturefile = "gfx/interface/goals/pis/macierewicz/focus_POL_kto_w_lodowce_trzyma_nowa.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_POL_bombe_z_klockow_atomowa"
+		texturefile = "gfx/interface/goals/pis/macierewicz/focus_POL_bombe_z_klockow_atomowa.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_POL_kto_doradcow_ma_z_przedszkola"
+		texturefile = "gfx/interface/goals/pis/macierewicz/focus_POL_kto_doradcow_ma_z_przedszkola.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_POL_kogo_prezes_antos_wola"
+		texturefile = "gfx/interface/goals/pis/macierewicz/focus_POL_kogo_prezes_antos_wola.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_POL_kto_oczy_ma_taliba"
+		texturefile = "gfx/interface/goals/pis/macierewicz/focus_POL_kto_oczy_ma_taliba.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_POL_kto_na_pomoc_marsjan_wzywa"
+		texturefile = "gfx/interface/goals/pis/macierewicz/focus_POL_kto_na_pomoc_marsjan_wzywa.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_POL_rozliczenie_opozycji"
+		texturefile = "gfx/interface/goals/pis/macierewicz/focus_POL_rozliczenie_opozycji.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_POL_kto_obrabia_biura_nato"
+		texturefile = "gfx/interface/goals/pis/macierewicz/focus_POL_kto_obrabia_biura_nato.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_POL_komu_wszystko_pachnie_zdrada"
+		texturefile = "gfx/interface/goals/pis/macierewicz/focus_POL_komu_wszystko_pachnie_zdrada.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_POL_kto_w_smolensku_tropil_brzoze"
+		texturefile = "gfx/interface/goals/pis/macierewicz/focus_POL_kto_w_smolensku_tropil_brzoze.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_POL_sledztwa_twardy_zgryzal_orzech"
+		texturefile = "gfx/interface/goals/pis/macierewicz/focus_POL_sledztwa_twardy_zgryzal_orzech.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_POL_kto_doradcow_dobral_z_cyrku"
+		texturefile = "gfx/interface/goals/pis/macierewicz/focus_POL_kto_doradcow_dobral_z_cyrku.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_POL_i_hipotez_mial_bez_liku"
+		texturefile = "gfx/interface/goals/pis/macierewicz/focus_POL_i_hipotez_mial_bez_liku.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_POL_kto_w_gasnicach_znalazl_bombe"
+		texturefile = "gfx/interface/goals/pis/macierewicz/focus_POL_kto_w_gasnicach_znalazl_bombe.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_POL_mgle_rozpuscil_wodociagiem"
+		texturefile = "gfx/interface/goals/pis/macierewicz/focus_POL_mgle_rozpuscil_wodociagiem.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_POL_kto_opieral_sie_na_znawcach"
+		texturefile = "gfx/interface/goals/pis/macierewicz/focus_POL_kto_opieral_sie_na_znawcach.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_POL_co_sie_znali_na_latawcach"
+		texturefile = "gfx/interface/goals/pis/macierewicz/focus_POL_co_sie_znali_na_latawcach.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_POL_big_cycki"
+		texturefile = "gfx/interface/goals/pis/macierewicz/focus_POL_big_cycki.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_POL_macierewicz_ekspansja"
+		texturefile = "gfx/interface/goals/pis/macierewicz/focus_POL_macierewicz_ekspansja.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_POL_antek_z_calym_swiatem_walczy"
+		texturefile = "gfx/interface/goals/pis/macierewicz/focus_POL_antek_z_calym_swiatem_walczy.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_POL_juz_mu_rosja_nie_wystarczy"
+		texturefile = "gfx/interface/goals/pis/macierewicz/focus_POL_juz_mu_rosja_nie_wystarczy.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_POL_on_napadnie_dzis_na_szwecje"
+		texturefile = "gfx/interface/goals/pis/macierewicz/focus_POL_on_napadnie_dzis_na_szwecje.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_POL_zlupi_madryt"
+		texturefile = "gfx/interface/goals/pis/macierewicz/focus_POL_zlupi_madryt.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_POL_kopnie_grecje"
+		texturefile = "gfx/interface/goals/pis/macierewicz/focus_POL_kopnie_grecje.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_POL_zrobi_przewrot_w_ameryce"
+		texturefile = "gfx/interface/goals/pis/macierewicz/focus_POL_zrobi_przewrot_w_ameryce.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_POL_pieklo_czyste_w_kostaryce"
+		texturefile = "gfx/interface/goals/pis/macierewicz/focus_POL_pieklo_czyste_w_kostaryce.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_POL_az_mu_pan_bog_powie_w_niebie"
+		texturefile = "gfx/interface/goals/pis/macierewicz/focus_POL_az_mu_pan_bog_powie_w_niebie.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_POL_ty_napadnij_sam_na_siebie"
+		texturefile = "gfx/interface/goals/pis/macierewicz/focus_POL_ty_napadnij_sam_na_siebie.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_POL_imperium_smolenskie"
+		texturefile = "gfx/interface/goals/pis/macierewicz/focus_POL_imperium_smolenskie.dds"
 	}
 
 	# Konfa

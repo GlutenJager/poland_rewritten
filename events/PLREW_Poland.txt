@@ -371,3 +371,4 @@ country_event = { # Niemcy wypowiadają nam wojnę
 	
 	POL = {sound_effect = dzis_o_piatej}
 }
+
