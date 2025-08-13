@@ -426,14 +426,7 @@ focus_tree = {
 		relative_position_id = POL_decydujace_posiedzenie
 		cost = 0
 		allow_branch = {
-			NOT = {
-				OR = {
-					has_completed_focus = POL_opcja_centrum
-					has_completed_focus = POL_opcja_lewica
-					has_completed_focus = POL_opcja_anarchia
-					has_completed_focus = POL_opcja_dziwna
-				}
-			}
+			prawica_is_avaliable = yes
 		}
 		prerequisite = {
 			focus = POL_decydujace_posiedzenie
@@ -474,14 +467,13 @@ focus_tree = {
 		relative_position_id = POL_opcja_prawica
 		cost = 5
 		allow_branch = {
+			prawica_is_avaliable = yes
 			NOT = {
-				OR = {
-					has_completed_focus = POL_opcja_pis
-					has_completed_focus = POL_opcja_konfa
-					has_completed_focus = POL_opcja_kamraci
-					has_completed_focus = POL_opcja_kukiz
-					has_completed_focus = POL_opcja_zero
-				}
+				has_completed_focus = POL_opcja_pis
+				has_completed_focus = POL_opcja_konfa
+				has_completed_focus = POL_opcja_kamraci
+				has_completed_focus = POL_opcja_kukiz
+				has_completed_focus = POL_opcja_zero
 			}
 		}
 		prerequisite = {
@@ -6761,14 +6753,7 @@ focus = {
 		relative_position_id = POL_decydujace_posiedzenie
 		cost = 0
 		allow_branch = {
-			NOT = {
-				OR = {
-					has_completed_focus = POL_opcja_prawica
-					has_completed_focus = POL_opcja_lewica
-					has_completed_focus = POL_opcja_anarchia
-					has_completed_focus = POL_opcja_dziwna
-				}
-			}
+			centrum_is_avaliable = yes
 		}
 		prerequisite = {
 			focus = POL_decydujace_posiedzenie
@@ -6811,6 +6796,7 @@ focus = {
 			focus = POL_opcja_agrarna
 		}
 		allow_branch = {
+			centrum_is_avaliable = yes
 			NOT = {
 				OR = {
 					has_completed_focus = POL_opcja_agrarna
@@ -6848,6 +6834,7 @@ focus = {
 			focus = POL_opcja_agrarna
 		}
 		allow_branch = {
+			centrum_is_avaliable = yes
 			NOT = {
 				OR = {
 					has_completed_focus = POL_opcja_agrarna
@@ -6897,6 +6884,7 @@ focus = {
 			focus = POL_opcja_agrarna
 		}
 		allow_branch = {
+			centrum_is_avaliable = yes
 			NOT = {
 				OR = {
 					has_completed_focus = POL_opcja_petru
@@ -8174,6 +8162,7 @@ focus = {
 			focus = POL_opcja_tusk
 		}
 		allow_branch = {
+			centrum_is_avaliable = yes
 			NOT = {
 				OR = {
 					has_completed_focus = POL_opcja_holownia
@@ -8206,14 +8195,7 @@ focus = {
 		relative_position_id = POL_decydujace_posiedzenie
 		cost = 0
 		allow_branch = {
-			NOT = {
-				OR = {
-					has_completed_focus = POL_opcja_prawica
-					has_completed_focus = POL_opcja_centrum
-					has_completed_focus = POL_opcja_anarchia
-					has_completed_focus = POL_opcja_dziwna
-				}
-			}
+			lewica_is_avaliable = yes
 		}
 		prerequisite = {
 			focus = POL_decydujace_posiedzenie
@@ -8258,6 +8240,7 @@ focus = {
 			focus = POL_opcja_razem
 		}
 		allow_branch = {
+			lewica_is_avaliable = yes
 			NOT = {
 				OR = {
 					has_completed_focus = POL_opcja_moja_ojczyzna_zjednoczona
@@ -8294,6 +8277,7 @@ focus = {
 			focus = POL_opcja_nowa_lewica
 		}
 		allow_branch = {
+			lewica_is_avaliable = yes
 			NOT = {
 				OR = {
 					has_completed_focus = POL_opcja_razem
@@ -8330,6 +8314,7 @@ focus = {
 			focus = POL_opcja_moja_ojczyzna_zjednoczona
 		}
 		allow_branch = {
+			lewica_is_avaliable = yes
 			NOT = {
 				OR = {
 					has_completed_focus = POL_opcja_nowa_lewica
@@ -8372,14 +8357,7 @@ focus = {
 		relative_position_id = POL_decydujace_posiedzenie
 		cost = 0
 		allow_branch = {
-			NOT = {
-				OR = {
-					has_completed_focus = POL_opcja_prawica
-					has_completed_focus = POL_opcja_centrum
-					has_completed_focus = POL_opcja_lewica
-					has_completed_focus = POL_opcja_dziwna
-				}
-			}
+			anarchia_is_avaliable = yes
 		}
 		prerequisite = {
 			focus = POL_decydujace_posiedzenie
@@ -8421,6 +8399,7 @@ focus = {
 			focus = POL_opcja_akom
 		}
 		allow_branch = {
+			anarchia_is_avaliable = yes
 			NOT = {
 				OR = {
 					has_completed_focus = POL_opcja_akom
@@ -8455,6 +8434,7 @@ focus = {
 			focus = POL_opcja_akap
 		}
 		allow_branch = {
+			anarchia_is_avaliable = yes
 			NOT = {
 				OR = {
 					has_completed_focus = POL_opcja_akap
