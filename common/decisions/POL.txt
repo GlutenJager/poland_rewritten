@@ -138,7 +138,7 @@ POL_defensive_plans = {
 }
 
 POL_civil_war_decisions = {
-	POL_german_action = {
+	POL_german_action = { #event
 		icon = infiltrate_state
 
 		allowed = { tag = POL }
@@ -170,9 +170,13 @@ POL_civil_war_decisions = {
 				GER = {
 					set_state_owner = 807
 					set_state_owner = 86
+					set_state_owner = 1018
+					set_state_owner = 1017
 
 					set_state_controller = 807
 					set_state_controller = 86
+					set_state_controller = 1018
+					set_state_controller = 1017
 
 					puppet = DNZ
 				}
@@ -183,7 +187,7 @@ POL_civil_war_decisions = {
 
 		}
 	}
-	POL_lithuanian_action = {
+	POL_lithuanian_action = { #event
 		icon = infiltrate_state
 
 		allowed = { tag = POL }
@@ -223,7 +227,7 @@ POL_civil_war_decisions = {
 
 		}
 	}
-	POL_ukrainian_action = {
+	POL_ukrainian_action = { #event
 		icon = infiltrate_state
 
 		allowed = { tag = POL }

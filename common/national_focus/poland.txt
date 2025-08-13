@@ -1599,6 +1599,12 @@ focus_tree = {
 				ideology = democratic
 				popularity = 0.05
 			}
+			ITA = {
+			add_opinion_modifier = {
+				target = POL
+				modifier = large_decrease
+				}
+			}
 		}# dodaj event z giertychem i jego smiercia, pogorsz relacje z wlochami
 	}
 	focus = {
@@ -1648,6 +1654,9 @@ focus_tree = {
 				807 = { remove_claim_by = PRE }
 				86 = { remove_claim_by = PRE }
 				762 = { remove_claim_by = PRE }
+				1017 = { remove_claim_by = PRE }
+				1018 = { remove_claim_by = PRE }
+
 
 				85 = { remove_core_of = DNZ }
 				762 = { remove_core_of = SIL }
@@ -2706,13 +2715,35 @@ focus_tree = {
 		prerequisite = {
 			focus = POL_on_napadnie_dzis_na_szwecje
 		}
-		completion_reward = {
-			SPA = {
-				country_event = { id = POL_mod_events.x13 }
+		available = {
+			OR = {
+				SPA = { exists = yes }
+				SPR = { exists = yes }
 			}
-			#ultimatum dla hiszpanii o zostanie marioneetka
+		}
+
+		bypass = {
+			SPA = {
+					exists = no
+			}
+			SPR = {
+					exists = no
+			}
+		}
+
+		completion_reward = {
+			if = { limit = { SPA = { exists = yes } }
+				SPA = {
+					 country_event = { id = PLREW_poland.13 }
+			}
+		}
+			if = { limit = { SPR = { exists = yes } }
+				SPR = {
+					country_event = { id = PLREW_poland.13 }
+			}
 		}
 	}
+}
 
 	focus = {
 		id = POL_kopnie_grecje
@@ -2724,6 +2755,14 @@ focus_tree = {
 		prerequisite = {
 			focus = POL_zlupi_madryt
 		}# ultimatum dla grecji o zostanie marioneetka
+		available = {
+			GRE = { exists = yes }
+		}
+		completion_reward = {
+			GRE = {
+				country_event = { id = PLREW_poland.14 }
+			}
+		}
 	}
 
 	focus = {
@@ -2811,6 +2850,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_stability = -0.1
+			add_war_support = -0.1
 		}
 	}
 
@@ -2824,6 +2864,25 @@ focus_tree = {
 		prerequisite = {
 			focus = POL_napadnij_sam_na_siebie
 		} #nowa stolica, cosmetic tag world news i portret orac cecha macierewicza
+		#set_capital = 120  # ← ID prowincji, która ma być nową stolicą
+			
+		completion_reward = {
+			set_politics = {
+				ruling_party = {
+					ideology = despotism
+				}
+				add_popularity = {
+					ideology = despotism
+					popularity = 0.6
+				}
+			}
+			create_country_leader = {
+				name = "Antonius Smoleńskus"
+				# picture = GFX_portrait_Edward_VIII
+				expire = "1965.1.1"
+				ideology = despotism
+			}#imperator, szef komisji, szaleniec, paranoja, trait zmniejszajacy czas uzasadniania war goali
+		}
 
 	}
 

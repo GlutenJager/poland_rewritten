@@ -232,7 +232,7 @@ country_event = {
 	   }
 	}
 	mean_time_to_happen = {
-        hours = 20
+        days = 20
     }
 
 	option = {
@@ -243,7 +243,7 @@ country_event = {
 		TRU = {
 				if = {
 					limit = {
-						USA = { exist = yes }
+						USA = { exists = yes }
 					}
 					annex_country = {
 						target = USA
@@ -301,20 +301,18 @@ country_event = { # Śmierć Janusza Korwina-Mikke
 	}
 }
 
-#ultimatum dla hiszpani antek CHYBA NIE DZIALA
+#ultimatum dla hiszpani antek 
 country_event = {
-	id = POL_mod_events.x13
-	title = POL_mod_events.x13.t
-	desc = {
-		text = POL_mod_events.x13.d
-	}
+	id = PLREW_poland.13
+	title = PLREW_poland.13.t
+	desc = PLREW_poland.13.d
 	
 	picture = GFX_report_event_lithuanian_ultimatum
 	
 	is_triggered_only = yes
 
 	option = { #Sure!
-		name = POL_mod_events.x13.a
+		name = PLREW_poland.13.a
 		ai_chance = {
 			base = 30
 			modifier = {
@@ -335,12 +333,12 @@ country_event = {
 			}
 		}
 		POL = {
-			country_event = { hours = 2 id = POL_mod_events.x1301 }
+			country_event = { hours = 2 id = PLREW_poland.1301 }
 		}
 	}
 
 	option = { #No thank you
-		name = POL_mod_events.x13.b
+		name = PLREW_poland.13.b
 		ai_chance = {
 			base = 10
 			modifier = {
@@ -358,23 +356,23 @@ country_event = {
 			}
 			modifier = {
 				any_other_country = {
-					has_guaranteed = SPA
+					has_guaranteed = PREV
 				}
 				factor = 5 #i've got friends
 			}
 			modifier = {
 				any_other_country = {
 					is_major = yes
-					has_guaranteed = SPA
+					has_guaranteed = PREV
 				}
 				factor = 5 #i've got big friends
 			}
 		}
 		POL = {
 			add_opinion_modifier = { target = PREV modifier = refused_help }
-			country_event = { hours = 2 id = POL_mod_events.x1302 }
-			if = { limit = { is_in_faction_with = SPA }
-				remove_from_faction = SPA
+			country_event = { hours = 2 id = PLREW_poland.1302 }
+			if = { limit = { is_in_faction_with = PREV }
+				remove_from_faction = PREV
 			}
 		}
 	}
@@ -382,15 +380,15 @@ country_event = {
 
 #Spain says yes
 country_event = {
-	id = POL_mod_events.x1301
-	title = POL_mod_events.x1301.t
-	desc = POL_mod_events.x1301.d
+	id = PLREW_poland.1301
+	title = PLREW_poland.1301.t
+	desc = PLREW_poland.1301.d
 	picture = GFX_report_event_generic_sign_treaty1
 	
 	is_triggered_only = yes
 
 	option = { #Awesome!
-		name = POL_mod_events.x1301.a
+		name = POL_mod_events.1301.a
 		ai_chance = {
 			base = 30
 		}
@@ -402,20 +400,138 @@ country_event = {
 
 #spain says no
 country_event = {
-	id = POL_mod_events.x1302
-	title = POL_mod_events.x1302.t
-	desc = POL_mod_events.x1302.d
+	id = PLREW_poland.1302
+	title = PLREW_poland.1302.t
+	desc = PLREW_poland.1302.d
 	picture = GFX_report_event_generic_sign_treaty1
 	
 	is_triggered_only = yes
 
 	option = { #How 'bout I do anyway
-		name = POL_mod_events.x1302.a
+		name = POL_mod_events.1302.a
 		ai_chance = {
 			base = 30
 		}
 		create_wargoal = {
-			type = annex_everything
+			type = puppet_wargoal_focus
+			target = FROM
+		}
+	}
+}
+
+#ultimatum dla Grecji antek
+country_event = {
+	id = PLREW_poland.14
+	title = PLREW_poland.14.t
+	desc = PLREW_poland.14.d
+
+	picture = GFX_report_event_lithuanian_ultimatum
+	
+	is_triggered_only = yes
+
+	option = { #Sure!
+		name = PLREW_poland.14.a
+		ai_chance = {
+			base = 30
+			modifier = {
+				add = -25
+				POL = { has_army_size = { size < 40 } }
+			}
+			modifier = {
+				add = 100
+				POL = { has_army_size = { size > 39 } }
+			}
+			modifier = {
+				add = 20
+				is_in_faction_with = POL
+			}
+			modifier = {
+				factor = 0.1
+				is_in_faction = yes
+			}
+		}
+		POL = {
+			country_event = { hours = 2 id = PLREW_poland.1401 }
+		}
+	}
+
+	option = { #No thank you
+		name = PLREW_poland.14.b
+		ai_chance = {
+			base = 10
+			modifier = {
+				POL = { has_army_size = { size > 39 } }
+				factor = 0.5
+			}
+			modifier = {
+				add = 20
+				POL = { has_army_size = { size < 30 } }
+			}
+			modifier = {
+				factor = 2
+				is_in_faction = yes
+				NOT = { is_in_faction_with = POL }
+			}
+			modifier = {
+				any_other_country = {
+					has_guaranteed = PREV
+				}
+				factor = 5 #i've got friends
+			}
+			modifier = {
+				any_other_country = {
+					is_major = yes
+					has_guaranteed = PREV
+				}
+				factor = 5 #i've got big friends
+			}
+		}
+		POL = {
+			add_opinion_modifier = { target = PREV modifier = refused_help }
+			country_event = { hours = 2 id = PLREW_poland.1402 }
+			if = { limit = { is_in_faction_with = PREV }
+				remove_from_faction = PREV
+			}
+		}
+	}
+}
+
+#Greece says yes
+country_event = {
+	id = PLREW_poland.1401
+	title = PLREW_poland.1401.t
+	desc = PLREW_poland.1401.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+
+	option = { #Awesome!
+		name = POL_mod_events.1401.a
+		ai_chance = {
+			base = 30
+		}
+		POL = {
+			puppet = { target = FROM }
+		}
+	}
+}
+
+#greeks says no
+country_event = {
+	id = PLREW_poland.1402
+	title = PLREW_poland.1402.t
+	desc = PLREW_poland.1402.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+
+	option = { #How 'bout I do anyway
+		name = POL_mod_events.1402.a
+		ai_chance = {
+			base = 30
+		}
+		create_wargoal = {
+			type = puppet_wargoal_focus
 			target = FROM
 		}
 	}
@@ -426,38 +542,37 @@ country_event = {
 ###########################
 
 country_event = { # Kaminski - bojka z antkiem
-	id = PLREW_poland.x01
-	title = PLREW_poland.x01.t
-	desc = PLREW_poland.x01.d
+	id = PLREW_poland.15
+	title = PLREW_poland.15.t
+	desc = PLREW_poland.15.d
 	picture = GFX_report_event_generic_read_write # W I P
 	fire_only_once = yes
 
 	trigger = {
-		always = no
 
 		tag = POL
 		has_completed_focus = POL_opcja_macierewicz
+		date > 1937.12.30
 	}
 
 	option = {
-		name = PLREW_poland.x10.o1
+		name = PLREW_poland.15.o1
 	}
 }
 
 country_event = { # Braun gasi chanuke
-	id = POL_mod_events.x11
-	title = POL_mod_events.x11.t
-	desc = POL_mod_events.x11.d
+	id = POL_mod_events.16
+	title = POL_mod_events.16.t
+	desc = POL_mod_events.16.d
 	picture = GFX_report_event_generic_read_write # W I P
 	fire_only_once = yes
 
 	trigger = {
-		always = no
 
 		tag = POL
-		date > 1938.1.1
+		date > 1939.1.15
 		NOT = { 
-			has_country_leader = POL_grzegorz_braun
+			#has_country_leader = POL_grzegorz_braun
 			has_country_leader = POL_antoni_macierewicz
 			has_country_leader = POL_wojciech_olszanski
 	 	}
@@ -469,26 +584,27 @@ country_event = { # Braun gasi chanuke
 }
 
 country_event = { # Niemcy wypowiadają nam wojnę
-	id = POL_mod_events.x12
-	title = POL_mod_events.x12.t
-	desc = POL_mod_events.x12.d
+	id = POL_mod_events.17
+	title = POL_mod_events.17.t
+	desc = POL_mod_events.17.d
 	picture = GFX_report_event_generic_read_write # W I P
 	fire_only_once = yes
 
 	trigger = {
-		always = no
 
 		tag = POL
-		has_war_with = { tag = GER }
+		POL = {
+		has_war_with = GER
+		} 
 		NOT = { 
 			has_country_leader = POL_donald_tusk
 	 	}
 	}
 
 	option = {
-		name = POL_mod_events.x12.o1
+		name = POL_mod_events.17.o1
 	}
 	
-	POL = {sound_effect = dzis_o_piatej}
+	#POL = {sound_effect = dzis_o_piatej}
 }
 
