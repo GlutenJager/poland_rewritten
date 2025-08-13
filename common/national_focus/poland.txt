@@ -2867,14 +2867,10 @@ focus_tree = {
 		#set_capital = 120  # ← ID prowincji, która ma być nową stolicą
 			
 		completion_reward = {
-			set_politics = {
-				ruling_party = {
-					ideology = despotism
-				}
-				add_popularity = {
-					ideology = despotism
-					popularity = 0.6
-				}
+			set_politics = { ruling_party = neutrality }
+			add_popularity = {
+				ideology = despotism
+				popularity = 0.6
 			}
 			create_country_leader = {
 				name = "Antonius Smoleńskus"
@@ -3402,7 +3398,6 @@ focus_tree = {
                     }
                 }
 				promote_character = POL_janusz_korwin_mikke
-				set_politics = { ruling_party = neutrality }
 				#news_event = { id = PLREW_world_news.2 }
 				remove_ideas = POL_sejmersi
 				mark_focus_tree_layout_dirty = yes
@@ -8191,17 +8186,6 @@ focus = {
 			focus = POL_KO_Agrounia
 		}
 	}
-
-
-
-
-
-
-
-
-
-
-
 
 #KOALICJA POLSKA#
 
