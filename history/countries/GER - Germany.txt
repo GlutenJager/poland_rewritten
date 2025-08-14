@@ -479,7 +479,7 @@ set_war_support = 0.3
 	create_wargoal = {
 		type = take_state_focus
 		target = POL
-		generator = { 72 88 90 87 86 762 807 85 } # Zaolzie Krakow Kielce Lodz Poznan Katowice Gdynia Danzig
+		generator = { 72 88 90 87 86 762 807 85 1017 1018 } # Zaolzie Krakow Kielce Lodz Poznan Katowice Gdynia Danzig
 	}
 
 	# Setup Trade with the Soviets

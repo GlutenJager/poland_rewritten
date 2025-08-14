@@ -359,7 +359,8 @@ focus_tree = {
 				}
 				start_civil_war = {
 					ideology = neutrality
-					size = 0.5
+					size = 0.55
+					states = { 97 784 1025 95 94 93 96 92 91 762 89 88 1029 90 1024 }
 				}
 				add_ideas = POL_european_pressure
 				add_ideas = POL_broken_justice_system
@@ -380,6 +381,7 @@ focus_tree = {
 					}
 					add_ideas = POL_wojna_domowa
 					set_cosmetic_tag = POL_SANATION
+					
 				}
 			}
 		}
@@ -6957,6 +6959,132 @@ focus = {
 		completion_reward = {
 			hidden_effect = {
 				mark_focus_tree_layout_dirty = yes
+				#jeszcze tuchel, prowincja suwalki, prowincja konin prowincja tuchel i kujawien prowincja i miasto grodno i sprawdzi sie co jeszcze
+				set_province_name = {
+			id = 362
+			name = Danzig
+			}
+			set_province_name = {
+			id = 9263
+			name = Gdingen
+			}
+			set_province_name = {
+			id = 279
+			name = Glutenstadt-Bromberg
+			}
+			set_province_name = {
+			id = 3295
+			name = Thorn
+			}
+			set_province_name = {
+			id = 6558
+			name = Posen
+			}
+			set_province_name = {
+			id = 3230
+			name = Plock
+			}
+			set_province_name = {
+			id = 9508
+			name = Litzmannstadt
+			}
+			set_province_name = {
+			id = 3544
+			name = Warschau
+			}
+			set_province_name = {
+			id = 6464
+			name = Kattowitz
+			}
+			set_province_name = {
+			id = 9427
+			name = Krakau
+			}
+			set_province_name = {
+			id = 3254
+			name = Sudauen
+			}
+			set_province_name = {
+			id = 442
+			name = Tarnau
+			}
+			set_province_name = {
+			id = 11301
+			name = Belostok
+			}
+			set_province_name = {
+			id = 11411
+			name = Stanislauw
+			}
+			set_province_name = {
+			id = 11479
+			name = Löwen
+			}			
+			set_province_name = {
+			id = 11411
+			name = Stanislauw
+			}			
+			set_province_name = {
+			id = 3392
+			name = Brest			
+			}
+			set_province_name = {
+			id = 560
+			name = Pinsk
+			}
+			set_province_name = {
+			id = 9304
+			name = Baranawitschy 		
+			}
+			set_province_name = {
+			id = 3320
+			name = Wilna 
+			}
+			85 = { 
+			set_state_name = "Danzig"
+			}
+			807 = { 
+			set_state_name = "Gdingen"
+			}
+			86 = { 
+			set_state_name = "Posen"
+			}
+			98 = { 
+			set_state_name = "Plock"
+			}
+			762 = { 
+			set_state_name = "Kattowitz"			
+			}
+			10 = { 
+			set_state_name = "Warschau"
+			}
+			88 = { 
+			set_state_name = "Krakau"
+			}
+			97 = { 
+			set_state_name = "Belostok"
+			}
+			89 = { 
+			set_state_name = "Stanislauw"
+			}			
+			91 = { 
+			set_state_name = "Löwen"
+			}			
+			93 = { 
+			set_state_name = "Wolhynien"
+			}			
+			94 = { 
+			set_state_name = "Polesien"
+			}			
+			95 = { 
+			set_state_name = "Nawahrudak"
+			}				
+			784 = { 
+			set_state_name = "Wilna"
+			}				
+			87 = { 
+			set_state_name = "Litzmannstadt"	
+				}
 			}
 		}
 	}
@@ -7758,7 +7886,7 @@ focus = {
 	}
 
 	focus = {
-		id = POL_Ponowne_zintegrowanie
+		id = POL_Ponowne_zintegrowanie #aneksja niemiec, cosmetic tag na Deutsches Kaiserreich, event na to czy aktualny szef czy merz zostaje kaiserem (nadal euroliberalnym), wyzowlenie polski z nowym tagiem na terenach gg plus te wschodnie i danie tam na wladce trzaska, chyba ze to on rzadzi to wtedy tuska z cechą generalny gubernator
 		icon = GFX_goal_unknown
 		x = 0
 		y = 2
@@ -7774,7 +7902,7 @@ focus = {
 	}
 
 	focus = {
-		id = POL_kupmy_sobie_czas
+		id = POL_kupmy_sobie_czas #oddajemy kresy za pakt o nieagresji
 		icon = GFX_goal_unknown
 		x = -4
 		y = 3
