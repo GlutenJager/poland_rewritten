@@ -1916,13 +1916,15 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			create_country_leader = {
-				name = "Antoni Macierewicz"
-				# picture = GFX_portrait_Edward_VIII
-				expire = "1965.1.1"
-				ideology = kaczism
-				traits = {}
+			add_country_leader_role = {
+				character = POL_antoni_macierewicz
+				country_leader = {
+					ideology = kaczism
+					expire = "1965.1.1.1"
+					id=-1
+				}
 			}
+			
 			custom_effect_tooltip = POL_nowy_doradca
 			promote_character = POL_bartlomiej_misiewicz
 
@@ -2869,16 +2871,18 @@ focus_tree = {
 		#set_capital = 120  # ← ID prowincji, która ma być nową stolicą
 			
 		completion_reward = {
+			add_country_leader_role = {
+				character = POL_antonius_smolenskus
+				country_leader = {
+					ideology = despotism
+					expire = "1965.1.1.1"
+					id=-1
+				}
+			}
 			set_politics = { ruling_party = neutrality }
 			add_popularity = {
 				ideology = despotism
 				popularity = 0.6
-			}
-			create_country_leader = {
-				name = "Antonius Smoleńskus"
-				# picture = GFX_portrait_Edward_VIII
-				expire = "1965.1.1"
-				ideology = despotism
 			}#imperator, szef komisji, szaleniec, paranoja, trait zmniejszajacy czas uzasadniania war goali
 		}
 

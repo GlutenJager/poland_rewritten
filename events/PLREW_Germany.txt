@@ -1,0 +1,6 @@
+###########################
+# PLREW Germany Events
+###########################
+
+add_namespace = PLREW_germany
+

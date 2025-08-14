@@ -1,0 +1,6 @@
+###########################
+# PLREW Italy Events
+###########################
+
+add_namespace = PLREW_italy
+

@@ -134,7 +134,8 @@ recruit_character = POL_andrzej_lepper
 recruit_character = POL_donald_tusk
 recruit_character = POL_janusz_korwin_mikke
 recruit_character = POL_wojciech_olszanski
-
+recruit_character = POL_antoni_macierewicz
+recruit_character = POL_antonius_smolenskus
 recruit_character = POL_jaroslaw_kaczynski
 recruit_character = POL_zbigniew_ziobro
 recruit_character = POL_mateusz_morawiecki

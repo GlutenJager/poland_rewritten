@@ -129,6 +129,10 @@ characters = {
 
 	# pisiory
 
+	POL_antonius_smolenskus = {
+		name="Antonius Smoleńskus"
+	}
+
 	POL_antoni_macierewicz = {
 		name="Antoni Macierewicz"
 	}
