@@ -6961,7 +6961,37 @@ focus = {
 			}
 		}
 		completion_reward = {
+			add_country_leader_role = {
+				character = POL_donald_tusk
+				country_leader = {
+					ideology = euro_liberalism
+					expire = "1965.1.1.1"
+					traits = {}
+					id=-1
+				}
+			}
+			add_stability = 0.2
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.15
+			}
+			
+			GER = {
+			add_opinion_modifier = {
+				target = POL
+				modifier = large_increase
+				}
+			}
+			set_party_name = {
+					ideology = democratic
+					long_name = KOALICJAOB_LONG
+					name = KOALICJAOB_SHORT
+				}
+				
 			hidden_effect = {
+				
+				set_cosmetic_tag = POL_usmiechnieta
+				promote_character = POL_donald_tusk
 				mark_focus_tree_layout_dirty = yes
 				#jeszcze tuchel, prowincja suwalki, prowincja konin prowincja tuchel i kujawien prowincja i miasto grodno i sprawdzi sie co jeszcze
 				set_province_name = {
