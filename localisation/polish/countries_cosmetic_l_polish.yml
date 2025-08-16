@@ -2767,6 +2767,9 @@
  POL_HOL_autonomy_eu_member_DEF: "Europejska Polska"
  POL_HOL_autonomy_eu_member_ADJ: "polsk."
 # Poland Rewritten
+ POL_usmiechnieta: "Polnische Eurorepublik"
+ POL_usmiechnieta_DEF: "Polnische Eurorepublik"
+ POL_usmiechnieta_ADJ: "polen"
  POL_IIRP: "II Rzeczpospolita"
  POL_IIRP_DEF: "II Rzeczpospolita"
  POL_IIRP_ADJ: "polsk."
