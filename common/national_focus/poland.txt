@@ -9112,7 +9112,7 @@ focus = {
 	}
 
 	focus = {
-		id = POL_poszukiwanie_ropy
+		id = POL_poszukiwanie_ropy #wymysle nazwy jakies ciekawe
 		icon = GFX_goal_unknown
 		prerequisite = {
 			focus = POL_wydobycie
@@ -9127,7 +9127,7 @@ focus = {
 	}
 
 	focus = {
-		id = POL_rafineria_w_gdansku
+		id = POL_rafineria_w_gdansku #wypadaloby zeby trzeba bylo ten gdansk posiadac XD
 		icon = GFX_goal_unknown
 		prerequisite = {
 			focus = POL_poszukiwanie_ropy
@@ -9138,7 +9138,7 @@ focus = {
 		relative_position_id = POL_wydobycie
 		completion_reward = {
 			# to co w tytule
-			# planuję dodać jakiś smaczek dotyczący afery...
+			# planuję dodać jakiś smaczek dotyczący afery... czyli event pojawiajacy sie jesli idziesz w pis
 			# ... z obajtkiem i arabia saud. (ścieżka pisu)
 		}
 	}
@@ -9154,7 +9154,7 @@ focus = {
 		y = 1
 		relative_position_id = POL_wydobycie
 		completion_reward = {
-			# zwieksza jednostki stali w kraju
+			# zwieksza jednostki stali w kraju mozna specyficznie w katowicach
 		}
 	}
 
@@ -9195,7 +9195,7 @@ focus = {
 			focus = POL_przemysl
 		}
 		available = {
-			# world tension > 50%
+			# world tension > 50% lepiej nie... dalbym 20
 		}
 		cost = 0
 		x = -2
@@ -9229,7 +9229,7 @@ focus = {
 			focus = POL_popularyzacja_polskich_firm
 		}
 		mutually_exclusive = {
-			focus = POL_bezpieczne_zaplecze_logistyczne
+			focus = POL_jeden_pocisk_jeden_niemiec
 		}
 		cost = 0
 		x = -2
@@ -9289,7 +9289,7 @@ focus = {
 	}
 
 	focus = { # ta sama uwaga co poprzednio
-		id = POL_bezpieczne_zaplecze_logistyczne
+		id = POL_jeden_pocisk_jeden_niemiec
 		icon = GFX_goal_unknown
 		prerequisite = {
 			focus = POL_bron_dla_polskiego_zolnierza
