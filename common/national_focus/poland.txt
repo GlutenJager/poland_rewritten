@@ -10,6 +10,15 @@ focus_tree = {
 		}
 	}
 
+	#focus = {
+	#	id
+	#	icon
+	#	cost
+	#	x
+	#	y
+	#	completion_reward
+	#}
+
 	default = no
 	continuous_focus_position = { x = 150 y = 5000 }
 	initial_show_position = { focus = POL_trzesienie_ziemii }
@@ -21,7 +30,7 @@ focus_tree = {
 		x = 10
 		y = 0
 		allow_branch = {
-			always = yes # Pokazuj: tak/nie
+			always = no # Pokazuj: tak/nie
 		}
 		completion_reward = {
 			mark_focus_tree_layout_dirty = yes
@@ -353,6 +362,17 @@ focus_tree = {
 			country_event = { id = PLREW_poland.1 }
 			custom_effect_tooltip = POL_wojna_domowa_decyzje_tt
 			hidden_effect = {
+				add_country_leader_role = {
+					character = POL_edward_rydzsmigly
+					country_leader = {
+						ideology = despotism
+						expire = "1965.1.1.1"
+						traits = { }
+						id=-1
+					}
+				}
+
+				promote_character = POL_edward_rydzsmigly
 				promote_character = POL_zgromadzenie
 				set_politics = {
 					ruling_party = democratic
@@ -376,12 +396,13 @@ focus_tree = {
 
 
 				every_country = {
-					limit = {
+					limit = { # civil war opponent
 						has_war_with = ROOT
+						has_civil_war = yes
+						original_tag = POL
 					}
 					add_ideas = POL_wojna_domowa
 					set_cosmetic_tag = POL_SANATION
-					
 				}
 			}
 		}
@@ -8689,14 +8710,20 @@ focus = {
 		}
 	}
 
+	########################################################
+	########################################################
+	########################################################
 	# DRZEWKO WOJSKOWE
+	########################################################
+	########################################################
+	########################################################
 
 	focus = {
 		id = POL_reorganizacja_armii
 		icon = GFX_focus_POL_reorganizacja_armii
 		cost = 10
 		x = 22
-		y = 0
+		y = 1
 		available = {
 			has_completed_focus = POL_zamach_stanu
 		}
@@ -9019,6 +9046,300 @@ focus = {
 		}
 	}
 
-}
+	########################################################
+	########################################################
+	########################################################
+	# DRZEWKO GOSPODARCZE
+	########################################################
+	########################################################
+	########################################################
 
-#			custom_effect_tooltip = generic_skip_one_line_tt 
+	focus = {
+		id = POL_przebudzenie_polskiej_gospodarki
+		icon = GFX_goal_unknown
+		cost = 0
+		x = 44
+		y = 1
+		completion_reward = {
+			# + pp, stabilka i 1 research slot
+			# wypełnia focusy: wydobycie, przemysl, strat. inwestycje
+		}
+	}
+
+	focus = {
+		id = POL_wydobycie
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = POL_przebudzenie_polskiej_gospodarki
+		}
+		cost = 0
+		x = -7
+		y = 1
+		relative_position_id = POL_przebudzenie_polskiej_gospodarki
+		completion_reward = {
+			# nic, automatycznie się robi
+		}
+	}
+
+	focus = {
+		id = POL_poszukiwanie_ropy
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = POL_wydobycie
+		}
+		cost = 0
+		x = -2
+		y = 1
+		relative_position_id = POL_wydobycie
+		completion_reward = {
+			# zwieksza jednostki ropy w kraju
+		}
+	}
+
+	focus = {
+		id = POL_rafineria_w_gdansku
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = POL_poszukiwanie_ropy
+		}
+		cost = 0
+		x = -2
+		y = 2
+		relative_position_id = POL_wydobycie
+		completion_reward = {
+			# to co w tytule
+			# planuję dodać jakiś smaczek dotyczący afery...
+			# ... z obajtkiem i arabia saud. (ścieżka pisu)
+		}
+	}
+
+	focus = {
+		id = POL_huta_katowice
+		icon = GFX_goal_unknown # zrób nawiązanie do huty katowice błagam XD
+		prerequisite = {
+			focus = POL_wydobycie
+		}
+		cost = 0
+		x = 0
+		y = 1
+		relative_position_id = POL_wydobycie
+		completion_reward = {
+			# zwieksza jednostki stali w kraju
+		}
+	}
+
+	focus = {
+		id = POL_fabryki_gum
+		icon = GFX_goal_unknown # durex
+		prerequisite = {
+			focus = POL_wydobycie
+		}
+		cost = 0
+		x = 2
+		y = 1
+		relative_position_id = POL_wydobycie
+		completion_reward = {
+			# zwieksza jednostki gumy w kraju
+		}
+	}
+	
+	focus = {
+		id = POL_przemysl
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = POL_przebudzenie_polskiej_gospodarki
+		}
+		cost = 0
+		x = 0
+		y = 1
+		relative_position_id = POL_przebudzenie_polskiej_gospodarki
+		completion_reward = {
+			# nic, automatycznie się robi
+		}
+	}
+
+	focus = {
+		id = POL_zagraniczni_inwestorzy
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = POL_przemysl
+		}
+		available = {
+			# world tension > 50%
+		}
+		cost = 0
+		x = -2
+		y = 1
+		relative_position_id = POL_przemysl
+		completion_reward = {
+			# + civ
+		}
+	}
+
+
+	focus = {
+		id = POL_popularyzacja_polskich_firm 
+		icon = GFX_goal_unknown # żabka, orlen...
+		prerequisite = {
+			focus = POL_zagraniczni_inwestorzy
+		}
+		cost = 0
+		x = -2
+		y = 2
+		relative_position_id = POL_przemysl
+		completion_reward = {
+			# + civ
+		}
+	}
+
+	focus = {
+		id = POL_polskie_imperium_przemyslowe
+		icon = GFX_goal_unknown # żabka, orlen...
+		prerequisite = {
+			focus = POL_popularyzacja_polskich_firm
+		}
+		mutually_exclusive = {
+			focus = POL_bezpieczne_zaplecze_logistyczne
+		}
+		cost = 0
+		x = -2
+		y = 3
+		relative_position_id = POL_przemysl
+		completion_reward = {
+			# spirit na rozwoj przemyslu cywilnego
+		}
+	}
+
+	focus = {
+		id = POL_zwiekszenie_wydatkow_na_zbrojenie
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = POL_przemysl
+		}
+		available = {
+			# world tension > 50%
+		}
+		cost = 0
+		x = 0
+		y = 1
+		relative_position_id = POL_przemysl
+		completion_reward = {
+			# partial mob
+		}
+	}
+
+	focus = {
+		id = POL_fabryki_amunicji
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = POL_przemysl
+		}
+		cost = 0
+		x = 2
+		y = 1
+		relative_position_id = POL_przemysl
+		completion_reward = {
+			# + mil
+		}
+	}
+
+	focus = { # kurwa na nic madrzejszego nie wpadlem
+		id = POL_bron_dla_polskiego_zolnierza
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = POL_fabryki_amunicji
+		}
+		cost = 0
+		x = 2
+		y = 2
+		relative_position_id = POL_przemysl
+		completion_reward = {
+			# + mil
+		}
+	}
+
+	focus = { # ta sama uwaga co poprzednio
+		id = POL_bezpieczne_zaplecze_logistyczne
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = POL_bron_dla_polskiego_zolnierza
+		}
+		mutually_exclusive = {
+			focus = POL_polskie_imperium_przemyslowe
+		}
+		cost = 0
+		x = 2
+		y = 3
+		relative_position_id = POL_przemysl
+		completion_reward = {
+			# spirit na rozwoj przemyslu militarnego
+		}
+	}
+
+	focus = {
+		id = POL_strategiczne_inwestycje
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = POL_przebudzenie_polskiej_gospodarki
+		}
+		cost = 0
+		x = 5
+		y = 1
+		relative_position_id = POL_przebudzenie_polskiej_gospodarki
+		completion_reward = {
+			# nic, automatycznie się robi
+			# prawdopodobnie dodam hinta że ścieżka...
+			# ... nie będzie dostępna w akapie
+			# ale pewien co do tego to ja nie jestem
+		}
+	}
+
+	focus = {
+		id = POL_budowa_elektrowni_atomowych
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = POL_strategiczne_inwestycje
+		}
+		cost = 20
+		x = -1
+		y = 1
+		relative_position_id = POL_strategiczne_inwestycje
+		completion_reward = {
+			# decyzje z inwestycją w atom
+		}
+	}
+
+	focus = {
+		id = POL_centralny_port_komunikacyjny
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = POL_strategiczne_inwestycje
+		}
+		cost = 20
+		x = 1
+		y = 1
+		relative_position_id = POL_strategiczne_inwestycje
+		completion_reward = {
+			# decyzje z cpk
+		}
+	}
+
+	focus = {
+		id = POL_nasza_kolej
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = POL_strategiczne_inwestycje
+		}
+		available = {
+			always = no # jak rzadzi tusk
+		}
+		cost = 10
+		x = 3
+		y = 1
+		relative_position_id = POL_strategiczne_inwestycje
+		completion_reward = {
+			# infrastruktura albo tego typu
+		}
+	}
+
+}
