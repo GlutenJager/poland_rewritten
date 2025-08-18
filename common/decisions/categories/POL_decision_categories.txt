@@ -72,3 +72,15 @@ POL_pis_fractionality_decisions = {
 
 	priority = 100
 }
+
+
+# PLREW - Balance of Power
+
+POL_european_power_balance_category = {
+	allowed = {
+		original_tag = POL
+	}
+
+	visible = {
+	}
+}

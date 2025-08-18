@@ -30,10 +30,12 @@ focus_tree = {
 		x = 10
 		y = 0
 		allow_branch = {
-			always = no # Pokazuj: tak/nie
+			always = yes # Pokazuj: tak/nie
 		}
 		completion_reward = {
-			mark_focus_tree_layout_dirty = yes
+			set_power_balance = {
+				id = POL_european_power_balance
+			}
 		}
 	}
 
@@ -9127,7 +9129,7 @@ focus = {
 	}
 
 	focus = {
-		id = POL_rafineria_w_gdansku #wypadaloby zeby trzeba bylo ten gdansk posiadac XD
+		id = POL_rafineria_w_gdansku
 		icon = GFX_goal_unknown
 		prerequisite = {
 			focus = POL_poszukiwanie_ropy
