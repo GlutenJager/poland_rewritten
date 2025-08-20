@@ -524,6 +524,128 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/konfederacja/focus_POL_pierwszy_kongres_w_wolnej_polsce.dds"
 	}
 
+	SpriteType = {
+		name = GFX_focus_POL_usuniecie_korwina
+		texturefile = "gfx/interface/goals/konfederacja/focus_POL_usuniecie_korwina.dds"
+	}
+
+	# Mentzen
+
+	SpriteType = {
+		name = GFX_focus_POL_wipleryzacja_partii
+		texturefile = "gfx/interface/goals/konfederacja/mentzen/focus_POL_wipleryzacja_partii.dds"
+	}
+
+	SpriteType = {
+		name = GFX_focus_POL_cukier_plus
+		texturefile = "gfx/interface/goals/konfederacja/mentzen/focus_POL_cukier_plus.dds"
+	}
+
+	SpriteType = {
+		name = GFX_focus_POL_debata_z_petru
+		texturefile = "gfx/interface/goals/konfederacja/mentzen/focus_POL_debata_z_petru.dds"
+	}
+
+	SpriteType = {
+		name = GFX_focus_POL_pozbyc_sie_winnickiego
+		texturefile = "gfx/interface/goals/konfederacja/mentzen/focus_POL_pozbyc_sie_winnickiego.dds"
+	}
+
+	SpriteType = {
+		name = GFX_focus_POL_wasalizacja_bosaka
+		texturefile = "gfx/interface/goals/konfederacja/mentzen/focus_POL_wasalizacja_bosaka.dds"
+	}
+
+	SpriteType = {
+		name = GFX_focus_POL_destabilizacja_kkp
+		texturefile = "gfx/interface/goals/konfederacja/mentzen/focus_POL_destabilizacja_kkp.dds"
+	}
+
+	SpriteType = {
+		name = GFX_focus_POL_braun_do_brukseli
+		texturefile = "gfx/interface/goals/konfederacja/mentzen/focus_POL_braun_do_brukseli.dds"
+	}
+
+	SpriteType = {
+		name = GFX_focus_POL_hold_lenny_narodowcow
+		texturefile = "gfx/interface/goals/konfederacja/mentzen/focus_POL_hold_lenny_narodowcow.dds"
+	}
+
+	SpriteType = {
+		name = GFX_focus_POL_pokonac_foliarzy
+		texturefile = "gfx/interface/goals/konfederacja/mentzen/focus_POL_pokonac_foliarzy.dds"
+	}
+
+	SpriteType = {
+		name = GFX_focus_POL_nowa_nadzieja
+		texturefile = "gfx/interface/goals/konfederacja/mentzen/focus_POL_nowa_nadzieja.dds"
+	}
+
+	SpriteType = {
+		name = GFX_focus_POL_ujarzmienie_aspergika
+		texturefile = "gfx/interface/goals/konfederacja/mentzen/focus_POL_ujarzmienie_aspergika.dds"
+	}
+
+	SpriteType = {
+		name = GFX_focus_POL_dofinansowanie_abw
+		texturefile = "gfx/interface/goals/konfederacja/mentzen/focus_POL_dofinansowanie_abw.dds"
+	}
+
+	SpriteType = {
+		name = GFX_focus_POL_umowy_z_wielkimi_koncernami
+		texturefile = "gfx/interface/goals/konfederacja/mentzen/focus_POL_umowy_z_wielkimi_koncernami.dds"
+	}
+
+	SpriteType = {
+		name = GFX_focus_POL_ustawa_lobbystowska
+		texturefile = "gfx/interface/goals/konfederacja/mentzen/focus_POL_ustawa_lobbystowska.dds"
+	}
+
+	SpriteType = {
+		name = GFX_focus_POL_inba_z_ukrainskim_zbozem
+		texturefile = "gfx/interface/goals/konfederacja/mentzen/focus_POL_inba_z_ukrainskim_zbozem.dds"
+	}
+
+	SpriteType = {
+		name = GFX_focus_POL_liberalizm_nie_tak_dobry
+		texturefile = "gfx/interface/goals/konfederacja/mentzen/focus_POL_liberalizm_nie_tak_dobry.dds"
+	}
+
+	SpriteType = {
+		name = GFX_focus_POL_inba_naftowa
+		texturefile = "gfx/interface/goals/konfederacja/mentzen/focus_POL_inba_naftowa.dds"
+	}
+
+	SpriteType = {
+		name = GFX_focus_POL_negocjacje_z_obajtkiem
+		texturefile = "gfx/interface/goals/konfederacja/mentzen/focus_POL_negocjacje_z_obajtkiem.dds"
+	}
+
+	SpriteType = {
+		name = GFX_focus_POL_powrot_do_sociali
+		texturefile = "gfx/interface/goals/konfederacja/mentzen/focus_POL_powrot_do_sociali.dds"
+	}
+
+	SpriteType = {
+		name = GFX_focus_POL_rozwiazanie_kwestii_korwinowskiej
+		texturefile = "gfx/interface/goals/konfederacja/mentzen/focus_POL_rozwiazanie_kwestii_korwinowskiej.dds"
+	}
+
+	SpriteType = {
+		name = GFX_focus_POL_konfedepis
+		texturefile = "gfx/interface/goals/konfederacja/mentzen/focus_POL_konfedepis.dds"
+	}
+
+	SpriteType = {
+		name = GFX_focus_POL_pisowska_taktyka_w_ue
+		texturefile = "gfx/interface/goals/konfederacja/mentzen/focus_POL_pisowska_taktyka_w_ue.dds"
+	}
+
+	#SpriteType = {
+	#	name = GFX_focus_POL_zaorac_opozycje
+	#	texturefile = "gfx/interface/goals/konfederacja/mentzen/focus_POL_zaorac_opozycje.dds"
+	#}
+	
 	# Drzewko armii
 
 	SpriteType = {
