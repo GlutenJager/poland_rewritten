@@ -586,7 +586,83 @@ country = {
         }
 
         POL_zerowy_pit = {
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                consumer_goods_factor = -0.1
+                stability_factor = 0.15
+                industrial_capacity_factory = 0.075
+            }
         }
+
+        POL_cukier_plus_idea = {
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                consumer_goods_factor = 0.05
+                political_power_gain = 0.3
+            }
+        }
+
+        POL_opozycja_narodowa = {
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                drift_defence_factor = -0.15
+                stability_weekly = -0.01
+
+                fascism_drift = 0.03
+                fascism_acceptance = 15
+            }
+        }
+
+        POL_weak_opocyzja_narodowa = {
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                drift_defence_factor = -0.10
+                fascism_acceptance = 10
+            }
+        }
+
+        POL_opozycja_korony = {
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                drift_defence_factor = -0.2
+                stability_weekly = -0.01
+                conscription_factor = -0.2
+
+                democratic_acceptance = -15
+                communism_acceptance = 15 # matiuszka rasija
+            }
+        }
+
+        POL_weak_opozycja_korony = {
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                drift_defence_factor = -0.10
+                communism_acceptance = 10
+            }
+        }
+
+        POL_wplywy_lobbystow_wipler = {
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                drift_defence_factor = 0.15
+                political_power_factor = 0.2
+            }
+        }
+
 
     }
 }

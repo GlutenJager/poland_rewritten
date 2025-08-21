@@ -1601,7 +1601,7 @@ focus_tree = {
 		prerequisite = {
 			focus = POL_stalinflacja
 		}
-		completion_reward = { # Obajtek NIE zostaje generałem 😭🙏
+		completion_reward = {
 			custom_effect_tooltip = POL_nowy_doradca
 			show_ideas_tooltip = POL_daniel_obajtek
 		}
@@ -3552,7 +3552,7 @@ focus_tree = {
 
 
 	focus = {
-		id = POL_usuniecie_korwina #dodaj duchy narodowcy i Brauniarze z minusami
+		id = POL_usuniecie_korwina
 		icon = GFX_goal_unknown
 		x = -16
 		y = 1
@@ -3583,7 +3583,28 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			add_country_leader_role = {
+                character = POL_slawomir_mentzen
+                country_leader = {
+                    ideology = neo-korwinism
+                    expire = "1965.1.1.1"
+                  	traits = { }
+					id=-1
+                }
+            }
+
+			add_ideas = POL_opozycja_narodowa
+			add_ideas = POL_opozycja_korony
 			hidden_effect = {
+				promote_character = POL_slawomir_mentzen
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.15
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.1
+				}
 				mark_focus_tree_layout_dirty = yes
 			}
 		}
@@ -3598,6 +3619,15 @@ focus_tree = {
 		prerequisite = {
 			focus = POL_usuniecie_korwina
 		}
+		completion_reward = {
+			add_stability = -0.10
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.05
+			}
+			custom_effect_tooltip = POL_nowy_doradca
+			show_ideas_tooltip = POL_przemyslaw_wipler
+		}
 	}
 	focus = {
 		id = POL_cukier_plus #duch cukier plus
@@ -3608,6 +3638,13 @@ focus_tree = {
 		cost = 5
 		prerequisite = {
 			focus = POL_usuniecie_korwina
+		}
+		completion_reward = {
+			add_ideas = POL_cukier_plus_idea
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.1
+			}
 		}
 	}
 	focus = {
@@ -3634,6 +3671,12 @@ focus_tree = {
 		prerequisite = {
 			focus = POL_cukier_plus
 		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = POL_opozycja_narodowa
+				add_idea = POL_weak_opocyzja_narodowa
+			}
+		}
 	}
 	focus = {
 		id = POL_destabilizacja_kkp #odejmuje minusy od spirita braunisci
@@ -3648,6 +3691,13 @@ focus_tree = {
 		prerequisite = {
 			focus = POL_cukier_plus
 		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = POL_opozycja_korony
+				add_idea = POL_weak_opozycja_korony
+			}
+			add_stability = -0.05
+		}
 	}
 	focus = {
 		id = POL_wasalizacja_bosaka #dodaje doradce bosaka i odejmuje minusy od narodowcow
@@ -3658,6 +3708,9 @@ focus_tree = {
 		cost = 10
 		prerequisite = {
 			focus = POL_pozbyc_sie_winnickiego
+		}
+		completion_reward = {
+			
 		}
 	}
 	focus = {
@@ -3670,6 +3723,19 @@ focus_tree = {
 		prerequisite = {
 			focus = POL_wasalizacja_bosaka
 		}
+		completion_reward = {
+			remove_ideas = POL_weak_opocyzja_narodowa
+			add_stability = 0.05
+
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.1
+			}
+		}
 	}
 	focus = {
 		id = POL_braun_do_brukseli # odejmuje minusy od ducha braunisci i odejmuje generala brauna
@@ -3681,6 +3747,17 @@ focus_tree = {
 		prerequisite = {
 			focus = POL_destabilizacja_kkp
 		}
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.05
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.025
+			}
+			retire_character = POL_grzegorz_braun
+		}
 	}
 	focus = {
 		id = POL_pokonac_foliarzy # usuwa duch braunisci 
@@ -3691,6 +3768,15 @@ focus_tree = {
 		cost = 5
 		prerequisite = {
 			focus = POL_braun_do_brukseli
+		}
+		completion_reward = {
+			remove_ideas = POL_weak_opozycja_korony
+			add_stability = 0.05
+
+			add_popularity = {
+				ideology = communism
+				popularity = -0.05
+			}
 		}
 	}
 	focus = {
@@ -3706,6 +3792,14 @@ focus_tree = {
 		prerequisite = {
 			focus = POL_hold_lenny_narodowcow
 		}
+		completion_reward = {
+			set_party_name = {
+				ideology = neutrality
+				long_name = NN_LONG
+				name = NN_SHORT
+			}
+			country_event = { id = PLREW_poland.16 }
+		}
 	}
 	focus = {
 		id = POL_ujarzmienie_aspergika #wipler (kaczyzm) przejmuje wladze
@@ -3720,6 +3814,23 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = POL_przejrzenie_wiplera
 		}
+		completion_reward = {
+			remove_ideas = POL_wrogowie_wewnetrzni
+			kill_country_leader = POL
+
+			hidden_effect = {
+				add_country_leader_role = {
+					character = POL_przemyslaw_wipler
+					country_leader = {
+						ideology = neo-korwinism
+						expire = "1965.1.1.1"
+						traits = { }
+						id=-1
+					}
+				}
+				promote_character = POL_przemyslaw_wipler
+			}
+		}
 	}
 	focus = {
 		id = POL_zaorac_opozycje #usuwa duch wrogowie wewnetrzni
@@ -3730,6 +3841,13 @@ focus_tree = {
 		cost = 10
 		prerequisite = {
 			focus = POL_nowa_nadzieja
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.15
+			}
+			add_stability = 0.10
 		}
 	}
 	focus = {
@@ -3756,6 +3874,7 @@ focus_tree = {
 		prerequisite = {
 			focus = POL_przejrzenie_wiplera
 		}
+		
 	}
 	focus = {
 		id = POL_pokazowa_egzekucja #event o zamordowaniu wiplera, poparcie wojny
@@ -3767,6 +3886,9 @@ focus_tree = {
 		prerequisite = {
 			focus = POL_przejrzenie_wiplera
 		}
+		completion_reward = {
+			remove_ideas = POL_wrogowie_wewnetrzni
+		}
 	}
 	focus = {
 		id = POL_calkowita_prywatyzacja #prywatne armie
@@ -3777,6 +3899,12 @@ focus_tree = {
 		cost = 5
 		prerequisite = {
 			focus = POL_pokazowa_egzekucja
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = POL_fixed_justice_system
+				add_idea = POL_private_lawyers
+			}
 		}
 	}
 	focus = {
@@ -3965,6 +4093,8 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			add_stability = 0.15
+			remove_ideas = POL_wrogowie_wewnetrzni
 			hidden_effect = {
 				mark_focus_tree_layout_dirty = yes
 			}
@@ -4313,6 +4443,9 @@ focus_tree = {
 		prerequisite = {
 			focus = POL_umowy_z_wielkimi_koncernami
 		}
+		completion_reward = {
+			add_ideas = POL_wplywy_lobbystow_wipler
+		}
 	}
 	focus = {
 		id = POL_rozwiazanie_kwestii_korwinowskiej
@@ -4334,6 +4467,12 @@ focus_tree = {
 		cost = 10
 		prerequisite = {
 			focus = POL_inba_naftowa
+		}
+		completion_reward = {
+			add_political_power = 50
+
+			custom_effect_tooltip = POL_nowy_doradca
+			show_ideas_tooltip = POL_daniel_obajtek
 		}
 	}
 	focus = {
@@ -4368,10 +4507,21 @@ focus_tree = {
 		prerequisite = {
 			focus = POL_ujarzmienie_aspergika
 		}
+		completion_reward = {
+			custom_effect_tooltip = POL_abw_utworzenie
+			add_ideas = POL_reformed_abw
+
+			hidden_effect = {
+				create_intelligence_agency = {
+					name = "ABW"
+					icon = GFX_ABW
+				}	
+			}
+		}
 	}
 	focus = {
 		id = POL_inba_z_ukrainskim_zbozem #cel wojenny na upa
-		icon = GFX_goal_unknown
+		icon = GFX_goal_unknown # chyba cie poje
 		x = -4
 		y = 8
 		relative_position_id = POL_usuniecie_korwina
@@ -4395,7 +4545,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = POL_umowy_z_wielkimi_koncernami #dodaj fabryki
+		id = POL_umowy_z_wielkimi_koncernami
 		icon = GFX_goal_unknown
 		x = -6
 		y = 8
@@ -4403,6 +4553,20 @@ focus_tree = {
 		cost = 10
 		prerequisite = {
 			focus = POL_dofinansowanie_abw
+		}
+		completion_reward = {
+			every_owned_state = {
+				limit = { 
+					OR = {
+						state = 98
+						state = 10
+					}
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+				}
+			}
 		}
 	}
 	focus = {
@@ -4431,6 +4595,20 @@ focus_tree = {
 		cost = 5
 		prerequisite = {
 			focus = POL_konfedepis
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = POL_menel_europy_spirit
+				days = 90
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.10
+			}
+			
+			hidden_effect = {
+				remove_ideas = POL_european_pressure
+			}
 		}
 	}
 
@@ -4527,6 +4705,9 @@ focus_tree = {
 		prerequisite = {
 			focus = POL_zabiegajmy_o_koalicjantów
 	}
+		completion_reward = {
+			remove_ideas = POL_wrogowie_wewnetrzni
+		}
 	}
 	
 	focus = {
@@ -4893,6 +5074,9 @@ focus_tree = {
 		prerequisite = {
 			focus = POL_wolnosciowcy
 	}
+		completion_reward = {
+			remove_ideas = POL_wrogowie_wewnetrzni
+		}
 }
 focus = {
 	id = POL_libertarianizm_gospodarczy #dodaj niezmienialnie wolny rynek minus stabilka
@@ -5249,6 +5433,9 @@ focus = {
 	}
 	prerequisite = {
 		focus = POL_piasecki_tez_fajny
+	}
+	completion_reward = {
+		remove_ideas = POL_wrogowie_wewnetrzni
 	}
 	
 }
@@ -7362,6 +7549,9 @@ focus = {
 		cost = 5
 		prerequisite = {
 			focus = POL_euro_nie_zlotowka
+		}
+		completion_reward = {
+			add_ideas = POL_800plus
 		}
 	}
 

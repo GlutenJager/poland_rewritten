@@ -59,7 +59,7 @@ characters = {
 		}
 	}
 
-	# MOD COUNTRY LEADERS
+	# PLREW COUNTRY LEADERS
 
 	POL_zgromadzenie = {
 		name="Zgromadzenie Narodowe"
@@ -103,15 +103,6 @@ characters = {
 		}
 	}
 
-	POL_janusz_korwin_mikke = {
-		name="Janusz Korwin-Mikke"
-		portraits = {
-			civilian = {
-				large = GFX_portraits_janusz_korwin_mikke
-			}
-		}
-	}
-
 	POL_wojciech_olszanski = { # lider
 		name="Wojciech Olszański"
 		portraits = {
@@ -125,6 +116,65 @@ characters = {
 			expire="1965.1.1.1"
 			id=-1
 		}
+	}
+
+	# konfa konfunia
+
+	POL_janusz_korwin_mikke = {
+		name="Janusz Korwin-Mikke"
+		portraits = {
+			civilian = {
+				large = GFX_portraits_janusz_korwin_mikke
+			}
+		}
+	}
+
+	POL_slawomir_mentzen = {
+		name = "Sławomir Mentzen"
+	}
+
+	POL_przemyslaw_wipler = {
+		name = "Przemysław Wipler"
+		advisor={ 
+			cost = 100
+			slot = political_advisor
+			idea_token = POL_przemyslaw_wipler
+			available = {
+				has_completed_focus = POL_wipleryzacja_partii
+			}
+			allowed = {
+				original_tag = POL
+			}
+			traits = {
+				mod_agency_boost
+			}
+		}
+	}
+
+	POL_artur_dziambor = {
+		name = "Artur Dziambor"
+	}
+
+	POL_krzysztof_bosak = {
+		name = "Krzysztof Bosak"
+	}
+
+	POL_grzegorz_braun = {
+		name = "Grzegorz Braun"
+		corps_commander = {
+			visible = { 
+				has_completed_focus = POL_opcja_prawica
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 4 # wybitne skille pierdolenia glupot 
+			logistics_skill = 1
+		}
+	}
+
+	POL_robert_winnicki = {
+		name = "Robet Winnicki"
 	}
 
 	# pisiory
@@ -208,7 +258,10 @@ characters = {
 			slot = political_advisor
 			idea_token = POL_daniel_obajtek
 			available = {
-				has_completed_focus = POL_manipulacja_cenami_paliw
+				OR = {
+					has_completed_focus = POL_manipulacja_cenami_paliw
+					has_completed_focus = POL_negocjacje_z_obajtkiem
+				}
 			}
 			allowed = {
 				original_tag = POL

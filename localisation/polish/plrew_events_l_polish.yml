@@ -32,13 +32,28 @@
 
   PLREW_poland.11.t: "I Kongres Konfederacji"
   PLREW_poland.11.k: "Ponowne zwycięstwo Korwina"
-  PLREW_poland.11.l: "Korwin traci władzę"
+  PLREW_poland.11.l: "Młodszy korwinista Mentzen przejmuje stery"
   PLREW_poland.11.m: "Dochodzi do tragicznego incydentu"
 
   PLREW_poland.1101.t: "Śmierć Janusza-Korwina-Mikke"
   PLREW_poland.1101.k: "Trzeba pokazać Polakom prawdziwą drogę do wolności"
   PLREW_poland.1101.l: "Pora na propolskie przywództwo na prawicy"
   PLREW_poland.1101.m: "tO wSzystkO WiNA żYDÓW!!!1!"
+
+  PLREW_poland.15.t: "Debata w RMF FM"
+  PLREW_poland.15.a: "Trzymajmy kciuki!"
+
+  PLREW_poland.1501.t: "Petru marakruje Mentzena"
+  PLREW_poland.1501.a: "Ja pierdolę. Miało wyjść inaczej."
+
+  PLREW_poland.1502.t: "Mentzen masakruje Petru"
+  PLREW_poland..1502.a: "Polska Racja Konfederacja!"
+
+  PLREW_poland.16.t: "II Kongres Konfederacji"
+  PLREW_poland.16.d: "Po bohaterskim triumfie nad zmęczonym starcem Korwinem i antywolnościowymi siłami Bosaka i Brauna zwołano II Kongres Konfederacji. Rozwiązano Ruch Narodowy i Konfederację Korony Polskiej i zjednoczono nasze siły prawicowe. Nową partię nazwano Konfederacja Nowa Nadzieja. Duży niepokój sprowadziło Mentzenowi głosowanie nad przywództwem w partii. Z niewielką przewagą wygrał Przemysław Wipler. Rozniosły się podejrzenia nad sfałszowanuym głosowaniem, jak i spiskiem Wiplera na rzecz PiSu. Decyzja w sprawie uznania wyników głosowania i podaniem się do dymisji zostaje w rękach Sławka:"
+  PLREW_poland.16.a: "§GUznaj wyniki głosowania§!"
+  PLREW_poland.16.b: "§RNie uznaj wyników głosowania§!"
+
 
 # WORLD NEWS
   PLREW_world_news.1.t: "Lepper przejmuje władzę w Polsce"

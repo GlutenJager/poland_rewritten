@@ -101,9 +101,9 @@ defined_text = {
     }
     text = {
         trigger = {
-            has_country_leader_ideology = right_libertarianism
+            has_country_leader_ideology = libertarianism
         }
-        localization_key = right_libertarianism
+        localization_key = libertarianism
     }
     text = {
         trigger = {
@@ -116,6 +116,12 @@ defined_text = {
             has_country_leader_ideology = korwinism
         }
         localization_key = korwinism
+    }
+    text = {
+        trigger = {
+            has_country_leader_ideology = neo-korwinism
+        }
+        localization_key = neo-korwinism
     }
     text = {
         trigger = {

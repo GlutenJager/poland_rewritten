@@ -245,11 +245,15 @@ ideologies = {
 				can_be_randomly_selected = no
 			}
 
-			right_anarchism = {
+			anarchist_capitalism = {
 				can_be_randomly_selected = no
 			}
 
 			korwinism = {
+				can_be_randomly_selected = no
+			}
+
+			neo-korwinism = {
 				can_be_randomly_selected = no
 			}
 

@@ -537,6 +537,80 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = PLREW_poland.15
+	title = PLREW_poland.15.t
+	desc = PLREW_poland_placeholder_desc
+	
+	is_triggered_only = yes
+
+	option = {
+		name = PLREW_poland.15.a
+		
+	}
+}
+
+country_event = {
+	id = PLREW_poland.1501
+	title = PLREW_poland.1501.t
+	desc = PLREW_poland_placeholder_desc
+	
+	is_triggered_only = yes
+
+	option = {
+		name = PLREW_poland.1501.a
+		add_popularity = {
+			ideology = neutrality
+			popularity = -0.1
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.1
+		}
+	}
+}
+
+country_event = {
+	id = PLREW_poland.1502
+	title = PLREW_poland.1502.t
+	desc = PLREW_poland_placeholder_desc
+	
+	is_triggered_only = yes
+
+	immediate = {
+		add_stability = 0.10
+	}
+
+	option = {
+		name = PLREW_poland.1502.a
+		add_popularity = {
+			ideology = democratic
+			popularity = -0.1
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.15
+		}
+	}
+}
+
+country_event = {
+	id = PLREW_poland.16 # II kongres konfederacji (mentzen)
+	title = PLREW_poland.16.t
+	desc = PLREW_poland_placeholder_desc
+	
+	is_triggered_only = yes
+
+	option = {
+		name = PLREW_poland.16.a
+		complete_national_focus = POL_ujarzmienie_aspergika
+	}
+	option = {
+		name = PLREW_poland.16.b
+		complete_national_focus = POL_przejrzenie_wiplera
+	}
+}
+
 ###########################
 # Work In Progress Events
 ###########################
