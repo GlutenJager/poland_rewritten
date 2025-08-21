@@ -3552,8 +3552,8 @@ focus_tree = {
 
 
 	focus = {
-		id = POL_usuniecie_korwina
-		icon = GFX_goal_unknown
+		id = POL_usuniecie_korwina #dodaj duchy narodowcy i Brauniarze z minusami
+		icon = GFX_focus_POL_usuniecie_korwina
 		x = -16
 		y = 1
 		relative_position_id = POL_pierwszy_kongres_w_wolnej_polsce
@@ -3611,7 +3611,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_wipleryzacja_partii #powrot wiplera, odejmuje stabilke i poparcie, dodaje doradce do spraw agencji wiplera
-		icon = GFX_goal_unknown
+		icon = GFX_focus_POL_wipleryzacja_partii
 		x = -2
 		y = 1
 		relative_position_id = POL_usuniecie_korwina
@@ -3631,7 +3631,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_cukier_plus #duch cukier plus
-		icon = GFX_goal_unknown
+		icon = GFX_focus_POL_cukier_plus
 		x = 0
 		y = 1
 		relative_position_id = POL_usuniecie_korwina
@@ -3649,7 +3649,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_debata_z_petru #event kolejna przegrana debata z minusami/ wygrana z plusami (losowo 50-50)
-		icon = GFX_goal_unknown
+		icon = GFX_focus_POL_debata_z_petru
 		x = 2
 		y = 1
 		relative_position_id = POL_usuniecie_korwina
@@ -3660,7 +3660,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_pozbyc_sie_winnickiego #odejmuje minusy od spirita narodowcy
-		icon = GFX_goal_unknown
+		icon = GFX_focus_POL_pozbyc_sie_winnickiego
 		x = -1
 		y = 2
 		relative_position_id = POL_usuniecie_korwina
@@ -3680,7 +3680,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_destabilizacja_kkp #odejmuje minusy od spirita braunisci
-		icon = GFX_goal_unknown
+		icon = GFX_focus_POL_destabilizacja_kkp
 		x = 1
 		y = 2
 		relative_position_id = POL_usuniecie_korwina
@@ -3701,7 +3701,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_wasalizacja_bosaka #dodaje doradce bosaka i odejmuje minusy od narodowcow
-		icon = GFX_goal_unknown
+		icon = GFX_focus_POL_wasalizacja_bosaka
 		x = -1
 		y = 3
 		relative_position_id = POL_usuniecie_korwina
@@ -3715,7 +3715,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_hold_lenny_narodowcow #usuniecie ducha narodowcy
-		icon = GFX_goal_unknown
+		icon = GFX_focus_POL_hold_lenny_narodowcow
 		x = -1
 		y = 4
 		relative_position_id = POL_usuniecie_korwina
@@ -3739,7 +3739,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_braun_do_brukseli # odejmuje minusy od ducha braunisci i odejmuje generala brauna
-		icon = GFX_goal_unknown
+		icon = GFX_focus_POL_braun_do_brukseli
 		x = 1
 		y = 3
 		relative_position_id = POL_usuniecie_korwina
@@ -3761,7 +3761,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_pokonac_foliarzy # usuwa duch braunisci 
-		icon = GFX_goal_unknown
+		icon = GFX_focus_POL_pokonac_foliarzy
 		x = 1
 		y = 4
 		relative_position_id = POL_usuniecie_korwina
@@ -3781,7 +3781,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_nowa_nadzieja #dodaje pozytywnego ducha Nowa Nadzieja
-		icon = GFX_goal_unknown
+		icon = GFX_focus_POL_nowa_nadzieja
 		x = 0
 		y = 5
 		relative_position_id = POL_usuniecie_korwina
@@ -3803,7 +3803,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_ujarzmienie_aspergika #wipler (kaczyzm) przejmuje wladze
-		icon = GFX_goal_unknown
+		icon = GFX_focus_POL_ujarzmienie_aspergika
 		x = -4
 		y = 6
 		relative_position_id = POL_usuniecie_korwina
@@ -4435,7 +4435,7 @@ focus_tree = {
 
 	focus = {
 		id = POL_ustawa_lobbystowska #dodaje duch wplywy lobbystow
-		icon = GFX_goal_unknown
+		icon = GFX_focus_POL_ustawa_lobbystowska
 		x = -6
 		y = 9
 		relative_position_id = POL_usuniecie_korwina
@@ -4449,7 +4449,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_rozwiazanie_kwestii_korwinowskiej
-		icon = GFX_goal_unknown
+		icon = GFX_focus_POL_rozwiazanie_kwestii_korwinowskiej
 		x = -4
 		y = 11
 		relative_position_id = POL_usuniecie_korwina
@@ -4460,7 +4460,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_negocjacje_z_obajtkiem
-		icon = GFX_goal_unknown
+		icon = GFX_focus_POL_negocjacje_z_obajtkiem
 		x = -2
 		y = 9
 		relative_position_id = POL_usuniecie_korwina
@@ -4477,7 +4477,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_liberalizm_nie_taki_dobry
-		icon = GFX_goal_unknown
+		icon = GFX_focus_POL_liberalizm_nie_tak_dobry
 		x = -2
 		y = 7
 		relative_position_id = POL_usuniecie_korwina
@@ -4488,7 +4488,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_inba_naftowa
-		icon = GFX_goal_unknown
+		icon = GFX_focus_POL_inba_naftowa
 		x = -2
 		y = 8
 		relative_position_id = POL_usuniecie_korwina
@@ -4499,7 +4499,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_dofinansowanie_abw #zawiaz abw
-		icon = GFX_goal_unknown
+		icon = GFX_focus_POL_dofinansowanie_abw
 		x = -6
 		y = 7
 		relative_position_id = POL_usuniecie_korwina
@@ -4521,7 +4521,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_inba_z_ukrainskim_zbozem #cel wojenny na upa
-		icon = GFX_goal_unknown # chyba cie poje
+		icon = GFX_goal_unknown
 		x = -4
 		y = 8
 		relative_position_id = POL_usuniecie_korwina
@@ -4532,7 +4532,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_powrot_do_socjali #dodaj 500 plus
-		icon = GFX_goal_unknown
+		icon = GFX_focus_POL_powrot_do_sociali
 		x = -4
 		y = 10
 		relative_position_id = POL_usuniecie_korwina
@@ -4545,7 +4545,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = POL_umowy_z_wielkimi_koncernami
+		id = POL_umowy_z_wielkimi_koncernami #dodaj fabryki
 		icon = GFX_goal_unknown
 		x = -6
 		y = 8
@@ -4571,7 +4571,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_konfedepis #wipler zostaje agentem i dodaje sie mechanika frakcyjnosci pisu, gdzie zostaje on liderem koliberalnego pisu
-		icon = GFX_goal_unknown
+		icon = GFX_focus_POL_konfedepis
 		x = -4
 		y = 12
 		relative_position_id = POL_usuniecie_korwina
@@ -4588,7 +4588,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_pisowska_taktyka_ue #duch menel europy jak na pisie
-		icon = GFX_goal_unknown
+		icon = GFX_focus_POL_pisowska_taktyka_w_ue
 		x = -4
 		y = 13
 		relative_position_id = POL_usuniecie_korwina
