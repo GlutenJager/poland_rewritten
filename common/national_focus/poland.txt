@@ -9320,7 +9320,7 @@ focus = {
 
 	focus = {
 		id = POL_rafineria_w_gdansku
-		icon = GFX_goal_unknown
+		icon = GFX_goal_unknown # szejkowie arabscy
 		prerequisite = {
 			focus = POL_poszukiwanie_ropy
 		}
