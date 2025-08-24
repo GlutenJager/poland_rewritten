@@ -131,10 +131,20 @@ characters = {
 
 	POL_slawomir_mentzen = {
 		name = "Sławomir Mentzen"
+		portraits = {
+			civilian = {
+				large = GFX_portraits_slawomir_mentzen
+			}
+		}
 	}
 
 	POL_przemyslaw_wipler = {
 		name = "Przemysław Wipler"
+		portraits = {
+			civilian = {
+				large = GFX_portraits_przemyslaw_wipler
+			}
+		}
 		advisor={ 
 			cost = 100
 			slot = political_advisor
@@ -153,14 +163,29 @@ characters = {
 
 	POL_artur_dziambor = {
 		name = "Artur Dziambor"
+		portraits = {
+			civilian = {
+				large = GFX_portraits_artur_dziambor
+			}
+		}
 	}
 
 	POL_krzysztof_bosak = {
 		name = "Krzysztof Bosak"
+		portraits = {
+			civilian = {
+				large = GFX_portraits_krzysztof_bosak
+			}
+		}
 	}
 
 	POL_grzegorz_braun = {
 		name = "Grzegorz Braun"
+		portraits = {
+			civilian = {
+				large = GFX_portraits_grzegorz_braun
+			}
+		}
 		corps_commander = {
 			visible = { 
 				has_completed_focus = POL_opcja_prawica
@@ -174,17 +199,32 @@ characters = {
 	}
 
 	POL_robert_winnicki = {
-		name = "Robet Winnicki"
+		name = "Robert Winnicki"
+		portraits = {
+			civilian = {
+				large = GFX_portraits_robert_winnicki
+			}
+		}
 	}
 
 	# pisiory
 
 	POL_antonius_smolenskus = {
 		name="Antonius Smoleńskus"
+		portraits = {
+			civilian = {
+				large = GFX_portraits_antonius_smolenskus
+			}
+		}
 	}
 
 	POL_antoni_macierewicz = {
 		name="Antoni Macierewicz"
+		portraits = {
+			civilian = {
+				large = GFX_portraits_antoni_macierewicz
+			}
+		}
 	}
 
 	POL_janusz_kowalski = {

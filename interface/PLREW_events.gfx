@@ -4,6 +4,14 @@ spriteTypes = {
 		texturefile = "gfx/events/event_zamachstanu.dds"
 	}
 	spriteType = {
+		name = "GFX_MOD_event_niemcy_wypowiadaja_wojne"
+		texturefile = "gfx/events/event_niemcy_wypowiadaja_wojne.dds"
+	}
+	spriteType = {
+		name = "GFX_MOD_event_niemcy_zajmują_warszawe"
+		texturefile = "gfx/events/event_niemcy_zajmują_warszawe.dds"
+	}
+	spriteType = {
 		name = "GFX_MOD_event_sejm_meeting"
 		texturefile = "gfx/events/event_decydujaceposiedzenie.dds"
 	}

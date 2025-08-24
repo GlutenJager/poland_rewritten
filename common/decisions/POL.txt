@@ -167,6 +167,9 @@ POL_civil_war_decisions = {
 
 		timeout_effect = {
 			hidden_effect = {
+				news_event = {
+				id = PLREW_world_news.5
+			}
 				GER = {
 					set_state_owner = 807
 					set_state_owner = 86
@@ -215,7 +218,11 @@ POL_civil_war_decisions = {
 		}
 
 		timeout_effect = {
+			
 			hidden_effect = {
+				news_event = {
+				id = PLREW_world_news.4
+			}
 				LIT = {
 					set_state_owner = 784
 					set_state_controller = 784
@@ -256,6 +263,9 @@ POL_civil_war_decisions = {
 
 		timeout_effect = {
 			hidden_effect = {
+				news_event = {
+				id = PLREW_world_news.6
+			}
 				UKR = {
                     set_state_owner = 91
                     set_state_owner = 89
@@ -265,7 +275,10 @@ POL_civil_war_decisions = {
 
 					set_cosmetic_tag = UKR_UPA
 					declare_war_on = {
-						target = D04
+						target = PSX
+					}
+					declare_war_on = {
+						target = POL
 					}
                     set_politics = { ruling_party = fascism }
                     add_popularity = {

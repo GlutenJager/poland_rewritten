@@ -364,17 +364,7 @@ focus_tree = {
 			country_event = { id = PLREW_poland.1 }
 			custom_effect_tooltip = POL_wojna_domowa_decyzje_tt
 			hidden_effect = {
-				add_country_leader_role = {
-					character = POL_edward_rydzsmigly
-					country_leader = {
-						ideology = despotism
-						expire = "1965.1.1.1"
-						traits = { }
-						id=-1
-					}
-				}
 
-				promote_character = POL_edward_rydzsmigly
 				promote_character = POL_zgromadzenie
 				set_politics = {
 					ruling_party = democratic
@@ -397,15 +387,20 @@ focus_tree = {
 				activate_mission = POL_ukrainian_action
 
 
-				every_country = {
-					limit = { # civil war opponent
-						has_war_with = ROOT
-						has_civil_war = yes
-						original_tag = POL
-					}
+				PSX = {
 					add_ideas = POL_wojna_domowa
 					set_cosmetic_tag = POL_SANATION
+					add_ideas = POL_wojna_domowa
+					set_cosmetic_tag = POL_SANATION
+				    add_country_leader_role = {
+					character = POL_edward_rydz_smigly
+					promote_leader = yes
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = fascism_ideology
+					}					
 				}
+			}
 			}
 		}
 	}

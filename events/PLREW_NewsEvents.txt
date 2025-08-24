@@ -23,8 +23,48 @@ news_event = {
 	}
 }
 
+#WAJNA DAMOFA POLSKA# 
 
-# WAJNA DOMOOFA #
+news_event = {
+	id = PLREW_world_news.4  #LITWINI ZAJMUJĄ WILNO
+	title = PLREW_world_news.4.t
+	desc = PLREW_world_news.4.desc
+	picture = GFX_news_event_038
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = PLREW_world_news.4.o1
+	}
+}
+
+news_event = {
+	id = PLREW_world_news.5 #niemcy interweniują na ziemiach koronnych
+	title = PLREW_world_news.5.t
+	desc = PLREW_world_news.5.desc
+	picture = GFX_news_event_HUN_alliance_with_germany
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = PLREW_world_news.5.o1
+	}
+}
+
+news_event = {
+	id = PLREW_world_news.6 #upa organizuje bunt
+	title = PLREW_world_news.6.t
+	desc = PLREW_world_news.6.desc
+	picture = GFX_news_event_generic_silesian_rebels
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = PLREW_world_news.6.o1
+	}
+}
+
+# WAJNA DOMOOFA USA#
 news_event = {
 	id = PLREW_world_news.3
 	title = PLREW_world_news.3.t

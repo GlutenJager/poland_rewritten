@@ -8,10 +8,7 @@ spriteTypes = {
 		name = "GFX_portraits_donald_tusk"
 		texturefile = "gfx/leaders/POL/portrait_POL_donald_tusk.dds"
 	}
-	spriteType = {
-		name = "GFX_portraits_janusz_korwin_mikke"
-		texturefile = "gfx/leaders/POL/portrait_POL_janusz_korwin-mikke.dds"
-	}
+	
 	spriteType = {
 		name = "GFX_portraits_wojciech_olszanski"
 		texturefile = "gfx/leaders/POL/portrait_POL_wojciech_olszanski.dds"
@@ -28,6 +25,36 @@ spriteTypes = {
 		name = "GFX_portraits_Joe_Biden"
 		texturefile = "gfx/leaders/POL/portrait_USA_joe_biden.dds"
 	}
+	#konfa 
+	spriteType = {
+		name = "GFX_portraits_slawomir_mentzen"
+		texturefile = "gfx/leaders/POL/portrait_POL_slawomir_mentzen.dds"
+	}
+	spriteType = {
+		name = "GFX_portraits_janusz_korwin_mikke"
+		texturefile = "gfx/leaders/POL/portrait_POL_janusz_korwin-mikke.dds"
+	}
+	spriteType = {
+		name = "GFX_portraits_przemyslaw_wipler"
+		texturefile = "gfx/leaders/POL/portrait_POL_przemyslaw_wipler.dds"
+	}
+	spriteType = {
+		name = "GFX_portraits_krzysztof_bosak"
+		texturefile = "gfx/leaders/POL/portrait_POL_krzysztof_bosak.dds"
+	}
+	spriteType = {
+		name = "GFX_portraits_artur_dziambor"
+		texturefile = "gfx/leaders/POL/portrait_POL_artur_dziambor.dds"
+	}
+	spriteType = {
+		name = "GFX_portraits_grzegorz_braun"
+		texturefile = "gfx/leaders/POL/portrait_POL_grzegorz_braun.dds"
+	}
+	spriteType = {
+		name = "GFX_portraits_robert_winnicki"
+		texturefile = "gfx/leaders/POL/portrait_POL_robert_winnicki.dds"
+	}
+	
 	# PIS
 	spriteType = {
 		name = "GFX_portraits_jaroslaw_kaczynski"
@@ -108,6 +135,14 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_portraits_Tadeusz_Rydzyk"
 		textureFile = "gfx/interface/ideas/generals/portrait_POL_tadeusz_rydzyk.dds"
+	}
+	spriteType = {
+		name = "GFX_portraits_antoni_macierewicz"
+		texturefile = "gfx/leaders/POL/portrait_POL_antoni_macierewicz.dds"
+	}
+	spriteType = {
+		name = "GFX_portraits_antonius_smolenskus"
+		texturefile = "gfx/leaders/POL/portrait_POL_antonius_smolenskus.dds"
 	}
 
 #samoobrona

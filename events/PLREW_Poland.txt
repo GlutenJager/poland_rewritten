@@ -611,6 +611,149 @@ country_event = {
 	}
 }
 
+
+country_event = {
+	id = PLREW_poland.17 # odzyskanie kielc
+	title = PLREW_poland.17.t
+	desc = PLREW_poland_placeholder_desc
+	picture = GFX_report_event_poland_rejects
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = PLREW_poland.17.a
+	}
+}
+
+country_event = {
+	id = PLREW_poland.18 # odzyskanie radomia
+	title = PLREW_poland.18.t
+	desc = PLREW_poland_placeholder_desc
+	picture = GFX_report_event_gre_city_devastated
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = PLREW_poland.18.a
+	}
+}
+
+country_event = {
+	id = PLREW_poland.19 # odzyskanie Zamoscia
+	title = PLREW_poland.19.t
+	desc = PLREW_poland_placeholder_desc
+	picture = GFX_report_event_polish_tanks_01
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = PLREW_poland.19.a
+	}
+}
+
+country_event = {
+	id = PLREW_poland.20 # odzyskanie Krakau
+	title = PLREW_poland.20.t
+	desc = PLREW_poland_placeholder_desc
+	picture = GFX_report_event_romanian_soldiers
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = PLREW_poland.20.a
+	}
+}
+
+country_event = {
+	id = PLREW_poland.21 # odzyskanie Katowic
+	title = PLREW_poland.21.t
+	desc = PLREW_poland_placeholder_desc
+	picture = GFX_report_event_polish_tanks_02
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = PLREW_poland.21.a
+	}
+}
+
+country_event = {
+	id = PLREW_poland.22 # odzyskanie Lublina
+	title = PLREW_poland.22.t
+	desc = PLREW_poland_placeholder_desc
+	picture = GFX_report_event_soldiers_marching
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = PLREW_poland.22.a
+	}
+}
+
+country_event = {
+	id = PLREW_poland.23 # odzyskanie Kowla
+	title = PLREW_poland.23.t
+	desc = PLREW_poland_placeholder_desc
+	picture = GFX_report_event_SOV_mongolia_cavalry
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = PLREW_poland.23.a
+	}
+}
+
+country_event = {
+	id = PLREW_poland.24 # odzyskanie Bialegostoku
+	title = PLREW_poland.24.t
+	desc = PLREW_poland_placeholder_desc
+	picture = GFX_report_event_soviet_german_soldier_handshake
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = PLREW_poland.24.a
+	}
+}
+
+country_event = {
+	id = PLREW_poland.25 # odzyskanie Suwalk
+	title = PLREW_poland.25.t
+	desc = PLREW_poland_placeholder_desc
+	picture = GFX_report_event_polish_army
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = PLREW_poland.25.a
+	}
+}
+
+country_event = {
+	id = PLREW_poland.26 # odzyskanie Lwowa
+	title = PLREW_poland.26.t
+	desc = PLREW_poland_placeholder_desc
+	picture = GFX_report_event_polish_army #WIP
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = PLREW_poland.26.a
+	}
+}
+
+country_event = {
+	id = PLREW_poland.27 # odzyskanie Stanisławowa
+	title = PLREW_poland.27.t
+	desc = PLREW_poland_placeholder_desc
+	picture = GFX_report_event_polish_army #WIP
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = PLREW_poland.27.a
+	}
+}
 ###########################
 # Work In Progress Events
 ###########################
@@ -661,8 +804,9 @@ country_event = { # Niemcy wypowiadają nam wojnę
 	id = POL_mod_events.17
 	title = POL_mod_events.17.t
 	desc = POL_mod_events.17.d
-	picture = GFX_report_event_generic_read_write # W I P
+	picture = GFX_MOD_event_niemcy_wypowiadaja_wojne
 	fire_only_once = yes
+	is_triggered_only = no
 
 	trigger = {
 
