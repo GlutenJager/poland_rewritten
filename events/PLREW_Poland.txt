@@ -537,7 +537,7 @@ country_event = {
 	}
 }
 
-country_event = {
+country_event = { #Petru vs MEncwel
 	id = PLREW_poland.15
 	title = PLREW_poland.15.t
 	desc = PLREW_poland_placeholder_desc

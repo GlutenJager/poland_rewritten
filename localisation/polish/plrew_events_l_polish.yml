@@ -40,6 +40,32 @@
   PLREW_poland.1101.l: "Pora na propolskie przywództwo na prawicy"
   PLREW_poland.1101.m: "tO wSzystkO WiNA żYDÓW!!!1!"
 
+  PLREW_poland.13.t: "Macierewicz proponuje upamiętnienie ofiar Smoleńska"
+  PLREW_poland.13.d: "Antoni Macierewicz, były minister obrony narodowej i znany z teorii spiskowych polityk, zaproponował rządowi Hiszpanii, by Polska objęła ochroną ten kraj w zamian za oficjalne upamiętnienie ofiar katastrofy smoleńskiej."
+  PLREW_poland.13.a: "Oni są zbyt nieprzewidywalni..."
+  PLREW_poland.13.b: "NO chyba nie LOL"
+
+  PLREW_poland.1301.t: "Hiszpania zgodziła się na ochronę ze strony Polski"
+  PLREW_poland.1301.d: "Władze Hiszpańskie postanowiły skorzystać z wystosowanej przez Antoniego Macierewicza oferty protekcji. W Hiszpani oficjalnie rozpoczęto świętowanie miesięcznic Smoleńskich, a agenci Hiszpańskich służb od dziś wspomagają nas w poszukiwaniu dowodów na to, że Donald Tusk wraz z władzami Rosyjskimi zamordowali Lecha Kaczyńskiego."
+  PLREW_poland.1301.a: "Chwała Imperium Kaczanum"
+
+  PLREW_poland.1302.t: "Hiszpania odmówiła ochrony"
+  PLREW_poland.1302.d: "Hiszpanie, są chyba zbyt ośmieleni wsparciem jakie otrzymali w wojnie domowej i postanowili odrzucić oraz wyśmiać pomoc ze strony Polski. Spugawili pamięć o ofiarach Smoleńska, więc należy zbadaćjak zaawansowane są Hiszpańskie kontakty z Rosją."
+  PLREW_poland.1302.a: "Hiszpanie poczują co znaczy Polak na wakacjach"
+
+  PLREW_poland.14.t: "Polska rząda uznania wyższości"
+  PLREW_poland.14.d: "Antoni Macierewicz, w swym szaleństwie postanowił uznać, że to Polska i Lech Kaczyński to kolebka cywilizacji europejskiej. Polska wystosowała do nas ultimatum o podporzadkowanie naszej polityki i uznanie 'prawdy' historycznej."
+  PLREW_poland.14.a: "A więc tak upada moralność"
+  PLREW_poland.14.b: "Nie można pozwolić na kolejny Rzym"
+
+  PLREW_poland.1401.t: "Grecy ulegają"
+  PLREW_poland.1401.d: "Antoni Macierewicz, dowiódł znów, że jego krucjata przeciw złu tego świata jest skuteczniejsza niż wrogowie przypuszczają. Już dziś tak zwana (kiedyś) kolebka cywilizacji europejskiej, znaje swoją podległość wobec wielkiej polski i religii Smoleńskiej."
+  PLREW_poland.1401.a: "Czas na walkę o naszą przyszłość!"
+
+  PLREW_poland.1402.t: "Sparta i Ateny jednoczą się"
+  PLREW_poland.1402.d: "Helleci ani myślą uznać jedyną prawdziwą wersję historii. Niestety nie docenili dobregoduchu pana Antoniego i napluli polakom w twarz jeszcze się z tego ciesząc. Jak mawiał Lech Kaczyński:"
+  PLREW_poland.1402.a: "Nie wolno ulegać imperializmowi!"
+
   PLREW_poland.15.t: "Debata w RMF FM"
   PLREW_poland.15.a: "Trzymajmy kciuki!"
 
@@ -53,6 +79,50 @@
   PLREW_poland.16.d: "Po bohaterskim triumfie nad zmęczonym starcem Korwinem i antywolnościowymi siłami Bosaka i Brauna zwołano II Kongres Konfederacji. Rozwiązano Ruch Narodowy i Konfederację Korony Polskiej i zjednoczono nasze siły prawicowe. Nową partię nazwano Konfederacja Nowa Nadzieja. Duży niepokój sprowadziło Mentzenowi głosowanie nad przywództwem w partii. Z niewielką przewagą wygrał Przemysław Wipler. Rozniosły się podejrzenia nad sfałszowanuym głosowaniem, jak i spiskiem Wiplera na rzecz PiSu. Decyzja w sprawie uznania wyników głosowania i podaniem się do dymisji zostaje w rękach Sławka:"
   PLREW_poland.16.a: "§GUznaj wyniki głosowania§!"
   PLREW_poland.16.b: "§RNie uznaj wyników głosowania§!"
+
+  PLREW_poland.17.t: "Upadek Kielc"
+  PLREW_poland.17.d: "Pod naporem wojsk nowej polski, Kielce musiały upaść. Wraz z resztkami uciekających żołnierzy upadły również wszelkie szanse na utrzymanie przez wojska Piłsudczyków miasta. Dodatkowym zwycięstwem wojsk nowego rządu jest śmierć Józefa Becka, który z jakiegoś powodu przebywał w mieście przed jego oblęrzeniem."
+  PLREW_poland.17.a: "Pierwszy krok do upadku sanacji"
+
+  PLREW_poland.18.t: "Upadek Radomia"
+  PLREW_poland.18.d: "Nasze wojska weszły do Radomia, gdzie nie spotkały ni jednego żywego ducha, miasto wyglądało jak po bombardowaniu, mimo, że w samym mieście nie toczono zbytnio walk, a żadna bomba tam nie spadła. Miasto przypomina trochę obraz Moskwy jaką zastał Napoleon po ewakuacji Rosjan i podpaleniu."
+  PLREW_poland.18.a: "A co z chytrą babą?"
+
+  PLREW_poland.19.t: "Upadek Zamościa"
+  PLREW_poland.19.d: "Wojska Rydza-Śmigłego zaciekle broniły Zamościa, ale niespodziewana plaga szopów, które tam nawet nie występują naturalnie oraz krótkie bombardowanie z powietrza zmusiły wojska starego ładu do szybkiego odwrotu. O bitwie mieszkańcom Zamościa jeszcze długo bedzie przypominał zabytkowy ratusz który został zniszczony przez rozbijający się o niego myśliwiec."
+  PLREW_poland.19.a: "Szopy? Co za głupota!"
+
+  PLREW_poland.20.t: "Upadek Krakowa"
+  PLREW_poland.20.d: "Opór wojsk Sanacji sypie się bardzo szybko pod naporem zdeterminowanych do walki żołnierzy nowej Polski. Kraków, niegdyś miasto królewskie, teraz staje się symbolem jej upadku. Gdy czołgi Rzeczpospolitej wjechały na Wawel nad zamkiem zawisła nowa flaga. Oto symbol upadku starego ładu."
+  PLREW_poland.20.a: "Damy królom powód do dumy"
+
+  PLREW_poland.21.t: "Upadek Katowic"
+  PLREW_poland.21.d: "Katowice uległy dziś nowemu rządowi Polski. Miasto zostało zdobyte bez większego oporu, a wojska sanacji wycofały się w popłochu. Mimo tego, że Katowice opowiedziały się po straonie Polski jeszcze niedawno, dziś gdy do nich wchodziliśy ludzie masowo krzyczeli o polskim okupancie, ale na szczeście szybko ich spacyfikował jakiś wiking na wózku."
+  PLREW_poland.21.a: "Klejnot Wołgi znowu uderza"
+
+  PLREW_poland.22.t: "Upadek Lublina"
+  PLREW_poland.22.d: "Ostatni bastion sanacji na Lubelszczyźnie, upadł i otworzył nam drogę na wschód. Jeśli się postaramy to nasi ułani szybko spacyfikują cały wschód i będziemy mogli skończyć to szaleństwo"
+  PLREW_poland.22.a: "HAJDA NA MOSKALA"
+
+  PLREW_poland.23.t: "Upadek Kowla"
+  PLREW_poland.23.d: "Chłopi oraz robotnicy z Kowla zorganizowali się i postanowili stawić opór nowemu rządowi, ponieważ obrony nie zapewniła im sanacja. Ich determinacja i walka o prawa pracownicze przyciągnęły uwagę całej Polski. Kowal stał się symbolem walki z uciskiem i niesprawiedliwością."
+  PLREW_poland.23.a: "Należy uspokoić klasę robotniczą"
+
+  PLREW_poland.24.t: "Upadek Białegostoku"
+  PLREW_poland.24.d: "Białystok został zajęty przez nasze wojska bez większego oporu. Miasto, które było kiedyś ważnym ośrodkiem przemysłowym i kulturalnym (na skale podlasia), teraz stało się symbolem upadku sanacji. Mieszkańcy miasta przywitali nas z mieszanymi uczuciami, pośród nich znalazł się dziwny człowiek, którego dla uspokojenia mas ustanowiliśmy jego prezydentem.."
+  PLREW_poland.24.a: "Nie bedzie Niczego..."
+
+  PLREW_poland.25.t: "Upadek Suwałk"
+  PLREW_poland.25.d: "Region bardzo ważny strategicznie oparty na głębi strategicznej i wchodzący na drabinę eskalacyjną, czyli przesmyk suwalski,został zabezpieczony przez wojska wolnej polski. Litwa nie zostanie już odcięta od... eeee.. Litwy?"
+  PLREW_poland.25.a: "Ludzie, przecież tu nikogo nie ma"
+
+  PLREW_poland.26.t: "Upadek Lwowa"
+  PLREW_poland.26.d: "Może chociaż nowemu rządowi uda się zaprowadzić pokój miedzy ludnością Białorusi, Polski i Ukrainy. Lwów dzisiaj trafia do nowej ery swojej historii..."
+  PLREW_poland.26.a: "Lwów na zawsze Polski"
+
+  PLREW_poland.27.t: "Upadek Stanisławowa"
+  PLREW_poland.27.d: "Ukraińcy na Lwowszczyźnie zostali spacyfikowani, jeśli wojna nie zakończy się szybko, to Ukraińcy mogą wywołać jakieś problemy. Trzeba się spieszyć, by ich nie ośmielać."
+  PLREW_poland.27.a: "Piłsudski wróć..."
 
 
 # WORLD NEWS
