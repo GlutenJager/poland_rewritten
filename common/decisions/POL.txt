@@ -1,141 +1,4 @@
-POL_defensive_plans = {
-	POL_defend_in_east_state = {
 
-		icon = hol_draw_up_staff_plans
-
-		state_target = any_controlled_state
-		target_root_trigger = {
-			has_completed_focus = POL_local_eastern_plans
-			has_war_with = SOV
-			num_of_controlled_states > 0
-		}
-		available = {
-			FROM = {
-				OR = {
-					AND = {
-						is_controlled_by = POL
-						any_neighbor_state = {
-							is_controlled_by = SOV
-						}
-					}
-					AND = {
-						is_controlled_by = SOV
-						any_neighbor_state = {
-							is_controlled_by = POL
-						}
-					}
-				}
-			}
-			has_war_with = SOV
-		}
-		target_trigger = {
-			FROM = {
-				OR = {
-					AND = {
-						is_controlled_by = POL
-						any_neighbor_state = {
-							is_controlled_by = SOV
-						}
-					}
-					AND = {
-						is_controlled_by = SOV
-						any_neighbor_state = {
-							is_controlled_by = POL
-						}
-					}
-				}
-			}
-		}
-		visible = {
-			has_completed_focus = POL_local_eastern_plans
-		}
-
-		fire_only_once = no
-		cost = 50
-
-		days_re_enable = 60
-		on_map_mode = map_only
-		complete_effect = {
-			FROM = { 
-				add_dynamic_modifier = {
-					modifier = POL_anti_soviet_offensive
-					days = 60
-					scope = POL
-				}
-			}
-		}
-
-		ai_will_do = {
-			base = 0
-		}
-	}
-	POL_defend_in_west_state = {
-
-		icon = hol_draw_up_staff_plans
-
-		state_target = any_controlled_state
-
-		available = {
-			FROM = {
-				OR = {
-					AND = {
-						is_controlled_by = POL
-						any_neighbor_state = {
-							is_controlled_by = GER
-						}
-					}
-					AND = {
-						is_controlled_by = GER
-						any_neighbor_state = {
-							is_controlled_by = POL
-						}
-					}
-				}
-			}
-			has_war_with = GER
-		}
-		target_trigger = {
-			FROM = {
-				OR = {
-					AND = {
-						is_controlled_by = POL
-						any_neighbor_state = {
-							is_controlled_by = GER
-						}
-					}
-					AND = {
-						is_controlled_by = GER
-						any_neighbor_state = {
-							is_controlled_by = POL
-						}
-					}
-				}
-			}
-		}
-		visible = {
-			has_completed_focus = POL_local_western_plans
-		}
-
-		fire_only_once = no
-		cost = 50
-
-		days_re_enable = 60
-		on_map_mode = map_only
-		complete_effect = {
-			FROM = { 
-				add_dynamic_modifier = {
-					modifier = POL_anti_german_offensive
-					days = 60
-					scope = POL
-				}
-			}
-		}
-
-		ai_will_do = {
-			base = 10
-		}
-	}
-}
 
 POL_civil_war_decisions = {
 	POL_german_action = { #event
@@ -399,9 +262,16 @@ POL_pis_polityka_zagraniczna = {
         available = {
             has_completed_focus = POL_polak_wegier_2_bratanki
             controls_state = 69              # Bratysława (Słowacja)
-            is_in_faction_with = HUN          # Czechosłowacja nie może istnieć
+                     # Czechosłowacja nie może istnieć
+
             HUN = {
-                exists = yes
+				AND = {
+					exists = yes
+					OR = {
+						is_in_faction_with = POL
+						is_subject_of = POL
+					}
+				}
             }
         }
 
@@ -410,7 +280,7 @@ POL_pis_polityka_zagraniczna = {
         }
 
         fire_only_once = yes
-        days_remove = 1
+        days_remove = 15
         
         cost = 20
 
@@ -419,9 +289,11 @@ POL_pis_polityka_zagraniczna = {
         }
 
         complete_effect = {
-            transfer_state = 69              # oddajemy stan
+        
             HUN = {
-                add_state_core = 69          # Węgry zyskują core
+				transfer_state = 69
+                add_state_core = 69
+
             }
         }
     }

@@ -386,21 +386,25 @@ focus_tree = {
 				activate_mission = POL_lithuanian_action
 				activate_mission = POL_ukrainian_action
 
-
+				
 				PSX = {
 					add_ideas = POL_wojna_domowa
 					set_cosmetic_tag = POL_SANATION
 					add_ideas = POL_wojna_domowa
 					set_cosmetic_tag = POL_SANATION
-				    add_country_leader_role = {
-					character = POL_edward_rydz_smigly
-					promote_leader = yes
+					kill_country_leader = POL_ignacy_moscicki
+					add_country_leader_role = {
+					character = POL_edward_rydzsmigly
 					country_leader = {
-						expire = "1965.1.1"
-						ideology = fascism_ideology
-					}					
+						ideology = despotism
+						expire = "1965.1.1.1"
+						traits = { }
+						id=-1
+					}
 				}
-			}
+
+				promote_character = POL_edward_rydzsmigly
+				}
 			}
 		}
 	}
@@ -7134,7 +7138,7 @@ focus = {
 
 
 	focus = {
-		id = POL_opcja_tusk
+		id = POL_opcja_tusk #dodaj pol minusowy pol plusowy spirit Koalicja Ludzkich Serc bedzie modyfikowany lewym drzewkiem
 		icon = GFX_goal_unknown
 		x = 5
 		y = 1
@@ -7329,7 +7333,7 @@ focus = {
 	}
 	
 	focus = {
-		id = POL_powrot_do_europy
+		id = POL_powrot_do_europy #Zamien spirit europejskina lepszy
 		icon = GFX_goal_unknown
 		x = -1
 		y = 1
@@ -7341,7 +7345,7 @@ focus = {
 	}
 
 	focus = {
-		id = POL_never_lose_yr_smile
+		id = POL_never_lose_yr_smile #event z przyjeciemczesci niemieckich generalow w tym oskara dirlewangera
 		icon = GFX_goal_unknown
 		x = 1
 		y = 1
@@ -7353,7 +7357,7 @@ focus = {
 	}
 
 	focus = {
-		id = POL_wykorzystanie_srodkow_z_kpo
+		id = POL_wykorzystanie_srodkow_z_kpo #afera z kebabem zakladajacym solarium na jachcie event, duch kPO ktory daje plusy do przemyslu a jakies inne minusy np sile politycza
 		icon = GFX_goal_unknown
 		x = -2
 		y = 2
@@ -7368,7 +7372,7 @@ focus = {
 	}
 
 	focus = {
-		id = POL_inwestycje_w_bastion
+		id = POL_inwestycje_w_bastion #dodatkowa ifrastruktura na teranach zachodnich i jakies fabryczki
 		icon = GFX_goal_unknown
 		x = 0
 		y = 2
@@ -7383,7 +7387,7 @@ focus = {
 	}
 
 	focus = {
-		id = POL_bron_na_dinozaury
+		id = POL_bron_na_dinozaury #troche sprzetu 
 		icon = GFX_goal_unknown
 		x = 2
 		y = 2
@@ -7398,7 +7402,7 @@ focus = {
 	}
 
 	focus = {
-		id = POL_wosp
+		id = POL_wosp #zatrudnij generala owsiaka i dodaj fabryki gdzies tam
 		icon = GFX_goal_unknown
 		x = -2
 		y = 3
@@ -7410,7 +7414,7 @@ focus = {
 	}
 
 	focus = {
-		id = POL_pamietamy_KLD
+		id = POL_pamietamy_KLD #dodaj poparcie demokracji
 		icon = GFX_goal_unknown
 		x = 2
 		y = 3
@@ -7422,7 +7426,7 @@ focus = {
 	}
 
 	focus = {
-		id = POL_ja_tymi_rekoma
+		id = POL_ja_tymi_rekoma #odblokowuje bolka jako srednio oplacalnego doradce
 		icon = GFX_goal_unknown
 		x = 0
 		y = 3
@@ -7434,7 +7438,7 @@ focus = {
 	}
 
 	focus = {
-		id = POL_silni_razem #event (silni razem wybiora kaisera) tu zmienia sie ideologia z demokratycznej na nonalignd, a jesli zosytanie wybrany tusk to i jego portret sie zmienia#
+		id = POL_silni_razem #event (silni razem wybiora kaisera) jesli zosytanie wybrany tusk to i jego portret sie zmienia, moze byc wybrany giertych sikorski budka i trzask#
 		icon = GFX_goal_unknown
 		x = 0
 		y = 4
@@ -7452,7 +7456,7 @@ focus = {
 	}
 
 	focus = {
-		id = POL_ruch_osmiu_gwiazd
+		id = POL_ruch_osmiu_gwiazd #dodaj ruch 8 gwiazd duch
 		icon = GFX_goal_unknown
 		x = 3
 		y = 5
@@ -7464,7 +7468,7 @@ focus = {
 	}
 
 	focus = {
-		id = POL_komisje_sledcze
+		id = POL_komisje_sledcze #odejmuje poparcie dla faszyzmu i daje nowy zespol badawczy
 		icon = GFX_goal_unknown
 		x = 3
 		y = 6
@@ -7476,7 +7480,7 @@ focus = {
 	}
 
 	focus = {
-		id = POL_kolejna_koalicja_psl
+		id = POL_kolejna_koalicja_psl #nowa koalicja PSL event,odblokowuje teorytyka kosiniaka i dodaje poparcie
 		icon = GFX_goal_unknown
 		x = 3
 		y = 7
@@ -7488,7 +7492,7 @@ focus = {
 	}
 
 	focus = {
-		id = POL_pozarcie_przystawek
+		id = POL_pozarcie_przystawek #pp i poparcie na plus, event czarzasty sie cieszy oraz drugi holownia sie stawia
 		icon = GFX_goal_unknown
 		x = 3
 		y = 8
@@ -7500,7 +7504,7 @@ focus = {
 	}
 
 	focus = {
-		id = POL_wymienienie_neosedziow
+		id = POL_wymienienie_neosedziow #usunac rozjebane sadownictwo i dodac pp
 		icon = GFX_goal_unknown
 		x = 1
 		y = 5
@@ -7512,7 +7516,7 @@ focus = {
 	}
 
 	focus = {
-		id = POL_przyjecie_paktu_imigracyjnego
+		id = POL_przyjecie_paktu_imigracyjnego #dodaj duch pakt migracyjny, ktory dodaje ludnosc ale odejmuje stabilkę i poparcie
 		icon = GFX_goal_unknown
 		x = -1
 		y = 5
@@ -7524,7 +7528,7 @@ focus = {
 	}
 
 	focus = {
-		id = POL_euro_nie_zlotowka
+		id = POL_euro_nie_zlotowka #Duch przyjecie euro na 2 lata ktory zabiera 10 procent consumer goods ale dodaje pp
 		icon = GFX_goal_unknown
 		x = -3
 		y = 5
@@ -7536,7 +7540,7 @@ focus = {
 	}
 
 	focus = {
-		id = POL_utrzymanie_socjali_pisowskich
+		id = POL_utrzymanie_socjali_pisowskich #dodaj 500 plus ale odjemij 15poparcia 
 		icon = GFX_goal_unknown
 		x = -3
 		y = 6
@@ -7551,7 +7555,7 @@ focus = {
 	}
 
 	focus = {
-		id = POL_kredyt_0
+		id = POL_kredyt_0 #zamien 500 plus na duch rozdawnictwo
 		icon = GFX_goal_unknown
 		x = -3
 		y = 7
@@ -7563,7 +7567,7 @@ focus = {
 	}
 
 	focus = {
-		id = POL_rozwoj_inzynierii_i_lecznictwa
+		id = POL_rozwoj_inzynierii_i_lecznictwa #zmniejsz minusy w duchu pakt migracyjny
 		icon = GFX_goal_unknown
 		x = -1
 		y = 6
@@ -7575,7 +7579,7 @@ focus = {
 	}
 
 	focus = {
-		id = POL_podwyzszenie_wieku_emerytalnego
+		id = POL_podwyzszenie_wieku_emerytalnego #dodaj fabryczki odejmij stabilke i poparcie
 		icon = GFX_goal_unknown
 		x = 1
 		y = 6
@@ -7587,7 +7591,7 @@ focus = {
 	}
 
 	focus = {
-		id = POL_polskosc_to_nienormalnosc
+		id = POL_polskosc_to_nienormalnosc #Dodaj liderowi trait antypolak
 		icon = GFX_goal_unknown
 		x = -1
 		y = 7
@@ -7602,7 +7606,7 @@ focus = {
 	}
 
 	focus = {
-		id = POL_fur_deutschland
+		id = POL_fur_deutschland #oddaj rowniez katowice niemcom oczywiscie event jest potrzebny
 		icon = GFX_goal_unknown
 		x = 1
 		y = 8
@@ -7617,7 +7621,7 @@ focus = {
 	}
 
 	focus = {
-		id = POL_polityka_cieplej_wody
+		id = POL_polityka_cieplej_wody #dodaj stabilkę ale dodaj wiecej consumer goods w rozdawnictwie
 		icon = GFX_goal_unknown
 		x = -1
 		y = 8
@@ -7632,7 +7636,7 @@ focus = {
 	}
 
 	focus = {
-		id = POL_wina_tuska
+		id = POL_wina_tuska #duch narodowy wina tuska ktory daje plusy do pp (dosc duze po przyda sie do europy)
 		icon = GFX_goal_unknown
 		x = 1
 		y = 9
@@ -7661,7 +7665,7 @@ focus = {
 
 
 focus = {
-		id = POL_osadzenie_demokratow_na_tronie_niem
+		id = POL_osadzenie_demokratow_na_tronie_niem #niemcy dobrowolnie zmieniają sie w demokracje i zostają eurorepubliką a my wybieramy czy rzadzi tam scholz czy merz eventem
 		icon = GFX_goal_unknown
 		x = 1
 		y = 12
@@ -7692,7 +7696,7 @@ focus = {
 	}
 
 focus = {
-		id = POL_zaproszenie_francuzow
+		id = POL_zaproszenie_francuzow #francuzi dostają event o zostanie naszym dominium (lepszy puppet, eurorepublik), jeslisie nie zgodzą to odblokowuje sie decyzja o utworzeniu z zajetych terenow frnacuskich eurorepubliki tak czy inaczej
 		icon = GFX_goal_unknown
 		x = 3
 		y = 1
@@ -7704,7 +7708,7 @@ focus = {
 	}
 
 focus = {
-		id = POL_pakt_stalowy
+		id = POL_pakt_stalowy #pakt o surowce z sowietem tak jak na niemczech
 		icon = GFX_goal_unknown
 		x = -3
 		y = 1
@@ -7716,7 +7720,7 @@ focus = {
 	}
 
 focus = {
-		id = POL_unia_polsko_niemiecka
+		id = POL_unia_polsko_niemiecka # Polska i Niemcy jednoczą się w jedną eurorepublikę, w ktorej rzadzi tusk odblokowuje tez decyzje o utworzeniu kommisariatow (mowa o kategorii)
 		icon = GFX_goal_unknown
 		x = 0
 		y = 1
@@ -7735,7 +7739,7 @@ focus = {
 
 
 focus = {
-		id = POL_nord_stream_2
+		id = POL_nord_stream_2 #rozbudowa w jakis sposob paktu stalowego
 		icon = GFX_goal_unknown
 		x = -5
 		y = 2
@@ -7751,7 +7755,7 @@ focus = {
 	}
 
 focus = {
-		id = POL_wolna_bialorus
+		id = POL_wolna_bialorus #zarzadamy od sowieta oddania nam bialorusi (aneksja), odblokowuje sie decyzja o oddaniu terenow reichkommisariatom moskwy i ostland odpowiednich terenow jesli te istnieją
 		icon = GFX_goal_unknown
 		x = -4
 		y = 3
@@ -7764,7 +7768,7 @@ focus = {
 	}
 
 focus = {
-		id = POL_obrona_ukrainy
+		id = POL_obrona_ukrainy #zarzadamy oddania nam ukrainy (aneksja) odblokowuje sie decyzja o uworzeniu reichkomiisariat ukraine
 		icon = GFX_goal_unknown
 		x = -6
 		y = 3
@@ -7777,7 +7781,7 @@ focus = {
 	}
 
 focus = {
-		id = POL_powalenie_niedzwiedzia
+		id = POL_powalenie_niedzwiedzia #cel i decyzja o odblokowaniu reichkommisariat moskowien, kaukasien, turkiestan, syberien, dostepne po zjdennoczeniu eu
 		icon = GFX_goal_unknown
 		x = -5
 		y = 4
@@ -7793,7 +7797,7 @@ focus = {
 	}
 
 focus = {
-		id = POL_bliskowschodnia_demokracja
+		id = POL_bliskowschodnia_demokracja #cele na bliski wschód i decyzja na eurokomiisariat Arabien oraz Israel i Persien
 		icon = GFX_goal_unknown
 		x = -6
 		y = 5
@@ -7806,7 +7810,7 @@ focus = {
 	}
 
 focus = {
-		id = POL_zdlawienie_skrajnosci
+		id = POL_zdlawienie_skrajnosci #cele na panstwa faszystowskie ikomunistyczne ktore sie ostaly
 		icon = GFX_goal_unknown
 		x = -4
 		y = 5
@@ -7826,7 +7830,7 @@ focus = {
 
 
 focus = {
-		id = POL_droga_ku_zjednoczonej_europie
+		id = POL_droga_ku_zjednoczonej_europie #cory na ziemie nieiecki i spirit z bonusami do compilance dodaj też balance of power
 		icon = GFX_goal_unknown
 		x = 0
 		y = 2
@@ -7835,11 +7839,15 @@ focus = {
 		prerequisite = {
 			focus = POL_unia_polsko_niemiecka
 		}
-		
+		completion_reward = {
+		set_power_balance = {
+				id = POL_european_power_balance
+			}
+		}
 	}
 
 focus = {
-		id = POL_Skandinavische_eurokomissariat
+		id = POL_Skandinavische_eurokomissariat #odblokowanie decyzji o eurokomiisariat nordischien (bez szlezwigu tu core) oraz cele na te panstwa
 		icon = GFX_goal_unknown
 		x = -2
 		y = 3
@@ -7848,11 +7856,31 @@ focus = {
 		prerequisite = {
 			focus = POL_droga_ku_zjednoczonej_europie
 		}
-		
+		completion_reward = {
+			DEN = {
+				country_event = { id = PLREW_poland.28 }
+			}
+
+			NOR = {
+				country_event = { id = PLREW_poland.28 }
+			}
+
+			ICE = {
+				country_event = { id = PLREW_poland.28 }
+			}
+
+			SWE = {
+				country_event = { id = PLREW_poland.28 }
+			}
+
+			FIN = {
+				country_event = { id = PLREW_poland.28 }
+			}
+		}
 	}
 
 focus = {
-		id = POL_Benelux_eurokomissariat
+		id = POL_Benelux_eurokomissariat #odblokowanie decyzji o eurokomiisariat Beneluxu (bez luksemburga i eupen tu core) oraz cele na te panstwa
 		icon = GFX_goal_unknown
 		x = 0
 		y = 3
@@ -7861,11 +7889,25 @@ focus = {
 		prerequisite = {
 			focus = POL_droga_ku_zjednoczonej_europie
 		}
+
+		completion_reward = {
+			LUX = {
+				country_event = { id = PLREW_poland.28 }
+			}
+
+			BEL = {
+				country_event = { id = PLREW_poland.28 }
+			}
+
+			HOL = {
+				country_event = { id = PLREW_poland.28 }
+			}
+		}
 		
 	}
 
 focus = {
-		id = POL_Baltische_eurokomissariat
+		id = POL_Baltische_eurokomissariat #odblokowanie decyzji o eurokomiisariat ostland oraz cele na te panstwa, bedzie to potem mozna rozszerzyc
 		icon = GFX_goal_unknown
 		x = 2
 		y = 3
@@ -7874,11 +7916,25 @@ focus = {
 		prerequisite = {
 			focus = POL_droga_ku_zjednoczonej_europie
 		}
+
+		completion_reward = {
+			LIT = {
+				country_event = { id = PLREW_poland.28 }
+			}
+
+			LAT = {
+				country_event = { id = PLREW_poland.28 }
+			}
+
+			EST = {
+				country_event = { id = PLREW_poland.28 }
+			}
+		}
 		
 	}
 
 focus = {
-		id = POL_eurokomissariat_Tschechien
+		id = POL_eurokomissariat_Tschechien #odblokowanie decyzji o utworzeniu europrotektoratu czech i moraw oraz eurokomisariatu slowacji, a na sudety masz cory
 		icon = GFX_goal_unknown
 		x = 2
 		y = 4
@@ -7888,10 +7944,17 @@ focus = {
 			focus = POL_Baltische_eurokomissariat
 		}
 		
+		completion_reward = {
+			CZE = {
+				country_event = { id = PLREW_poland.28 }
+			}
+		}
+		
+		
 	}
 
 focus = {
-		id = POL_kwestia_orbana
+		id = POL_kwestia_orbana #cel na Węgry, moze byc skonczone tylko jesli ukonczylismy cel na czechy
 		icon = GFX_goal_unknown
 		x = 0
 		y = 4
@@ -7900,11 +7963,22 @@ focus = {
 		prerequisite = {
 			focus = POL_Benelux_eurokomissariat
 		}
+		available = {
+			has_completed_focus = POL_eurokomissariat_Tschechien
+		}
+
+		
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = HUN
+			}
+		}
 		
 	}
 
 focus = {
-		id = POL_zmiazdzenie_alpejskiej_neutralnosci
+		id = POL_zmiazdzenie_alpejskiej_neutralnosci #odblokowanie decyzji o utworzeniu eurokomisarriat alpine, i wlochy taka sama mechanika jak z francją
 		icon = GFX_goal_unknown
 		x = -2
 		y = 4
@@ -7913,11 +7987,17 @@ focus = {
 		prerequisite = {
 			focus = POL_droga_ku_zjednoczonej_europie
 		}
+
+		completion_reward = {
+			SWI = {
+				country_event = { id = PLREW_poland.28 }
+			}
+		}
 		
 	}
 
 focus = {
-		id = POL_Balkanische_eurokomissariat
+		id = POL_Balkanische_eurokomissariat #odblokowanie decyzji o eurokomiisariat bałkański oraz cele na te panstwa(wegry juz są zaanektowane), na slowenie dostajesz cory, cel moze byc ukonczony tylko po anschlussie
 		icon = GFX_goal_unknown
 		x = 1
 		y = 5
@@ -7929,11 +8009,24 @@ focus = {
 		prerequisite = {
 			focus = POL_eurokomissariat_Tschechien
 		}
+
+	}
+
+focus = {
+		id = POL_Marsz_na_Iberię #jesli skonczyla sie wojna domowa w spain to moze  byc eurorepublik iberien
+		icon = GFX_goal_unknown
+		x = -2
+		y = 6
+		relative_position_id = POL_osadzenie_demokratow_na_tronie_niem
+		cost = 5
+		prerequisite = {
+			focus = POL_Anschluss
+		}
 		
 	}
 
 focus = {
-		id = POL_Anschluss
+		id = POL_Anschluss #anektuje Austrię
 		icon = GFX_goal_unknown
 		x = -1
 		y = 5
@@ -7945,11 +8038,17 @@ focus = {
 		prerequisite = {
 			focus = POL_zmiazdzenie_alpejskiej_neutralnosci
 		}
+
+		completion_reward = {
+			AUS = {
+				country_event = { id = PLREW_poland.28 }
+			}
+		}
 		
 	}
 
 focus = {
-		id = POL_do_europy_federalnej
+		id = POL_do_europy_federalnej #balnce of power w przód
 		icon = GFX_goal_unknown
 		x = 0
 		y = 6
@@ -7965,7 +8064,7 @@ focus = {
 	}
 
 	focus = {
-		id = POL_zjednoczeni
+		id = POL_zjednoczeni #anektuje wszystkie eurokommisariaty i zmienia sie w unię europejską, worldnews 
 		icon = GFX_goal_unknown
 		x = 0
 		y = 7
@@ -7973,6 +8072,9 @@ focus = {
 		cost = 5
 		prerequisite = {
 			focus = POL_do_europy_federalnej
+		}
+		prerequisite = {
+			focus = POL_Marsz_na_Iberię
 		}
 		
 	}
@@ -7983,7 +8085,7 @@ focus = {
 
 
 focus = {
-		id = POL_armia_europejska
+		id = POL_armia_europejska #dodaj dywizje Armii Europejskiej i sprze oraz duch ktoey pomoze w zajmowaniu panstw eurpy
 		icon = GFX_goal_unknown
 		x = 5
 		y = 2
@@ -7999,7 +8101,7 @@ focus = {
 	}
 
 focus = {
-		id = POL_Friedensmarine
+		id = POL_Friedensmarine #Dodaje stocznie i plusy do produkcji statkow
 		icon = GFX_goal_unknown
 		x = 4
 		y = 3
@@ -8012,7 +8114,7 @@ focus = {
 	}
 
 focus = {
-		id = POL_Tuskwaffe
+		id = POL_Tuskwaffe #bonusy do produkcji lotnictwa,oraz do ataku lotnictwa
 		icon = GFX_goal_unknown
 		x = 6
 		y = 3
@@ -8025,7 +8127,7 @@ focus = {
 	}
 
 focus = {
-		id = POL_koniec_Brexitu
+		id = POL_koniec_Brexitu #cel na brytyjczykow, decyzje o eurokommisariatach szkocji irlandii walii i anglii, moze byc zrobione jesli zjednoczono juz europe
 		icon = GFX_goal_unknown
 		x = 5
 		y = 4
@@ -8039,7 +8141,7 @@ focus = {
 	}
 
 focus = {
-		id = POL_zarzad_koloni_brytyjskich
+		id = POL_zarzad_koloni_brytyjskich #dostepne jesli posiadamy pozauropejskie kolonie brytyjskie, w tym te autonomiczne, tworzy z nich jedno panstwo 
 		icon = GFX_goal_unknown
 		x = 4
 		y = 5
@@ -8052,7 +8154,7 @@ focus = {
 	}
 
 focus = {
-		id = POL_unia_afrykanska
+		id = POL_unia_afrykanska #dostepne jesli posiadamy wszystkie skolonizowane tereny w afryce, tworzy z nich panstwo i zaprasza te autonomiczne do niego
 		icon = GFX_goal_unknown
 		x = 6
 		y = 5
@@ -8071,7 +8173,7 @@ focus = {
 	# DRZEWKO PODBOJU ala KAISER #
 
 	focus = {
-		id = POL_sen_wilhelma
+		id = POL_sen_wilhelma #w niemczech dodaj spirita ktoryje rozjebe
 		icon = GFX_goal_unknown
 		x = 13
 		y = 0
@@ -8102,7 +8204,7 @@ focus = {
 	}
 	
 	focus = {
-		id = POL_premier_z_krakowa
+		id = POL_premier_z_krakowa #event niemcy mnie biją (ala prowokacja, po ktorej mozna wejsc w prusy) ktoryodblokowuje marszalka jana rokitę, moze byc zrobione tylko jesli niemcy sie juz rozpadly
 		icon = GFX_goal_unknown
 		x = -1
 		y = 1
@@ -8115,7 +8217,7 @@ focus = {
 	}
 
 	focus = {
-		id = POL_wystawienie_federacji_na_probe
+		id = POL_wystawienie_federacji_na_probe #niemcy rozpadają sie na bawarię, Prusy, Saksonię i jakies tam inne
 		icon = GFX_goal_unknown
 		x = 1
 		y = 1
@@ -8128,7 +8230,7 @@ focus = {
 	}
 
 	focus = {
-		id = POL_Ponowne_zintegrowanie #aneksja niemiec, cosmetic tag na Deutsches Kaiserreich, event na to czy aktualny szef czy merz zostaje kaiserem (nadal euroliberalnym), wyzowlenie polski z nowym tagiem na terenach gg plus te wschodnie i danie tam na wladce trzaska, chyba ze to on rzadzi to wtedy tuska z cechą generalny gubernator
+		id = POL_Ponowne_zintegrowanie #aneksja niemiec (wszystkich), cosmetic tag na Deutsches Kaiserreich, event na to czy aktualny szef czy merz zostaje kaiserem (nadal euroliberalnym), wyzowlenie polski z nowym tagiem na terenach gg plus te wschodnie i danie tam na wladce trzaska, chyba ze to on rzadzi to wtedy tuska z cechą generalny gubernator, dostepne jesli prusy upadły
 		icon = GFX_goal_unknown
 		x = 0
 		y = 2
@@ -8144,7 +8246,7 @@ focus = {
 	}
 
 	focus = {
-		id = POL_kupmy_sobie_czas #oddajemy kresy za pakt o nieagresji
+		id = POL_kupmy_sobie_czas #oddajemy kresy za pakt o nieagresji, procz lwowa
 		icon = GFX_goal_unknown
 		x = -4
 		y = 3
@@ -8481,7 +8583,7 @@ focus = {
 
 
 	focus = {
-		id = POL_Kwestia_Koalicji
+		id = POL_Kwestia_Koalicji #pp dodaj
 		icon = GFX_goal_unknown
 		x = -10
 		y = 1
@@ -8495,7 +8597,7 @@ focus = {
 	}
 
 	focus = {
-		id = POL_KO_Zieloni
+		id = POL_KO_Zieloni #zmodyfikuj duch koalicji o pp na plus dodaj  generala jachire
 		icon = GFX_goal_unknown
 		x = -1
 		y = 2
@@ -8507,7 +8609,7 @@ focus = {
 	}
 
 	focus = {
-		id = POL_KO_iPL
+		id = POL_KO_iPL #dodaj poparcie komunizmu na plusw tym duchu dodaj barbare nowacką i palikota jako generalow
 		icon = GFX_goal_unknown
 		x = 1
 		y = 1
@@ -8519,7 +8621,7 @@ focus = {
 	}
 
 	focus = {
-		id = POL_KO_Nowoczesna
+		id = POL_KO_Nowoczesna #mzodyfikuj na plus duch i dodaj stabilkę Dodaj generała szłapkę i zębaczynskiego
 		icon = GFX_goal_unknown
 		x = -1
 		y = 1
@@ -8531,7 +8633,7 @@ focus = {
 	}
 
 	focus = {
-		id = POL_KO_Agrounia
+		id = POL_KO_Agrounia #dodaj fabryczki na podkarpaciu i lubelszczyznie Dodaj generała Kolodziejczaka
 		icon = GFX_goal_unknown
 		x = 1
 		y = 2
@@ -8543,7 +8645,7 @@ focus = {
 	}
 
 	focus = {
-		id = POL_KO_Prymat_Volksplatform
+		id = POL_KO_Prymat_Volksplatform #zostaw tylko bonusy w tym spiricie 
 		icon = GFX_goal_unknown
 		x = 0
 		y = 3

@@ -13,7 +13,7 @@ on_actions = {
 			    # Kielce
 				if = {
 					limit = { FROM.FROM = { state = 90 } }
-					country_event = { id = PLREW_poland.26 hours = 10 }
+					country_event = { id = PLREW_poland.17 hours = 10 }
 				}
 				# Lwow
 				if = {
