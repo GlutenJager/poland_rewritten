@@ -1,0 +1,34 @@
+state = {
+	id = 1035
+	name = "STATE_1035" #Gaza
+	manpower = 933142
+	
+	state_category = rural
+
+	history = {
+
+		owner = PAL
+		add_core_of = PAL
+		add_core_of = ISR
+
+		buildings = {
+			infrastructure = 3 #was: 5
+			industrial_complex = 1
+			air_base = 2
+			4088 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			4088 3 # Gaza
+		}
+		
+		
+	}
+
+	provinces = {
+		4088
+	}
+
+	local_supplies = 0.0 
+}
