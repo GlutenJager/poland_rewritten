@@ -670,9 +670,17 @@ TBE_third_bulgarian_empire_neutrality = {
 }
 
 # PLREW
+FRA_eurorepublik = {
+	color = rgb { 0 10 120 }
+	color_ui = rgb { 0 10 120 }
+}
+GER_eurorepublik = {
+	color = rgb { 0 10 120 }
+	color_ui = rgb { 0 10 120 }
+}
 POL_usmiechnieta = {
-	color = rgb { 0 51 153 }
-	color_ui = rgb { 0 51 153 }
+	color = rgb { 0 10 120 }
+	color_ui = rgb { 0 10 120 }
 }
 POL_lepperism = {
 	color = rgb { 229  52  52 }

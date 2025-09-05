@@ -20,6 +20,7 @@ ideologies = {
 
 			euro_liberalism = {
 				can_be_randomly_selected = no
+				
 			}
 
 			kaczism = {

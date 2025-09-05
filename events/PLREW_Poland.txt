@@ -877,6 +877,187 @@ country_event = {
 	}
 }
 
+country_event = { #zjednoczenie europy
+	id = PLREW_poland.29
+	title = PLREW_poland.29.t
+	desc = PLREW_poland.29.d
+
+	picture = GFX_report_event_lithuanian_ultimatum
+	
+	is_triggered_only = yes
+
+	option = { #Evropa straznik pokoju
+		name = PLREW_poland.29.a
+		#set_cosmetic_tag = EU 
+		#news_event
+	}
+	option = { #Niemiecka dominacja TNO
+		name = PLREW_poland.29.b
+		#set_cosmetic_tag = Grosgermanische reich
+		#news_event
+	}
+	option = { #Czas na zarowadzenie Ze new World Order
+		name = PLREW_poland.29.c
+		#set_cosmetic_tag = EU Klaus Schwab, schwab przejmuje wladze
+		#news_event
+	}
+}
+
+# German-Soviet Treaty (Soviets)
+country_event = {
+	id = PLREW_poland.30
+	title = PLREW_poland.30.t
+	desc = PLREW_poland.30.d
+	picture = GFX_report_event_physics_lab_01
+
+	is_triggered_only = yes
+
+	option = {
+		name = PLREW_poland.30.a	#sounds good
+		POL = {
+			country_event = { days = 1 id = PLREW_poland.31 }
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = sov_ger_treaty
+			}
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = sov_ger_treaty_trade
+			}
+			effect_tooltip = {
+				add_breakthrough_progress = {
+					specialization = specialization_land
+					value = 1
+				}
+			}
+		}
+		# REVISIT Balance research bonus
+		give_SOV_armor_research_bonuses = yes
+		custom_effect_tooltip = generic_skip_one_line_tt
+		add_breakthrough_progress = {
+			specialization = specialization_land
+			value = 1
+		}
+	}
+
+	option = {
+		name = PLREW_poland.30.b	#no way
+		add_timed_idea = { idea = SOV_scientist_defect days = 365 }
+		ai_chance = { factor = 0 }
+		add_political_power = -10
+		add_opinion_modifier = { target = POL modifier = refused_MR_pact } # no pact
+		POL = {
+			country_event = { days = 1 id = PLREW_poland.32 }
+		}
+	}
+}
+
+# Soviets Accept German-Soviet Treaty
+country_event = {
+	id = PLREW_poland.31
+	title = PLREW_poland.31.t
+	desc = PLREW_poland.31.d
+	picture = GFX_report_event_physics_lab_02
+
+	is_triggered_only = yes
+
+	option = {
+		name = PLREW_poland.31.a	#bah
+		# REVISIT Balance research bonus
+		if = {
+			limit = {
+				NOT = {
+					has_dlc = "No Step Back"
+				}
+			}
+			add_tech_bonus = {
+				name = med_armor_bonus
+				ahead_reduction = 1
+				category = cat_medium_armor
+			}
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 2
+				category = armor
+			}
+		}
+		else = { #NO STEP BACK EFFECTS
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 2.0
+				uses = 1
+				category = armor
+			}
+			create_equipment_variant = {
+				name = "Panzer VII Löwe"
+				type = heavy_tank_chassis_2
+				design_team = mio:GER_daimler_benz_organization #We feed on your tears
+				parent_version = 0
+				modules = {
+					main_armament_slot = tank_heavy_cannon_2
+					turret_type_slot = tank_heavy_two_man_tank_turret
+					suspension_type_slot = tank_torsion_bar_suspension
+					armor_type_slot = tank_welded_armor
+					engine_type_slot = tank_gasoline_engine
+					special_type_slot_1 = tank_radio_1
+					special_type_slot_2 = additional_machine_guns
+					special_type_slot_3 = sloped_armor
+				}
+				upgrades = {
+					tank_nsb_engine_upgrade = 6
+					tank_nsb_armor_upgrade = 6
+				}
+				icon = "GFX_GER_improved_heavy_tank_medium"
+			}
+			create_equipment_variant = {
+				name = "Panzerjäger Elefant"
+				type = heavy_tank_destroyer_chassis_2
+				parent_version = 0
+				modules = {
+					main_armament_slot = tank_heavy_cannon_2
+					turret_type_slot = tank_heavy_fixed_superstructure_turret
+					suspension_type_slot = tank_torsion_bar_suspension
+					armor_type_slot = tank_welded_armor
+					engine_type_slot = tank_gasoline_engine
+					special_type_slot_1 = tank_radio_1
+					special_type_slot_2 = additional_machine_guns
+					special_type_slot_3 = squeezebore_adaptor
+					special_type_slot_4 = sloped_armor
+				}
+				upgrades = {
+					tank_nsb_engine_upgrade = 6
+					tank_nsb_armor_upgrade = 6
+				}
+				icon = "GFX_GER_improved_heavy_tank_medium"
+			}
+		}
+		add_breakthrough_progress = {
+			specialization = specialization_land
+			value = 1
+		}
+		SOV = {
+			add_opinion_modifier = { target = POL modifier = sov_ger_treaty }
+			add_opinion_modifier = { target = POL modifier = sov_ger_treaty_trade }
+		}
+	}
+}
+
+# Soviets Reject German-Soviet Treaty
+country_event = {
+	id = PLREW_poland.32
+	title = PLREW_poland.32.t
+	desc = PLREW_poland.32.d
+	picture = GFX_report_event_physics_lab_02
+
+	is_triggered_only = yes
+
+	option = {
+		name = PLREW_poland.32.a
+		add_opinion_modifier = { target = SOV modifier = refused_MR_pact }# no pact
+	}
+}
+
 ###########################
 # Work In Progress Events
 ###########################
@@ -912,9 +1093,9 @@ country_event = { # Braun gasi chanuke
 		tag = POL
 		date > 1939.1.15
 		NOT = { 
-			#has_country_leader = POL_grzegorz_braun
-			has_country_leader = POL_antoni_macierewicz
-			has_country_leader = POL_wojciech_olszanski
+			has_completed_focus = POL_braun
+			has_completed_focus = POL_opcja_macierewicz
+			has_completed_focus = POL_opcja_kamraci
 	 	}
 	}
 
@@ -938,7 +1119,7 @@ country_event = { # Niemcy wypowiadają nam wojnę
 		has_war_with = GER
 		} 
 		NOT = { 
-			has_country_leader = POL_donald_tusk
+			has_completed_focus = POL_opcja_tusk
 	 	}
 	}
 

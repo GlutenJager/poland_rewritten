@@ -1430,3 +1430,34 @@
  IMO_neutrality_party_long: "Poplecznicy Imanatu Ibadi"
  PER_islamic_rep_party: "Rada Islamska"
  PER_islamic_rep_party_long: "Rada Islamskiej Rewolucji"
+
+#######
+#PLREW#
+#######
+
+
+ ESK_communism_party: "KPS"
+ ESK_communism_party_long: "Kommunistische Partei Skandinaviens"
+ ESK_fascism_party: "NSSAP"
+ ESK_fascism_party_long: "Nationalsozialistische Skandinavische Arbeiterpartei"
+ ESK_democratic_party: "L"
+ ESK_democratic_party_long: "Liberalerna"
+ ESK_neutrality_party: "SNVP"
+ ESK_neutrality_party_long: "Szwedzki Narodowy Związek Zwolenników Monarchii"
+
+ ORB_communism_party: "BBP"
+ ORB_communism_party_long: "Burgund Bolszewic Partei"
+ ORB_fascism_party: "SS"
+ ORB_fascism_party_long: "Shutstafel Burgund"
+ ORB_democratic_party: "BDP"
+ ORB_democratic_party_long: "Pro-demokratyczna Partia Burgundii"
+ ORB_neutrality_party: "Dynastia SS"
+ ORB_neutrality_party_long: "Dynastia SS"
+ EOS_communism_party: "KPS"
+ EOS_communism_party_long: "Kommunistische Partei Ostland"
+ EOS_fascism_party: "NSSAP"
+ EOS_fascism_party_long: "Nationalsozialistische Ostland Arbeiterpartei"
+ EOS_democratic_party: "EVP"
+ EOS_democratic_party_long: "Europäisch Volks Partei"
+ EOS_neutrality_party: "ONVP"
+ EOS_neutrality_party_long: "Ostland - Narodowy Związek Zwolenników Monarchii"

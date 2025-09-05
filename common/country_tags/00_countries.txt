@@ -344,3 +344,6 @@ BLC = "countries/Balochistan.txt"
 
 
 TRU = "countries/Trump.txt"
+ESK = "countries/Eurokomisarriat Skandinaven.txt"
+EOS = "countries/Eurokommisarriat Ostland.txt"
+ORB = "countries/Euro-ordenstadt Burgund.txt"

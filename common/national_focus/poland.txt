@@ -7170,6 +7170,7 @@ focus = {
 			}
 		}
 		completion_reward = {
+			remove_ideas = POL_sejmersi
 			add_country_leader_role = {
 				character = POL_donald_tusk
 				country_leader = {
@@ -7198,18 +7199,41 @@ focus = {
 				}
 				
 			hidden_effect = {
-				
+
+				set_party_name = {
+					ideology = communism
+					long_name = SAMOOBRONA_LONG
+					name = SAMOOBRONA_SHORT
+				}
+				set_party_name = {
+					ideology = democratic
+					long_name = PiS_LONG
+					name = PiS_SHORT
+				}
+				set_party_name = {
+					ideology = fascism
+					long_name = NIEPODLEGLOSC_LONG
+					name = NIEPODLEGLOSC_SHORT
+				}
 				set_cosmetic_tag = POL_usmiechnieta
 				promote_character = POL_donald_tusk
 				mark_focus_tree_layout_dirty = yes
 				#jeszcze tuchel, prowincja suwalki, prowincja konin prowincja tuchel i kujawien prowincja i miasto grodno i sprawdzi sie co jeszcze
-				set_province_name = {
+			set_province_name = {
 			id = 362
 			name = Danzig
 			}
 			set_province_name = {
 			id = 9263
 			name = Gdingen
+			}
+			set_province_name = {
+			id = 334
+			name = Tüchel
+			}
+			set_province_name = {
+			id = 400
+			name = Sudauen
 			}
 			set_province_name = {
 			id = 279
@@ -7328,6 +7352,21 @@ focus = {
 			87 = { 
 			set_state_name = "Litzmannstadt"	
 				}
+			1017 = {
+			set_state_name = "Landkreis Tüchel"
+			    }
+			1024 = {
+			set_state_name = "Sudauen"
+			    }
+
+			1018 = {
+			set_state_name = "Kuyavien"
+			    }
+			1023 = {
+			set_state_name = "Provinz SüdPreussen"
+			    }
+
+
 			}
 		}
 	}
@@ -7693,6 +7732,34 @@ focus = {
 					has_completed_focus = POL_opcja_tusk
 			}
 		}
+
+		available = {
+			has_completed_focus = POL_powrot_do_europy
+			
+			GER = {
+				has_civil_war = no
+				has_war = no
+			}
+		}
+		completion_reward = {
+			#news_event
+			GER = {
+				set_cosmetic_tag = GER_eurorepublik
+				create_country_leader = {
+			name = "Friedrich Merz"
+			picture = "GFX_portraits_Friedrich_Merz"
+			ideology = euro_liberalism
+				}
+				set_politics = {
+					ruling_party = democratic
+				}
+				add_popularity = {
+				ideology = democratic
+				popularity = 0.5
+			}
+			}
+			puppet = { target = GER }
+		}
 	}
 
 focus = {
@@ -7705,10 +7772,36 @@ focus = {
 		prerequisite = {
 			focus = POL_osadzenie_demokratow_na_tronie_niem
 		}
+		available = {
+			has_completed_focus = POL_unia_polsko_niemiecka
+
+		}
+		completion_reward = {
+			#news_event
+			#set cosmetic
+		FRA = {
+			set_cosmetic_tag = FRA_eurorepublik
+			create_country_leader = {
+			name = "Emmanuel Macron"
+			picture = "GFX_portraits_Emmanuel_Macron"
+			ideology = euro_liberalism
+				}
+				set_politics = {
+					ruling_party = democratic
+				}
+				add_popularity = {
+				ideology = democratic
+				popularity = 0.5
+			}
+		}
+			puppet = { target = FRA }
+			transfer_state = 28
+			add_core_of = 28
+		}
 	}
 
 focus = {
-		id = POL_pakt_stalowy #pakt o surowce z sowietem tak jak na niemczech
+		id = POL_pakt_stalowy #pakt z sowietem tak jak na niemczech
 		icon = GFX_goal_unknown
 		x = -3
 		y = 1
@@ -7716,6 +7809,9 @@ focus = {
 		cost = 5
 		prerequisite = {
 			focus = POL_osadzenie_demokratow_na_tronie_niem
+		}
+		completion_reward = {
+			SOV = { country_event = { id = PLREW_poland.30 } }
 		}
 	}
 
@@ -7728,6 +7824,17 @@ focus = {
 		cost = 5
 		prerequisite = {
 			focus = POL_osadzenie_demokratow_na_tronie_niem
+		}
+		completion_reward = {
+			#news_event
+			#set cosmetic
+			annex_country = { target = GER transfer_troops = yes }
+			GER = {
+			every_unit_leader = {
+					set_nationality = POL
+				}
+			}
+			#add_core
 		}
 	}
 
@@ -7792,6 +7899,9 @@ focus = {
 		}
 		prerequisite = {
 			focus = POL_wolna_bialorus
+		}
+		available = {
+			has_completed_focus = POL_zjednoczeni
 		}
 		
 	}
@@ -7902,6 +8012,7 @@ focus = {
 			HOL = {
 				country_event = { id = PLREW_poland.28 }
 			}
+			add_core_of = 8
 		}
 		
 	}
@@ -8026,6 +8137,19 @@ focus = {
 	}
 
 focus = {
+		id = POL_Burgundian_lullaby #jesli skonczyla sie wojna domowa w spain to moze  byc eurorepublik iberien
+		icon = GFX_goal_unknown
+		x = 2
+		y = 6
+		relative_position_id = POL_osadzenie_demokratow_na_tronie_niem
+		cost = 5
+		prerequisite = {
+			focus = POL_Balkanische_eurokomissariat
+		}
+		
+	}
+
+focus = {
 		id = POL_Anschluss #anektuje Austrię
 		icon = GFX_goal_unknown
 		x = -1
@@ -8060,6 +8184,9 @@ focus = {
 		prerequisite = {
 			focus = POL_Balkanische_eurokomissariat
 		}
+		completion_reward = {
+			POL_bop_very_high_increase_effect = yes
+		}
 		
 	}
 
@@ -8076,7 +8203,12 @@ focus = {
 		prerequisite = {
 			focus = POL_Marsz_na_Iberię
 		}
-		
+		prerequisite = {
+			focus = POL_Burgundian_lullaby
+		}
+		completion_reward = {
+			remove_power_balance = { id = POL_european_power_balance }
+		}
 	}
 
 
@@ -8136,6 +8268,9 @@ focus = {
 		prerequisite = {
 			focus = POL_Friedensmarine
 			focus = POL_Tuskwaffe
+		}
+		available = {
+			has_completed_focus = POL_zjednoczeni
 		}
 		
 	}
@@ -8201,6 +8336,9 @@ focus = {
 				has_completed_focus = POL_sen_wilhelma
 			}
 		}
+		available = {
+			has_completed_focus = POL_powrot_do_europy
+		}
 	}
 	
 	focus = {
@@ -8213,6 +8351,22 @@ focus = {
 		
 		prerequisite = {
 			focus = POL_sen_wilhelma
+		}
+
+		available = {
+			has_completed_focus = POL_wystawienie_federacji_na_probe
+			PRE = exists
+			NOT = {
+			POL = has_war
+			}
+		}
+
+		completion_reward = {
+			#evencik
+			create_wargoal = {
+				target = PRE
+				type = annex_everything
+			}
 		}
 	}
 
@@ -8227,10 +8381,75 @@ focus = {
 		prerequisite = {
 			focus = POL_sen_wilhelma
 		}
+		available = {
+			GER = exists
+			has_completed_focus = POL_powrot_do_europy
+			PRE = {
+				has_civil_war = no
+				has_war = no
+			}
+		}
+		completion_reward = {
+
+			#jakiś kurwa event 
+			hidden_effect = {
+
+				
+				WUR = {transfer_state =  50 }
+				WUR = {transfer_state =  978 }
+
+				BAY = {transfer_state =  54 }
+				BAY = {transfer_state =  53 }
+				BAY = {transfer_state =  52 }
+
+				RHI = {transfer_state =  42 }
+				RHI = {transfer_state =  51 }
+
+				HES = {transfer_state =  55 }
+
+				HAN = {transfer_state =  56 }
+				HAN = {transfer_state =  59 }
+				HAN = {transfer_state =  57 }
+
+				SHL = {transfer_state =  58 }
+				SHL = {transfer_state =  909 }
+
+				MEK = {transfer_state =  61 }
+
+				THU = {transfer_state =  60 }
+
+				SAX = {transfer_state =  65 }
+				SAX = {transfer_state =  1026 }
+
+				SIL = {transfer_state =  1028 }
+				SIL = {transfer_state =  66 }
+				SIL = {transfer_state =  67 }
+				SIL = {transfer_state =  1027 }
+
+				WUR = {transfer_state =  64 }
+				WUR = {transfer_state =  1030 }
+				WUR = {transfer_state =  62 }
+				WUR = {transfer_state =  68 }
+				WUR = {transfer_state =  63 }
+				WUR = {transfer_state =  8 }
+				WUR = {transfer_state =  1022 }
+				WUR = {transfer_state =  1020 }
+				WUR = {transfer_state =  763 }
+				WUR = {transfer_state =  1019 }
+				WUR = {transfer_state =  5 }
+				WUR = {transfer_state =  85 }
+				WUR = {transfer_state =  807 }
+				WUR = {transfer_state =  1017 }
+				WUR = {transfer_state =  1018 }
+				WUR = {transfer_state =  86 }
+
+			}
+
+		}
 	}
 
 	focus = {
-		id = POL_Ponowne_zintegrowanie #aneksja niemiec (wszystkich), cosmetic tag na Deutsches Kaiserreich, event na to czy aktualny szef czy merz zostaje kaiserem (nadal euroliberalnym), wyzowlenie polski z nowym tagiem na terenach gg plus te wschodnie i danie tam na wladce trzaska, chyba ze to on rzadzi to wtedy tuska z cechą generalny gubernator, dostepne jesli prusy upadły
+		id = POL_Ponowne_zintegrowanie # cosmetic tag na Deutsches Kaiserreich, wyzowlenie polski z nowym tagiem na terenach gg plus te wschodnie i danie tam na wladce trzaska, chyba ze to on rzadzi to wtedy tuska z cechą generalny gubernator, dostepne jesli prusy upadły
 		icon = GFX_goal_unknown
 		x = 0
 		y = 2
@@ -8242,6 +8461,78 @@ focus = {
 		}
 		prerequisite = {
 			focus = POL_premier_z_krakowa
+		}
+		available = {
+			NOT = {
+			PRE = exists
+			}
+			has_army_manpower = { size > 250000 }
+		}
+		completion_reward = {
+			#evencik o tym ze polska jednoczy niemcy, zmiana cosmetic taga
+			hidden_effect = {
+			
+			annex_country = { target = WUR transfer_troops = yes }
+			WUR = {
+			every_unit_leader = {
+					set_nationality = POL
+				}
+			}
+			annex_country = { target = BAY transfer_troops = yes }
+			BAY = {
+			every_unit_leader = {
+					set_nationality = POL
+				}
+			}
+			annex_country = { target = HES transfer_troops = yes }
+			HES = {
+			every_unit_leader = {
+					set_nationality = POL
+				}
+			}
+			annex_country = { target = RHI transfer_troops = yes }
+			RHI = {
+			every_unit_leader = {
+					set_nationality = POL
+				}
+			}
+			annex_country = { target = HAN transfer_troops = yes }
+			HAN = {
+			every_unit_leader = {
+					set_nationality = POL
+				}
+			}
+			annex_country = { target = SHL transfer_troops = yes }
+			SHL = {
+			every_unit_leader = {
+					set_nationality = POL
+				}
+			}
+			annex_country = { target = MEK transfer_troops = yes }
+			MEK = {
+			every_unit_leader = {
+					set_nationality = POL
+				}
+			}
+			annex_country = { target = THU transfer_troops = yes }
+			THU = {
+			every_unit_leader = {
+					set_nationality = POL
+				}
+			}
+			annex_country = { target = SAX transfer_troops = yes }
+			SAX = {
+			every_unit_leader = {
+					set_nationality = POL
+				}
+			}
+			annex_country = { target = SIL transfer_troops = yes }
+			SIL = {
+			every_unit_leader = {
+					set_nationality = POL
+				}
+			}
+		}
 		}
 	}
 
