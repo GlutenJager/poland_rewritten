@@ -768,13 +768,13 @@ country_event = {
 	option = { #Sure!
 		name = PLREW_poland.28.a
 		ai_chance = {
-			base = 30
+			base = 25
 			modifier = {
 				add = -25
 				POL = { has_army_size = { size < 40 } }
 			}
 			modifier = {
-				add = 100
+				add = 30
 				POL = { has_army_size = { size > 39 } }
 			}
 			modifier = {
@@ -811,14 +811,14 @@ country_event = {
 			}
 			modifier = {
 				any_other_country = {
-					has_guaranteed = LIT
+					has_guaranteed = THIS
 				}
 				factor = 5 #i've got friends
 			}
 			modifier = {
 				any_other_country = {
 					is_major = yes
-					has_guaranteed = LIT
+					has_guaranteed = THIS
 				}
 				factor = 5 #i've got big friends
 			}
@@ -848,11 +848,6 @@ country_event = {
 			base = 30
 		}
 		annex_country = { target = FROM transfer_troops = yes }
-		FROM = {
-			every_unit_leader = {
-					set_nationality = POL
-				}
-		}
 	}
 }
 
@@ -1055,6 +1050,324 @@ country_event = {
 	option = {
 		name = PLREW_poland.32.a
 		add_opinion_modifier = { target = SOV modifier = refused_MR_pact }# no pact
+	}
+}
+
+country_event = { #silni razem
+	id = PLREW_poland.33
+	title = PLREW_poland.33.t
+	desc = PLREW_poland.33.d
+	picture = GFX_report_event_generic_read_write # W I P
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = PLREW_poland.33.o1 #nikt nie bedzie nam mowil co mamy robic
+		add_stability = -0.1
+	}
+	option = {
+		name = PLREW_poland.33.o2 #i love democracy
+		create_country_leader = {
+			name = "Roman Giertych"
+			picture = "GFX_portraits_roman_giertych"
+			ideology = euro_liberalism
+			traits = {}
+		}
+	}
+	option = {
+		name = PLREW_poland.33.o3 #damy im wybrać kogoś przewidywalnego
+		country_event = { id = PLREW_poland.34 }
+	}
+}
+
+country_event = { # Przewidywalni
+	id = PLREW_poland.34
+	title = PLREW_poland.34.t
+	desc = PLREW_poland.34.d
+	picture = GFX_report_event_generic_read_write # W I P
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = PLREW_poland.34.o1
+		create_country_leader = {
+			name = "Rafał Trzaskowski"
+			picture = "GFX_portraits_rafał_trzaskowski"
+			ideology = euro_liberalism
+			traits = {}
+		}
+	}
+	option = {
+		name = PLREW_poland.34.o2
+		create_country_leader = {
+			name = "Borys Budka"
+			picture = "GFX_portraits_borys_budka"
+			ideology = euro_liberalism
+			traits = {}
+		}
+	}
+	option = {
+		name = PLREW_poland.34.o3
+		create_country_leader = {
+			name = "Radek Sikorski"
+			picture = "GFX_portraits_radek_sikorski"
+			ideology = euro_liberalism
+			traits = {}
+		}
+	}
+}
+
+country_event = { #ultimatum na sowieta europejskie bialorus
+	id = PLREW_poland.35
+	title = PLREW_poland.35.t
+	desc = PLREW_poland.35.d
+
+	picture = GFX_report_event_lithuanian_ultimatum
+	
+	is_triggered_only = yes
+
+	option = { #Sure!
+		name = PLREW_poland.35.a
+		ai_chance = {
+			base = 40
+			modifier = {
+				add = -25
+				POL = { has_army_size = { size < 45 } }
+			}
+			modifier = {
+				add = 30
+				POL = { has_army_size = { size > 44 } }
+			}
+			modifier = {
+				add = 20
+				is_in_faction_with = POL
+			}
+			modifier = {
+				factor = 0.1
+				is_in_faction = yes
+			}
+		}
+		POL = {
+			country_event = { hours = 2 id = PLREW_poland.3501 }
+		}
+		custom_effect_tooltip = GAME_OVER_TT
+	}
+
+	option = { #No thank you
+		name = PLREW_poland.35.b
+		ai_chance = {
+			base = 10
+			modifier = {
+				POL = { has_army_size = { size > 39 } }
+				factor = 0.5
+			}
+			modifier = {
+				add = 20
+				POL = { has_army_size = { size < 30 } }
+			}
+			modifier = {
+				factor = 2
+				is_in_faction = yes
+				NOT = { is_in_faction_with = POL }
+			}
+			modifier = {
+				any_other_country = {
+					has_guaranteed = THIS
+				}
+				factor = 5 #i've got friends
+			}
+			modifier = {
+				any_other_country = {
+					is_major = yes
+					has_guaranteed = THIS
+				}
+				factor = 5 #i've got big friends
+			}
+		}
+		POL = {
+			add_opinion_modifier = { target = PREV modifier = POL_annexation_refused }
+			country_event = { hours = 2 id = PLREW_poland.3502 }
+			if = { limit = { is_in_faction_with = PREV }
+				remove_from_faction = PREV
+			}
+		}
+	}
+}
+
+# says yes
+country_event = {
+	id = PLREW_poland.3501
+	title = PLREW_poland.3501.t
+	desc = PLREW_poland.3501.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+
+	option = { #Awesome!
+		name = PLREW_poland.3501.a
+		ai_chance = {
+			base = 30
+		}
+		207 = { transfer_state_to = POL }
+		204 = { transfer_state_to = POL }
+		206 = { transfer_state_to = POL }
+	}
+}
+
+# says no
+country_event = {
+	id = PLREW_poland.3502
+	title = PLREW_poland.3502.t
+	desc = PLREW_poland.3502.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+
+	option = { #How 'bout I do anyway
+		name = PLREW_poland.3502.a
+		ai_chance = {
+			base = 30
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = FROM
+		}
+	}
+}
+
+country_event = { #ultimatum na sowieta europejskie ukraina
+	id = PLREW_poland.36
+	title = PLREW_poland.36.t
+	desc = PLREW_poland.36.d
+
+	picture = GFX_report_event_lithuanian_ultimatum
+	
+	is_triggered_only = yes
+
+	option = { #Sure!
+		name = PLREW_poland.36.a
+		ai_chance = {
+			base = 40
+			modifier = {
+				add = -25
+				POL = { has_army_size = { size < 45 } }
+			}
+			modifier = {
+				add = 30
+				POL = { has_army_size = { size > 44 } }
+			}
+			modifier = {
+				add = 20
+				is_in_faction_with = POL
+			}
+			modifier = {
+				factor = 0.1
+				is_in_faction = yes
+			}
+		}
+		POL = {
+			country_event = { hours = 2 id = PLREW_poland.3601 }
+		}
+		custom_effect_tooltip = GAME_OVER_TT
+	}
+
+	option = { #No thank you
+		name = PLREW_poland.36.b
+		ai_chance = {
+			base = 10
+			modifier = {
+				POL = { has_army_size = { size > 39 } }
+				factor = 0.5
+			}
+			modifier = {
+				add = 20
+				POL = { has_army_size = { size < 30 } }
+			}
+			modifier = {
+				factor = 2
+				is_in_faction = yes
+				NOT = { is_in_faction_with = POL }
+			}
+			modifier = {
+				any_other_country = {
+					has_guaranteed = THIS
+				}
+				factor = 5 #i've got friends
+			}
+			modifier = {
+				any_other_country = {
+					is_major = yes
+					has_guaranteed = THIS
+				}
+				factor = 5 #i've got big friends
+			}
+		}
+		POL = {
+			add_opinion_modifier = { target = PREV modifier = POL_annexation_refused }
+			country_event = { hours = 2 id = PLREW_poland.3602 }
+			if = { limit = { is_in_faction_with = PREV }
+				remove_from_faction = PREV
+			}
+		}
+	}
+}
+
+# says yes
+country_event = {
+	id = PLREW_poland.3601
+	title = PLREW_poland.3601.t
+	desc = PLREW_poland.3601.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+
+	option = { #Awesome!
+		name = PLREW_poland.3601.a
+		ai_chance = {
+			base = 30
+		}
+		199 = { transfer_state_to = POL }
+		201 = { transfer_state_to = POL }
+		194 = { transfer_state_to = POL }
+		202 = { transfer_state_to = POL }
+		193 = { transfer_state_to = POL }
+		225 = { transfer_state_to = POL }
+		259 = { transfer_state_to = POL }
+		203 = { transfer_state_to = POL }
+		197 = { transfer_state_to = POL }
+		226 = { transfer_state_to = POL }
+		221 = { transfer_state_to = POL }
+		240 = { transfer_state_to = POL }
+		200 = { transfer_state_to = POL }
+		227 = { transfer_state_to = POL }
+		228 = { transfer_state_to = POL }
+		218 = { transfer_state_to = POL }
+		196 = { transfer_state_to = POL }
+		137 = { transfer_state_to = POL }
+		198 = { transfer_state_to = ROM }
+		834 = { transfer_state_to = ROM }
+		192 = { transfer_state_to = ROM }
+	}
+}
+
+# says no
+country_event = {
+	id = PLREW_poland.3602
+	title = PLREW_poland.3602.t
+	desc = PLREW_poland.3602.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+
+	option = { #How 'bout I do anyway
+		name = PLREW_poland.3602.a
+		ai_chance = {
+			base = 30
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = FROM
+		}
 	}
 }
 

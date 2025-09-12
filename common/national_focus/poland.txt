@@ -7138,7 +7138,7 @@ focus = {
 
 
 	focus = {
-		id = POL_opcja_tusk #dodaj pol minusowy pol plusowy spirit Koalicja Ludzkich Serc bedzie modyfikowany lewym drzewkiem
+		id = POL_opcja_tusk 
 		icon = GFX_goal_unknown
 		x = 5
 		y = 1
@@ -7170,6 +7170,7 @@ focus = {
 			}
 		}
 		completion_reward = {
+			add_ideas = POL_koalicja_polskich_serc
 			remove_ideas = POL_sejmersi
 			add_country_leader_role = {
 				character = POL_donald_tusk
@@ -7218,7 +7219,7 @@ focus = {
 				set_cosmetic_tag = POL_usmiechnieta
 				promote_character = POL_donald_tusk
 				mark_focus_tree_layout_dirty = yes
-				#jeszcze tuchel, prowincja suwalki, prowincja konin prowincja tuchel i kujawien prowincja i miasto grodno i sprawdzi sie co jeszcze
+				
 			set_province_name = {
 			id = 362
 			name = Danzig
@@ -7326,7 +7327,7 @@ focus = {
 			set_state_name = "Warschau"
 			}
 			88 = { 
-			set_state_name = "Krakau"
+			set_state_name = "Galizien"
 			}
 			97 = { 
 			set_state_name = "Belostok"
@@ -7372,7 +7373,7 @@ focus = {
 	}
 	
 	focus = {
-		id = POL_powrot_do_europy #Zamien spirit europejskina lepszy
+		id = POL_powrot_do_europy
 		icon = GFX_goal_unknown
 		x = -1
 		y = 1
@@ -7380,6 +7381,9 @@ focus = {
 		cost = 5
 		prerequisite = {
 			focus = POL_opcja_tusk
+		}
+		completion_reward = {
+			add_ideas = POL_european_pressure_tusk
 		}
 	}
 
@@ -7411,7 +7415,7 @@ focus = {
 	}
 
 	focus = {
-		id = POL_inwestycje_w_bastion #dodatkowa ifrastruktura na teranach zachodnich i jakies fabryczki
+		id = POL_inwestycje_w_bastion 
 		icon = GFX_goal_unknown
 		x = 0
 		y = 2
@@ -7423,10 +7427,30 @@ focus = {
 		prerequisite = {
 			focus = POL_never_lose_yr_smile
 		}
+		completion_reward = {
+			10 = { 
+			add_building_construction = {
+					type = infrastructure
+					level = 5
+				}
+			}
+			10 = { 
+			add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+			10 = { 
+			add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+		}
 	}
 
 	focus = {
-		id = POL_bron_na_dinozaury #troche sprzetu 
+		id = POL_bron_na_dinozaury  
 		icon = GFX_goal_unknown
 		x = 2
 		y = 2
@@ -7438,10 +7462,16 @@ focus = {
 		prerequisite = {
 			focus = POL_never_lose_yr_smile
 		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 5000
+			}
+		}
 	}
 
 	focus = {
-		id = POL_wosp #zatrudnij generala owsiaka i dodaj fabryki gdzies tam
+		id = POL_wosp #zatrudnij generala owsiaka
 		icon = GFX_goal_unknown
 		x = -2
 		y = 3
@@ -7450,10 +7480,73 @@ focus = {
 		prerequisite = {
 			focus = POL_wykorzystanie_srodkow_z_kpo
 		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = POL
+					is_owned_by = POL
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = POL
+					is_owned_by = POL
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = POL
+					is_owned_by = POL
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = POL
+					is_owned_by = POL
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = POL
+					is_owned_by = POL
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = POL
+					is_owned_by = POL
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+
+		}
 	}
 
 	focus = {
-		id = POL_pamietamy_KLD #dodaj poparcie demokracji
+		id = POL_pamietamy_KLD 
 		icon = GFX_goal_unknown
 		x = 2
 		y = 3
@@ -7461,6 +7554,12 @@ focus = {
 		cost = 5
 		prerequisite = {
 			focus = POL_bron_na_dinozaury
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+			}
 		}
 	}
 
@@ -7477,7 +7576,7 @@ focus = {
 	}
 
 	focus = {
-		id = POL_silni_razem #event (silni razem wybiora kaisera) jesli zosytanie wybrany tusk to i jego portret sie zmienia, moze byc wybrany giertych sikorski budka i trzask#
+		id = POL_silni_razem #event (silni razem wybiora kaisera), moze byc wybrany giertych sikorski budka i trzask#
 		icon = GFX_goal_unknown
 		x = 0
 		y = 4
@@ -7495,7 +7594,7 @@ focus = {
 	}
 
 	focus = {
-		id = POL_ruch_osmiu_gwiazd #dodaj ruch 8 gwiazd duch
+		id = POL_ruch_osmiu_gwiazd 
 		icon = GFX_goal_unknown
 		x = 3
 		y = 5
@@ -7504,10 +7603,13 @@ focus = {
 		prerequisite = {
 			focus = POL_silni_razem
 		}
+		completion_reward = {
+			add_ideas = POL_ruch_8_gwiazd
+		}
 	}
 
 	focus = {
-		id = POL_komisje_sledcze #odejmuje poparcie dla faszyzmu i daje nowy zespol badawczy
+		id = POL_komisje_sledcze
 		icon = GFX_goal_unknown
 		x = 3
 		y = 6
@@ -7515,6 +7617,13 @@ focus = {
 		cost = 5
 		prerequisite = {
 			focus = POL_ruch_osmiu_gwiazd
+		}
+		completion_reward = {
+			add_research_slot = 1
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.1
+			}
 		}
 	}
 
@@ -7528,10 +7637,16 @@ focus = {
 		prerequisite = {
 			focus = POL_komisje_sledcze
 		}
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05 #i tak za duzo lol
+			}
+		}
 	}
 
 	focus = {
-		id = POL_pozarcie_przystawek #pp i poparcie na plus, event czarzasty sie cieszy oraz drugi holownia sie stawia
+		id = POL_pozarcie_przystawek # event czarzasty sie cieszy oraz drugi holownia sie stawia
 		icon = GFX_goal_unknown
 		x = 3
 		y = 8
@@ -7540,10 +7655,17 @@ focus = {
 		prerequisite = {
 			focus = POL_kolejna_koalicja_psl
 		}
+		completion_reward = {
+			add_political_power = 50
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+			}
+		}
 	}
 
 	focus = {
-		id = POL_wymienienie_neosedziow #usunac rozjebane sadownictwo i dodac pp
+		id = POL_wymienienie_neosedziow
 		icon = GFX_goal_unknown
 		x = 1
 		y = 5
@@ -7551,6 +7673,10 @@ focus = {
 		cost = 5
 		prerequisite = {
 			focus = POL_silni_razem
+		}
+		completion_reward = {
+			remove_ideas = POL_broken_justice_system
+			add_command_power = 60
 		}
 	}
 
@@ -7579,7 +7705,7 @@ focus = {
 	}
 
 	focus = {
-		id = POL_utrzymanie_socjali_pisowskich #dodaj 500 plus ale odjemij 15poparcia 
+		id = POL_utrzymanie_socjali_pisowskich  
 		icon = GFX_goal_unknown
 		x = -3
 		y = 6
@@ -7590,11 +7716,12 @@ focus = {
 		}
 		completion_reward = {
 			add_ideas = POL_800plus
+			add_stability = -0.15
 		}
 	}
 
 	focus = {
-		id = POL_kredyt_0 #zamien 500 plus na duch rozdawnictwo
+		id = POL_kredyt_0 
 		icon = GFX_goal_unknown
 		x = -3
 		y = 7
@@ -7602,6 +7729,40 @@ focus = {
 		cost = 5
 		prerequisite = {
 			focus = POL_utrzymanie_socjali_pisowskich
+		}
+		completion_reward = {
+			add_political_power = 150
+			add_stability = 0.1
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = POL
+					is_owned_by = POL
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = POL
+					is_owned_by = POL
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = POL
+					is_owned_by = POL
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
 		}
 	}
 
@@ -7615,10 +7776,16 @@ focus = {
 		prerequisite = {
 			focus = POL_przyjecie_paktu_imigracyjnego
 		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = POL_pakt_migracyjny
+				add_idea = POL_pakt_migracyjny_2
+			}
+		}
 	}
 
 	focus = {
-		id = POL_podwyzszenie_wieku_emerytalnego #dodaj fabryczki odejmij stabilke i poparcie
+		id = POL_podwyzszenie_wieku_emerytalnego 
 		icon = GFX_goal_unknown
 		x = 1
 		y = 6
@@ -7627,10 +7794,18 @@ focus = {
 		prerequisite = {
 			focus = POL_przyjecie_paktu_imigracyjnego
 		}
+		completion_reward = {
+			add_political_power = 200
+			add_stability = -0.1
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.1
+			}
+		}
 	}
 
 	focus = {
-		id = POL_polskosc_to_nienormalnosc #Dodaj liderowi trait antypolak
+		id = POL_polskosc_to_nienormalnosc
 		icon = GFX_goal_unknown
 		x = -1
 		y = 7
@@ -7642,10 +7817,13 @@ focus = {
 		prerequisite = {
 			focus = POL_podwyzszenie_wieku_emerytalnego
 		}
+		completion_reward = {
+			add_country_leader_trait = mod_antypolak
+		}
 	}
 
 	focus = {
-		id = POL_fur_deutschland #oddaj rowniez katowice niemcom oczywiscie event jest potrzebny
+		id = POL_fur_deutschland 
 		icon = GFX_goal_unknown
 		x = 1
 		y = 8
@@ -7657,10 +7835,26 @@ focus = {
 		prerequisite = {
 			focus = POL_kolejna_koalicja_psl
 		}
+		bypass = {
+			GER = {
+				exists = no
+			}
+		}
+		completion_reward = {
+			GER = {
+				add_opinion_modifier = {
+					target = POL
+					modifier = large_increase
+				}
+			}
+			GER = {
+				transfer_state = 762
+			}
 	}
+}
 
 	focus = {
-		id = POL_polityka_cieplej_wody #dodaj stabilkę ale dodaj wiecej consumer goods w rozdawnictwie
+		id = POL_polityka_cieplej_wody
 		icon = GFX_goal_unknown
 		x = -1
 		y = 8
@@ -7672,10 +7866,16 @@ focus = {
 		prerequisite = {
 			focus = POL_kredyt_0
 		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = POL_800plus
+				add_idea = POL_ciepla_woda
+			}
+		}
 	}
 
 	focus = {
-		id = POL_wina_tuska #duch narodowy wina tuska ktory daje plusy do pp (dosc duze po przyda sie do europy)
+		id = POL_wina_tuska 
 		icon = GFX_goal_unknown
 		x = 1
 		y = 9
@@ -7689,6 +7889,10 @@ focus = {
 		}
 		prerequisite = {
 			focus = POL_pozarcie_przystawek
+		}
+		completion_reward = {
+			#news event o zielonej wyspie europy
+			add_ideas = POL_wina_tuska
 		}
 	}
 
@@ -7704,7 +7908,7 @@ focus = {
 
 
 focus = {
-		id = POL_osadzenie_demokratow_na_tronie_niem #niemcy dobrowolnie zmieniają sie w demokracje i zostają eurorepubliką a my wybieramy czy rzadzi tam scholz czy merz eventem
+		id = POL_osadzenie_demokratow_na_tronie_niem 
 		icon = GFX_goal_unknown
 		x = 1
 		y = 12
@@ -7747,7 +7951,7 @@ focus = {
 				set_cosmetic_tag = GER_eurorepublik
 				create_country_leader = {
 			name = "Friedrich Merz"
-			picture = "GFX_portraits_Friedrich_Merz"
+			picture = "GFX_portraits_friedrich_merz"
 			ideology = euro_liberalism
 				}
 				set_politics = {
@@ -7763,7 +7967,7 @@ focus = {
 	}
 
 focus = {
-		id = POL_zaproszenie_francuzow #francuzi dostają event o zostanie naszym dominium (lepszy puppet, eurorepublik), jeslisie nie zgodzą to odblokowuje sie decyzja o utworzeniu z zajetych terenow frnacuskich eurorepubliki tak czy inaczej
+		id = POL_zaproszenie_francuzow 
 		icon = GFX_goal_unknown
 		x = 3
 		y = 1
@@ -7777,13 +7981,16 @@ focus = {
 
 		}
 		completion_reward = {
+			create_wargoal = {
+				target = FRA
+				type = annex_everything
+			}
 			#news_event
-			#set cosmetic
 		FRA = {
 			set_cosmetic_tag = FRA_eurorepublik
 			create_country_leader = {
 			name = "Emmanuel Macron"
-			picture = "GFX_portraits_Emmanuel_Macron"
+			picture = "GFX_portraits_emanuel_macron"
 			ideology = euro_liberalism
 				}
 				set_politics = {
@@ -7796,12 +8003,14 @@ focus = {
 		}
 			puppet = { target = FRA }
 			transfer_state = 28
-			add_core_of = 28
+			28 = {
+				add_core_of = GER
+			}
 		}
 	}
 
 focus = {
-		id = POL_pakt_stalowy #pakt z sowietem tak jak na niemczech
+		id = POL_pakt_stalowy
 		icon = GFX_goal_unknown
 		x = -3
 		y = 1
@@ -7816,7 +8025,7 @@ focus = {
 	}
 
 focus = {
-		id = POL_unia_polsko_niemiecka # Polska i Niemcy jednoczą się w jedną eurorepublikę, w ktorej rzadzi tusk odblokowuje tez decyzje o utworzeniu kommisariatow (mowa o kategorii)
+		id = POL_unia_polsko_niemiecka 
 		icon = GFX_goal_unknown
 		x = 0
 		y = 1
@@ -7846,7 +8055,7 @@ focus = {
 
 
 focus = {
-		id = POL_nord_stream_2 #rozbudowa w jakis sposob paktu stalowego
+		id = POL_nord_stream_2 
 		icon = GFX_goal_unknown
 		x = -5
 		y = 2
@@ -7858,11 +8067,37 @@ focus = {
 		prerequisite = {
 			focus = POL_pakt_stalowy
 		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+				type = arms_factory
+				level = 3
+			}
+		}
+		random_owned_controlled_state = {
+				add_building_construction = {
+				type = arms_factory
+				level = 3
+			}
+		}
+		random_owned_controlled_state = {
+				add_building_construction = {
+				type = arms_factory
+				level = 3
+			}
+		}
+		random_owned_controlled_state = {
+				add_building_construction = {
+				type = arms_factory
+				level = 3
+			}
+		}
+		}
 		
 	}
 
 focus = {
-		id = POL_wolna_bialorus #zarzadamy od sowieta oddania nam bialorusi (aneksja), odblokowuje sie decyzja o oddaniu terenow reichkommisariatom moskwy i ostland odpowiednich terenow jesli te istnieją
+		id = POL_wolna_bialorus
 		icon = GFX_goal_unknown
 		x = -4
 		y = 3
@@ -7871,11 +8106,16 @@ focus = {
 		prerequisite = {
 			focus = POL_nord_stream_2
 		}
+		completion_reward = {
+			SOV = {
+			country_event = { id = PLREW_poland.35 }
+		}
+	}
 		
 	}
 
 focus = {
-		id = POL_obrona_ukrainy #zarzadamy oddania nam ukrainy (aneksja) odblokowuje sie decyzja o uworzeniu reichkomiisariat ukraine
+		id = POL_obrona_ukrainy
 		icon = GFX_goal_unknown
 		x = -6
 		y = 3
@@ -7884,11 +8124,16 @@ focus = {
 		prerequisite = {
 			focus = POL_nord_stream_2
 		}
+		completion_reward = {
+			SOV = {
+			country_event = { id = PLREW_poland.36 }
+		}
+	}
 		
 	}
 
 focus = {
-		id = POL_powalenie_niedzwiedzia #cel i decyzja o odblokowaniu reichkommisariat moskowien, kaukasien, turkiestan, syberien, dostepne po zjdennoczeniu eu
+		id = POL_powalenie_niedzwiedzia
 		icon = GFX_goal_unknown
 		x = -5
 		y = 4
@@ -7903,6 +8148,22 @@ focus = {
 		available = {
 			has_completed_focus = POL_zjednoczeni
 		}
+		bypass = {
+			OR = {
+				SOV = {
+					exists = no
+				}
+				SOV = {
+					is_subject = yes
+				}
+			}
+		}
+		completion_reward = {
+			create_wargoal = {
+				target = SOV
+				type = annex_everything
+			}
+		}
 		
 	}
 
@@ -7916,6 +8177,26 @@ focus = {
 		prerequisite = {
 			focus = POL_powalenie_niedzwiedzia
 		}
+		completion_reward = {
+			create_wargoal = {
+				target = SAU
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = TUR
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = PER
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = IRQ
+				type = annex_everything
+			}
+			#syria, palestyna, kuwejt, oman, liban, jemen, jordania, 
+			#decyzja na eurokomiisariat arabien
+		}
 		
 	}
 
@@ -7928,6 +8209,9 @@ focus = {
 		cost = 5
 		prerequisite = {
 			focus = POL_powalenie_niedzwiedzia
+		}
+		completion_reward = {
+			#do wymyslenia
 		}
 		
 	}
@@ -8012,7 +8296,7 @@ focus = {
 			HOL = {
 				country_event = { id = PLREW_poland.28 }
 			}
-			add_core_of = 8
+			8 = { add_core_of = POL }
 		}
 		
 	}
@@ -8217,7 +8501,7 @@ focus = {
 
 
 focus = {
-		id = POL_armia_europejska #dodaj dywizje Armii Europejskiej i sprze oraz duch ktoey pomoze w zajmowaniu panstw eurpy
+		id = POL_armia_europejska 
 		icon = GFX_goal_unknown
 		x = 5
 		y = 2
@@ -8229,11 +8513,14 @@ focus = {
 		prerequisite = {
 			focus = POL_zaproszenie_francuzow
 		}
+		completion_reward = {
+			add_ideas = POL_polnische_wehrmacht
+		}
 		
 	}
 
 focus = {
-		id = POL_Friedensmarine #Dodaje stocznie i plusy do produkcji statkow
+		id = POL_Friedensmarine 
 		icon = GFX_goal_unknown
 		x = 4
 		y = 3
@@ -8241,6 +8528,38 @@ focus = {
 		cost = 5
 		prerequisite = {
 			focus = POL_armia_europejska
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+			add_building_construction = {
+				type = dockyard
+				level = 4
+			}
+		}
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = dockyard
+				level = 5
+			}
+		}
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = dockyard
+				level = 2
+			}
+		}
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = dockyard
+				level = 3
+			}
+		}
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = dockyard
+				level = 2
+			}
+		}
 		}
 		
 	}
@@ -8271,6 +8590,13 @@ focus = {
 		}
 		available = {
 			has_completed_focus = POL_zjednoczeni
+		}
+		completion_reward = {
+			#news_event
+			create_wargoal = {
+				target = ENG
+				type = annex_everything
+			}
 		}
 		
 	}
@@ -8355,10 +8681,10 @@ focus = {
 
 		available = {
 			has_completed_focus = POL_wystawienie_federacji_na_probe
-			PRE = exists
-			NOT = {
-			POL = has_war
-			}
+			PRE = { exists = yes }
+			
+			POL = { has_war = no }
+			
 		}
 
 		completion_reward = {
@@ -8382,7 +8708,7 @@ focus = {
 			focus = POL_sen_wilhelma
 		}
 		available = {
-			GER = exists
+			GER = { exists = yes }
 			has_completed_focus = POL_powrot_do_europy
 			PRE = {
 				has_civil_war = no
@@ -8464,7 +8790,7 @@ focus = {
 		}
 		available = {
 			NOT = {
-			PRE = exists
+				PRE = { exists = yes }
 			}
 			has_army_manpower = { size > 250000 }
 		}
@@ -8874,7 +9200,7 @@ focus = {
 
 
 	focus = {
-		id = POL_Kwestia_Koalicji #pp dodaj
+		id = POL_Kwestia_Koalicji 
 		icon = GFX_goal_unknown
 		x = -10
 		y = 1
@@ -8885,10 +9211,13 @@ focus = {
 				has_completed_focus = POL_opcja_tusk
 			}
 		}
+		completion_reward = {
+			add_political_power = 25
+		}
 	}
 
 	focus = {
-		id = POL_KO_Zieloni #zmodyfikuj duch koalicji o pp na plus dodaj  generala jachire
+		id = POL_KO_Zieloni # dodaj  generala jachire
 		icon = GFX_goal_unknown
 		x = -1
 		y = 2
@@ -8897,10 +9226,20 @@ focus = {
 		prerequisite = {
 			focus = POL_KO_Nowoczesna
 		}
+		available = {
+			has_completed_focus = POL_KO_Nowoczesna
+			has_completed_focus = POL_KO_iPL
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = POL_koalicja_polskich_serc_ipl
+				add_idea = POL_koalicja_polskich_serc_zieloni
+			}
+		}
 	}
 
 	focus = {
-		id = POL_KO_iPL #dodaj poparcie komunizmu na plusw tym duchu dodaj barbare nowacką i palikota jako generalow
+		id = POL_KO_iPL # dodaj barbare nowacką i palikota jako generalow
 		icon = GFX_goal_unknown
 		x = 1
 		y = 1
@@ -8909,10 +9248,19 @@ focus = {
 		prerequisite = {
 			focus = POL_Kwestia_Koalicji
 		}
+		available = {
+			has_completed_focus = POL_KO_Nowoczesna
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = POL_koalicja_polskich_serc_nowoczesna
+				add_idea = POL_koalicja_polskich_serc_ipl
+			}
+		}
 	}
 
 	focus = {
-		id = POL_KO_Nowoczesna #mzodyfikuj na plus duch i dodaj stabilkę Dodaj generała szłapkę i zębaczynskiego
+		id = POL_KO_Nowoczesna #Dodaj generała szłapkę i zębaczynskiego
 		icon = GFX_goal_unknown
 		x = -1
 		y = 1
@@ -8921,10 +9269,16 @@ focus = {
 		prerequisite = {
 			focus = POL_Kwestia_Koalicji
 		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = POL_koalicja_polskich_serc
+				add_idea = POL_koalicja_polskich_serc_nowoczesna
+			}
+		}
 	}
 
 	focus = {
-		id = POL_KO_Agrounia #dodaj fabryczki na podkarpaciu i lubelszczyznie Dodaj generała Kolodziejczaka
+		id = POL_KO_Agrounia #Dodaj generała Kolodziejczaka
 		icon = GFX_goal_unknown
 		x = 1
 		y = 2
@@ -8933,10 +9287,23 @@ focus = {
 		prerequisite = {
 			focus = POL_KO_iPL
 		}
+		available = {
+			has_completed_focus = POL_KO_Nowoczesna
+			has_completed_focus = POL_KO_iPL
+			has_completed_focus = POL_KO_Zieloni
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = POL_koalicja_polskich_serc_zieloni
+				add_idea = POL_koalicja_polskich_serc_agrounia
+			}
+			97 = { add_building_construction = { type = infrastructure level = 4 } } 
+			88 = { add_building_construction = { type = infrastructure level = 4 } } 
+		}
 	}
 
 	focus = {
-		id = POL_KO_Prymat_Volksplatform #zostaw tylko bonusy w tym spiricie 
+		id = POL_KO_Prymat_Volksplatform 
 		icon = GFX_goal_unknown
 		x = 0
 		y = 3
@@ -8947,6 +9314,18 @@ focus = {
 		}
 		prerequisite = {
 			focus = POL_KO_Agrounia
+		}
+		available = {
+			has_completed_focus = POL_KO_Nowoczesna
+			has_completed_focus = POL_KO_iPL
+			has_completed_focus = POL_KO_Zieloni
+			has_completed_focus = POL_KO_Agrounia
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = POL_koalicja_polskich_serc_agrounia
+				add_idea = POL_prymat_volksplatform
+			}
 		}
 	}
 

@@ -97,7 +97,7 @@ characters = {
 		}
 		country_leader = {
 			ideology = euro_liberalism
-			traits = { }
+			traits = { mod_lubi_niemcy mod_kaszub }
 			expire="1965.1.1.1"
 			id=-1
 		}

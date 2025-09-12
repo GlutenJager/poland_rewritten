@@ -1,4 +1,15 @@
 spriteTypes = {
+	#TUSK
+	spriteType = {
+		name = "GFX_portraits_friedrich_merz"
+		texturefile = "gfx/leaders/POL/portrait_POL_friedrich_merz.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portraits_emanuel_macron"
+		texturefile = "gfx/leaders/POL/portrait_POL_emanuel_macron.dds"
+	}
+	
 	# LEADERS
 	spriteType = {
 		name = "GFX_portraits_andrzej_lepper"

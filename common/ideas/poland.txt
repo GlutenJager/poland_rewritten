@@ -19,6 +19,22 @@ country = {
                 non_core_manpower = 0.05
             }
         }
+
+        POL_european_pressure_tusk = {
+            picture = naciski_ue
+
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                stability_factor = 0.05
+                democratic_drift = 0.3
+                democratic_acceptance = 15
+                non_core_manpower = 0.05
+                consumer_goods_factor = -0.05
+            }
+        }
+
 		POL_jp2 = {
             picture = jp2
 
@@ -662,7 +678,177 @@ country = {
                 political_power_factor = 0.2
             }
         }
+        
+         POL_koalicja_polskich_serc = {
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                consumer_goods_factor = 0.1
+                political_power_factor = -0.15
+                drift_defence_factor = -0.1
+                stability_weekly = -0.005
+                surrender_limit = -0.5
+                production_speed_rail_way_factor = -0.3 #tusk nie lubi rozwijania zadupia
+                democratic_drift = 0.1
+                democratic_acceptance = 15
+            }
+        }
 
+        POL_ruch_8_gwiazd = {
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                stability_factor = -0.05
+                fascism_acceptance = -15
+                communism_acceptance = -5
+                democratic_drift = 0.01
+                research_speed_factor = 0.05
+                production_speed_arms_factory_factor = 0.1
+            }
+        }
+
+        POL_pakt_migracyjny = {
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                stability_factor = -0.10
+                fascism_acceptance = -25
+                communism_acceptance = -10
+            }
+
+    }
+
+    POL_pakt_migracyjny_2 = {
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                fascism_acceptance = -25
+                communism_acceptance = -10
+                democratic_drift = 0.002
+                research_speed_factor = 0.05 #inzynierowie
+                production_speed_buildings_factor = 0.2
+            }
+
+    }
+
+     POL_ciepla_woda = {
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                consumer_goods_factor = 0.25
+                stability_factor = 0.02
+                political_power_gain = 0.25
+            }
+
+        }
+
+    POL_wina_tuska = {
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                political_power_gain = 0.15
+            }
+
+        }
+
+        POL_koalicja_polskich_serc_nowoczesna = {
+            allowed = {
+                original_tag = POL
+            }
+           modifier = {
+                consumer_goods_factor = 0.1
+                political_power_factor = -0.15
+                drift_defence_factor = -0.1
+                stability_weekly = 0.0005
+                surrender_limit = 0.5
+                production_speed_rail_way_factor = -0.3 #tusk nie lubi rozwijania zadupia
+                democratic_drift = 0.01
+                democratic_acceptance = 15
+            }
+        }
+
+        POL_koalicja_polskich_serc_ipl = {
+            allowed = {
+                original_tag = POL
+            }
+           modifier = {
+                consumer_goods_factor = 0.1
+                political_power_factor = -0.15
+                drift_defence_factor = -0.1
+                stability_weekly = 0.0005
+                surrender_limit = 0.5
+                production_speed_rail_way_factor = 0.3 
+                democratic_drift = 0.01
+                communism_drift = 0.01
+                democratic_acceptance = 15
+            }
+        }
+
+        POL_koalicja_polskich_serc_zieloni = {
+            allowed = {
+                original_tag = POL
+            }
+           modifier = {
+                drift_defence_factor = -0.1
+                stability_weekly = 0.0005
+                surrender_limit = 0.1
+                production_speed_rail_way_factor = 0.3 
+                democratic_drift = 0.01
+                communism_drift = 0.01
+                democratic_acceptance = 15
+            }
+        }
+
+        POL_koalicja_polskich_serc_agrounia = {
+            allowed = {
+                original_tag = POL
+            }
+           modifier = {
+                stability_weekly = 0.0005
+                surrender_limit = 0.1
+                production_speed_rail_way_factor = 0.3 
+                democratic_drift = 0.01
+                communism_drift = 0.01
+                democratic_acceptance = 15
+                research_speed_factor = 0.05
+            }
+        }
+
+        POL_prymat_volksplatform = {
+            allowed = {
+                original_tag = POL
+            }
+           modifier = {
+                stability_weekly = 0.0005
+                surrender_limit = 0.3 
+                democratic_drift = 0.001
+                democratic_acceptance = 15
+                research_speed_factor = 0.1
+            }
+        }
+
+         POL_polnische_wehrmacht = {
+            allowed = {
+                original_tag = POL
+            }
+           modifier = {
+                army_defence_factor = 0.15
+                army_attack_factor = 0.15
+                army_speed_factor = 0.1
+                breakthrough_factor = 0.1
+                war_support_factor = 0.2
+                surrender_limit = 0.2
+                experience_gain_army = 0.25
+                production_factory_efficiency_gain_factor = 0.1
+                production_factory_max_efficiency_factor = 0.2
+            }
+        }
 
     }
 }
