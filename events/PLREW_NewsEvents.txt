@@ -1,6 +1,6 @@
 add_namespace = PLREW_world_news
 
-news_event = {
+news_event = { #lepper
 	id = PLREW_world_news.1
 	title = PLREW_world_news.1.t
 	desc = PLREW_world_news.1.d
@@ -11,7 +11,7 @@ news_event = {
 		name = PLREW_world_news.1.o1
 	}
 }
-news_event = {
+news_event = { #PIS
 	id = PLREW_world_news.2
 	title = PLREW_world_news.2.t
 	desc = PLREW_world_news.2.d
@@ -78,4 +78,42 @@ news_event = {
 	}
 }
 
+news_event = {
+	id = PLREW_world_news.7 #Tusk przejmuje wladze
+	title = PLREW_world_news.7.t
+	desc = PLREW_world_news.7.desc
+	picture = GFX_news_event_generic_silesian_rebels
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = PLREW_world_news.7.o1
+	}
+}
+
+news_event = {
+	id = PLREW_world_news.8 #Zielona wyspa Evropy
+	title = PLREW_world_news.8.t
+	desc = PLREW_world_news.8.desc
+	picture = GFX_news_event_generic_silesian_rebels
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = PLREW_world_news.8.o1
+	}
+}
+
+news_event = {
+	id = PLREW_world_news.9 #Koalicja destroy the fuckin left
+	title = PLREW_world_news.9.t
+	desc = PLREW_world_news.9.desc
+	picture = GFX_news_event_generic_silesian_rebels
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = PLREW_world_news.9.o1
+	}
+}
 

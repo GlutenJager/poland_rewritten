@@ -133,6 +133,8 @@ recruit_character = POL_zgromadzenie
 recruit_character = POL_andrzej_lepper
 recruit_character = POL_donald_tusk
 recruit_character = POL_wojciech_olszanski
+recruit_character = POL_rafal_trzaskowski
+recruit_character = POL_radek_sikorski
 	# PiS
 recruit_character = POL_antoni_macierewicz
 recruit_character = POL_antonius_smolenskus
@@ -148,6 +150,7 @@ recruit_character = POL_artur_dziambor
 recruit_character = POL_krzysztof_bosak
 recruit_character = POL_robert_winnicki
 recruit_character = POL_grzegorz_braun
+recruit_character = POL_janusz_korwin_mikke
 
 # MOD ADVISORS
 recruit_character = POL_mariusz_blaszczak
@@ -157,6 +160,7 @@ recruit_character = POL_karol_nawrocki
 recruit_character = POL_andrzej_duda
 recruit_character = POL_bartlomiej_misiewicz
 recruit_character = POL_john_maynard_keynes
+recruit_character = POL_lech_walesa
 #
 recruit_character = POL_leszek_miller
 recruit_character = POL_krystyna_pawlowicz
@@ -200,6 +204,32 @@ recruit_character = POL_adrian_klarenbach
 recruit_character = POL_zbigniew_stonoga
 recruit_character = POL_mariusz_gosek
 recruit_character = POL_jerzy_andrzejewski
+recruit_character = POL_jerzy_owsiak
+recruit_character = POL_aldona_skiergiello
+recruit_character = POL_krzysztof_jackowski
+recruit_character = POL_krzysztof_rutkowski
+recruit_character = POL_oskar_dirlewanger
+recruit_character = POL_klaudia_jachira
+recruit_character = POL_Ewa_Kopacz
+recruit_character = POL_tomasz_lis
+recruit_character = POL_dariusz_jonski
+recruit_character = POL_michal_szczerba
+recruit_character = POL_kinga_gajewska
+recruit_character = POL_slawomir_nitras
+recruit_character = POL_adam_szlapka
+recruit_character = POL_witold_zebaczynski
+recruit_character = POL_katarzyna_lubnauer
+recruit_character = POL_jan_pinski
+recruit_character = POL_barbara_nowacka
+recruit_character = POL_janusz_palikot
+recruit_character = POL_boguslaw_woloszanski
+recruit_character = POL_michal_kolodziejczak
+recruit_character = POL_andrzej_olechowski
+recruit_character = POL_bronislaw_komorowski
+recruit_character = POL_jan_maria_rokita
+recruit_character = POL_donald_tusk_general
+recruit_character = POL_roman_giertych
+
 # MOD SPIRITS
 add_ideas = POL_european_pressure
 add_ideas = POL_broken_justice_system

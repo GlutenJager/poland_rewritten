@@ -849,6 +849,29 @@ country = {
                 production_factory_max_efficiency_factor = 0.2
             }
         }
+        POL_pakt_migracyjny = {
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                political_power_gain = -0.15
+                consumer_goods_factor = -0.10
+                democratic_drift = -0.05
+                war_stability_factor = -0.1
+            }
+
+        }
+        POL_przyjecie_euro = {
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                political_power_gain = -0.10
+                consumer_goods_factor = 0.2
+                compliance_growth_on_our_occupied_states = 0.3
+            }
+
+        }
 
     }
 }

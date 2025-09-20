@@ -678,6 +678,10 @@ GER_eurorepublik = {
 	color = rgb { 0 10 120 }
 	color_ui = rgb { 0 10 120 }
 }
+POL_german_poland = {
+	color = rgb { 0 10 120 }
+	color_ui = rgb { 0 10 120 }
+}
 POL_usmiechnieta = {
 	color = rgb { 0 10 120 }
 	color_ui = rgb { 0 10 120 }

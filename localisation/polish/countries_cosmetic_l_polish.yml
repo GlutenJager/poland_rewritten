@@ -2767,6 +2767,9 @@
  POL_HOL_autonomy_eu_member_DEF: "Europejska Polska"
  POL_HOL_autonomy_eu_member_ADJ: "polsk."
 # Poland Rewritten
+ POL_german_poland: "Weimar Eurorepublik"
+ POL_german_poland_DEF: "Weimar Eurorepublik"
+ POL_german_poland_ADJ: "niem."
  FRA_eurorepublik: "Eurorepublik Frankreich"
  FRA_eurorepublik_DEF: "Eurorepublik Frankreich"
  FRA_eurorepublik_ADJ: "fran."

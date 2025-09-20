@@ -1090,16 +1090,12 @@ country_event = { # Przewidywalni
 
 	option = {
 		name = PLREW_poland.34.o1
-		create_country_leader = {
-			name = "Rafał Trzaskowski"
-			picture = "GFX_portraits_rafał_trzaskowski"
-			ideology = euro_liberalism
-			traits = {}
-		}
+		promote_character = POL_rafal_trzaskowski
 	}
 	option = {
 		name = PLREW_poland.34.o2
 		create_country_leader = {
+			id = POL_borys_budka
 			name = "Borys Budka"
 			picture = "GFX_portraits_borys_budka"
 			ideology = euro_liberalism
@@ -1109,6 +1105,7 @@ country_event = { # Przewidywalni
 	option = {
 		name = PLREW_poland.34.o3
 		create_country_leader = {
+			id = POL_radek_sikorski
 			name = "Radek Sikorski"
 			picture = "GFX_portraits_radek_sikorski"
 			ideology = euro_liberalism
@@ -1368,6 +1365,74 @@ country_event = {
 			type = annex_everything
 			target = FROM
 		}
+	}
+}
+
+country_event = { # Dirlewanger do nas dołącza
+	id = PLREW_poland.37
+	title = PLREW_poland.37.t
+	desc = PLREW_poland.37.d
+	picture = GFX_report_event_generic_read_write # W I P
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = PLREW_poland.37.o1
+	}
+}
+
+country_event = { # Kebab uduje solarium na jachcie za kase z KPO
+	id = PLREW_poland.38
+	title = PLREW_poland.38.t
+	desc = PLREW_poland.38.d
+	picture = GFX_report_event_generic_read_write # W I P
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = PLREW_poland.38.o1
+	}
+}
+
+country_event = { # Koalicja z PSL nr2
+	id = PLREW_poland.39
+	title = PLREW_poland.39.t
+	desc = PLREW_poland.39.d
+	picture = GFX_report_event_generic_read_write # W I P
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = PLREW_poland.39.o1
+	}
+}
+
+country_event = { # Czarzasty sie cieszy
+	id = PLREW_poland.40
+	title = PLREW_poland.40.t
+	desc = PLREW_poland.40.d
+	picture = GFX_report_event_generic_read_write # W I P
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = PLREW_poland.40.o1
+	}
+}
+
+country_event = { # Hujownia jest zuy
+	id = PLREW_poland.41
+	title = PLREW_poland.41.t
+	desc = PLREW_poland.41.d
+	picture = GFX_report_event_generic_read_write # W I P
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	option = {
+		name = PLREW_poland.41.o1
 	}
 }
 

@@ -43,6 +43,15 @@
 
 leader_traits = {
 
+	mod_bolek = {
+		random = no
+		political_power_gain = 0.1
+		communism_drift = 0.001
+		command_power_gain = 0.01
+		consumer_goods_factor = -0.1
+		agency_upgrade_time = -0.2
+	}
+
 	mod_agrarian_tribune = {
 		random = no
 		political_power_cost = -0.1
@@ -197,9 +206,9 @@ leader_traits = {
 	mod_naftowy_szejk = {
 		sprite = 6
 		random = no
-		fuel_gain_factor = 0.4
-		production_speed_synthetic_refinery_factor = 0.3
-		production_speed_fuel_silo_factor = 0.3
+		fuel_gain_factor = 0.1
+		production_speed_synthetic_refinery_factor = 0.2
+		production_speed_fuel_silo_factor = 0.2
 	}
 
 	mod_dzban_edukacji = {
