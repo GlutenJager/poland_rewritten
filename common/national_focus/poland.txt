@@ -2942,6 +2942,7 @@ focus_tree = {
 			y = -14
 			trigger = {
 				OR = {
+					has_completed_focus = POL_ujarzmienie_aspergika
 					has_completed_focus = POL_opcja_lepper
 					has_completed_focus = POL_opcja_kowalski
 					has_completed_focus = POL_opcja_ziobro
@@ -4565,6 +4566,284 @@ focus_tree = {
 	}
 	
 
+	focus = {
+		id = POL_kresy_bez_kresu
+		icon = GFX_goal_unknown
+		x = 1
+		y = 12
+		relative_position_id = POL_opcja_konfa
+		cost = 5
+		allow_branch = {
+			OR = {
+				has_completed_focus = POL_korwin_nadal_u_wladzy
+				has_completed_focus = POL_przejrzenie_wiplera
+			}
+		}
+		
+		offset = {
+			x = 9
+			y = -10
+			trigger = {
+					has_completed_focus = POL_korwin_nadal_u_wladzy
+			}
+		}
+		offset = {
+			x = 10
+			y = -12
+			trigger = {
+					has_completed_focus = POL_przejrzenie_wiplera
+			}
+		}
+	}
+
+	focus = {
+		id = POL_odnowienie_unii_lubelskiej
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = POL_kresy_bez_kresu
+		cost = 10
+		prerequisite = {
+			focus = POL_kresy_bez_kresu
+		}
+		
+	}
+
+	focus = {
+		id = POL_odbicie_inflant
+		icon = GFX_goal_unknown
+		x = 1
+		y = 2
+		relative_position_id = POL_kresy_bez_kresu
+		cost = 10
+		prerequisite = {
+			focus = POL_odnowienie_unii_lubelskiej
+		}
+		
+	}
+
+	focus = {
+		id = POL_pertraktacja_z_niemcami
+		icon = GFX_goal_unknown
+		x = -1
+		y = 1
+		relative_position_id = POL_kresy_bez_kresu
+		cost = 10
+		prerequisite = {
+			focus = POL_kresy_bez_kresu
+		}
+		
+	}
+
+	focus = {
+		id = POL_decyzja_w_sprawie_wspolnoty
+		icon = GFX_goal_unknown
+		x = 0
+		y = 3
+		relative_position_id = POL_kresy_bez_kresu
+		cost = 10
+		prerequisite = {
+			focus = POL_odbicie_inflant
+		}
+		prerequisite = {
+			focus = POL_zamach_na_przywodcow_upa
+		}
+		
+	}
+
+	focus = {
+		id = POL_zamach_na_przywodcow_upa
+		icon = GFX_goal_unknown
+		x = -1
+		y = 2
+		relative_position_id = POL_kresy_bez_kresu
+		cost = 10
+		prerequisite = {
+			focus = POL_pertraktacja_z_niemcami
+		}
+	}
+
+	focus = {
+		id = POL_zajęcie_slowacji
+		icon = GFX_goal_unknown
+		x = -2
+		y = 4
+		relative_position_id = POL_kresy_bez_kresu
+		cost = 10
+		prerequisite = {
+			focus = POL_decyzja_w_sprawie_wspolnoty
+		}
+	}
+
+	focus = {
+		id = POL_uprzedzic_niemcow
+		icon = GFX_goal_unknown
+		x = -2
+		y = 5
+		relative_position_id = POL_kresy_bez_kresu
+		cost = 10
+		prerequisite = {
+			focus = POL_zajęcie_slowacji
+		}
+	}
+
+	focus = {
+		id = POL_wykorzystanie_kozakow
+		icon = GFX_goal_unknown
+		x = 0
+		y = 4
+		relative_position_id = POL_kresy_bez_kresu
+		cost = 10
+		prerequisite = {
+			focus = POL_decyzja_w_sprawie_wspolnoty
+		}
+	}
+
+	focus = {
+		id = POL_odzyskanie_skradzionego_dziedzctwa
+		icon = GFX_goal_unknown
+		x = 0
+		y = 5
+		relative_position_id = POL_kresy_bez_kresu
+		cost = 10
+		prerequisite = {
+			focus = POL_wykorzystanie_kozakow
+		}
+	}
+
+	focus = {
+		id = POL_prusy_ksiazece
+		icon = GFX_goal_unknown
+		x = -1
+		y = 6
+		relative_position_id = POL_kresy_bez_kresu
+		cost = 10
+		prerequisite = {
+			focus = POL_uprzedzic_niemcow
+		}
+		prerequisite = {
+			focus = POL_odzyskanie_skradzionego_dziedzctwa
+		}
+		
+	}
+
+	focus = {
+		id = POL_ksiestwo_slaskie
+		icon = GFX_goal_unknown
+		x = -4
+		y = 7
+		relative_position_id = POL_kresy_bez_kresu
+		cost = 10
+		prerequisite = {
+			focus = POL_prusy_ksiazece
+		}
+	}
+
+	focus = {
+		id = POL_ksiestwo_pomorskie
+		icon = GFX_goal_unknown
+		x = -1
+		y = 7
+		relative_position_id = POL_kresy_bez_kresu
+		cost = 10
+		prerequisite = {
+			focus = POL_prusy_ksiazece
+		}
+	}
+
+	focus = {
+		id = POL_dalsze_roszczenia_w_niemczech
+		icon = GFX_goal_unknown
+		x = -3
+		y = 8
+		relative_position_id = POL_kresy_bez_kresu
+		cost = 10
+		prerequisite = {
+			focus = POL_ksiestwo_slaskie
+		}
+		prerequisite = {
+			focus = POL_ksiestwo_pomorskie
+		}
+	}
+
+	focus = {
+		id = POL_pielegnowanie_dawnej_przyjazni #pomagamy wungrom
+		icon = GFX_goal_unknown
+		x = 3
+		y = 7
+		relative_position_id = POL_kresy_bez_kresu
+		cost = 10
+		prerequisite = {
+			focus = POL_prusy_ksiazece
+		}
+	}
+
+	focus = {
+		id = POL_podział_rumunii
+		icon = GFX_goal_unknown
+		x = 2
+		y = 8
+		relative_position_id = POL_kresy_bez_kresu
+		cost = 10
+		prerequisite = {
+			focus = POL_pielegnowanie_dawnej_przyjazni
+		}
+	}
+
+	focus = {
+		id = POL_roszczenia_wobec_chorwacji
+		icon = GFX_goal_unknown
+		x = 4
+		y = 8
+		relative_position_id = POL_kresy_bez_kresu
+		cost = 10
+		prerequisite = {
+			focus = POL_pielegnowanie_dawnej_przyjazni
+		}
+	}
+
+	focus = {
+		id = POL_krolestwo_zalitawii
+		icon = GFX_goal_unknown
+		x = 3
+		y = 9
+		relative_position_id = POL_kresy_bez_kresu
+		cost = 10
+		prerequisite = {
+			focus = POL_roszczenia_wobec_chorwacji
+		}
+		prerequisite = {
+			focus = POL_podział_rumunii
+		}
+	}
+
+	focus = {
+		id = POL_polskie_sztandary_na_szczycie_kremla
+		icon = GFX_goal_unknown
+		x = 2
+		y = 4
+		relative_position_id = POL_kresy_bez_kresu
+		cost = 10
+		prerequisite = {
+			focus = POL_decyzja_w_sprawie_wspolnoty
+		}
+	}
+
+	focus = {
+		id = POL_zelazna_dama
+		icon = GFX_goal_unknown
+		x = 3
+		y = 5
+		relative_position_id = POL_kresy_bez_kresu
+		cost = 10
+		prerequisite = {
+			focus = POL_polskie_sztandary_na_szczycie_kremla
+		}
+	}
+
+
+
+
 
 
 
@@ -5465,6 +5744,66 @@ focus = {
 
 
 
+focus = {
+		id = POL_wolnosc
+		icon = GFX_goal_unknown
+		x = 1
+		y = 12
+		relative_position_id = POL_opcja_konfa
+		cost = 5
+		allow_branch = {
+			OR = {
+				has_completed_focus = POL_wolnosciowcy
+			}
+		}
+		
+		offset = {
+			x = 15
+			y = -10
+			trigger = {
+					has_completed_focus = POL_wolnosciowcy
+			}
+		}
+	}
+
+
+
+
+
+focus = {
+		id = POL_korona_krolestwa_polskiego
+		icon = GFX_goal_unknown
+		x = 1
+		y = 12
+		relative_position_id = POL_opcja_konfa
+		cost = 5
+		allow_branch = {
+			OR = {
+				has_completed_focus = POL_braun
+			}
+		}
+		
+		offset = {
+			x = 15
+			y = -10
+			trigger = {
+					has_completed_focus = POL_braun
+			}
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -5803,16 +6142,48 @@ focus = {
 
 
 
+focus = {
+		id = POL_marzenia_endekow
+		icon = GFX_goal_unknown
+		x = 1
+		y = 12
+		relative_position_id = POL_opcja_konfa
+		cost = 5
+		allow_branch = {
+			OR = {
+				has_completed_focus = POL_przewrot_narodowcow
+			}
+		}
+		
+		offset = {
+			x = 15
+			y = -10
+			trigger = {
+					has_completed_focus = POL_przewrot_narodowcow
+			}
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
 
 	focus = {
 		id = POL_opcja_kamraci
 		icon = GFX_goal_unknown
-		x = 55
+		x = 39
 		y = 1
 		relative_position_id = POL_opcja_prawica
 		cost = 5
 		allow_branch = {
-			always = no
+			kamraci_is_avaliable = yes
 		}
 		allow_branch = {
 			NOT = {
@@ -5825,9 +6196,6 @@ focus = {
 				}
 			}
 		}
-		available = {
-			always = no
-		}
 		prerequisite = {
 			focus = POL_opcja_prawica
 		}
@@ -5837,6 +6205,13 @@ focus = {
 			focus = POL_opcja_konfa
 			focus = POL_opcja_kukiz
 			focus = POL_opcja_zero
+		}
+		offset = {
+			x = -39
+			y = 0
+			trigger = {
+				has_completed_focus = POL_opcja_kamraci
+			}
 		}
 		completion_reward = {
 			hidden_effect = {
@@ -6180,12 +6555,12 @@ focus = {
 	focus = {
 		id = POL_opcja_zero
 		icon = GFX_goal_unknown
-		x = 73
+		x = 52
 		y = 1
 		relative_position_id = POL_opcja_prawica
 		cost = 5
 		allow_branch = {
-			always = no
+			zero_is_avaliable = yes
 		}
 		allow_branch = {
 			NOT = {
@@ -6198,9 +6573,7 @@ focus = {
 				}
 			}		
 		}
-		available = {
-			always = no
-		}
+		
 		prerequisite = {
 			focus = POL_opcja_prawica
 		}
@@ -6213,19 +6586,13 @@ focus = {
 		
 		}
 		offset = {
-			x = -30
-			y = 0
-			trigger = {
-				has_completed_focus = POL_opcja_prawica
-			}
-		}
-		offset = {
-			x = -43
+			x = -52
 			y = 0
 			trigger = {
 				has_completed_focus = POL_opcja_zero
 			}
 		}
+		
 		completion_reward = {
 			hidden_effect = {
 				mark_focus_tree_layout_dirty = yes
@@ -6920,12 +7287,12 @@ focus = {
 	focus = {
 		id = POL_opcja_kukiz
 		icon = GFX_goal_unknown
-		x = 95
+		x = 70
 		y = 1
 		relative_position_id = POL_opcja_prawica
 		cost = 5
 		allow_branch = {
-			always = no
+			kukiz_is_avaliable = yes
 		}
 		allow_branch = {
 			NOT = {
@@ -6952,14 +7319,7 @@ focus = {
 			focus = POL_opcja_zero
 		}
 		offset = {
-			x = -30
-			y = 0
-			trigger = {
-				has_completed_focus = POL_opcja_prawica
-			}
-		}
-		offset = {
-			x = -65
+			x = -70
 			y = 0
 			trigger = {
 				has_completed_focus = POL_opcja_kukiz
@@ -7154,7 +7514,7 @@ focus = {
 	focus = {
 		id = POL_opcja_centrum
 		icon = GFX_goal_unknown
-		x = 38
+		x = 95
 		y = 1
 		relative_position_id = POL_decydujace_posiedzenie
 		cost = 0
@@ -7174,7 +7534,7 @@ focus = {
 			focus = POL_opcja_dziwna
 		}
 		offset = {
-			x = -38
+			x = -95
 			y = 0
 			trigger = {
 				has_completed_focus = POL_opcja_centrum
@@ -9828,7 +10188,7 @@ focus = {
 	focus = {
 		id = POL_opcja_lewica
 		icon = GFX_focus_POL_opcja_lewica
-		x = 65
+		x = 130
 		y = 1
 		relative_position_id = POL_decydujace_posiedzenie
 		cost = 0
@@ -9848,7 +10208,7 @@ focus = {
 			focus = POL_opcja_dziwna
 		}
 		offset = {
-			x = -65
+			x = -130
 			y = 0
 			trigger = {
 				has_completed_focus = POL_opcja_lewica
@@ -9990,7 +10350,7 @@ focus = {
 	focus = {
 		id = POL_opcja_anarchia
 		icon = GFX_focus_POL_opcja_anarchia
-		x = 80
+		x = 150
 		y = 1
 		relative_position_id = POL_decydujace_posiedzenie
 		cost = 0
@@ -10010,7 +10370,7 @@ focus = {
 			focus = POL_opcja_dziwna
 		}
 		offset = {
-			x = -80
+			x = -150
 			y = 0
 			trigger = {
 				has_completed_focus = POL_opcja_anarchia
@@ -10112,7 +10472,7 @@ focus = {
 	focus = {
 		id = POL_opcja_dziwna
 		icon = GFX_focus_POL_opcja_dziwna
-		x = 89
+		x = 160
 		y = 1
 		relative_position_id = POL_decydujace_posiedzenie
 		cost = 0
@@ -10139,7 +10499,7 @@ focus = {
 			focus = POL_opcja_anarchia
 		}
 		offset = {
-			x = -89
+			x = -160
 			y = 0
 			trigger = {
 				has_completed_focus = POL_opcja_dziwna

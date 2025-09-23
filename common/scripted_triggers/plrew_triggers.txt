@@ -26,6 +26,36 @@ pis_is_avaliable = {
 		has_completed_focus = POL_opcja_zero
 	}
 }
+kukiz_is_avaliable = {
+	prawica_is_avaliable = yes
+	NOT = {
+		has_completed_focus = POL_opcja_lepper
+		has_completed_focus = POL_opcja_konfa
+		has_completed_focus = POL_opcja_kamraci
+		has_completed_focus = POL_opcja_pis
+		has_completed_focus = POL_opcja_zero
+	}
+}
+zero_is_avaliable = {
+	prawica_is_avaliable = yes
+	NOT = {
+		has_completed_focus = POL_opcja_lepper
+		has_completed_focus = POL_opcja_konfa
+		has_completed_focus = POL_opcja_kamraci
+		has_completed_focus = POL_opcja_pis
+		has_completed_focus = POL_opcja_kukiz
+	}
+}
+kamraci_is_avaliable = {
+	prawica_is_avaliable = yes
+	NOT = {
+		has_completed_focus = POL_opcja_lepper
+		has_completed_focus = POL_opcja_konfa
+		has_completed_focus = POL_opcja_kukiz
+		has_completed_focus = POL_opcja_pis
+		has_completed_focus = POL_opcja_zero
+	}
+}
 centrum_is_avaliable = {
 	NOT = {
 		has_completed_focus = POL_opcja_prawica
