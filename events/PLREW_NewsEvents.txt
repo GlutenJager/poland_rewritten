@@ -117,3 +117,29 @@ news_event = {
 	}
 }
 
+news_event = {
+	id = PLREW_world_news.10 #Braun koronowany przez biskupa
+	title = PLREW_world_news.10.t
+	desc = PLREW_world_news.10.desc
+	picture = GFX_news_event_generic_silesian_rebels
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = PLREW_world_news.10.o1
+	}
+}
+
+news_event = {
+	id = PLREW_world_news.11 #Braun odnawia sluby lwowskie
+	title = PLREW_world_news.11.t
+	desc = PLREW_world_news.11.desc
+	picture = GFX_news_event_generic_silesian_rebels
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = PLREW_world_news.11.o1
+	}
+}
+

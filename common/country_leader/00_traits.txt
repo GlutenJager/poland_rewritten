@@ -281,6 +281,13 @@ leader_traits = {
 		conscription_factor = 0.1
 	}
 
+	mod_wyzwolona_marionetka = {
+		random = no
+		justify_war_goal_time = -0.2
+		stability_weekly_factor = 0.05
+		experience_gain_army_factor = 0.15
+	}
+
 	mod_lewak_starej_daty = {
 		sprite = 18
 		random = no
@@ -302,6 +309,21 @@ leader_traits = {
 		production_speed_coastal_bunker_factor = 0.2
 		land_doctrine_cost_factor = -0.15
 	}
+
+	mod_krucjata_wolnorynkowa = {
+		random = no
+		cat_mass_assault_cost_factor = -0.15
+		neutrality_drift = 0.05
+		command_power_gain = 0.15
+	}
+
+	mod_krul_kucyków = {
+		random = no
+		stability_weekly_factor = 0.005
+		neutrality_drift = 0.05
+		cavalry_attack_factor = 0.2
+	}
+
 
 	mod_flegmatyczny_pisowiec = {
 		sprite = 13

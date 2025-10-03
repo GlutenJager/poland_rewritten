@@ -641,11 +641,290 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/konfederacja/mentzen/focus_POL_pisowska_taktyka_w_ue.dds"
 	}
 
-	#SpriteType = {
-	#	name = GFX_focus_POL_zaorac_opozycje
-	#	texturefile = "gfx/interface/goals/konfederacja/mentzen/focus_POL_zaorac_opozycje.dds"
-	#}
+	SpriteType = {
+		name = GFX_focus_POL_przejrzenie_wiplera
+		texturefile = "gfx/interface/goals/konfederacja/mentzen/focus_POL_przejrzenie_wiplera.dds"
+	}
+
+	SpriteType = {
+		name = GFX_focus_POL_a_poza_tym_sadze
+		texturefile = "gfx/interface/goals/konfederacja/mentzen/focus_POL_a_poza_tym_sadze.dds"
+	}
+
+	SpriteType = {
+		name = GFX_focus_POL_pokazowa_egzekucja
+		texturefile = "gfx/interface/goals/konfederacja/mentzen/focus_POL_pokazowa_egzekucja.dds"
+	}
+
+	SpriteType = {
+		name = GFX_focus_POL_calkowita_prywatyzacja
+		texturefile = "gfx/interface/goals/konfederacja/mentzen/focus_POL_calkowita_prywatyzacja.dds"
+	}
+
+	SpriteType = {
+		name = GFX_focus_POL_ase
+		texturefile = "gfx/interface/goals/konfederacja/mentzen/focus_POL_ase.dds"
+	}
+
+	SpriteType = {
+		name = GFX_focus_POL_gandalf_bialy
+		texturefile = "gfx/interface/goals/konfederacja/mentzen/focus_POL_gandalf_bialy.dds"
+	}
+
+	SpriteType = {
+		name = GFX_focus_POL_sa_dwa_kraje
+		texturefile = "gfx/interface/goals/konfederacja/mentzen/focus_POL_sa_dwa_kraje.dds"
+	}
+
+	SpriteType = {
+		name = GFX_focus_POL_jak_bedzie_w_wolnej_polsce
+		texturefile = "gfx/interface/goals/konfederacja/mentzen/focus_POL_jak_bedzie_w_wolnej_polsce.dds"
+	}
+
+	SpriteType = {
+		name = GFX_focus_POL_bron_w_kazdym_domu
+		texturefile = "gfx/interface/goals/konfederacja/mentzen/focus_POL_bron_w_kazdym_domu.dds"
+	}
+
+	SpriteType = {
+		name = GFX_focus_POL_teatralne
+		texturefile = "gfx/interface/goals/konfederacja/mentzen/focus_POL_teatralne.dds"
+	}
+
+	SpriteType = {
+		name = GFX_focus_POL_zeby_zylo_sie_lepiej
+		texturefile = "gfx/interface/goals/konfederacja/mentzen/focus_POL_zeby_zylo_sie_lepiej.dds"
+	}
+
+	SpriteType = {
+		name = GFX_focus_POL_mam_najwieksze_ego
+		texturefile = "gfx/interface/goals/konfederacja/mentzen/focus_POL_mam_najwieksze_ego.dds"
+	}
+
+	SpriteType = {
+		name = GFX_focus_POL_skamlaca_czilala
+		texturefile = "gfx/interface/goals/konfederacja/mentzen/focus_POL_skamlaca_czilala.dds"
+	}
+
+	SpriteType = {
+		name = GFX_focus_POL_edukacja_wolnosciowa
+		texturefile = "gfx/interface/goals/konfederacja/mentzen/focus_POL_edukacja_wolnosciowa.dds"
+	}
+
+	SpriteType = {
+		name = GFX_focus_POL_browar_mentzen
+		texturefile = "gfx/interface/goals/konfederacja/mentzen/focus_POL_browar_mentzen.dds"
+	}
+
+	SpriteType = {
+		name = GFX_focus_POL_kancelaria_mentzen
+		texturefile = "gfx/interface/goals/konfederacja/mentzen/focus_POL_kancelaria_mentzen.dds"
+	}
+
+	SpriteType = {
+		name = GFX_focus_POL_wolnosci_oddac_nie_umiem
+		texturefile = "gfx/interface/goals/konfederacja/mentzen/focus_POL_wolnosci_oddac_nie_umiem.dds"
+	}
+
+
+
+
+	###########				 ######
+	##		   ##		   ##	   ##
+	##			##		 ##		     ##
+	##			##		##			  ##
+	##		   ##  		##			  ##
+	###########			##			  ##
+	##					##			  ##
+	##					 ##		     ##
+	##					   ##	   ##
+	##						 ######
+
+
+	SpriteType = {
+		name = GFX_focus_POL_anschluss
+		texturefile = "gfx/interface/goals/PO/focus_POL_anschluss.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_armia_europejska
+		texturefile = "gfx/interface/goals/PO/focus_POL_armia_europejska.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_balteurokom
+		texturefile = "gfx/interface/goals/PO/focus_POL_balteurokom.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_bliskowschodnia_demokracja
+		texturefile = "gfx/interface/goals/PO/focus_POL_bliskowschodnia_demokracja.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_burgundian_lulaby
+		texturefile = "gfx/interface/goals/PO/focus_POL_burgundian_lulaby.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_do_europy_federalnej
+		texturefile = "gfx/interface/goals/PO/focus_POL_do_europy_federalnej.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_droga_do_zjednoczenia
+		texturefile = "gfx/interface/goals/PO/focus_POL_droga_do_zjednoczenia.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_balkan_eurokom
+		texturefile = "gfx/interface/goals/PO/focus_POL_balkan_eurokom.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_beneluks_eurokom
+		texturefile = "gfx/interface/goals/PO/focus_POL_beneluks_eurokom.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_euro_nie_zlotowka
+		texturefile = "gfx/interface/goals/PO/focus_POL_euro_nie_zlotowka.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_friedensmarine
+		texturefile = "gfx/interface/goals/PO/focus_POL_friedensmarine.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_fur_deutschland
+		texturefile = "gfx/interface/goals/PO/focus_POL_fur_deutschland.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_opcja_tusk
+		texturefile = "gfx/interface/goals/PO/focus_POL_opcja_tusk.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_ja_tymi_rekoma
+		texturefile = "gfx/interface/goals/PO/focus_POL_ja_tymi_rekoma.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_kredyt_0
+		texturefile = "gfx/interface/goals/PO/focus_POL_kredyt_0.dds"
+	}
+
+	SpriteType = {
+		name = GFX_focus_POL_kwestia_orbana
+		texturefile = "gfx/interface/goals/PO/focus_POL_kwestia_orbana.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_marsz_na_iberie
+		texturefile = "gfx/interface/goals/PO/focus_POL_marsz_na_iberie.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_never_lose_yr_smile
+		texturefile = "gfx/interface/goals/PO/focus_POL_never_lose_yr_smile.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_nord_strim_2
+		texturefile = "gfx/interface/goals/PO/focus_POL_nord_strim_2.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_osadzenie_demokratow_na_tronie_niem
+		texturefile = "gfx/interface/goals/PO/focus_POL_osadzenie_demokratow_na_tronie_niem.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_pakt_stalowy
+		texturefile = "gfx/interface/goals/PO/focus_POL_pakt_stalowy.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_pamietamy_kld
+		texturefile = "gfx/interface/goals/PO/focus_POL_pamietamy_kld.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_polskosc_to_nienormalnosc
+		texturefile = "gfx/interface/goals/PO/focus_POL_polskosc_to_nienormalnosc.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_powalenie_niedzwiedzia
+		texturefile = "gfx/interface/goals/PO/focus_POL_powalenie_niedzwiedzia.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_powrot_do_europy
+		texturefile = "gfx/interface/goals/PO/focus_POL_powrot_do_europy.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_ruch_8_gwiazd
+		texturefile = "gfx/interface/goals/PO/focus_POL_ruch_8_gwiazd.dds"
+	}
+
+	SpriteType = {
+		name = GFX_focus_POL_skandinaw_eurokom
+		texturefile = "gfx/interface/goals/PO/focus_POL_skandinaw_eurokom.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_swchweiz_eurokom
+		texturefile = "gfx/interface/goals/PO/focus_POL_swchweiz_eurokom.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_czech_eurokom
+		texturefile = "gfx/interface/goals/PO/focus_POL_czech_eurokom.dds"
+	}
+
+	SpriteType = {
+		name = GFX_focus_POL_tuskwaffe
+		texturefile = "gfx/interface/goals/PO/focus_POL_tuskwaffe.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_unia_afrykanska
+		texturefile = "gfx/interface/goals/PO/focus_POL_unia_afrykanska.dds"
+	}
+
+	SpriteType = {
+		name = GFX_focus_unia_polsko_niemiecka
+		texturefile = "gfx/interface/goals/PO/focus_unia_polsko_niemiecka.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_wolna_bialorus
+		texturefile = "gfx/interface/goals/PO/focus_POL_wolna_bialorus.dds"
+	}
+
+	SpriteType = {
+		name = GFX_focus_POL_wolna_ukraina
+		texturefile = "gfx/interface/goals/PO/focus_POL_wolna_ukraina.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_wosp
+		texturefile = "gfx/interface/goals/PO/focus_POL_wosp.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_kpo
+		texturefile = "gfx/interface/goals/PO/focus_POL_kpo.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_zaprosmy_francje
+		texturefile = "gfx/interface/goals/PO/focus_POL_zaprosmy_francje.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_zarzad_koloni_bryt
+		texturefile = "gfx/interface/goals/PO/focus_POL_zarzad_koloni_bryt.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_zdlawienie_skrajnosci
+		texturefile = "gfx/interface/goals/PO/focus_POL_zdlawienie_skrajnosci.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_zemsta_za_brexit
+		texturefile = "gfx/interface/goals/PO/focus_POL_zemsta_za_brexit.dds"
+	}
+	SpriteType = {
+		name = GFX_focus_POL_zjednoczeni
+		texturefile = "gfx/interface/goals/PO/focus_POL_zjednoczeni.dds"
+	}
+
+
+
 	
+
+
+
+
+
+
+
+
+
+
+
 	# Drzewko armii
 
 	SpriteType = {

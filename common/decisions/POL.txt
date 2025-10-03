@@ -2365,3 +2365,224 @@ POL_eurokommisarat_Transsiberien = { # decyzja o eurokomisariacie Transsyberii
 
 
     }
+
+
+
+
+POL_braun_wielka_polska_dzialania = { 
+
+	POL_nacjonalizacja_kamienic = {
+
+		icon = GFX_decision_oppression
+
+		available = {
+			has_completed_focus = POL_zapedy_imperialne
+			has_war_support > 0.6
+		}
+
+		cost = 50
+		fire_only_once = no
+		days_remove = 15
+		days_re_enable = 200
+		ai_will_do = {
+			factor = 2
+		}
+		remove_effect = {
+			add_stability = -0.05
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = POL
+					is_owned_by = POL
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+		}
+	}
+
+	POL_wykorzystanie_misiow = {
+
+		icon = GFX_decision_oppression
+
+		available = {
+			has_completed_focus = POL_zapedy_imperialne
+			has_war_support > 0.4
+		}
+
+		cost = 30
+		fire_only_once = no
+		days_remove = 15
+		days_re_enable = 150
+		ai_will_do = {
+			factor = 2
+		}
+		remove_effect = {
+			add_stability = -0.05
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 400
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+			}
+		}
+	}
+
+	POL_presja_na_monopolistow = {
+
+		icon = GFX_decision_oppression
+
+		available = {
+			has_completed_focus = POL_zapedy_imperialne
+			has_war_support > 0.6
+		}
+
+		cost = 150
+		fire_only_once = no
+		days_remove = 20
+		days_re_enable = 250
+		ai_will_do = {
+			factor = 2
+		}
+		remove_effect = {
+			add_stability = -0.2
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 25000
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 50000
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 10000
+			}
+		}
+	}
+
+	POL_rozdanie_tytulow_hetmanskich = {
+
+		icon = GFX_decision_oppression
+
+		available = {
+			has_completed_focus = POL_zapedy_imperialne
+			has_stability > 0.7
+			has_war_support > 0.55
+		}
+
+		cost = 50
+		fire_only_once = no
+		days_remove = 30
+		days_re_enable = 250
+		ai_will_do = {
+			factor = 2
+		}
+		remove_effect = {
+			army_experience = 300
+			add_command_power = 100
+			add_political_power = -100
+		}
+	}
+
+	POL_pomoc_w_odzyskiwaniu_majatkow_szlacheckich = {
+
+		icon = GFX_decision_oppression
+
+		available = {
+			has_completed_focus = POL_zapedy_imperialne
+			has_stability < 0.7
+		}
+
+		cost = 30
+		fire_only_once = no
+		days_remove = 30
+		days_re_enable = 200
+		ai_will_do = {
+			factor = 2
+		}
+		remove_effect = {
+			add_stability = 0.15
+			add_political_power = -100
+		}
+	}
+
+
+	POL_przywrocenie_chlopstwa = {
+
+		icon = GFX_decision_oppression
+
+		available = {
+			has_completed_focus = POL_zapedy_imperialne
+			has_stability > 0.5
+		}
+
+		cost = 50
+		fire_only_once = yes
+		days_remove = 30
+		ai_will_do = {
+			factor = 2
+		}
+		remove_effect = {
+			add_stability = -0.15
+			add_political_power = -100
+			add_manpower = 1000000
+		}
+	}
+
+	POL_sprawdzanie_autentycznosci_szlachectwa = {
+
+		icon = GFX_decision_oppression
+
+		available = {
+			has_completed_focus = POL_zapedy_imperialne
+			has_stability > 0.5
+		}
+
+		cost = 50
+		fire_only_once = no
+		days_remove = 30
+		days_re_enable = 360
+		ai_will_do = {
+			factor = 2
+		}
+		remove_effect = {
+			add_stability = 0.15
+			add_political_power = -100
+			add_manpower = -10000
+		}
+	}
+
+POL_ufundowanie_kosciolow = {
+
+		icon = GFX_decision_oppression
+
+		available = {
+			has_completed_focus = POL_zapedy_imperialne
+			has_stability > 0.5
+		}
+
+		cost = 50
+		fire_only_once = no
+		days_remove = 30
+		days_re_enable = 360
+		ai_will_do = {
+			factor = 2
+		}
+		remove_effect = {
+			add_stability = 0.05
+			add_political_power = 300
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.1
+			}
+		}
+	}
+
+
+	
+
+	}

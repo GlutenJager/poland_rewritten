@@ -547,6 +547,14 @@ country_event = { #Petru vs MEncwel
 	option = {
 		name = PLREW_poland.15.a
 		
+		random = {
+            chance = 50
+            country_event = PLREW_poland.1501
+        }
+        random = {
+            chance = 50
+            country_event = PLREW_poland.1502
+        }
 	}
 }
 
@@ -1427,15 +1435,215 @@ country_event = { # Hujownia jest zuy
 	picture = GFX_report_event_generic_read_write # W I P
 	fire_only_once = yes
 	is_triggered_only = yes
-	mean_time_to_happen = {
-		days = 10
-	}
 
 	option = {
 		name = PLREW_poland.41.o1
+		add_stability = -0.05
 	}
 }
 
+country_event = { # zmieniamy godlo
+	id = PLREW_poland.42
+	title = PLREW_poland.42.t
+	desc = PLREW_poland.42.d
+	picture = GFX_report_event_generic_read_write # W I P
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = PLREW_poland.42.o1
+		add_stability = 0.05
+		add_war_support = 0.05
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.1
+		}
+	}
+}
+
+country_event = { # Urban popelnia samobojstwo
+	id = PLREW_poland.43
+	title = PLREW_poland.43.t
+	desc = PLREW_poland.43.d
+	picture = GFX_report_event_generic_read_write # W I P
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = PLREW_poland.43.o1
+	}
+}
+
+country_event = { # Jakob ucieka za granice
+	id = PLREW_poland.44
+	title = PLREW_poland.44.t
+	desc = PLREW_poland.44.d
+	picture = GFX_report_event_generic_read_write # W I P
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = PLREW_poland.44.o1
+	}
+}
+
+country_event = { # Czy yoda byl zydem
+	id = PLREW_poland.45
+	title = PLREW_poland.45.t
+	desc = PLREW_poland.45.d
+	picture = GFX_report_event_generic_read_write # W I P
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = PLREW_poland.45.o1
+	}
+}
+
+country_event = { # wielka koalicja na paleoprawicy
+	id = PLREW_poland.46
+	title = PLREW_poland.46.t
+	desc = PLREW_poland.46.d
+	picture = GFX_report_event_generic_read_write # W I P
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = PLREW_poland.46.o1
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.6
+		}
+	}
+}
+
+country_event = { # beaun na wakacjach w palestynie
+	id = PLREW_poland.47
+	title = PLREW_poland.47.t
+	desc = PLREW_poland.47.d
+	picture = GFX_report_event_generic_read_write # W I P
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = PLREW_poland.47.o1
+	}
+}
+
+country_event = { # wipler zabity na placu pilsudskiego
+	id = PLREW_poland.48
+	title = PLREW_poland.48.t
+	desc = PLREW_poland.48.d
+	picture = GFX_report_event_generic_read_write # W I P
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = PLREW_poland.48.o1
+	}
+}
+
+country_event = { # mentzen na krucjacie wolnorynkowej
+	id = PLREW_poland.49
+	title = PLREW_poland.49.t
+	desc = PLREW_poland.49.d
+	picture = GFX_report_event_generic_read_write # W I P
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = PLREW_poland.49.o1
+	}
+}
+
+country_event = { # mam najwieksze szanse
+	id = PLREW_poland.50
+	title = PLREW_poland.50.t
+	desc = PLREW_poland.50.d
+	picture = GFX_report_event_generic_read_write # W I P
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = PLREW_poland.50.o1
+	}
+}
+
+country_event = { # rozwiazanie sejmu
+	id = PLREW_poland.51
+	title = PLREW_poland.51.t
+	desc = PLREW_poland.51.d
+	picture = GFX_report_event_generic_read_write # W I P
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = PLREW_poland.51.o1
+	}
+}
+
+country_event = { # namiestnik minarchistyczny
+	id = PLREW_poland.52
+	title = PLREW_poland.52.t
+	desc = PLREW_poland.52.d
+	picture = GFX_report_event_generic_read_write # W I P
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = PLREW_poland.52.o1
+		complete_national_focus = POL_dziambor
+		add_stability = 0.2
+	}
+
+	option = {
+		name = PLREW_poland.52.o1
+		complete_national_focus = POL_sosnierz
+	}
+}
+
+country_event = { # zniesienie przepisow o demoralizacji
+	id = PLREW_poland.53
+	title = PLREW_poland.53.t
+	desc = PLREW_poland.53.d
+	picture = GFX_report_event_generic_read_write # W I P
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = PLREW_poland.53.o1
+		add_stability = 0.05
+	}
+}
+
+country_event = { # cyborg znow na chodzie
+	id = PLREW_poland.54
+	title = PLREW_poland.54.t
+	desc = PLREW_poland.54.d
+	picture = GFX_report_event_generic_read_write # W I P
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = PLREW_poland.54.o1
+		add_stability = 0.05
+		add_political_power = 250
+	}
+}
+
+country_event = { # w wolnosci chodzi o partie wolnosc
+	id = PLREW_poland.55
+	title = PLREW_poland.55.t
+	desc = PLREW_poland.55.d
+	picture = GFX_report_event_generic_read_write # W I P
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = PLREW_poland.55.o1
+		add_stability = -0.05
+	}
+}
 ###########################
 # Work In Progress Events
 ###########################

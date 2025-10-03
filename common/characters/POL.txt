@@ -97,7 +97,7 @@ characters = {
 		}
 		country_leader = {
 			ideology = euro_liberalism
-			traits = { mod_lubi_niemcy mod_kaszub }
+			traits = { mod_lubi_niemcy mod_kaszub cornered_fox }
 			expire="1965.1.1.1"
 			id=-1
 		}
@@ -112,7 +112,7 @@ characters = {
 		}
 		country_leader = {
 			ideology = euro_liberalism
-			traits = { }
+			traits = { popular_figurehead2 white_liberal_leader_improved democratic_crusader }
 			expire="1965.1.1.1"
 			id=-1
 		}
@@ -127,7 +127,7 @@ characters = {
 		}
 		country_leader = {
 			ideology = euro_liberalism
-			traits = { }
+			traits = { the_gentleman_president liberal_journalist british_bulldog popular_figurehead }
 			expire="1965.1.1.1"
 			id=-1
 		}
@@ -142,7 +142,7 @@ characters = {
 		}
 		country_leader = {
 			ideology = fascism_ideology
-			traits = { }
+			traits = { fascist_corporatist fascist_militia_leader fascist_demagogue }
 			expire="1965.1.1.1"
 			id=-1
 		}
@@ -200,6 +200,15 @@ characters = {
 		}
 	}
 
+	POL_dobromir_sosnierz = {
+		name = "Dobromr Sośnierz"
+		portraits = {
+			civilian = {
+				large = GFX_portraits_artur_dziambor
+			}
+		}
+	}
+
 	POL_krzysztof_bosak = {
 		name = "Krzysztof Bosak"
 		portraits = {
@@ -216,9 +225,11 @@ characters = {
 				large = GFX_portraits_grzegorz_braun
 			}
 		}
-		corps_commander = {
+		field_marshal = {
 			visible = { 
-				has_completed_focus = POL_opcja_prawica
+				has_completed_focus = POL_opcja_konfa
+				has_completed_focus = POL_kto_w_gasnicach_znalazl_bombe
+				has_completed_focus = POL_opcja_kamraci
 			}
 			skill = 2
 			attack_skill = 2
@@ -313,6 +324,837 @@ characters = {
 			}
 		}
 	}
+
+
+
+
+
+
+
+
+	#KONFA GENERALS
+
+
+
+
+POL_Ryszard_Wilk = {
+		name = "Ryszard Wilk"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_usuniecie_korwina 
+				has_completed_focus = POL_korwin_nadal_u_wladzy
+				has_completed_focus = POL_wolnosciowcy
+			}
+		}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		} 
+			
+	}
+
+	POL_Stanislaw_tyszka = {
+		name = "Stanisław Tyszka"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_usuniecie_korwina 
+				has_completed_focus = POL_korwin_nadal_u_wladzy
+				has_completed_focus = POL_opcja_kukiz
+				has_completed_focus = POL_przewrot_narodowcow
+			}
+		}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 7
+			logistics_skill = 7
+		} 
+			
+	}
+
+	POL_konrad_berkowicz_general = {
+		name = "Konrad Berkowicz"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_usuniecie_korwina 
+				has_completed_focus = POL_korwin_nadal_u_wladzy
+				has_completed_focus = POL_wolnosciowcy
+
+			}
+		}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		} 
+			
+	}
+
+	POL_Patryk_marjan = {
+		name = "Patryk Marjan"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_usuniecie_korwina 
+				has_completed_focus = POL_wolnosciowcy
+			}
+		}
+			skill = 5
+			attack_skill = 5
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		} 
+			
+	}
+
+	POL_bartlomiej_pejo = {
+		name = "Bartłomiej Pejo"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_usuniecie_korwina 
+				has_completed_focus = POL_korwin_nadal_u_wladzy
+			}
+		}
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 3
+		} 
+			
+	}
+
+	POL_grzegorz_placzek = {
+		name = "Grzegorz Płaczek"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_usuniecie_korwina 
+				has_completed_focus = POL_opcja_kukiz
+			}
+		}
+			skill = 3
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		} 
+			
+	}
+
+	POL_piotr_liroy = {
+		name = "Piotr Liroy-Marzec"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_opcja_kukiz
+				has_completed_focus = POL_powrot_leroya
+			}
+		}
+			skill = 2
+			attack_skill = 7
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 2
+		} 
+			
+	}
+
+	POL_marcin_sypniewski = {
+		name = "Marcin Sypniewski"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_usuniecie_korwina 
+				has_completed_focus = POL_korwin_nadal_u_wladzy
+				has_completed_focus = POL_wolnosciowcy
+			}
+		}
+			skill = 3
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 5
+		} 
+			
+	}
+
+	POL_ewa_zajaczkowska = {
+		name = "Ewa Zajączkowska-Hernik"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_usuniecie_korwina 
+			}
+		}
+			skill = 2
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		} 
+			
+	}
+
+	POL_artur_dziambor_general = {
+		name = "Artur Erwin Dziambor"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_opcja_holownia
+				has_completed_focus = POL_opcja_agrarna
+				has_completed_focus = POL_opcja_kukiz
+				has_completed_focus = POL_wolnosciowcy
+			}
+		}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 6
+			planning_skill = 3
+			logistics_skill = 3
+		} 
+			
+	}
+
+	POL_dobromir_sosnierz_general = {
+		name = "Dobromir Sośnierz"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_usuniecie_korwina 
+				has_completed_focus = POL_korwin_nadal_u_wladzy
+				has_completed_focus = POL_wolnosciowcy
+				has_completed_focus = POL_opcja_akap
+			}
+		}
+			skill = 4
+			attack_skill = 5
+			defense_skill = 8
+			planning_skill = 4
+			logistics_skill = 5
+		} 
+			
+	}
+
+	POL_jakub_kulesza = {
+		name = "Jakub Kulesza"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_ankap_kulesza
+				has_completed_focus = POL_opcja_akap
+			}
+		}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 5
+		} 
+			
+	}
+
+	POL_michal_urbaniak = {
+		name = "Michał Urbaniak"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_przewrot_narodowcow
+				has_completed_focus = POL_opcja_kukiz
+			}
+		}
+			skill = 4
+			attack_skill = 8
+			defense_skill = 8
+			planning_skill = 4
+			logistics_skill = 6
+		} 
+			
+	}
+
+	POL_slawomir_mentzen_general = {
+		name = "Sławomir Mentzen"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_bosak_i_mentzen
+				has_completed_focus = POL_kto_doradcow_ma_z_przedszkola
+			}
+		}
+			skill = 4
+			attack_skill = 9
+			defense_skill = 8
+			planning_skill = 8
+			logistics_skill = 7
+		} 
+			
+	}
+
+	POL_patryk_jaki = {
+		name = "Patryk Jaki"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_kto_doradcow_ma_z_przedszkola
+				has_completed_focus = POL_opcja_ziobro
+				has_completed_focus = POL_opcja_kukiz
+			}
+		}
+			skill = 3
+			attack_skill = 4
+			defense_skill = 5
+			planning_skill = 6
+			logistics_skill = 4
+		} 
+			
+	}
+
+	POL_krzysztof_bosak_general = {
+		name = "Krzysztof Bosak"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_bosak_i_mentzen
+				has_completed_focus = POL_kto_doradcow_ma_z_przedszkola
+				has_completed_focus = POL_opcja_kamraci
+				has_completed_focus = POL_mlodziez_wszechpolska_focus
+				has_completed_focus = POL_opcja_kukiz
+			}
+		}
+			skill = 5
+			attack_skill = 9
+			defense_skill = 9
+			planning_skill = 6
+			logistics_skill = 5
+		} 
+			
+	}
+
+	POL_Krzysztof_Tuduj = {
+		name = "Krzysztof Tuduj"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_hold_lenny_narodowcow 
+				has_completed_focus = POL_przewrot_narodowcow
+				has_completed_focus = POL_opcja_kukiz
+			}
+		}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
+		} 
+			
+	}
+
+	POL_slawomir_zawislak = {
+		name = "Sławomir Zawiślak"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_destabilizacja_kkp
+				has_completed_focus = POL_kkp
+				has_completed_focus = POL_opcja_pis
+			}
+		}
+			skill = 2
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		} 
+			
+	}
+
+	POL_roman_fritz = {
+		name = "Roman Fritz"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_braun 
+				has_completed_focus = POL_opcja_kamraci
+			}
+		}
+			skill = 4
+			attack_skill = 5
+			defense_skill = 5
+			planning_skill = 3
+			logistics_skill = 2
+		} 
+			
+	}
+
+	POL_korwin_general = {
+		name = "Jonasz Koran-Mekka"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		field_marshal = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_gandalf_bialy
+				has_completed_focus = POL_korwin_nadal_u_wladzy
+				has_completed_focus = POL_opcja_akap
+				has_completed_focus = POL_heil_korwin
+			}
+		}
+			skill = 4
+			attack_skill = 11
+			defense_skill = 10
+			planning_skill = 10
+			logistics_skill = 10
+		} 
+			
+	}
+
+	POL_wlodzimierz_skalik = {
+		name = "Włodzimierz Skalik"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_braun
+			}
+		}
+			skill = 3
+			attack_skill = 4
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 4
+		} 
+			
+	}
+
+	POL_anna_brylka = {
+		name = "Anna Bryłka"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_przewrot_narodowcow 
+				has_completed_focus = POL_opcja_agrarna
+				has_completed_focus = POL_opcja_kamraci
+			}
+		}
+			skill = 4
+			attack_skill = 5
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 5
+		} 
+			
+	}
+
+	POL_dominika_korwin_mike = {
+		name = "Dominika Korwin-Mikke"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = { 
+				has_completed_focus = POL_korwin_nadal_u_wladzy
+			}
+		}
+			skill = 1
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		} 
+			
+	}
+
+	POL_seb_ross = {
+		name = "Sebastian Ross"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_braun 
+				has_completed_focus = POL_korwin_nadal_u_wladzy
+			}
+		}
+			skill = 4
+			attack_skill = 11
+			defense_skill = 5
+			planning_skill = 5
+			logistics_skill = 4
+		} 
+			
+	}
+
+	POL_longinus_zerwimycka = {
+		name = "Longinus Zerwimycka"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_opcja_kamraci
+				has_completed_focus = POL_usunac_balcerowicza
+				has_completed_focus = POL_zniszczmy_zydokomune
+				has_completed_focus = POL_opcja_lepper
+
+			}
+		}
+			skill = 4
+			attack_skill = 5
+			defense_skill = 5
+			planning_skill = 3
+			logistics_skill = 5
+		} 
+			
+	}
+
+	POL_witold_tumanowicz = {
+		name = "Witold Tumanowicz"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_przewrot_narodowcow
+				has_completed_focus = POL_opcja_zero
+			}
+		}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 6
+			planning_skill = 5
+			logistics_skill = 4
+		} 
+			
+	}
+
+	POL_michal_wawer = {
+		name = "Michał Wawer"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_krzysiu_narodowy_libek
+			}
+		}
+			skill = 4
+			attack_skill = 6
+			defense_skill = 6
+			planning_skill = 6
+			logistics_skill = 5
+		} 
+			
+	}
+
+	POL_kaja_godek = {
+		name = "Kaja Godek"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_opcja_kamraci
+				has_completed_focus = POL_braun
+			}
+		}
+			skill = 2
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 5
+		} 
+			
+	}
+
+	POL_marek_jakubiak_general = {
+		name = "Marek Jakubiak"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_jakubiak
+				has_completed_focus = POL_kukiz
+				has_completed_focus = POL_zawiazanie_iv_rp
+				has_completed_focus = POL_wielkie_księstwo
+			}
+		}
+			skill = 4
+			attack_skill = 9
+			defense_skill = 6
+			planning_skill = 6
+			logistics_skill = 7
+		} 
+			
+	}
+
+POL_samuela_torkowska = {
+		name = "Samuela Torkowska"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_braun 
+				has_completed_focus = POL_korwin_nadal_u_wladzy
+				has_completed_focus = POL_opcja_kamraci
+			}
+		}
+			skill = 3
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		} 
+			
+	}
+
+	POL_jacek_wilk = {
+		name = "Jacek Wilk"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_braun 
+				has_completed_focus = POL_korwin_nadal_u_wladzy
+				has_completed_focus = POL_opcja_kamraci
+			}
+		}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 5
+			planning_skill = 5
+			logistics_skill = 4
+		} 
+			
+	}
+
+	POL_karina_bosak = {
+		name = "Karina Bosak"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_krzysiu_narodowy_libek
+			}
+		}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 5
+			planning_skill = 5
+			logistics_skill = 4
+		} 
+			
+	}
+
+	POL_robert_bakiewicz = {
+		name = "Robert Bąkiewicz"
+		portraits = {
+			army = {
+				#large = "GFX_portraits_Elzbieta_Witek"
+			}
+		}
+		
+		corps_commander = {
+			visible = { 
+				OR = {
+				has_completed_focus = POL_wykorzystanie_sebixow
+				has_completed_focus = POL_mlodziez_wszechpolska_focus
+				has_completed_focus = POL_opcja_kamraci
+				has_completed_focus = POL_opcja_pis
+			}
+		}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		} 
+			
+	}
+
+
+
+
 
 	#PEO GENERALS
 

@@ -103,3 +103,19 @@ POL_po_europejska_dominacja = {
 
 	priority = 100
 }
+
+# Braun droga do wielkosci
+
+POL_braun_wielka_polska_dzialania = {
+	icon = GFX_decision_category_generic_communism
+
+	allowed = {
+		original_tag = POL
+	}
+
+	visible = {
+		has_completed_focus = POL_zapedy_imperialne
+	}
+
+	priority = 100
+}

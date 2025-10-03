@@ -151,6 +151,7 @@ recruit_character = POL_krzysztof_bosak
 recruit_character = POL_robert_winnicki
 recruit_character = POL_grzegorz_braun
 recruit_character = POL_janusz_korwin_mikke
+recruit_character = POL_dobromir_sosnierz
 
 # MOD ADVISORS
 recruit_character = POL_mariusz_blaszczak
@@ -229,6 +230,40 @@ recruit_character = POL_bronislaw_komorowski
 recruit_character = POL_jan_maria_rokita
 recruit_character = POL_donald_tusk_general
 recruit_character = POL_roman_giertych
+recruit_character = POL_Ryszard_Wilk
+recruit_character = POL_Stanislaw_tyszka
+recruit_character = POL_konrad_berkowicz_general
+recruit_character = POL_Patryk_marjan
+recruit_character = POL_bartlomiej_pejo
+recruit_character = POL_grzegorz_placzek
+recruit_character = POL_piotr_liroy
+recruit_character = POL_marcin_sypniewski
+recruit_character = POL_ewa_zajaczkowska
+recruit_character = POL_artur_dziambor
+recruit_character = POL_dobromir_sosnierz_general
+recruit_character = POL_jakub_kulesza
+recruit_character = POL_michal_urbaniak
+recruit_character = POL_slawomir_mentzen_general
+recruit_character = POL_patryk_jaki
+recruit_character = POL_krzysztof_bosak_general
+recruit_character = POL_Krzysztof_Tuduj
+recruit_character = POL_slawomir_zawislak
+recruit_character = POL_roman_fritz
+recruit_character = POL_korwin_general
+recruit_character = POL_wlodzimierz_skalik
+recruit_character = POL_anna_brylka
+recruit_character = POL_dominika_korwin_mike
+recruit_character = POL_seb_ross
+recruit_character = POL_longinus_zerwimycka
+recruit_character = POL_witold_tumanowicz
+recruit_character = POL_michal_wawer
+recruit_character = POL_kaja_godek
+recruit_character = POL_marek_jakubiak_general
+recruit_character = POL_samuela_torkowska
+recruit_character = POL_jacek_wilk
+recruit_character = POL_karina_bosak
+recruit_character = POL_robert_bakiewicz
+
 
 # MOD SPIRITS
 add_ideas = POL_european_pressure
