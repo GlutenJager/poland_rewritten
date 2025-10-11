@@ -1058,5 +1058,109 @@ country = {
             }
 
         }
+
+         POL_kosciol_w_szkole = {
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                stability_factor = -0.05
+                drift_defence_factor = -0.1
+                fascism_drift = 0.01
+                fascism_acceptance = 10
+            }
+
+        }
+
+        POL_nd_legacy = {
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                political_power_factor = 0.15
+                stability_factor = 0.05
+                fascism_drift = 0.01
+                democratic_acceptance = 15
+            }
+
+        }
+
+        POL_narodowe_sentymenty = {
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                political_power_factor = 0.15
+                fascism_drift = 0.015
+                democratic_acceptance = 10
+                conscription_factor = 0.15
+            }
+
+        }
+
+        POL_opocyzja_libkofa = {
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                consumer_goods_factor = 0.1
+                neutrality_acceptance = 10
+                compliance_growth = -0.15
+            }
+        }
+
+        POL_konfa_ruch_narodowy = {
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                compliance_gain = 0.1
+                weekly_manpower = 150
+                fascism_drift = 0.01
+            }
+        }
+
+        POL_homonationalizm = {
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                army_attack_factor = 0.1
+            }
+        }
+
+        POL_homonationalizm_2 = {
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+                army_attack_factor = 0.1
+                experience_gain_army = 0.1
+                stability_factor = 0.05
+            }
+        }
+
+        POL_czolem_wielkiej_polsce_bosak = {
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+              experience_gain_air = 0.1
+              experience_gain_navy = 0.1
+              equipment_capture = 0.15
+              war_support_weekly_factor = 0.01
+            }
+        }
+
+        POL_koniec_rosyjskiej_dominacji = {
+            allowed = {
+                original_tag = POL
+            }
+            modifier = {
+              attack_bonus_against_cores = 0.25
+              decryption_factor = 0.2
+             intel_network_gain = 0.5
+            }
+        }
     }
 }
