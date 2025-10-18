@@ -119,3 +119,19 @@ POL_braun_wielka_polska_dzialania = {
 
 	priority = 100
 }
+
+#TUSK 
+
+POL_balance_of_power_category = {
+	icon = GFX_decision_category_power_struggle
+
+	allowed = {
+		original_tag = POL
+	}
+
+	visible = {
+		
+	}
+
+	priority = 100
+}

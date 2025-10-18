@@ -19,6 +19,9 @@
   PLREW_poland.4.t: "Odrodzenie PRL"
   PLREW_poland.4.d:  "Dotychczasowy szef rządu i przywódca Samoobrony Andrzej Lepper ogłosił narodowi polskiemu, że sfinalizowane zostały reformy mające na celu wprowadzenie socjalistycznego państwa prawa. Oficjalnie już wprowadzono Polskę Rzeczpospolitą Ludową, której zasady opierały się na pierwotnych zasadach działania historycznego PRL-u. Wielce kontrowersyjna decyzja spotkała się z entuzjazmem wśród zwolenników Leppera, ale z furią, strachem i chęcią zemsty pośród działaczy zarówno legalnej, jak i nielegalnej opozycji."
   PLREW_poland.4.k: "Panie Andrzeju nieee!"
+  PLREW_poland.5.t: "oPOzycja strajkuje"
+  PLREW_poland.5.d:  "Teraz gdy okres przejściowy między naszymi reformami a ich skutkami stał się okresem trudnym dla obywateli, na tym rzyznym gruncie wyrosły hasła populistyczne. Antypolscy prowokatorzy i pożal się Jarosławie aktywiści korzystają dziś na złości umęczonego, acz dzielnego narodu i sypią sól w jego rany. Musimy jak najszybciej zdławić te strajki, aby już nigdydo Polski nie zawitała nienawiść."
+  PLREW_poland.5.k: "Wina Tuska!"
   PLREW_poland.6.t: "Ojciec Dyrektor"
   PLREW_poland.6.d: "W trakcie naszych społecznych reform nasz minister cyfryzacji skontaktował się z człowiekiem, który pomoże nam rozpowszechniać duch prezesa wokół całej Polski, tym bardziej polskich wsi i głęboko wierzących katolików. Wraz z Ojcem Tadeuszem Rydzykiem i Radiem Maryją rozprowadzimy kaczyzm po całym kraju."
   PLREW_poland.6.k: "Ciemny lud to kupi."
@@ -26,9 +29,17 @@
   PLREW_poland.7.d: "Hej! Hej! Hej! Hej!\nZ raz obranej drogi nie zawracaj w tył\nNie opuszczaj wiary w decyzje prezesa\nJak Karol Nawrocki niszcz Tuskowy stan\nNiech powróci kaczyzm który będzie trwać!\nPrawo i Sprawiedliwość\nJedna droga dla kraju\nPrawo i Sprawiedliwość\nJedna droga dla kraju"
   PLREW_poland.7.l: "Zwyciężyliśmy!"
   PLREW_poland.8.t: "Los Porozumienia Centrum"
-  PLREW_poland.8.d: "dajcie mi swoje erotyczne zabaweczki a ja pokaze wam droge do agarthy"
-  PLREW_poland.8.k: "Możemy przystąpić na tę propozycję"
-  PLREW_poland.8.l: "Jeszcze się nam przydadzą"
+  PLREW_poland.8.d: "*dajcie mi swoje erotyczne zabaweczki a ja pokaze wam droge do agarthy*\nDostaliśmy dziś propozycję od rządu szwedziego by Gotlandia stała się stacją przesyłową TV republiki. Chęć do wypełnienia misji nadzorczej nad projektem wyrazili Michał Rachoń i Adrian Klarenbach. Prezes jednak zasugerował, żeby może wysłać tam w ramach nagrody za dobrą służbę starych towarzyszy z PC. "
+  PLREW_poland.8.k: "Lepiej żeby pojechali dziennikarze"
+  PLREW_poland.8.l: "Są młodzi. Jeszcze się nam przydadzą"
+
+  PLREW_poland.9.t: "Donald Trump wysłany do USA"
+  PLREW_poland.9.d: "Pan Macierewicz stwierdził, że powinniśmy pomóc prawdziwej prawicy zaprowadzić prawdę w Stanach Zjednoczonych. Wraz z grupą wywrotowców na misję do USA pojechał Donald J. Trump."
+  PLREW_poland.9.k: "Ale niech nie lata samolotami..."
+
+  PLREW_poland.10.t: "Trump wnioskuje o zacieśnienie współpracy"
+  PLREW_poland.10.d: "Po zakończeniu walki o niepodległość Amerykanie wreszcie docenili nasz wkład i to jak istotni jestesmy dla ich interesów w regionie. Trump zapowiedział, że bedzię z nami ustalał swoje kluczowe decyzje."
+  PLREW_poland.10.k: "Siły prwicy jednoczą się"
 
   PLREW_poland.11.t: "I Kongres Konfederacji"
   PLREW_poland.11.k: "Ponowne zwycięstwo Korwina"
@@ -127,6 +138,97 @@
   PLREW_poland.27.d: "Ukraińcy na Lwowszczyźnie zostali spacyfikowani, jeśli wojna nie zakończy się szybko, to Ukraińcy mogą wywołać jakieś problemy. Trzeba się spieszyć, by ich nie ośmielać."
   PLREW_poland.27.a: "Piłsudski wróć..."
 
+  PLREW_poland.28.t: "Rada Europy rząda naszej integracji"
+  PLREW_poland.28.d: "Slava Kokainu"
+  PLREW_poland.28.a: "Demokracja zwycięża"
+  PLREW_poland.28.b: "Niech spróbują nas wziąść siłą"
+
+  PLREW_poland.2801.t: "Czesi poddają się bez walki"
+  PLREW_poland.2801.d: "Koniec Czechosłowacji staje się faktem, gdyż nasze wojska wkraczają właśnie do Pragi. Armia czeska złożyła broń, której było całkiem sporo, a jej czołgi bez wątpienia wzmocnią nasze siły.\n\nBöhmen wkrótce stanie się protektoratem Rzeszy, podobnie jak ci śmieszni Słowacy."
+  PLREW_poland.2801.a: "Triumf Niem... Demokracji"
+
+  PLREW_poland.2802.t: "Czesi odrzucają wolność"
+  PLREW_poland.2802.d: "Obrzydliwi Czesi, zapewne zmanipulowani przez tych antyzachodnich, prorosyjskich prawaków ze Słowacji odrzucili naszą propozycje integracji. Widocznie należy zaprowadzić tam demokracje na siłe."
+  PLREW_poland.2802.a: "Żony mi nie dałeś, żonę wziąłem sobie sam"
+
+  PLREW_poland.29.t: "Europa się jednoczy!"
+  PLREW_poland.29.d: "Po długich staraniach, wielu akcjach yplomatycznych i paru... eeee... interwencjach pokojowych udało nam się Zjednoczyć ludy Europy pod flagą Niem.... Unii Europejskiej. Demokracja i nowoczesność zwycięża, a Europa stała się wzorem w każdej dziedzinie dla reszty świta. Europejczycy znowu panują nad światem! Teraz pora zadecydować, co bedziemy robić dalej, bo nie wolno nam się zatrzymywać."
+  PLREW_poland.29.a: "Europa musi stać się gwarantem pokoju"
+  PLREW_poland.29.b: "Alles fur Deutschland"
+  PLREW_poland.29.c: "Ar you ready for ze new world order?"
+
+  PLREW_poland.30.t: "Rada Europy propuje nam wymiane"
+
+  PLREW_poland.31.t: "Rosjanie zaakceptowali propozycje wymiany"
+  PLREW_poland.31.d: "Po długich negocjacjach nas dyplomaci wspólnie zadecydowali o założeniach naszej współpracy. Narazie będziemy współpracować w kwestii projektów wojskowych."
+  PLREW_poland.31.a: "Głupcy, nie widzą co ich czeka"
+
+  PLREW_poland.32.t: "Rosjanie zerwali negocjacje"
+  PLREW_poland.32.d: "Może wysyłanie posła Zębaczyńskiego to nie był najlepszy pomysł na przeprowadzenie udanych negocjacji z jakimkoliwek krajem, ale i tak Rosjanie okazali się równe chamscy jak myśleliśmu i odesłali naleśnika z kwitkiem."
+  PLREW_poland.32.a: "Większa starta dla nich."
+
+  PLREW_poland.33.t: "Silni razem"
+  PLREW_poland.33.d: "Roman Giertych wraz z Tomaszem Lisem podburzyli przeciw nam nasz własny elektorat. Wczoraj niezadowoleni z prędkości roziczania PiSowców Silni aktywiści z sercem i k*rwą na ustach wdarli się do Kancelarii Prezesa Rady ministrów i robiąc w niej spustoszenie zajęli ją. Postawili rządanie zmiany przywództwa."
+  PLREW_poland.33.o1: "Nie będą nam silniczki mówić co mamy robić"
+  PLREW_poland.33.o2: "Dajmy więc zwyciężyć demokracji..."
+  PLREW_poland.33.o3: "Damy im wybrać kogoś umiarkowanego."
+
+  PLREW_poland.34.t: "Umiarkowani przywódcy?"
+  PLREW_poland.34.d: "Donald Tusk dał pod głosowanie w partii, kto przejmie władzę nad nią i w państwie. Patyjnacy wybrali..."
+  PLREW_poland.34.o1: "Popularnego - Rafała Trzaskowskiego"
+  PLREW_poland.34.o2: "Sterowalnego - Borysa Budkę"
+  PLREW_poland.34.o3: "Tradycyjnego - Chadosława Sikorskiego"
+
+  PLREW_poland.35.t: "Rada Europy rząda uwolnienia Białorusi"
+
+  PLREW_poland.3501.t: "Rosjanie uwalniają Białoruś"
+  PLREW_poland.3501.d: "Rząd Rosyjski uległ naszym naciskom. Od dziś Białoruś, a przynajmniej jej większość, jest wolna od czerwonego nacisku. To kolejny krok ku całej wielkiej wolnej Europie."
+  PLREW_poland.3501.a: "Dobrze, boją się nas!"
+
+  PLREW_poland.3502.t: "Sowieci odmawiają"
+  PLREW_poland.3502.d: "Rosjanie, wysmiali naszych dyplomatów. Powiedzieli, że nikt nie bedzie im dyktował takiej korekty granic."
+  PLREW_poland.3502.a: "Więc pora uwolnić siłą lud Białejrusi"
+
+  PLREW_poland.36.t: "Rada Europy rząda odstąpienia Ukrainy"
+
+  PLREW_poland.3601.t: "Rosjanie oddają Ukrainę"
+  PLREW_poland.3601.d: "Rząd związku sowieckiego, będąc w niezwyklecięzkiej sytuacji odstąpił tereny zniszczone głodem, który sami spowodowali. Rumunia otrzymała własną strafę okupacyjną, którą nadzorują nasi wojskowi. Biedni Ukraińcy wchodzą dziś pod skrzydła wolenego świata. "
+  PLREW_poland.3601.a: "Jeszcze jeden krok do powalenia czerwonego kolosa"
+
+  PLREW_poland.3602.t: "Sowieci odmawiają"
+  PLREW_poland.3602.d: "Rosjanie, wysmiali naszych dyplomatów. Powiedzieli, że nikt nie bedzie im dyktował takiej korekty granic."
+  PLREW_poland.3602.a: "Więc pora uwolnić siłą lud Ukraiński"
+
+  PLREW_poland.37.t: "Never lose your smile"
+  PLREW_poland.37.d: "Pewien Śląski wojskowy, zaoferował nam dzisiaj swoje usługi. Nasi generałowie długo się wachali nad przyjęciem go w łaski, bo wydawał się strasznie dziwny, ale miał całkiem dobre CV i umiejętności."
+  PLREW_poland.37.o1: "*Dźwięki palonych wsi*"
+
+  PLREW_poland.38.t: "Afera KPO"
+  PLREW_poland.38.d: "Rada Europy postanowiła przeznaczyć na rozwój Polski pieniądze z Krjowego Planu Odbudowy, ale jak to w Polsce, szybko znalazły się Januszexy i teraz mamy aferę o kupno Ekspressów. Kebab udający solarium na Jachcie z basenem i hydromasa-.... kurw."
+  PLREW_poland.38.o1: "Ale na szpital też coś było"
+
+  PLREW_poland.39.t: "Druga Koalicja POPSL"
+  PLREW_poland.39.d: "Dla utrzymania stabilności po ostatnich problemach wizerunkowych, postanowiliśmy ostatecznie zwasalizować słabych ludowców. Druga Koalicja z pewności w końcu zaszklachtuje tę partyjkę."
+  PLREW_poland.39.o1: "Witos się w grobie przewraca"
+
+  PLREW_poland.40.t: "Nowa Lewica"
+  PLREW_poland.40.d: "Nowa Lewica z entuzjazmem niekrytym nawet w jednym procencie przyłaczyła się do nas w całości za pare miejsc na listach i w spółkach. "
+  PLREW_poland.40.o1: "marksiści-karierowicze"
+
+  PLREW_poland.41.t: "Hołownia się stawia"
+  PLREW_poland.41.d: "'Jutro święto konstytucji. Czytam ją codziennie i chciałbym kiedyś zrobić Polskę, która będzie własnie taka. Jak będzie trzeba, to wszystko oddam, żeby właśnie taka była.' *Wszyscy prócz Petru przechodzą do PO lol.*"
+  PLREW_poland.41.o1: "Cry about it"
+
+  PLREW_poland.59.t: "Anschluss"
+
+  PLREW_poland.5901.t: "Anschluss"
+  PLREW_poland.5901.d: "Targające Austrią niepokoje ewidentnie wskazują na to, że jej mieszkańcy pragną być obywatelami Niemiec. Pora przekuć słowa w czyny i spełnić wolę ludu. "
+  PLREW_poland.5901.a: "Jak można twierdzić, że Austria nie jest częścią Republiki?"
+
+  PLREW_poland.5902.t: "Anschluss odrzucony"
+  PLREW_poland.5902.d: "Raczy pan żartować."
+  PLREW_poland.5902.a: "Czyli pora na operacje malarz!"
+ 
 
 # WORLD NEWS
   PLREW_world_news.1.t: "Lepper przejmuje władzę w Polsce"

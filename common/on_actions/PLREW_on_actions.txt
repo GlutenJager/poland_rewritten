@@ -1,5 +1,41 @@
 on_actions = {
 
+	on_war = { 
+		effect = {
+			if = {
+				limit = {
+					original_tag = POL
+					has_war_with = GER
+				}
+				POL = { country_event = POL_mod_events.17 }
+
+			}
+			
+		}
+		
+
+	}
+
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = POL
+					has_war_with = GER
+					FROM.FROM = {
+						is_owned_by = POL
+						is_controlled_by = GER
+					}
+				}
+				# WAWA
+				if = {
+					limit = { FROM.FROM = { state = 10 } }
+					country_event = { id = POL_mod_events.18 hours = 10 }
+				}
+			}
+		}
+	}
+
 	on_startup = {
 		# Launch Ethipoian BoP events
 		effect = {

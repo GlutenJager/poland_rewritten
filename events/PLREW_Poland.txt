@@ -3,6 +3,7 @@
 ###########################
 
 add_namespace = PLREW_poland
+add_namespace = POL_mod_events
 
 country_event = { # Zamach stanu
 	id = PLREW_poland.1
@@ -95,6 +96,7 @@ country_event = { # oPOzycja strajkuje
 	desc = PLREW_poland.5.d
 	picture = GFX_report_event_generic_read_write # W I P
 	fire_only_once = yes
+	is_triggered_only = no
 
 	trigger = {
 		tag = POL
@@ -891,17 +893,17 @@ country_event = { #zjednoczenie europy
 
 	option = { #Evropa straznik pokoju
 		name = PLREW_poland.29.a
-		#set_cosmetic_tag = EU 
+		set_cosmetic_tag = POL_european_union
 		#news_event
 	}
 	option = { #Niemiecka dominacja TNO
 		name = PLREW_poland.29.b
-		#set_cosmetic_tag = Grosgermanische reich
+		set_cosmetic_tag = POL_rzesza_wielkogermanska
 		#news_event
 	}
 	option = { #Czas na zarowadzenie Ze new World Order
 		name = PLREW_poland.29.c
-		#set_cosmetic_tag = EU Klaus Schwab, schwab przejmuje wladze
+		set_cosmetic_tag = POL_european_union
 		#news_event
 	}
 }
@@ -1854,6 +1856,7 @@ country_event = { # Braun gasi chanuke
 		tag = POL
 		date > 1939.1.15
 		NOT = { 
+			original_tag = POL
 			has_completed_focus = POL_braun
 			has_completed_focus = POL_opcja_macierewicz
 			has_completed_focus = POL_opcja_kamraci
@@ -1871,21 +1874,25 @@ country_event = { # Niemcy wypowiadają nam wojnę
 	desc = POL_mod_events.17.d
 	picture = GFX_MOD_event_niemcy_wypowiadaja_wojne
 	fire_only_once = yes
-	is_triggered_only = no
-
-	trigger = {
-
-		tag = POL
-		POL = {
-		has_war_with = GER
-		} 
-		NOT = { 
-			has_completed_focus = POL_opcja_tusk
-	 	}
-	}
+	is_triggered_only = yes
 
 	option = {
 		name = POL_mod_events.17.o1
+	}
+	
+	#POL = {sound_effect = dzis_o_piatej}
+}
+
+country_event = { # Niemcy w waszawie
+	id = POL_mod_events.18
+	title = POL_mod_events.18.t
+	desc = POL_mod_events.18.d
+	picture = GFX_MOD_event_niemcy_wypowiadaja_wojne
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = POL_mod_events.18.o1
 	}
 	
 	#POL = {sound_effect = dzis_o_piatej}

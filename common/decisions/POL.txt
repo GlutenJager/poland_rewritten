@@ -1,7 +1,7 @@
 
 
 POL_civil_war_decisions = {
-	POL_german_action = { #event
+	POL_german_action = { 
 		icon = infiltrate_state
 
 		allowed = { tag = POL }
@@ -53,7 +53,7 @@ POL_civil_war_decisions = {
 
 		}
 	}
-	POL_lithuanian_action = { #event
+	POL_lithuanian_action = { 
 		icon = infiltrate_state
 
 		allowed = { tag = POL }
@@ -97,7 +97,7 @@ POL_civil_war_decisions = {
 
 		}
 	}
-	POL_ukrainian_action = { #event
+	POL_ukrainian_action = { 
 		icon = infiltrate_state
 
 		allowed = { tag = POL }
@@ -758,7 +758,6 @@ POL_po_europejska_dominacja = {
 			controls_state = 202
 			controls_state = 193
 			controls_state = 225
-			controls_state = 239
 			controls_state = 197
 			controls_state = 226
 			controls_state = 221
@@ -1591,14 +1590,45 @@ POL_eurokommisarat_Transsiberien = { # decyzja o eurokomisariacie Transsyberii
 
         available = {
             has_completed_focus = POL_do_europy_federalnej
-
-            controls_state = 117
+	AND ={
+        OR = {
+			controls_state = 117
+			any_subject_country = {
+				controls_state = 117
+			}
+		}
+		OR = {
 			controls_state = 849
+			any_subject_country = {
+				controls_state = 849
+			}
+		}
+		OR = {
 			controls_state = 156
+			any_subject_country = {
+				controls_state = 156
+			}
+		}
+		OR = {
 			controls_state = 115
+			any_subject_country = {
+				controls_state = 115
+			}
+		}
+		OR = {
 			controls_state = 114
+			any_subject_country = {
+				controls_state = 114
+			}
+		}
+		OR = {
 			controls_state = 164
+			any_subject_country = {
+				controls_state = 164
+			}
+		}
         }
+	}
 
         visible = {
             has_completed_focus = POL_do_europy_federalnej
@@ -1644,12 +1674,34 @@ POL_eurokommisarat_Transsiberien = { # decyzja o eurokomisariacie Transsyberii
         available = {
             has_completed_focus = POL_do_europy_federalnej
 
-            controls_state = 2
+			AND ={
+        OR = {
+			controls_state = 2
+			any_subject_country = {
+				controls_state = 2
+			}
+		}
+		OR = {
 			controls_state = 157
+			any_subject_country = {
+				controls_state = 157
+			}
+		}
+		OR = {
 			controls_state = 162
+			any_subject_country = {
+				controls_state = 162
+			}
+		}
+		OR = {
 			controls_state = 161
-
+			any_subject_country = {
+				controls_state = 161
+			}
+		}
         }
+	}
+
 
         visible = {
             has_completed_focus = POL_do_europy_federalnej
@@ -1691,29 +1743,124 @@ POL_eurokommisarat_Transsiberien = { # decyzja o eurokomisariacie Transsyberii
         available = {
             has_completed_focus = POL_do_europy_federalnej
 
-            controls_state = 158
+			AND ={
+        OR = {
+			controls_state = 158
+			any_subject_country = {
+				controls_state = 158
+			}
+		}
+		OR = {
 			controls_state = 159
+			any_subject_country = {
+				controls_state = 159
+			}
+		}
+		OR = {
 			controls_state = 160
+			any_subject_country = {
+				controls_state = 160
+			}
+		}
+		OR = {
 			controls_state = 850
+			any_subject_country = {
+				controls_state = 850
+			}
+		}
+		OR = {
 			controls_state = 736
-			controls_state = 852
-			controls_state = 103
+			any_subject_country = {
+				controls_state = 736
+			}
+		}
+		OR = {
 			controls_state = 804
+			any_subject_country = {
+				controls_state = 804
+			}
+		}
+		OR = {
 			controls_state = 105
+			any_subject_country = {
+				controls_state = 105
+			}
+		}
+		OR = {
 			controls_state = 802
+			any_subject_country = {
+				controls_state = 802
+			}
+		}
+		OR = {
 			controls_state = 970
+			any_subject_country = {
+				controls_state = 970
+			}
+		}
+		OR = {
 			controls_state = 934
+			any_subject_country = {
+				controls_state = 934
+			}
+		}
+		OR = {
 			controls_state = 44
+			any_subject_country = {
+				controls_state = 44
+			}
+		}
+		OR = {
 			controls_state = 805
+			any_subject_country = {
+				controls_state = 805
+			}
+		}
+		OR = {
 			controls_state = 185
+			any_subject_country = {
+				controls_state = 185
+			}
+		}
+		OR = {
 			controls_state = 186
+			any_subject_country = {
+				controls_state = 186
+			}
+		}
+		OR = {
 			controls_state = 182
+			any_subject_country = {
+				controls_state = 182
+			}
+		}
+		OR = {
 			controls_state = 187
+			any_subject_country = {
+				controls_state = 187
+			}
+		}
+		OR = {
 			controls_state = 164
+			any_subject_country = {
+				controls_state = 164
+			}
+		}
+		OR = {
 			controls_state = 183
+			any_subject_country = {
+				controls_state = 183
+			}
+		}
+
+        }
+	}
 
 			ITA = {
+				OR = {
 				exists = no
+				is_puppet_of = POL
+				}
 			}
 
         }
@@ -1732,9 +1879,11 @@ POL_eurokommisarat_Transsiberien = { # decyzja o eurokomisariacie Transsyberii
         }
 
 			remove_effect = {
+				
 				#create lider i set cosmetic
 				hidden_effect = {
 				ITA = {
+				set_cosmetic_tag = ITA_eurorepublik
 				transfer_state = 158
 				transfer_state = 159
 				transfer_state = 160
@@ -1755,6 +1904,7 @@ POL_eurokommisarat_Transsiberien = { # decyzja o eurokomisariacie Transsyberii
 				transfer_state = 187
 				transfer_state = 164
 				transfer_state = 183
+				set_cosmetic_tag = ITA_eurorepublik
 				}
 			}
 
@@ -2138,19 +2288,21 @@ POL_eurokommisarat_Transsiberien = { # decyzja o eurokomisariacie Transsyberii
 
 			remove_effect = {
 				hidden_effect = {
+					
 					#leader i comsetic
 				CZE = {
 				transfer_state = 9
                 add_state_core = 9
 				transfer_state = 75
                 add_state_core = 75
-
 				}
 			}
 
 				puppet = { target = CZE }
-
 			    	POL_bop_low_decrease_effect = yes
+				CZE = {
+					set_cosmetic_tag = CZE_eurorepublik
+				}
 			}
         }
 
@@ -2166,9 +2318,7 @@ POL_eurokommisarat_Transsiberien = { # decyzja o eurokomisariacie Transsyberii
 			controls_state = 73
 			controls_state = 664
 
-            CZE = {
-				exists = no
-            }
+        
 			
         }
 
@@ -2188,7 +2338,9 @@ POL_eurokommisarat_Transsiberien = { # decyzja o eurokomisariacie Transsyberii
 			remove_effect = {
 				hidden_effect = {
 					#leader i comsetic
+					
 				SLO = {
+				set_cosmetic_tag = SLO_eurorepublik
 				transfer_state = 70
                 add_state_core = 70
 				transfer_state = 71
@@ -2277,6 +2429,7 @@ POL_eurokommisarat_Transsiberien = { # decyzja o eurokomisariacie Transsyberii
 				hidden_effect = {
 					#leader i comsetic
 				YUG = {
+					set_cosmetic_tag = YUG_eurorepublik
 				transfer_state = 975
                 add_state_core = 975
 				transfer_state = 73
@@ -2584,5 +2737,474 @@ POL_ufundowanie_kosciolow = {
 
 
 	
+
+	}
+
+	POL_balance_of_power_category = {
+
+			POL_bop_kampania_propagandowa_w_mediach = {
+		priority = 110
+		icon = GFX_decision_SWI_swiss_democratic_tradition_campaign
+
+		allowed = {
+			original_tag = POL
+		}
+
+		visible = {
+			has_completed_focus = POL_droga_ku_zjednoczonej_europie
+		}
+
+		available = {
+			has_government = democratic
+		}
+
+		cost = 70
+
+		fire_only_once = yes
+
+		complete_effect = {
+			POL_bop_high_increase_effect = yes
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+			}
+		}
+
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 5
+				power_balance_value = {
+					id = POL_european_power_balance
+					value < 0.3
+				}
+			}
+			modifier = {
+				factor = 10
+				power_balance_value = {
+					id = POL_european_power_balance
+					value < 0.15
+				}
+			}
+		}
+	}
+
+	POL_bop_udobruchajmy_elity = {
+		priority = 109
+		icon = GFX_decision_eng_ally_imperialist_coup
+
+		allowed = {
+			original_tag = POL
+		}
+
+		visible = {
+			has_completed_focus = POL_droga_ku_zjednoczonej_europie
+		}
+
+		available = {
+			has_government = democratic
+		}
+
+		cost = 70
+
+		fire_only_once = yes
+
+		complete_effect = {
+			POL_bop_medium_increase_effect = yes
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+			}
+		}
+
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 5
+				power_balance_value = {
+					id = POL_european_power_balance
+					value < 0.3
+				}
+			}
+			modifier = {
+				factor = 10
+				power_balance_value = {
+					id = POL_european_power_balance
+					value < 0.15
+				}
+			}
+		}
+	}
+
+	POL_bop_kampania_doktora_napierdala = {
+		priority = 108
+		icon = GFX_decision_generic_break_treaty
+
+		allowed = {
+			original_tag = ITA
+		}
+
+		visible = {
+			has_completed_focus = POL_droga_ku_zjednoczonej_europie
+		}
+
+		available = {
+			has_country_leader = POL_donald_tusk
+		}
+
+		cost = 70
+
+		fire_only_once = yes
+
+		complete_effect = {
+			add_stability = -0.05
+			POL_bop_medium_increase_effect = yes
+
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	POL_bop_prowokacja_prawicy = {
+		priority = 107
+		icon = GFX_decision_hol_exchange_intelligence_data
+
+		allowed = {
+			original_tag = POL
+		}
+
+		visible = {
+			has_completed_focus = POL_droga_ku_zjednoczonej_europie
+		}
+
+		available = {
+			has_government = democratic
+		}
+
+		cost = 70
+
+		fire_only_once = no
+		days_re_enable = 70
+
+		complete_effect = {
+			add_political_power = 500
+			add_stability = -0.05
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.05
+			}
+			POL_bop_medium_decrease_effect = yes
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	POL_bop_nozki_popieloszki_w_zalewie_wislanej = {
+		priority = 106
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = POL
+		}
+
+		visible = {
+			has_completed_focus = POL_wosp
+		}
+
+		available = {
+			has_government = democratic
+		}
+
+		cost = 70
+
+		days_re_enable = 150
+
+		complete_effect = {
+			add_stability = 0.1
+			ITA_bop_medium_increase_effect = yes
+
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	POL_bop_zebranie_rady_europejskiej = {
+		priority = 105
+		icon = GFX_decision_eng_propaganda_campaigns
+
+		allowed = {
+			original_tag = POL
+		}
+
+		visible = {
+			OR = {
+				has_completed_focus = POL_do_europy_federalnej
+			}
+		}
+
+		available = {
+			has_completed_focus = POL_do_europy_federalnej
+		}
+
+		cost = 70
+
+		fire_only_once = yes
+
+		complete_effect = { #event
+			add_stability = -0.05
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.1
+			}
+			POL_bop_low_increase_effect = yes
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	POL_bop_akcje_antypatriotyczne = {
+		priority = 104
+		icon = GFX_decision_SWI_support_humanitarian_efforts
+
+		allowed = {
+			original_tag = POL
+		}
+
+		visible = {
+			has_completed_focus = POL_do_europy_federalnej
+		}
+
+		available = {
+			has_completed_focus = POL_fur_deutschland
+		}
+
+		cost = 100
+
+		fire_only_once = no
+		days_re_enable = 50
+		days_remove = 90
+
+		remove_effect = {
+			POL_bop_high_increase_effect = yes
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.1
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	POL_bop_sfinansowanie_influenserow = {
+		priority = 104
+		icon = GFX_decision_SWI_support_humanitarian_efforts
+
+		allowed = {
+			original_tag = POL
+		}
+
+		visible = {
+			has_completed_focus = POL_do_europy_federalnej
+		}
+
+		available = {
+			has_completed_focus = POL_fur_deutschland
+		}
+
+		cost = 100
+
+		fire_only_once = no
+		days_re_enable = 50
+		days_remove = 50
+
+		remove_effect = {
+			POL_bop_high_increase_effect = yes
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	POL_bop_znikajace_pomniki = {
+		priority = 106
+		icon = GFX_decision_generic_civil_support
+
+		allowed = {
+			original_tag = POL
+		}
+
+		visible = {
+			has_completed_focus = POL_do_europy_federalnej
+		}
+
+		available = {
+			has_completed_focus = POL_fur_deutschland
+		}
+
+		cost = 70
+
+		fire_only_once = yes
+
+		complete_effect = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+			POL_bop_medium_increase_effect = yes
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	POL_bop_koalicja_swiatel_drogowych = {
+		priority = 105
+		icon = GFX_decision_generic_speech
+
+		allowed = {
+			original_tag = POL
+		}
+
+		visible = {
+			has_completed_focus = POL_droga_ku_zjednoczonej_europie
+		}
+
+		available = {
+			has_government = democratic
+		}
+
+		cost = 70
+
+		fire_only_once = yes
+
+		days_remove = 90
+
+		modifier = {
+			political_power_factor = -0.15
+		}
+
+		remove_effect = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+			POL_bop_low_increase_effect = yes
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	POL_bop_odezwa_strasburska = {
+		priority = 104
+		icon = GFX_decision_generic_fundraising
+
+		allowed = {
+			original_tag = POL
+		}
+
+		visible = {
+			has_completed_focus = POL_do_europy_federalnej
+		}
+
+		available = {
+			OR = {
+				has_government = democratic
+				has_government = communism
+			}
+		}
+
+		cost = 40
+
+		fire_only_once = yes
+
+		days_remove = 60
+
+		complete_effect = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+			}
+			POL_bop_high_increase_effect = yes
+		}
+
+		remove_effect = {
+			if = {
+				limit = {
+					has_government = communism
+				}
+				add_stability = 0.05
+			}
+			else = {
+				add_stability = 0.1
+				add_political_power = 100
+			}
+		}
+
+		modifier = {
+			consumer_goods_factor = -0.10
+		}
+
+		ai_will_do = {
+			base = 1
+			
+		}
+	}
+
+	POL_kooperacja_z_chrzescijanskimi_demokratami = {
+		priority = 103
+		icon = GFX_decision_generic_political_discourse
+
+		allowed = {
+			original_tag = POL
+		}
+
+		visible = {
+			has_completed_focus = POL_droga_ku_zjednoczonej_europie
+		}
+
+		available = {
+			has_government = democratic
+			
+		}
+
+		cost = 70
+
+		fire_only_once = no
+		days_re_enable = 50
+
+		complete_effect = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			POL_bop_medium_increase_effect = yes
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
 
 	}

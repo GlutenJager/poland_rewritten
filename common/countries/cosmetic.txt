@@ -682,11 +682,55 @@ POL_korona_krolestwa_polskiego = {
 	color = rgb { 188 35 36 }
 	color_ui = rgb { 188 35 36 }
 }
+POL_european_union = {
+	color = rgb { 0 10 120 }
+	color_ui = rgb { 0 10 120 }
+}
+POL_rzesza_wielkogermanska = {
+	color = rgb { 54 54 54 }
+	color_ui = rgb { 115 115 115 }
+}
 FRA_eurorepublik = {
 	color = rgb { 0 10 120 }
 	color_ui = rgb { 0 10 120 }
 }
+ITA_eurorepublik = {
+	color = rgb { 0 10 120 }
+	color_ui = rgb { 0 10 120 }
+}
 GER_eurorepublik = {
+	color = rgb { 0 10 120 }
+	color_ui = rgb { 0 10 120 }
+}
+SLO_eurorepublik = {
+	color = rgb { 0 10 120 }
+	color_ui = rgb { 0 10 120 }
+}
+CZE_eurorepublik = {
+	color = rgb { 0 10 120 }
+	color_ui = rgb { 0 10 120 }
+}
+YUG_eurorepublik = {
+	color = rgb { 0 10 120 }
+	color_ui = rgb { 0 10 120 }
+}
+ITA_eurorepublik = {
+	color = rgb { 0 10 120 }
+	color_ui = rgb { 0 10 120 }
+}
+SAU_arabien_eurokomisarr = {
+	color = rgb { 0 10 120 }
+	color_ui = rgb { 0 10 120 }
+}
+ETH_african_union = {
+	color = rgb { 0 10 120 }
+	color_ui = rgb { 0 10 120 }
+}
+AUS_imperial_federation = {
+	color = rgb { 0 10 120 }
+	color_ui = rgb { 0 10 120 }
+}
+ISR_Europrotektorat = {
 	color = rgb { 0 10 120 }
 	color_ui = rgb { 0 10 120 }
 }
