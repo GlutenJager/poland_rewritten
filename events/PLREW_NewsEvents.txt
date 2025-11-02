@@ -143,3 +143,29 @@ news_event = {
 	}
 }
 
+news_event = {
+	id = PLREW_world_news.12 #Rzesza upada
+	title = PLREW_world_news.12.t
+	desc = PLREW_world_news.12.desc
+	picture = GFX_news_event_generic_silesian_rebels
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = PLREW_world_news.12.o1
+	}
+}
+
+news_event = {
+	id = PLREW_world_news.13 #IV niemiecka kaiserriech
+	title = PLREW_world_news.13.t
+	desc = PLREW_world_news.13.desc
+	picture = GFX_news_event_generic_silesian_rebels
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = PLREW_world_news.13.o1
+	}
+}
+
