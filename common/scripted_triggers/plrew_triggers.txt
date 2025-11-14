@@ -72,6 +72,38 @@ lewica_is_avaliable = {
 		has_completed_focus = POL_opcja_dziwna
 	}
 }
+nowa_lewica_is_avaliable = {
+	NOT = {
+		has_completed_focus = POL_opcja_moja_ojczyzna_zjednoczona
+		has_completed_focus = POL_opcja_razem
+	}
+}
+pzpr_is_avaliable = {
+	NOT = {
+		has_completed_focus = POL_opcja_nowa_lewica
+		has_completed_focus = POL_opcja_razem
+	}
+}
+razem_lewica_is_avaliable = {
+	NOT = {
+		has_completed_focus = POL_opcja_moja_ojczyzna_zjednoczona
+		has_completed_focus = POL_opcja_nowa_lewica
+	}
+}
+senyszyn_is_avaliable = {
+	NOT = {
+		has_completed_focus = POL_powrot_generala
+		has_completed_focus = POL_opcja_nowa_lewica
+		has_completed_focus = POL_opcja_razem
+	}
+}
+jaruzel_is_avaliable = {
+	NOT = {
+		has_completed_focus = POL_sensacja
+		has_completed_focus = POL_opcja_nowa_lewica
+		has_completed_focus = POL_opcja_razem
+	}
+}
 anarchia_is_avaliable = {
 	NOT = {
 		has_completed_focus = POL_opcja_prawica
