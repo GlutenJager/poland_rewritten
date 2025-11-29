@@ -7743,7 +7743,7 @@ focus = {
 	}
 	focus = {
 		id = POL_zwiazek_jaszczurczy #duch dodajacy pop
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_air_defense
 		x = 0
 		y = 4
 		relative_position_id = POL_opcja_kamraci
@@ -7754,7 +7754,7 @@ focus = {
 	}
 	focus = {
 		id = POL_zebranie_elektoratu_konfy #dodaj ciu fasz dodaj pp
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_annex_country
 		x = 0
 		y = 6
 		relative_position_id = POL_opcja_kamraci
@@ -7787,7 +7787,7 @@ focus = {
 	}
 	focus = {
 		id = POL_polska_dla_polakow #dodaj plusy do ducha na armie  ale ludnosc z nierdzennych na minus
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_combined_arms
 		x = -2
 		y = 8
 		relative_position_id = POL_opcja_kamraci
@@ -7798,7 +7798,7 @@ focus = {
 	}
 	focus = {
 		id = POL_protekcjonizm_dla_dobra_narodowego #napraw ciut duch na panstwo dodaj fabryczki
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_annex_country_2
 		x = -2
 		y = 9
 		relative_position_id = POL_opcja_kamraci
@@ -7809,7 +7809,7 @@ focus = {
 	}
 	focus = {
 		id = POL_zaorac_liberałow_antypolakow #napraw duch na panstwo odejmij pp demokracji
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_cas_aircraft
 		x = 2
 		y = 8
 		relative_position_id = POL_opcja_kamraci
@@ -7842,7 +7842,7 @@ focus = {
 	}
 	focus = {
 		id = POL_katolicyzm_nie_wyklucza_tradycji #duch o zastanowieniu sie nad slowianszczyzną 
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_catholic_dominion
 		x = 0
 		y = 9
 		relative_position_id = POL_opcja_kamraci
@@ -7853,7 +7853,7 @@ focus = {
 	}
 	focus = {
 		id = POL_komuno_nazizm_narodowo_slowianski #zamien duch o slowiansszczyznie
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_attack_poland
 		x = 0
 		y = 10
 		relative_position_id = POL_opcja_kamraci
@@ -7881,7 +7881,7 @@ focus = {
 	}
 	focus = {
 		id = POL_lewakow_trzeba_bic #delegalizacja komunizmu
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_communism_anti_fascism
 		x = -1
 		y = 11
 		relative_position_id = POL_opcja_kamraci
@@ -7892,7 +7892,7 @@ focus = {
 	}
 	focus = {
 		id = POL_promocja_meskich_wartosci #dodaj extensive conscription
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_bad_medical
 		x = 1
 		y = 11
 		relative_position_id = POL_opcja_kamraci
@@ -7928,7 +7928,7 @@ focus = {
 	}
 	focus = {
 		id = POL_problem_osobowosciowy #jablon mozemiec traita na minus albo zmienic sie w poganskiego jablona
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_communist_attack_poland
 		x = -2
 		y = 12
 		relative_position_id = POL_opcja_kamraci
@@ -7956,7 +7956,7 @@ focus = {
 	}
 	focus = {
 		id = POL_reformy_osadowskiego #duch na unię papa
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_conspiracy
 		x = 1
 		y = 13
 		relative_position_id = POL_opcja_kamraci
@@ -7970,7 +7970,7 @@ focus = {
 	}
 	focus = {
 		id = POL_jaszczurcze_brygady_rewolucyjne #duch
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_advanced_military_studies
 		x = -1
 		y = 13
 		relative_position_id = POL_opcja_kamraci
@@ -7984,7 +7984,7 @@ focus = {
 	}
 	focus = {
 		id = POL_wielka_nacjonalizacja #wiecej infrastruktury
-		icon = GFX_goal_unknown
+		icon = GFX_focus_fra_le_deluge
 		x = 0
 		y = 14
 		relative_position_id = POL_opcja_kamraci
@@ -8009,7 +8009,7 @@ focus = {
 	}
 	focus = {
 		id = POL_likwidacja_wolnych_mediow # minus do stabilki i dodaj pp
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_army_doctrines_2
 		x = -1
 		y = 15
 		relative_position_id = POL_opcja_kamraci
@@ -8034,7 +8034,7 @@ focus = {
 	}
 	focus = {
 		id = POL_oplaceni_influenserow #dodaj handel niewolnikami na 2 lata
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_concessions
 		x = 0
 		y = 17
 		relative_position_id = POL_opcja_kamraci
@@ -9151,7 +9151,7 @@ focus = {
 		relative_position_id = POL_opcja_kukiz
 		cost = 5
 		prerequisite = {
-			focus = POL_kukiz
+			focus = POL_wojsko_nowej_ery
 		}
 	}
 
@@ -9694,7 +9694,7 @@ focus = {
 
 	focus = {
 		id = POL_o_kazde_drzewo 
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_jet_planes
 		x = 0
 		y = 1
 		relative_position_id = POL_opcja_holownia
@@ -9706,7 +9706,7 @@ focus = {
 
 	focus = {
 		id = POL_zamrazarka_sejmowa
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_industrialists
 		x = -1
 		y = 2
 		relative_position_id = POL_opcja_holownia
@@ -9730,7 +9730,7 @@ focus = {
 
 	focus = {
 		id = POL_polska_dialogu
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_hill_training
 		x = 0
 		y = 3
 		relative_position_id = POL_opcja_holownia
@@ -9775,7 +9775,7 @@ focus = {
 
 	focus = {
 		id = POL_zapewnienie_wiekszosci
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_full_employment
 		x = -2
 		y = 4
 		relative_position_id = POL_opcja_holownia
@@ -9787,7 +9787,7 @@ focus = {
 
 	focus = {
 		id = POL_marszalek_promocyjny
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_the_giant_wakes
 		x = 0
 		y = 4
 		relative_position_id = POL_opcja_holownia
@@ -9812,7 +9812,7 @@ focus = {
 
 	focus = {
 		id = POL_walka_z_analfabetyzmem
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_field_hostpital
 		x = 0
 		y = 5
 		relative_position_id = POL_opcja_holownia
@@ -9842,7 +9842,7 @@ focus = {
 
 	focus = {
 		id = POL_zawiazanie_rady_soltyskiej
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_farmland
 		x = -2
 		y = 7
 		relative_position_id = POL_opcja_holownia
@@ -9866,7 +9866,7 @@ focus = {
 
 	focus = {
 		id = POL_inwestycje_w_biedniejsze_regiony
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_economic_recovery
 		x = -3
 		y = 8
 		relative_position_id = POL_opcja_holownia
@@ -9928,7 +9928,7 @@ focus = {
 
 	focus = {
 		id = POL_roznijmy_sie_pieknie
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_democratic_europe
 		x = 3
 		y = 8
 		relative_position_id = POL_opcja_holownia
@@ -9941,7 +9941,7 @@ focus = {
 
 	focus = {
 		id = POL_pozytywizm_spoleczny
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_develop_ethiopia
 		x = 5
 		y = 8
 		relative_position_id = POL_opcja_holownia
@@ -9967,7 +9967,7 @@ focus = {
 
 	focus = {
 		id = POL_mamy_talent
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_diplomatic_treaty
 		x = 0
 		y = 9
 		relative_position_id = POL_opcja_holownia
@@ -10064,7 +10064,7 @@ focus = {
 
 	focus = {
 		id = POL_zamach_stanu_w_po
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_monarchy_1
 		x = 1
 		y = 1
 		relative_position_id = POL_opcja_petru
@@ -10101,7 +10101,7 @@ focus = {
 
 	focus = {
 		id = POL_zysk_przedsiebiorcy_zysk_cywila
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_naval_discipline
 		x = -5
 		y = 4
 		relative_position_id = POL_opcja_petru
@@ -10113,7 +10113,7 @@ focus = {
 
 	focus = {
 		id = POL_centralny_okreg_przemyslowy
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_public_works
 		x = -3
 		y = 4
 		relative_position_id = POL_opcja_petru
@@ -10125,7 +10125,7 @@ focus = {
 
 	focus = {
 		id = POL_liberalizacja_prawa_ab
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_national_security
 		x = -1
 		y = 4
 		relative_position_id = POL_opcja_petru
@@ -10137,7 +10137,7 @@ focus = {
 
 	focus = {
 		id = POL_zluzowanie_przepisow_podatkowych
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_price_controls
 		x = -5
 		y = 5
 		relative_position_id = POL_opcja_petru
@@ -10149,7 +10149,7 @@ focus = {
 
 	focus = {
 		id = POL_otwarcie_sie_na_prywatnyc_inwestorow
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_pan_scandinavism
 		x = -3
 		y = 5
 		relative_position_id = POL_opcja_petru
@@ -10161,7 +10161,7 @@ focus = {
 
 	focus = {
 		id = POL_ulgi_rodzinne
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_population_growth
 		x = -1
 		y = 5
 		relative_position_id = POL_opcja_petru
@@ -10173,7 +10173,7 @@ focus = {
 
 	focus = {
 		id = POL_plan_petru
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_monetary_union
 		x = -3
 		y = 6
 		relative_position_id = POL_opcja_petru
@@ -10191,7 +10191,7 @@ focus = {
 
 	focus = {
 		id = POL_bo_ludzie_maja_charowac
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_railroad
 		x = 2
 		y = 3
 		relative_position_id = POL_opcja_petru
@@ -10203,7 +10203,7 @@ focus = {
 
 	focus = {
 		id = POL_euro
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_the_council_of_europe
 		x = 5
 		y = 3
 		relative_position_id = POL_opcja_petru
@@ -10227,7 +10227,7 @@ focus = {
 
 	focus = {
 		id = POL_wielka_reprywatyzacja
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_purchase_mechanized_equipment
 		x = 1
 		y = 4
 		relative_position_id = POL_opcja_petru
@@ -10251,7 +10251,7 @@ focus = {
 
 	focus = {
 		id = POL_droga_do_nowoczesnej_polski
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_polish_deal
 		x = 3
 		y = 4
 		relative_position_id = POL_opcja_petru
@@ -13504,7 +13504,7 @@ focus = {
 
 	focus = {
 		id = POL_narodowy_agraryzm
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_military_dictatorship
 		x = 0
 		y = 5
 		relative_position_id = POL_opcja_agrarna
@@ -13517,7 +13517,7 @@ focus = {
 
 	focus = {
 		id = POL_polskie_chlopy_to_niebyle_co
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_military_mission
 		x = -1
 		y = 6
 		relative_position_id = POL_opcja_agrarna
@@ -13565,7 +13565,7 @@ focus = {
 
 	focus = {
 		id = POL_plan_polska_lokalna
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_military_industry
 		x = 1
 		y = 7
 		relative_position_id = POL_opcja_agrarna
@@ -13602,7 +13602,7 @@ focus = {
 
 	focus = {
 		id = POL_kompromis_w_sprawie_edukacji
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_monarchist_sentiment
 		x = -2
 		y = 9
 		relative_position_id = POL_opcja_agrarna
@@ -13698,8 +13698,7 @@ focus = {
 			focus = POL_opcja_razem
 		}
 		allow_branch = {
-			lewica_is_avaliable = yes
-			nowa_lewica_is_avaliable
+			nowa_lewica_is_avaliable = yes
 		}
 		offset = {
 			x = 0
@@ -13794,7 +13793,7 @@ focus = {
 
 	focus = {
 		id = POL_konsolidacja_wladzy_lewicy
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_secret_service_agency
 		x = 2
 		y = 4
 		relative_position_id = POL_opcja_nowa_lewica
@@ -13806,7 +13805,7 @@ focus = {
 
 	focus = {
 		id = POL_komunizm_z_ludzka_twarza_lew #polewej stronie serce mam
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_social_democracy
 		x = -2
 		y = 1
 		relative_position_id = POL_opcja_nowa_lewica
@@ -13818,7 +13817,7 @@ focus = {
 
 	focus = {
 		id = POL_rozszerzenie_poparcia_centrolewu
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_royal_wedding
 		x = -3
 		y = 2
 		relative_position_id = POL_opcja_nowa_lewica
@@ -13830,7 +13829,7 @@ focus = {
 
 	focus = {
 		id = POL_legalizacja_tranzycji
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_socialist_science
 		x = -1
 		y = 2
 		relative_position_id = POL_opcja_nowa_lewica
@@ -13842,7 +13841,7 @@ focus = {
 
 	focus = {
 		id = POL_wykorzystanie_poparcia_w_miastach
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_soviet_politics
 		x = -2
 		y = 3
 		relative_position_id = POL_opcja_nowa_lewica
@@ -13857,7 +13856,7 @@ focus = {
 
 	focus = {
 		id = POL_minister_cyfryzacji
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_reorient_production
 		x = -4
 		y = 4
 		relative_position_id = POL_opcja_nowa_lewica
@@ -13870,7 +13869,7 @@ focus = {
 
 	focus = {
 		id = POL_unowoczesnienie_wojska_zawodowego
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_reinforcing_the_supply_network
 		x = -2
 		y = 4
 		relative_position_id = POL_opcja_nowa_lewica
@@ -13882,7 +13881,7 @@ focus = {
 
 	focus = {
 		id = POL_zcentralizowana_produkcja
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_resource_extraction
 		x = -3
 		y = 5
 		relative_position_id = POL_opcja_nowa_lewica
@@ -13909,7 +13908,7 @@ focus = {
 
 	focus = {
 		id = POL_zebranie_plenum
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_spur_communist_revolutions
 		x = 1
 		y = 5
 		relative_position_id = POL_opcja_nowa_lewica
@@ -13962,7 +13961,7 @@ focus = {
 
 	focus = {
 		id = POL_rozwoj_produkcji_wodki
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_supply_line
 		x = 3
 		y = 6
 		relative_position_id = POL_opcja_nowa_lewica
@@ -13989,7 +13988,7 @@ focus = {
 
 	focus = {
 		id = POL_zomo_i_milicja
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_support_the_left_right
 		x = 2
 		y = 7
 		relative_position_id = POL_opcja_nowa_lewica
@@ -14016,8 +14015,7 @@ focus = {
 
 	focus = {
 		id = POL_rondo_praw_kobiet
-		icon = GFX_goal_unknown
-		x = -2
+		icon = GFX_focus_generic_surrender
 		y = 7
 		relative_position_id = POL_opcja_nowa_lewica
 		cost = 5
@@ -14085,7 +14083,6 @@ focus = {
 			focus = POL_opcja_nowa_lewica
 		}
 		allow_branch = {
-			lewica_is_avaliable = yes
 			pzpr_is_avaliable = yes
 		}
 		offset = {
@@ -14125,9 +14122,8 @@ focus = {
 			focus = POL_sensacja
 		}
 		allow_branch = {
-			lewica_is_avaliable = yes
 			jaruzel_is_avaliable = yes
-			pzpr_is_avaliable = yes
+			
 		}
 		offset = {
 			x = 8
@@ -14143,7 +14139,7 @@ focus = {
 
 	focus = {
 		id = POL_wodz_na_trudne_czasy
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_tank_assault
 		x = -1
 		y = 1
 		relative_position_id = POL_powrot_generala
@@ -14286,9 +14282,7 @@ focus = {
 			}
 		}
 		allow_branch = {
-			lewica_is_avaliable = yes
 			senyszyn_is_avaliable = yes
-			pzpr_is_avaliable = yes
 		}
 		prerequisite = {
 			focus = POL_nowa_droga
@@ -14429,7 +14423,7 @@ focus = {
 
 	focus = {
 		id = POL_nowoczesne_technologie
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_university_1
 		x = -6
 		y = 4
 		relative_position_id = POL_sensacja
@@ -14492,7 +14486,7 @@ focus = {
 
 	focus = {
 		id = POL_konfitury
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_treaty
 		x = 7
 		y = 2
 		relative_position_id = POL_sensacja
@@ -14504,7 +14498,7 @@ focus = {
 
 	focus = {
 		id = POL_tuzaelznienie_zbuntowanej_lewicy
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_total_war
 		x = 6
 		y = 3
 		relative_position_id = POL_sensacja
@@ -14537,7 +14531,7 @@ focus = {
 
 	focus = {
 		id = POL_supremacja_matriarchatu
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_universal_suffrage
 		x = -6
 		y = 6
 		relative_position_id = POL_sensacja
@@ -14574,7 +14568,6 @@ focus = {
 			focus = POL_opcja_moja_ojczyzna_zjednoczona
 		}
 		allow_branch = {
-			lewica_is_avaliable = yes
 			razem_lewica_is_avaliable = yes
 		}
 		offset = {
@@ -14617,7 +14610,7 @@ focus = {
 
 	focus = {
 		id = POL_zbudujemy_nowa_polske
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_pan_scandinavism
 		x = 0
 		y = 1
 		relative_position_id = POL_opcja_razem
@@ -14828,7 +14821,7 @@ focus = {
 
 	focus = {
 		id = POL_rozszerzenie_praw_pracowniczych
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_red_flags
 		x = 5
 		y = 2
 		relative_position_id = POL_opcja_razem
@@ -14866,7 +14859,7 @@ focus = {
 	focus = {
 		id = POL_opcja_anarchia
 		icon = GFX_focus_POL_opcja_anarchia
-		x = 140
+		x = 137
 		y = 1
 		relative_position_id = POL_decydujace_posiedzenie
 		cost = 0
@@ -14886,7 +14879,7 @@ focus = {
 			focus = POL_opcja_dziwna
 		}
 		offset = {
-			x = -140
+			x = -137
 			y = 0
 			trigger = {
 				has_completed_focus = POL_opcja_anarchia
@@ -14899,45 +14892,15 @@ focus = {
 		}
 	}
 
-focus = {
-		id = POL_opcja_akap #tramwajno, Kelthuz lub wspolnota
-		icon = GFX_goal_unknown
-		x = 3
-		y = 1
-		relative_position_id = POL_opcja_anarchia
-		cost = 5
-		prerequisite = {
-			focus = POL_opcja_anarchia
-		}
-		mutually_exclusive = {
-			focus = POL_opcja_akom
-		}
-		allow_branch = {
-			anarchia_is_avaliable = yes
-			NOT = {
-				OR = {
-					has_completed_focus = POL_opcja_akom
-				}
-			}
-		}
-		offset = {
-			x = -3
-			y = 0
-			trigger = {
-				has_completed_focus = POL_opcja_akap
-			}
-		}
-		completion_reward = {
-			hidden_effect = {
-				mark_focus_tree_layout_dirty = yes
-			}
-		}
-	}
+
+
+
+
 
 focus = {
 		id = POL_opcja_akom
 		icon = GFX_goal_unknown
-		x = -3
+		x = -4
 		y = 1
 		relative_position_id = POL_opcja_anarchia
 		cost = 5
@@ -14970,7 +14933,468 @@ focus = {
 	}
 
 
+	focus = {
+		id = POL_chlopcy_lenina
+		icon = GFX_goal_unknown
+		x = -2
+		y = 1
+		relative_position_id = POL_opcja_akom
+		cost = 5
+		prerequisite = {
+			focus = POL_opcja_akom
+		}
+	}
 
+	focus = {
+		id = POL_marksistowski_land
+		icon = GFX_goal_unknown
+		x = -2
+		y = 2
+		relative_position_id = POL_opcja_akom
+		cost = 5
+		prerequisite = {
+			focus = POL_chlopcy_lenina
+		}
+	}
+
+
+	focus = {
+		id = POL_narodowy_syndykalizm
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = POL_opcja_akom
+		cost = 5
+		prerequisite = {
+			focus = POL_opcja_akom
+		}
+	}
+
+	focus = {
+		id = POL_wyburzenie_kosciolow
+		icon = GFX_goal_unknown
+		x = 2
+		y = 1
+		relative_position_id = POL_opcja_akom
+		cost = 5
+		prerequisite = {
+			focus = POL_opcja_akom
+		}
+	}
+
+	focus = {
+		id = POL_czlowiek_sobie_bogiem
+		icon = GFX_goal_unknown
+		x = 2
+		y = 2
+		relative_position_id = POL_opcja_akom
+		cost = 5
+		prerequisite = {
+			focus = POL_wyburzenie_kosciolow
+		}
+	}
+
+	focus = {
+		id = POL_zniesienie_wlasnosci
+		icon = GFX_goal_unknown
+		x = 0
+		y = 2
+		relative_position_id = POL_opcja_akom
+		cost = 5
+		prerequisite = {
+			focus = POL_narodowy_syndykalizm
+		}
+	}
+
+	focus = {
+		id = POL_sprawiedliwosc_i_organicyzm
+		icon = GFX_goal_unknown
+		x = 0
+		y = 3
+		relative_position_id = POL_opcja_akom
+		cost = 5
+		prerequisite = {
+			focus = POL_zniesienie_wlasnosci
+		}
+		prerequisite = {
+			focus = POL_czlowiek_sobie_bogiem
+		}
+		prerequisite = {
+			focus = POL_marksistowski_land
+		}
+	}
+
+	focus = {
+		id = POL_koniec_cynizmu_egozimu
+		icon = GFX_goal_unknown
+		x = -2
+		y = 4
+		relative_position_id = POL_opcja_akom
+		cost = 5
+		prerequisite = {
+			focus = POL_sprawiedliwosc_i_organicyzm
+		}
+	}
+
+	focus = {
+		id = POL_spoleczenstwo_idealne
+		icon = GFX_goal_unknown
+		x = 2
+		y = 4
+		relative_position_id = POL_opcja_akom
+		cost = 5
+		prerequisite = {
+			focus = POL_sprawiedliwosc_i_organicyzm
+		}
+	}
+
+	focus = {
+		id = POL_wzmocnienie_wolnych_komun
+		icon = GFX_goal_unknown
+		x = 0
+		y = 4
+		relative_position_id = POL_opcja_akom
+		cost = 5
+		prerequisite = {
+			focus = POL_sprawiedliwosc_i_organicyzm
+		}
+	}
+
+	focus = {
+		id = POL_eksterminacja_buntownikow
+		icon = GFX_goal_unknown
+		x = 0
+		y = 5
+		relative_position_id = POL_opcja_akom
+		cost = 5
+		prerequisite = {
+			focus = POL_wzmocnienie_wolnych_komun
+			focus = POL_koniec_cynizmu_egozimu
+			focus = POL_spoleczenstwo_idealne
+		}
+	}
+
+	focus = {
+		id = POL_utopia_mitem_elit
+		icon = GFX_goal_unknown
+		x = 0
+		y = 6
+		relative_position_id = POL_opcja_akom
+		cost = 5
+		prerequisite = {
+			focus = POL_eksterminacja_buntownikow
+		}
+	}
+
+	focus = {
+		id = POL_wielki_kolektyw
+		icon = GFX_goal_unknown
+		x = 2
+		y = 6
+		relative_position_id = POL_opcja_akom
+		cost = 5
+		prerequisite = {
+			focus = POL_eksterminacja_buntownikow
+		}
+	}
+
+	focus = {
+		id = POL_przygotowanie_do_podniesienia_sztandaru
+		icon = GFX_goal_unknown
+		x = -2
+		y = 6
+		relative_position_id = POL_opcja_akom
+		cost = 5
+		prerequisite = {
+			focus = POL_eksterminacja_buntownikow
+		}
+	}
+
+	focus = {
+		id = POL_socjalistiche_welt_republik
+		icon = GFX_goal_unknown
+		x = 1
+		y = 7
+		relative_position_id = POL_opcja_akom
+		cost = 5
+		prerequisite = {
+			focus = POL_utopia_mitem_elit
+		}
+		prerequisite = {
+			focus = POL_wielki_kolektyw
+		}
+	}
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+focus = {
+		id = POL_opcja_akap #tramwajno, Kelthuz lub wspolnota
+		icon = GFX_goal_unknown
+		x = 4
+		y = 1
+		relative_position_id = POL_opcja_anarchia
+		cost = 5
+		prerequisite = {
+			focus = POL_opcja_anarchia
+		}
+		mutually_exclusive = {
+			focus = POL_opcja_akom
+		}
+		allow_branch = {
+			anarchia_is_avaliable = yes
+			NOT = {
+				OR = {
+					has_completed_focus = POL_opcja_akom
+				}
+			}
+		}
+		offset = {
+			x = -3
+			y = 0
+			trigger = {
+				has_completed_focus = POL_opcja_akap
+			}
+		}
+		completion_reward = {
+			hidden_effect = {
+				mark_focus_tree_layout_dirty = yes
+			}
+		}
+	}
+
+
+
+	focus = {
+		id = POL_libertariat
+		icon = GFX_goal_unknown
+		x = -2
+		y = 1
+		relative_position_id = POL_opcja_akap
+		cost = 5
+		prerequisite = {
+			focus = POL_opcja_akap
+		}
+	}
+
+	focus = {
+		id = POL_sznura_dzien
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = POL_opcja_akap
+		cost = 5
+		prerequisite = {
+			focus = POL_opcja_akap
+		}
+	}
+
+	focus = {
+		id = POL_rozwiazanie_wiekszosci_struktur
+		icon = GFX_goal_unknown
+		x = 2
+		y = 1
+		relative_position_id = POL_opcja_akap
+		cost = 5
+		prerequisite = {
+			focus = POL_opcja_akap
+		}
+	}
+
+	focus = {
+		id = POL_ochrona_wlasnosci
+		icon = GFX_goal_unknown
+		x = 2
+		y = 2
+		relative_position_id = POL_opcja_akap
+		cost = 5
+		prerequisite = {
+			focus = POL_rozwiazanie_wiekszosci_struktur
+		}
+	}
+
+	focus = {
+		id = POL_sprzedanie_wlasnosci_panstwa
+		icon = GFX_goal_unknown
+		x = 2
+		y = 3
+		relative_position_id = POL_opcja_akap
+		cost = 5
+		prerequisite = {
+			focus = POL_ochrona_wlasnosci
+		}
+	}
+
+	focus = {
+		id = POL_waffen_cc
+		icon = GFX_goal_unknown
+		x = -2
+		y = 2
+		relative_position_id = POL_opcja_akap
+		cost = 5
+		prerequisite = {
+			focus = POL_libertariat
+		}
+	}
+
+	focus = {
+		id = POL_zmiana_oficjalnej_religii
+		icon = GFX_goal_unknown
+		x = -2
+		y = 3
+		relative_position_id = POL_opcja_akap
+		cost = 5
+		prerequisite = {
+			focus = POL_waffen_cc
+		}
+	}
+
+	focus = {
+		id = POL_gumisie_akapu
+		icon = GFX_goal_unknown
+		x = 0
+		y = 2
+		relative_position_id = POL_opcja_akap
+		cost = 5
+		prerequisite = {
+			focus = POL_sznura_dzien
+		}
+	}
+
+	focus = {
+		id = POL_za_wolnosc_nasza_i_wasza
+		icon = GFX_goal_unknown
+		x = 0
+		y = 3
+		relative_position_id = POL_opcja_akap
+		cost = 5
+		prerequisite = {
+			focus = POL_gumisie_akapu
+		}
+	}
+
+	focus = {
+		id = POL_przygotowanie_do_swiatowego_akapu
+		icon = GFX_goal_unknown
+		x = 0
+		y = 4
+		relative_position_id = POL_opcja_akap
+		cost = 5
+		prerequisite = {
+			focus = POL_za_wolnosc_nasza_i_wasza
+			focus = POL_zmiana_oficjalnej_religii
+			focus = POL_sprzedanie_wlasnosci_panstwa
+		}
+	}
+
+	focus = {
+		id = POL_niekontrolowany_przyrost_naturalny
+		icon = GFX_goal_unknown
+		x = -2
+		y = 5
+		relative_position_id = POL_opcja_akap
+		cost = 5
+		prerequisite = {
+			focus = POL_przygotowanie_do_swiatowego_akapu
+		}
+	}
+
+
+	focus = {
+		id = POL_brak_podatkow
+		icon = GFX_goal_unknown
+		x = 0
+		y = 5
+		relative_position_id = POL_opcja_akap
+		cost = 5
+		prerequisite = {
+			focus = POL_przygotowanie_do_swiatowego_akapu
+		}
+	}
+
+	focus = {
+		id = POL_ludzkie_dzialanie
+		icon = GFX_goal_unknown
+		x = 2
+		y = 5
+		relative_position_id = POL_opcja_akap
+		cost = 5
+		prerequisite = {
+			focus = POL_przygotowanie_do_swiatowego_akapu
+		}
+	}
+
+	focus = {
+		id = POL_organizowanie_bandytow
+		icon = GFX_goal_unknown
+		x = 2
+		y = 6
+		relative_position_id = POL_opcja_akap
+		cost = 5
+		prerequisite = {
+			focus = POL_ludzkie_dzialanie
+		}
+	}
+
+	focus = {
+		id = POL_balcerowicz_bohaterem
+		icon = GFX_goal_unknown
+		x = 0
+		y = 6
+		relative_position_id = POL_opcja_akap
+		cost = 5
+		prerequisite = {
+			focus = POL_brak_podatkow
+		}
+	}
+
+	focus = {
+		id = POL_o_co_walczymy
+		icon = GFX_goal_unknown
+		x = 4
+		y = 6
+		relative_position_id = POL_opcja_akap
+		cost = 5
+		prerequisite = {
+			focus = POL_ludzkie_dzialanie
+		}
+	}
+
+	focus = {
+		id = POL_wolny_swiat
+		icon = GFX_goal_unknown
+		x = 3
+		y = 7
+		relative_position_id = POL_opcja_akap
+		cost = 5
+		prerequisite = {
+			focus = POL_o_co_walczymy
+		}
+		prerequisite = {
+			focus = POL_organizowanie_bandytow
+		}
+	}
 
 
 
