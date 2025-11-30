@@ -1,13 +1,14 @@
 state={
-	id=1017
-	name="STATE_1017"
+	id=1048
+	name="STATE_1048"
 	provinces={
-		334 389 3324 
+		243 279 3295 6347
 	}
-	manpower=50000
-	buildings_max_level_factor=1.000
+	manpower=200000
 	state_category=city
-	local_supplies=3.000
+	buildings_max_level_factor=1.000
+	local_supplies=2.000
+
 	history = {
 
 		owner = POL
@@ -16,14 +17,17 @@ state={
 		add_claim_by = PRE
 
 		victory_points = {
-			334 5 # tuchel
+			3295 5 # Torun
+		}
+
+		victory_points = {
+			279 1 # Bydgoszcz
 		}
 
 		buildings = {
 			infrastructure = 3 #was: 6
 			arms_factory = 0
-			industrial_complex = 1
-			air_base = 0
+			industrial_complex = 2
 		}
 		
 		1938.3.12 = {

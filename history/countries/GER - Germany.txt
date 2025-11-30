@@ -1,4 +1,4 @@
-﻿capital = 1030 # Berlin
+﻿capital = 1060 # Berlin
 
 if = {
 	limit = {

@@ -373,7 +373,7 @@ focus_tree = {
 				start_civil_war = {
 					ideology = neutrality
 					size = 0.55
-					states = { 97 784 1025 95 94 93 96 92 91 762 89 88 1029 90 1024 }
+					states = { 97 784 1055 95 94 93 96 92 91 762 89 88 1059 90 1054 }
 				}
 				add_ideas = POL_european_pressure
 				add_ideas = POL_broken_justice_system
@@ -1687,8 +1687,8 @@ focus_tree = {
 				807 = { remove_claim_by = PRE }
 				86 = { remove_claim_by = PRE }
 				762 = { remove_claim_by = PRE }
-				1017 = { remove_claim_by = PRE }
-				1018 = { remove_claim_by = PRE }
+				1047 = { remove_claim_by = PRE }
+				1048 = { remove_claim_by = PRE }
 
 
 				85 = { remove_core_of = DNZ }
@@ -2017,11 +2017,11 @@ focus_tree = {
 				set_state_owner = 807
 				add_state_core = 807
 
-				set_state_owner = 1017
-				add_state_core = 1017
+				set_state_owner = 1047
+				add_state_core = 1047
 
-				set_state_owner = 1018
-				add_state_core = 1018
+				set_state_owner = 1048
+				add_state_core = 1048
 			}
 			GER = {
 			add_opinion_modifier = {
@@ -3089,7 +3089,7 @@ focus_tree = {
 			start_border_war = {
 			change_state_after_war = no
 			    attacker = {
-			        state = 1024
+			        state = 1054
 			       num_provinces = 2
 			       on_win = wtt_border_conflict_won_attacker.1
        				 on_lose = wtt_border_conflict_lost_attacker.1
@@ -4198,8 +4198,8 @@ focus_tree = {
 				807 = { remove_claim_by = PRE }
 				86 = { remove_claim_by = PRE }
 				762 = { remove_claim_by = PRE }
-				1017 = { remove_claim_by = PRE }
-				1018 = { remove_claim_by = PRE }
+				1047 = { remove_claim_by = PRE }
+				1048 = { remove_claim_by = PRE }
 
 
 				85 = { remove_core_of = DNZ }
@@ -4568,8 +4568,8 @@ focus_tree = {
 				target = GER
 				modifier = huge_increase
 			}
-			transfer_state = 1019
-			1019 = { add_core_of = POL }
+			transfer_state = 1049
+			1049 = { add_core_of = POL }
 		}
 	}
 	focus = {
@@ -7765,7 +7765,7 @@ focus = {
 	}
 	focus = {
 		id = POL_dmowski_naszym_wodzem #dmowski legacy
-		icon = GFX_goal_unknown
+		icon = GFX_goal_unknown #ten od narodowcow
 		x = 2
 		y = 6
 		relative_position_id = POL_opcja_kamraci
@@ -7820,7 +7820,7 @@ focus = {
 	}
 	focus = {
 		id = POL_zbierzmy_onrowcow #dodaj po fasz i napraw duch armii
-		icon = GFX_goal_unknown
+		icon = GFX_goal_unknown #piasecki od narodowcow
 		x = 2
 		y = 9
 		relative_position_id = POL_opcja_kamraci
@@ -7914,7 +7914,7 @@ focus = {
 	}
 	focus = {
 		id = POL_nptv_oficjalnym_medium #zamien zle sadownicwo na cos zwiazanego z bogami slowianskimi
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_autarky_achieved
 		x = 2
 		y = 12
 		relative_position_id = POL_opcja_kamraci
@@ -7942,7 +7942,7 @@ focus = {
 	}
 	focus = {
 		id = POL_maciak_pederasto #pogarszamy relacje z rosją
-		icon = GFX_goal_unknown
+		icon = GFX_focus_AFG_anti_malaria
 		x = 0
 		y = 12
 		relative_position_id = POL_opcja_kamraci
@@ -7998,7 +7998,7 @@ focus = {
 	}
 	focus = {
 		id = POL_eksploatacja_korwinowej_piwnicy #plus do budowy bunkruf
-		icon = GFX_goal_unknown
+		icon = GFX_focus_AFG_contact_rural_loyalists
 		x = 1
 		y = 15
 		relative_position_id = POL_opcja_kamraci
@@ -8020,7 +8020,7 @@ focus = {
 	}
 	focus = {
 		id = POL_jedna_rzesza_jeden_narod_jeden_kamrat #rzesza ludow slavickich, tak nazywa sie teraz panstwo
-		icon = GFX_goal_unknown
+		icon = GFX_focus_ger_assassinate_mussolini
 		x = 0
 		y = 16
 		relative_position_id = POL_opcja_kamraci
@@ -10531,17 +10531,17 @@ focus = {
 			87 = { 
 			set_state_name = "Litzmannstadt"	
 				}
-			1017 = {
+			1047 = {
 			set_state_name = "Landkreis Tüchel"
 			    }
-			1024 = {
+			1048 = {
 			set_state_name = "Sudauen"
 			    }
 
-			1018 = {
+			1048 = {
 			set_state_name = "Kuyavien"
 			    }
-			1023 = {
+			1053 = {
 			set_state_name = "Provinz SüdPreussen"
 			    }
 
@@ -11670,26 +11670,26 @@ focus = {
 			61 = { add_core_of = POL }
 			60 = { add_core_of = POL }
 			65 = { add_core_of = POL }
-			1026 = { add_core_of = POL }
-			1028 = { add_core_of = POL }
+			1056 = { add_core_of = POL }
+			1058 = { add_core_of = POL }
 			67 = { add_core_of = POL }
 			66 = { add_core_of = POL }
-			1027 = { add_core_of = POL }
+			1057 = { add_core_of = POL }
 			64 = { add_core_of = POL }
-			1030 = { add_core_of = POL }
+			1060 = { add_core_of = POL }
 			62 = { add_core_of = POL }
 			68 = { add_core_of = POL }
 			63 = { add_core_of = POL }
 			8 = { add_core_of = POL }
-			1022 = { add_core_of = POL }
-			1020 = { add_core_of = POL }
+			1052 = { add_core_of = POL }
+			1050 = { add_core_of = POL }
 			763 = { add_core_of = POL }
-			1019 = { add_core_of = POL }
+			1049 = { add_core_of = POL }
 			5 = { add_core_of = POL }
 			85 = { add_core_of = POL }
 			807 = { add_core_of = POL }
-			1017 = { add_core_of = POL }
-			1018 = { add_core_of = POL }
+			1047 = { add_core_of = POL }
+			1048 = { add_core_of = POL }
 			86 = { add_core_of = POL }
 			102 = { add_core_of = POL }
 			912 = { add_core_of = POL }
@@ -12518,30 +12518,30 @@ focus = {
 				THU = {transfer_state =  60 }
 
 				SAX = {transfer_state =  65 }
-				SAX = {transfer_state =  1026 }
+				SAX = {transfer_state =  1056 }
 
-				SIL = {transfer_state =  1028 }
+				SIL = {transfer_state =  1058 }
 				SIL = {transfer_state =  66 }
 				SIL = {transfer_state =  67 }
-				SIL = {transfer_state =  1027 }
+				SIL = {transfer_state =  1057 }
 
 				PRE = {transfer_state =  64 }
-				PRE = {transfer_state =  1030 }
+				PRE = {transfer_state =  1060 }
 				PRE = {transfer_state =  62 }
 				PRE = {transfer_state =  68 }
 				PRE = {transfer_state =  63 }
 				PRE = {transfer_state =  8 }
-				PRE = {transfer_state =  1022 }
-				PRE = {transfer_state =  1020 }
+				PRE = {transfer_state =  1042 }
+				PRE = {transfer_state =  1040 }
 				PRE = {transfer_state =  763 }
-				PRE = {transfer_state =  1019 }
+				PRE = {transfer_state =  1049 }
 				PRE = {transfer_state =  5 }
 				PRE = {transfer_state =  85 }
 				PRE = {transfer_state =  807 }
-				PRE = {transfer_state =  1017 }
-				PRE = {transfer_state =  1018 }
+				PRE = {transfer_state =  1047 }
+				PRE = {transfer_state =  1048 }
 				PRE = {transfer_state =  86 }
-				PRE = {transfer_state =  1021 }
+				PRE = {transfer_state =  1051 }
 
 			}
 
@@ -12572,7 +12572,7 @@ focus = {
 		completion_reward = {
 
 			set_capital = {
-				state = 1030
+				state = 1060
 			}
 
 			87 = {
@@ -12590,7 +12590,7 @@ focus = {
 			88 = {
 				add_state_core = GEN
 			}
-			1029 = {
+			1059 = {
 				add_state_core = GEN
 			}
 
@@ -12600,9 +12600,9 @@ focus = {
 				transfer_state = 90
 				transfer_state = 92
 				transfer_state = 88
-				transfer_state = 1029
+				transfer_state = 1059
 				set_capital = {
-					state = 1029
+					state = 1059
 				}
 			}
 			if = {
@@ -12716,7 +12716,7 @@ focus = {
 		}
 		completion_reward = {
 			SOV = {
-				transfer_state = 1025
+				transfer_state = 1055
 				transfer_state = 95
 				transfer_state = 96
 				transfer_state = 94

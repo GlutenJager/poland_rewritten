@@ -1,30 +1,28 @@
 state={
-	id=1026
-	name="STATE_1026"
+	id=1060
+	name="STATE_1060"
 	provinces={
-		514 573 3514 6559 9535 
+		6521 
 	}
-	manpower=3000006
-	state_category=town
+	manpower=1000000
+	state_category=megalopolis
 	buildings_max_level_factor=1.000
-	local_supplies=3.000
+	local_supplies=9.000
 
 	history = {
 
 		owner = GER
 		add_core_of = GER
-		add_core_of = SAX
 		add_core_of = PRE
 
 		buildings = {
 			infrastructure = 4
 			arms_factory = 1
-			industrial_complex = 2
+			industrial_complex = 3
 		}
 
 		victory_points = {
-			514 5 # Dresden
+			6521 10 # Berlin
 		}
-		
 	}
 }

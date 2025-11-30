@@ -1045,8 +1045,8 @@ country_event = {
 			factor = 50
 		}
 		effect_tooltip = {
-			GER = { transfer_state = 1017 }
-			GER = { transfer_state = 1018 }
+			GER = { transfer_state = 1047 }
+			GER = { transfer_state = 1048 }
 			GER = { transfer_state = 85 }
 			GER = { transfer_state = 807 }
 			GER = { transfer_state = 86 }
@@ -1103,16 +1103,16 @@ country_event = {
 	# Great
 	option = {
 		name = wtt_germany.15.a
-		transfer_state = 1017
-		transfer_state = 1018
+		transfer_state = 1047
+		transfer_state = 1048
 		transfer_state = 85
 		transfer_state = 807
 		transfer_state = 86
 		transfer_state = 762
 		transfer_state = 807
 		add_state_core = 85
-		add_state_core = 1017
-		add_state_core = 1018
+		add_state_core = 1047
+		add_state_core = 1048
 		add_state_core = 86
 		add_state_core = 762
 		add_state_core = 807
@@ -3350,13 +3350,13 @@ country_event = {
 		has_full_control_of_state = 85
 		has_full_control_of_state = 86
 		has_full_control_of_state = 807
-		has_full_control_of_state = 1017
-		has_full_control_of_state = 1018
+		has_full_control_of_state = 1047
+		has_full_control_of_state = 1048
 		owns_state = 85
 		owns_state = 86
 		owns_state = 807
-		owns_state = 1017
-		owns_state = 1018
+		owns_state = 1047
+		owns_state = 1048
 		has_idea = GER_the_great_red_menace
 		surrender_progress > 0.3
 		has_defensive_war_with = SOV
@@ -3408,18 +3408,18 @@ country_event = {
 		transfer_state = 85
 		transfer_state = 86
 		transfer_state = 807
-		transfer_state = 1017
-		transfer_state = 1018
+		transfer_state = 1047
+		transfer_state = 1048
 		add_state_core = 85
 		add_state_core = 86
 		add_state_core = 807
-		add_state_core = 1017
-		add_state_core = 1018
+		add_state_core = 1047
+		add_state_core = 1048
 		85 = { add_claim_by = SOV }
 		86 = { add_claim_by = SOV }
 		807 = { add_claim_by = SOV }
-		1017 = { add_claim_by = SOV }
-		1018 = { add_claim_by = SOV }
+		1047 = { add_claim_by = SOV }
+		1048 = { add_claim_by = SOV }
 		POL = { country_event = { id = wtt_germany.59 } }
 	}
 

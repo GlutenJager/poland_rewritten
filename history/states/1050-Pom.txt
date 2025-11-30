@@ -1,10 +1,10 @@
 state={
-	id=1019
-	name="STATE_1019"
+	id=1050
+	name="STATE_1050"
 	provinces={
-		3380 6402 11245 
+		11316 11343 
 	}
-	manpower=46000
+	manpower=40000
 	state_category=city
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
@@ -13,19 +13,16 @@ state={
 
 		owner = GER
 		add_core_of = GER
-		add_claim_by = PRE
+		add_core_of = KSH
 		add_core_of = PRE
 
 		victory_points = {
-			3380 5 # elblag
+			11343 1 #Słupsk
 		}
 
 		buildings = {
-			infrastructure = 3 #was: 6
-			arms_factory = 0
-			industrial_complex = 1
-			air_base = 2
+			infrastructure = 2
 		}
+		
 	}
-
 }
