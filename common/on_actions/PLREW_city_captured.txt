@@ -22,7 +22,7 @@ on_actions = {
 				}
 				# Kraków
 				if = {
-					limit = { FROM.FROM = { state = 1059 } }
+					limit = { FROM.FROM = { state = 89 } }
 					country_event = { id = PLREW_poland.20 hours = 10 }
 				}
 				# Katowice

@@ -9,5 +9,5 @@ tags={
 }
 name="Poland Rewritten: Modern Day"
 path="mod/poland_rewritten"
-supported_version="1.17.*"
+supported_version="1.17.1"
 picture="thumbnail.png"

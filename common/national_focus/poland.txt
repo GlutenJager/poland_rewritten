@@ -373,7 +373,7 @@ focus_tree = {
 				start_civil_war = {
 					ideology = neutrality
 					size = 0.55
-					states = { 97 784 1055 95 94 93 96 92 91 762 89 88 1059 90 1054 }
+					states = { 97 784 95 94 93 96 92 91 762 89 88 90 }
 				}
 				add_ideas = POL_european_pressure
 				add_ideas = POL_broken_justice_system
@@ -1687,8 +1687,6 @@ focus_tree = {
 				807 = { remove_claim_by = PRE }
 				86 = { remove_claim_by = PRE }
 				762 = { remove_claim_by = PRE }
-				1047 = { remove_claim_by = PRE }
-				1048 = { remove_claim_by = PRE }
 
 
 				85 = { remove_core_of = DNZ }
@@ -2017,11 +2015,6 @@ focus_tree = {
 				set_state_owner = 807
 				add_state_core = 807
 
-				set_state_owner = 1047
-				add_state_core = 1047
-
-				set_state_owner = 1048
-				add_state_core = 1048
 			}
 			GER = {
 			add_opinion_modifier = {
@@ -3086,22 +3079,7 @@ focus_tree = {
 			focus = POL_polityka_zemsty_historycznej
 		}
 		completion_reward = {
-			start_border_war = {
-			change_state_after_war = no
-			    attacker = {
-			        state = 1054
-			       num_provinces = 2
-			       on_win = wtt_border_conflict_won_attacker.1
-       				 on_lose = wtt_border_conflict_lost_attacker.1
-			    }
-							
-			   		defender = {
-			       state = 5
-			        num_provinces = 2
-			        on_win = wtt_border_conflict_won_defender.1
-   					 on_lose = wtt_border_conflict_lost_defender.1
-			    }
-			}
+			
 		}
 	}
 
@@ -4198,8 +4176,6 @@ focus_tree = {
 				807 = { remove_claim_by = PRE }
 				86 = { remove_claim_by = PRE }
 				762 = { remove_claim_by = PRE }
-				1047 = { remove_claim_by = PRE }
-				1048 = { remove_claim_by = PRE }
 
 
 				85 = { remove_core_of = DNZ }
@@ -4568,8 +4544,6 @@ focus_tree = {
 				target = GER
 				modifier = huge_increase
 			}
-			transfer_state = 1049
-			1049 = { add_core_of = POL }
 		}
 	}
 	focus = {
@@ -10531,19 +10505,7 @@ focus = {
 			87 = { 
 			set_state_name = "Litzmannstadt"	
 				}
-			1047 = {
-			set_state_name = "Landkreis Tüchel"
-			    }
-			1048 = {
-			set_state_name = "Sudauen"
-			    }
-
-			1048 = {
-			set_state_name = "Kuyavien"
-			    }
-			1053 = {
-			set_state_name = "Provinz SüdPreussen"
-			    }
+			
 
 
 			}
@@ -11670,26 +11632,18 @@ focus = {
 			61 = { add_core_of = POL }
 			60 = { add_core_of = POL }
 			65 = { add_core_of = POL }
-			1056 = { add_core_of = POL }
-			1058 = { add_core_of = POL }
 			67 = { add_core_of = POL }
 			66 = { add_core_of = POL }
-			1057 = { add_core_of = POL }
+			
 			64 = { add_core_of = POL }
-			1060 = { add_core_of = POL }
 			62 = { add_core_of = POL }
 			68 = { add_core_of = POL }
 			63 = { add_core_of = POL }
 			8 = { add_core_of = POL }
-			1052 = { add_core_of = POL }
-			1050 = { add_core_of = POL }
 			763 = { add_core_of = POL }
-			1049 = { add_core_of = POL }
 			5 = { add_core_of = POL }
 			85 = { add_core_of = POL }
 			807 = { add_core_of = POL }
-			1047 = { add_core_of = POL }
-			1048 = { add_core_of = POL }
 			86 = { add_core_of = POL }
 			102 = { add_core_of = POL }
 			912 = { add_core_of = POL }
@@ -12518,30 +12472,19 @@ focus = {
 				THU = {transfer_state =  60 }
 
 				SAX = {transfer_state =  65 }
-				SAX = {transfer_state =  1056 }
 
-				SIL = {transfer_state =  1058 }
 				SIL = {transfer_state =  66 }
 				SIL = {transfer_state =  67 }
-				SIL = {transfer_state =  1057 }
 
 				PRE = {transfer_state =  64 }
-				PRE = {transfer_state =  1060 }
 				PRE = {transfer_state =  62 }
 				PRE = {transfer_state =  68 }
 				PRE = {transfer_state =  63 }
 				PRE = {transfer_state =  8 }
-				PRE = {transfer_state =  1042 }
-				PRE = {transfer_state =  1040 }
-				PRE = {transfer_state =  763 }
-				PRE = {transfer_state =  1049 }
 				PRE = {transfer_state =  5 }
 				PRE = {transfer_state =  85 }
 				PRE = {transfer_state =  807 }
-				PRE = {transfer_state =  1047 }
-				PRE = {transfer_state =  1048 }
 				PRE = {transfer_state =  86 }
-				PRE = {transfer_state =  1051 }
 
 			}
 
@@ -12572,7 +12515,7 @@ focus = {
 		completion_reward = {
 
 			set_capital = {
-				state = 1060
+				state = 64
 			}
 
 			87 = {
@@ -12590,9 +12533,7 @@ focus = {
 			88 = {
 				add_state_core = GEN
 			}
-			1059 = {
-				add_state_core = GEN
-			}
+			
 
 			GEN = {
 				transfer_state = 87
@@ -12600,10 +12541,6 @@ focus = {
 				transfer_state = 90
 				transfer_state = 92
 				transfer_state = 88
-				transfer_state = 1059
-				set_capital = {
-					state = 1059
-				}
 			}
 			if = {
 				limit = {
@@ -12716,7 +12653,6 @@ focus = {
 		}
 		completion_reward = {
 			SOV = {
-				transfer_state = 1055
 				transfer_state = 95
 				transfer_state = 96
 				transfer_state = 94
