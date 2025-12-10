@@ -36,9 +36,13 @@ POL_civil_war_decisions = {
 				GER = {
 					set_state_owner = 807
 					set_state_owner = 86
+					set_state_owner = 1018
+					set_state_owner = 1017
 
 					set_state_controller = 807
 					set_state_controller = 86
+					set_state_controller = 1018
+					set_state_controller = 1017
 
 					puppet = DNZ
 				}
@@ -1851,8 +1855,6 @@ POL_eurokommisarat_Transsiberien = { # decyzja o eurokomisariacie Transsyberii
 
         }
 	}
- remove_effect = {
-	
 
 			ITA = {
 				OR = {
@@ -2515,7 +2517,7 @@ POL_eurokommisarat_Transsiberien = { # decyzja o eurokomisariacie Transsyberii
         }
 
 
-    
+    }
 
 
 

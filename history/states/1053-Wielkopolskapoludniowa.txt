@@ -1,0 +1,28 @@
+state={
+	id=1053
+	name="STATE_1053"
+	provinces={
+		493 9439 9546 11515 11558 
+	}
+	manpower=100000
+	state_category=city
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+
+	history = {
+
+		owner = POL
+		add_core_of = POL
+
+		victory_points = {
+			493 3
+		}
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			
+		}
+		
+	}
+}

@@ -1,0 +1,6 @@
+###########################
+# PLREW Soviet Events
+###########################
+
+add_namespace = PLREW_soviet
+
